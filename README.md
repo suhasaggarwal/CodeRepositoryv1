@@ -44,7 +44,7 @@ B)Gets new urls from websites sitemap. New urls are added in websites sitemap on
 Polling for new Urls occur every 2 hours.
 
 Delta Crawler -
-Generates url from which requests is logged in Elasticsearch.
+C)Generates url from which requests is logged in Elasticsearch.
 Url Set is generated twice in a day.
 If url has not already been crawled before and is not present in Entity index, it is crawled and its entity data is added in Entity index.
 
