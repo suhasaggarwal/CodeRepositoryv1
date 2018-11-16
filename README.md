@@ -51,5 +51,15 @@ If url has not already been crawled before and is not present in Entity index, i
 Adserver Support - This involves scaled Adserver with support for Elasticsearch and new Tracker - Response based Tracker for Chatbot module which takes user response corresponding to questions asked from users.
 
 
+Semantic Engine is set up in Servers and code can be obtained from there. 
+
+1)IAB based classifier - Python 
+
+2)Topic Miner - java 
+
+3)Recommendation module in Python 
+
+
+
 
 
