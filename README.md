@@ -34,7 +34,7 @@ Does enhancement of raw data points - Has been discussed.
 3)Lenskart  In-house DMP
 
 
-Crawling is divied in two stages -
+4)Crawling is divided in two stages -
 
 Initial Crawler
 A)First scrapy crawls website for full list of urls and puts Entity data corresponding to urls in Entity index.
