@@ -62,9 +62,15 @@ Semantic Engine is set up in Servers and code can be obtained from there.
 
 //Javascript based scripts 
 
+
+
 <script src="https://cuberoottagmanager.dc.cuberoot.co/dcode2/dmpbasedc.js" defer></script>
+
 <script src="https://segmentsync.dc.cuberoot.co/cookiedatav5.js"></script>
 
+    
+    
+    
     <script type="text/javascript">
 
         getCookieData(function(cookiedatav1) {
