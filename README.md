@@ -48,6 +48,8 @@ C)Generates url from which requests is logged in Elasticsearch.
 Url Set is generated twice in a day.
 If url has not already been crawled before and is not present in Entity index, it is crawled and its entity data is added in Entity index.
 
+Adserver Support - This involves scaled Adserver with support for Elasticsearch and new Tracker - Response based Tracker for Chatbot module which takes user response corresponding to questions asked from users.
+
 
 
 
