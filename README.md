@@ -60,6 +60,40 @@ Semantic Engine is set up in Servers and code can be obtained from there.
 3)Recommendation module in Python 
 
 
+//Javascript based scripts 
+
+<script src="https://cuberoottagmanager.dc.cuberoot.co/dcode2/dmpbasedc.js" defer></script>
+<script src="https://segmentsync.dc.cuberoot.co/cookiedatav5.js"></script>
+
+    <script type="text/javascript">
+
+        getCookieData(function(cookiedatav1) {
+      
+        var cubecity;
+        var cubemobile;
+        var cubetags;
+        var cubeinmarket;
+        var cubeaffinity;
+        var cubeage;
+        var cubegender;
+        var cubeincomelevel;
+        var cubesection;
+
+         cubecity       = JSON.parse(cookiedatav1).city;
+         cubemobile     = JSON.parse(cookiedatav1).mobileDevice;
+         cubetags       = JSON.parse(cookiedatav1).tags;
+         cubeinmarket   = JSON.parse(cookiedatav1).inMarketSegments;
+         cubeaffinity   = JSON.parse(cookiedatav1).AffinitySegments;
+         cubeage        = JSON.parse(cookiedatav1).age;
+         cubegender     = JSON.parse(cookiedatav1).gender;
+         cubeincomelevel= JSON.parse(cookiedatav1).incomelevel;
+         cubesection    = JSON.parse(cookiedatav1).section;
+
+         window.cubeRootTargetingSlot = [
+           [['cinma', cubeinmarket], ['caffin', cubeaffinity],['ccity', cubecity],['cmobile',cubemobile], ['ctags',cubetags],['cgen',cubegender], ['cag', cubeage],['cinc', cubeincomelevel],['csection', cubesection]] ];
+       });
+    </script>
+
 
 
 
