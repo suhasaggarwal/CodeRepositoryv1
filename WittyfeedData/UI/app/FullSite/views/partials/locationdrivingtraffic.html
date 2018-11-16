@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="text-bold">Locations Driving Traffic To Article</h5>
+            </div>
+            <div class="container-fluid">
+                <span class="text-muted text-bold">Top Locations</span>
+
+                <select ng-change="vm.fillLocationData()" ng-model="vm.selectedLocation">
+                <option ng-repeat="region in vm.locations" ng-selected="vm.selectedLocation == region.selected" value="{{region.key}}">{{region.value}}</option>
+                </select>
+            </div>
+            <table class="table text-nowrap">
+                <thead>
+                    <tr>
+                        <th class="text-muted">{{vm.locationHeader}}</th>
+                        <th class="text-right text-muted">Pageview share</th>
+                        <th class="text-right col-md-4"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="city in vm.cityData.data">
+                        <td class="text-muted">{{city.type}}
+                        </td>
+                        <td class="text-right text-bold">{{city.count }}
+                        </td>
+                        <td class="text-right">
+                            <div class="progress">
+                                <div class="progress-bar" style="width:{{city.share}}%">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <div class="col-md-4 text-muted">Map View</div>
+                <div class="col-md-6">
+                    <select class="bootstrap-select" data-width="100%">
+					<option value="Global">Global</option>
+			</select>
+                </div>
+            </div>
+            <div vmap style="width:100%;height:400px" vmap-map="world_mill_en" vmap-colors="{br:'yellow'}" vmap-selected-regions="['br']"
+                vmap-background="transparent" vmap-color="#ccc" vmap-hover-color="#cfcfcf" , vmap-selected-color="#6391ff" vmap-scale-colors="#6391ff"
+                vmap-normalize-function="linear" vmap-enable-zoom="true" vmap-show-tooltip="true" vmap-border-color="black" vmap-border-width="1"
+                , vmap-border-opacity="1.05" vmap-multi-select-region="true" class="vmap">
+            </div>
+        </div>
+    </div>
+</div>

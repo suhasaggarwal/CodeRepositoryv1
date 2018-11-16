@@ -1,0 +1,132 @@
+<div class="audience-profile-info">
+    <h5 aman="nirav" class="text-bold head-heading">Audience Profile</h5>
+    <div class="row">
+        <div class="col-md-4">
+            <div id="gender"  width="480" height="320" class="panel panel-flat overview-audience-profile-card">
+                <div class="panel-heading">
+                    <h5 class="text-bold title-border-bottom card-heading"><span ng-click="vm.goToOtherPages('genderTraffic')" style="cursor: pointer;">{{vm.pageTamplate.gender.display}}</span>
+                        <!-- {{ vm.templateData.cardtitletemplate.gender}} -->
+                        <!-- {{vm.templateData}} -->
+                       <!--  {{vm.shareTemplateData.overview.templateData[0].display}} -->
+                       
+                        <gear-configuration pdf-downlode="vm.pdfExport('gender')" jpeg-downlode="vm.jpegExport('gender')" update-data="vm.genderDataUpdate()"></gear-configuration>
+                        <pdf-generater options="dirPdfOptions"></pdf-generater>
+                        <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+                    </h5>
+                </div>
+                <!-- <div class="linear-background">
+                      <div class="inter-draw"></div>
+                      <div class="inter-crop"></div>
+                      <div class="inter-right--top"></div>
+                       <div class="inter-right--bottom"></div>
+                    </div> -->
+                    <!-- <div><img  ng-src="{{myCroppedImage}}" /></div>
+                        <div class="cropArea"><div ng-hide="myCroppedImage">Select an image file: <input type="file" id="fileInput" /></div>
+                        <div >
+                        <ui-cropper image="myImage" area-type="circle" chargement="'Loading'" result-image="myCroppedImage" canvas-scalemode="true"></ui-cropper>
+                        </div>  
+                        </div> -->
+                <div class="container-fluid">
+                    <nvd3 ng-click="vm.goToOtherPages('genderTraffic')" style="cursor: pointer;" options="vm.genderData.chartOptions" data="vm.genderData.chartData"></nvd3>
+                    <table class="table datatable-fixed-left" width="1000%">
+                        <thead>
+                            <tr>
+                                <th class="table-card-heading">Gender</th>
+                                <th class=" text-right table-card-heading">{{ vm.selectMatricLabel }}</th>
+                            </tr>
+                        </thead>
+                        <div ng-if="vm.genderData.data !=0">
+                            <tbody>
+                                <tr ng-repeat="gender in vm.genderData.data">
+                                    <td class=" text-left  capitalize-text" ng-click="vm.goToOtherPages('genderProfile', gender.genderId)" style="cursor: pointer;"><span class="color-span pull-left" style="margin-right: 5px;margin-top: 3px; margin-left: 5px; border-color: {{gender.color}}"></span>{{gender.type}}</td>
+                                    <td class="text-right text-bold">{{gender.count }}</td>
+                                </tr>
+                            </tbody>
+                        </div>
+                    </table>
+                    <div ng-if="vm.genderData.data == 0" ng-repeat="message in vm.genderData.messageStatus">
+                        <p class="text-center" style="color: #64c1ac; margin-top: 60px; font-size: 20px;">{{message}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div id="age" class="panel panel-flat overview-audience-profile-card">
+                <div class="panel-heading">
+                    <h5 id="heading" class="text-bold title-border-bottom card-heading"><span ng-click="vm.goToOtherPages('ageGroup')" style="cursor: pointer;">{{vm.pageTamplate.agegroup.display}}</span>
+                       <gear-configuration pdf-downlode="vm.pdfExport('age')" jpeg-downlode="vm.jpegExport('age')" update-data="vm.genderDataUpdate()"></gear-configuration>
+                        <pdf-generater options="dirPdfOptions"></pdf-generater>
+                        <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+                    </h5>
+                </div>
+                <div class="container-fluid">
+                    <!--<nvd3 options="vm.ageGroupData.chartOptions" data="vm.ageGroupData.chartData"></nvd3>-->
+                    <div pdf-save-content="ageGroup">
+                        <table class="table datatable-fixed-left" width="100%">
+                            <thead>
+                                <tr>
+                                    <th class="table-card-heading padding-12">Age Group</th>
+                                    <th class=" text-right table-card-heading padding-12">{{ vm.selectMatricLabel }}</th>
+                                    <th class=" text-right text-semibold padding-12"></th>
+                                </tr>
+                            </thead>
+                            <div ng-if="vm.ageGroupData.data !=0">
+                                <tbody>
+                                    <tr ng-repeat="agegroup in vm.ageGroupData.data">
+                                        <td class="  padding-12" ng-click="vm.goToOtherPages('ageGroupProfile', agegroup.ageId)" style="cursor: pointer;">{{agegroup.type}}</td>
+                                        <td class=" text-right  padding-12 text-bold">{{agegroup.count }}</td>
+                                        <td class="text-center padding-12">
+                                            <div class="progress age-group-progressbar" data-toggle="tooltip" data-placement="top" tooltip="{{agegroup.share}}%">
+                                                <div class="progress-bar" style="width:{{agegroup.scaledShare}}%">
+                                                    <span class="sr-only"></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </div>
+                        </table>
+                        <div ng-if="vm.ageGroupData.data == 0" ng-repeat="message in vm.ageGroupData.messageStatus">
+                            <p class="text-center" style="color: #64c1ac; margin-top: 155px; font-size: 20px;">{{message}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div id="income" class="panel panel-flat overview-audience-profile-card">
+                <div class="panel-heading">
+                    <h5 class="text-bold title-border-bottom card-heading"><span ng-click="vm.goToOtherPages('incomeLevel')" style="cursor: pointer;">{{vm.pageTamplate.incomelevel.display}}</span>
+                        <gear-configuration pdf-downlode="vm.pdfExport('income')" jpeg-downlode="vm.jpegExport('income')" update-data="vm.genderDataUpdate()"></gear-configuration>
+                        <pdf-generater options="dirPdfOptions"></pdf-generater>
+                        <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+                    </h5>
+                </div>
+                <div>
+                    <div class="container-fluid">
+                        <nvd3 ng-click="vm.goToOtherPages('incomeLevel')" style="cursor: pointer;" options="vm.incomeData.chartOptions" data="vm.incomeData.chartData"></nvd3>
+                        <table class="table datatable-fixed-left" width="100%">
+                            <thead>
+                                <tr>
+                                    <th class=" table-card-heading">Income Level</th>
+                                    <th class=" text-right table-card-heading">{{ vm.selectMatricLabel }}</th>
+                                </tr>
+                            </thead>
+                            <div ng-if="vm.incomeData.data !=0">
+                                <tbody>
+                                    <tr ng-repeat="income in vm.incomeData.data">
+                                        <td class=" text-left  capitalize-text" ng-click="vm.goToOtherPages('incomeLevelProfile', income.incomeId)" style="cursor: pointer;"><span class="color-span pull-left" style="margin-right: 5px;margin-top: 3px; margin-left: 5px; border-color: {{income.color}}"></span>{{income.type}}</td>
+                                        <td class=" text-right text-bold">{{income.count }}</td>
+                                    </tr>
+                                </tbody>
+                            </div>
+                        </table>
+                        <div ng-if="vm.incomeData.data == 0" ng-repeat="message in vm.incomeData.messageStatus">
+                            <p class="text-center" style="color: #64c1ac; margin-top: 60px; font-size: 20px;">{{message}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<ul class="nav navbar-nav pull-left">
+    <li>
+       <!--  <select ng-change="loadArticles(siteId)"
+                ng-options="site.siteId as site.siteName for site in siteList"
+                ng-model="siteId" class="form-control" style="width:180px; background-color: #ffffff; margin-top: 8px; height: 35px;"><option value="" style="background-color: white" disabled selected style="color: red;">Site Name</option></select> -->
+        <ul style="list-style-type: none; margin-bottom:5px !important">
+             <li class="pull-right">
+                <label class="audience-keymetric-label text-bold">{{siteName }}</label>
+                <ul class="breadcrumb-elements">
+                    <li class="dropdown pull-right">
+                   <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon-fix" style="background-color: transparent"><b style="color: #ffffff" class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-right site-top-scrolldown" role="menu">
+                             <li ng-repeat="site in siteList">
+                            <a href="javascript:void(0)" ng-click="loadArticles(site)">{{ site.siteName }}</a>
+                        </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>     
+    </li>
+    <!--<li style="margin-left: 10px;">
+        <select ng-options="article.id as article.id for article in articleList"
+            ng-model="article.id" class="form-control" style="width:90px; background-color: white; margin-top: 8px; height: 35px;"><option value="" disabled selected>Site Id</option></select>                   
+    </li>
+    <li style="margin-left: 10px;">
+         <button class="btn btn-default" style="margin-top: 8px; height: 35px;" ng-click="loadWebSite(articleList,article.id)">Apply</button>
+    </li>-->
+</ul>  
+
+ <!-- style="margin-left: 380px; -->

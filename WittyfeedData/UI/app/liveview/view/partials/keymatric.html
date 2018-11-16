@@ -1,0 +1,129 @@
+<div class="col-md-5">
+    <div class="col-md-12 no-padding">
+        <div id="Key_Matric" class="panel panel-flat">
+            <div class="panel-heading">
+                <div class="col-md-7">
+                    <!-- <button class="btn btn-default live-top-head-heading" style="margin-right: 7px;">Key Matric</button> -->
+                    <label class="live-top-head-heading" style="background-color:#e8e3e3;padding: 10px; margin-right: 7px;">{{vm.pageTamplate.totalViews.display}}</label>
+                </div>
+                <div class="col-md-5">
+                    <ul class="nav text-right pull-right" style="margin-bottom:5px !important">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle btn-default text-right" style="padding: 10px; width: max-content; background-color: #e2e0e0;">{{vm.soForTodayLabel}}<b class="caret"></b></a>
+                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                <li ng-repeat="value in vm.templateData.dropdownValues.calenderFilter">
+                                    <a href="javascript:void(0)" ng-click="vm.selectKeyMetricDropDown( value )">{{ value.timespan }}</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <live-gear-configuration pdf-downlode="vm.pdfExport('Key_Matric')" jpeg-downlode="vm.jpegExport('Key_Matric')" update-data="vm.keyMetricUpdate()"></live-gear-configuration>
+            <pdf-generater options="dirPdfOptions"></pdf-generater>
+            <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+            <div class="container-fluid" style="margin-top: 50px;">
+                <div class="row clear-both" style="padding-left: 25px;">
+                    <div class="col-md-3">
+                        <ul class="list-inline">
+                            <li>
+                                <div class="text-bold">Visitors</div>
+                                <div class="text-bold text-left key-metrics-number" ng-click="vm.goToOtherPages('segmentDetails')" style="cursor: pointer;">{{vm.uniqueVisitors}}</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="list-inline">
+                            <li>
+                                <div class="text-bold">Pageviews</div>
+                                <div class="text-bold text-left key-metrics-number" ng-click="vm.goToOtherPages('segmentDetails')" style="cursor: pointer;">{{vm.totalPageViews}}</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3" style="width: auto;">
+                        <ul class="list-inline">
+                            <li>
+                                <div class="text-bold">Engage Time</div>
+                                <div class="text-bold text-left key-metrics-number" ng-click="vm.goToOtherPages('segmentDetails')" style="cursor: pointer;">{{vm.engagementTime}}</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+                </div>
+                <div style="height: 390px;">
+                    <cr-analytic-area-chart></cr-analytic-area-chart>
+                    <!--<date-series-chart id="container" option="vm.totalPageViewsByDate.chartData" ></date-series-chart>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel col-md-12">
+        <div id="Audience_Insights" style="background-color: white" class="live-audience-insights-card">
+            <div class="col-md-6">
+                <h5 class="text-bold">{{vm.pageTamplate.audience_segment.display}}</h5>
+            </div>
+            <div class="col-md-6">
+                <ul class="nav text-right pull-right" style="margin-bottom:5px !important">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle btn-default text-right audience-insights-dropdown" style="width: max-content; background-color: #e2e0e0;">{{vm.audienceSegmentlevel}}<b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                            <li ng-repeat="value in vm.templateData.dropdownValues.calenderFilter">
+                                <a href="javascript:void(0)" ng-click="vm.selectAudienceSegments( value )">{{ value.timespan }}</a>
+                            </li>
+                            <!-- <li ng-repeat="value in vm.templateData.dropdownValues.keyMetric">
+                                <a href="javascript:void(0)" ng-click="vm.audienceInsightsFitler( value.dropdown )" style="width: 145px;">{{ value.dropdown }}</a>
+                            </li> -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <live-gear-configuration pdf-downlode="vm.pdfExport('Audience_Insights')" jpeg-downlode="vm.jpegExport('Audience_Insights')" update-data="vm.audienceInsightsUpdate()"></live-gear-configuration>
+            <pdf-generater options="dirPdfOptions"></pdf-generater>
+            <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+            <div class="media-left col-md-4 no-padding">
+                <h5>Interests</h5>
+                <table class="table datatable-fixed-left">                   
+                    <tbody>
+                        <tr ng-repeat="audience in vm.audienceSegment.data">
+                            <td class="text-bold" ng-click="vm.goToOtherPages('segmentDetails')" style="cursor: pointer; padding-left: 0%; padding-right: 0%" data-toggle="tooltip" data-placement="top" tooltip="{{audience.share}}%">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="{{audience.share}}" aria-valuemin="0" aria-valuemax="100" style="width:{{audience.scaledShare}}%">
+                                        <span class="sr-only"></span>
+                                        <p style="width: max-content;">{{audience.type}}</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="liveViewGenderTraffic" class="media-right col-md-8" style="padding: 4px;">
+                <nvd3 ng-click="vm.goToOtherPages('genderTraffic')" style="cursor: pointer;" options="vm.genderData.chartOptions" data="vm.genderData.chartData"></nvd3>
+                <div class="audience-insights-div">
+                    <ul>
+                        <li  ng-repeat="gender in vm.genderData.data" class="list-style-none" ng-click="vm.goToOtherPages('genderTraffic')" style="cursor: pointer; margin-right: 10px;">
+                            <span class="color-span" ng-style="{'border-color': gender.color}"></span> {{gender.type}}
+                        </li>
+                    </ul>
+                </div>
+                <nvd3 ng-click="vm.goToOtherPages('ageGroup')" style="cursor: pointer;" options="vm.ageGroupData.chartOptions" data="vm.ageGroupData.chartData"></nvd3>
+                <div class="audience-insights-div">
+                    <ul >
+                        <li ng-repeat="gender in vm.ageGroupData.data" class="list-style-none" ng-click="vm.goToOtherPages('ageGroup')" style="cursor: pointer; margin-right: 10px;">
+                            <span class="color-span" ng-style="{'border-color': gender.color}"></span> {{gender.type}}
+                        </li>
+                    </ul>
+                </div>
+                <nvd3 ng-click="vm.goToOtherPages('incomeLevel')" style="cursor: pointer;" options="vm.incomeData.chartOptions" data="vm.incomeData.chartData"></nvd3>
+                <div class="audience-insights-div" style="padding-right: 45px;">
+                    <ul >
+                        <li ng-repeat="gender in vm.incomeData.data" class="list-style-none" ng-click="vm.goToOtherPages('incomeLevel')" style="cursor: pointer; margin-right: 10px;">
+                            <span class="color-span" ng-style="{'border-color': gender.color}"></span> {{gender.type}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

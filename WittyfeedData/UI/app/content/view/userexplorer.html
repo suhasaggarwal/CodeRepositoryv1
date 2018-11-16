@@ -1,0 +1,378 @@
+<div class="row">
+	<div class="col-lg-12 audience-header-content">
+		<cr-audience-header-dir></cr-audience-header-dir>
+	</div>
+</div>
+<div class="tab-menu">
+    <div id="menu-center" class="row">
+        <div id="sticky-anchor"></div>
+            <ul class="nav nav-tabs" id="sticky-nav" style="margin-bottom:5px !important">                
+                <li class="pull-right pageview-section">
+                    <label  class="audience-keymetric-label">{{ vm.selectMatricLabel }} : </label>
+                    <ul class="breadcrumb-elements pull-right">
+                        <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon-fix" style="background-color: transparent"><b class="caret"></b></a>
+                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                <li ng-repeat="value in vm.templateData.dropdownValues.keyMetric">
+                                    <a href="javascript:void(0)" ng-click="vm.keyMetricFitler( value.apifilter )">{{ value.dropdown }}</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+<div class="row">
+	<div class="col-lg-12 audience-header-content">
+		<!-- Left Content -->
+		<div class="col-lg-7">
+			<div id="keymetric" class="panel panel-flat">
+				<cr-key-metric-dir></cr-key-metric-dir>
+			</div>
+			<div class="panel panel-flat">
+				<div id="activites" class="panel-heading ">
+					<h5 class="text-bold title-border-bottom">
+						{{vm.pageTamplate.refcurrentoriginal.display}}
+						<gear-configuration pdf-downlode="vm.pdfExport('activites')" jpeg-downlode="vm.jpegExport('activites')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+						<pdf-generater options="dirPdfOptions"></pdf-generater>
+						<jpeg-generater options="dirJpegOptions"></jpeg-generater>
+						<!-- <ul class="breadcrumb-elements pull-right">
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Show Activites<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Visitors</a></li>
+                                    <li><a href="#">Pageviews</a></li>
+                                    <li><a href="#">Engagement Time</a></li>
+                                </ul>
+                            </li>
+                        </ul> -->
+					</h5>
+				</div>
+
+				<div class="container-fluid">
+					<div style="min-height: 1420px;">
+
+						<ul class="nav nav-pills nav-stacked left-menu" id="stacked-menu">
+							<li ng-repeat="userActivity in vm.userActivitiesData">
+								<a href="#" data-target="#{{ userActivity.id}}" data-toggle="collapse" data-parent="#stacked-menu" class="border-bottom-imp">
+									<b ng-if="userActivity.hasChild" class="caret"></b>
+									<b>{{ userActivity.date | dateFormat: "MMM DD, YYYY"}}</b><b class="pull-right">{{userActivity.sessionCount}}</b></a>
+								<ul ng-if="userActivity.hasChild" class="nav nav-stacked collapse left-submenu" id="{{userActivity.id}}">
+									<li><a style="color: #000; font-weight: bold;"   class="border-bottom-imp">
+										<div class="row"><div class="col-md-3">Time</div><div class="col-md-3">Duration</div><div class="col-md-3">Source</div><div class="col-md-3">Activity</div>
+										</div>
+									</a></li>
+									<li ng-repeat="childOne in userActivity.userReport" class="clear-both">
+										<a style="color: #232323;" href="#" data-target="#{{ childOne.id}}"
+										   data-toggle="collapse" data-parent="#stacked-menu" class="border-bottom-imp" >
+											<div class="row">
+												<div class="col-md-3">
+													<b ng-if="childOne.hasChild" class="caret" ng-class="{'tree-table-icon': childOne.close}"></b>
+													{{ childOne.date | timeFilter}}</div>
+												<div class="col-md-3">{{childOne.duration}}</div>
+												<div class="col-md-3">{{childOne.referrerType}}</div>
+												<div class="col-md-3">{{ childOne.activityStats}}</div>
+											</div>
+										</a>
+										<ul ng-if="childOne.hasChild" class="nav nav-stacked collapse left-submenu" id="{{childOne.id}}">
+											<li ng-repeat="childTwo in childOne.userReport"  class="clear-both">
+												<a style="color: #434343;" href="#" data-target="#{{ childTwo.id}}" data-toggle="collapse"
+												   data-parent="#stacked-menu" class="border-bottom-imp">
+													<div class="row">
+														<div class="col-md-3" style="padding-left: 30px;">{{ childTwo.date | timeFilter}}<span ng-if="childTwo.hasChild" class="caret arrow"></span></div>
+														<div class="col-md-3"><img src="{{childTwo.activityImage}}" style=" width: 20px;"><span>{{childTwo.activityType}}</span></div>
+														<div class="col-md-6">{{childTwo.articleTitle}}</div>
+
+													</div></a>
+												<ul ng-if="childTwo.hasChild" class="nav nav-stacked collapse left-submenu" id="{{childTwo.id}}">
+													<li ng-repeat="childThree in childTwo.userReport">
+														<a href="#" data-target="#{{ childThree.id}}" data-toggle="collapse" data-parent="#stacked-menu">{{ childThree.date}}<span ng-if="childThree.hasChild" class="caret arrow"></span></a>
+														<ul ng-if="childThree.hasChild" class="nav nav-stacked collapse left-submenu" id="{{childThree.id}}">
+															<li ng-repeat="childFourth in childThree.userReport">
+																<a href="#" data-target="#{{ childFourth.id}}" data-toggle="collapse" data-parent="#stacked-menu">{{ childFourth.date}}<span ng-if="childFourth.hasChild" class="caret arrow"></span></a>
+																<ul ng-if="childFourth.hasChild" class="nav nav-stacked collapse left-submenu" id="{{childFourth.id}}">
+																	<li ng-repeat="childFifth in childFourth.userReport">
+																		<a href="#" data-target="#{{ childFifth.id}}" data-toggle="collapse" data-parent="#stacked-menu">{{ childFifth.date}}<span ng-if="childFifth.hasChild" class="caret arrow"></span></a>
+																		<ul ng-if="childFourth.hasChild" class="nav nav-stacked collapse left-submenu" id="{{childFifth.id}}">
+																			<li ng-repeat="childsixth in childFifth.userReport">
+																				<a href="#">{{childsixth.date}}</a>
+																			</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div ng-if="vm.userActivities.data == 0" ng-repeat="message in vm.userActivities.messageStatus">
+							<p class="text-center" style="color: #64c1ac; margin-top: 60px; font-size: 20px;">{{message}}</p>
+						</div>
+					</div>
+					<div ng-if="vm.userActivities.data.length > 30">
+
+						<div class="col-lg-12 text-right" style="margin-bottom: 4%">
+							<pagination
+									ng-model="vm.userActivities.currentPage"
+									total-items="vm.userActivities.data.length"
+									max-size="5"
+									boundary-links="true"
+									boundary-link-numbers="true"
+									previous-text="&lsaquo;"
+									next-text="&rsaquo;"
+									first-text="&laquo;"
+									last-text="&raquo;"
+									items-per-page="vm.userActivities.numPerPage"
+									ng-change="userActivitiesPaging()">
+							</pagination>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Right Content -->
+		<div class="col-lg-5">
+			<div id="userprofile" class="panel panel-flat user-report-page-card">
+				<div class="panel-heading ">
+					<h5 class="text-bold title-border-bottom">
+						{{vm.pageTamplate.userDetails.display}}
+						<gear-configuration pdf-downlode="vm.pdfExport('userprofile')" jpeg-downlode="vm.jpegExport('userprofile')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+						<pdf-generater options="dirPdfOptions"></pdf-generater>
+						<jpeg-generater options="dirJpegOptions"></jpeg-generater>
+					</h5>
+				</div>
+				<div class="container-fluid">
+					<table class="table text-nowrap">
+						<thead>
+						<tr>
+							<th class="text-bold col-lg-4">Gender</th>
+							<th class="text-bold col-lg-4">Age Group</th>
+							<th class="text-bold col-lg-4">Income Level</th>
+						</tr>
+						</thead>
+						<div ng-if="vm.deviceName.data !=0">
+							<tbody>
+							<tr ng-repeat="device in vm.deviceName.data">
+								<td ng-click="vm.goToOtherPages('genderTraffic', filterData, device.gender)" style="cursor: pointer;" class="col-lg-4">{{device.gender}}</td>
+								<td ng-click="vm.goToOtherPages('ageGroup', filterData, device.age)" style="cursor: pointer;" class="col-lg-4">{{device.age}}</td>
+								<td ng-click="vm.goToOtherPages('incomeLevel', filterData, device.incomelevel)" style="cursor: pointer;" class="col-lg-4">{{device.incomelevel}}</td>
+							</tr>
+							</tbody>
+						</div>
+					</table>
+					<table class="table datatable-fixed-left" width="100%">
+						<tbody>
+						<div class="col-lg-6" ng-if="vm.deviceName.data != 0">
+							<ul class="nav table text-left" style="margin-bottom:5px !important; cursor: pointer;">
+								<li>Acquisition Date</li>
+								<li ng-click="vm.goToOtherPages('source')" style="cursor: pointer;"">Acquisition Source</li>
+								<li ng-click="vm.goToOtherPages('source')"
+									style="cursor: pointer;">Acquisition Channel</li>
+							</ul>
+						</div>
+						<div class="col-lg-2">
+
+						</div>
+						<div class="col-lg-4" style="padding-left: 20px;">
+							<ul class="nav text-left" style="margin-bottom:5px !important" ng-repeat="device in vm.deviceName.data">
+								<li class="text-bold">{{device.acquisitionDate}}</li>
+								<li ng-click="vm.goToOtherPages('source',filterData, device.acquisitionSource)" style="cursor: pointer;" class="text-bold">{{device.acquisitionSource}}</li>
+								<li ng-click="vm.goToOtherPages('source', filterData, device.acquisitionChannel)" style="cursor: pointer;" class="text-bold">{{device.acquisitionChannel}}</li>
+							</ul>
+						</div>
+						</tbody>
+					</table>
+					<div ng-if="vm.deviceName.data == 0" ng-repeat="message in vm.deviceName.messageStatus">
+						<p class="text-center user-report-page-message-show" style="color: #64c1ac; font-size: 20px;">{{message}}</p>
+					</div>
+				</div>
+			</div>
+			<div id="userinterest" class="panel panel-flat user-report-page-card">
+				<div  class="panel-heading ">
+					<h5 class="text-bold title-border-bottom">
+						{{vm.pageTamplate.userDetailsSegment.display}}
+						<gear-configuration pdf-downlode="vm.pdfExport('userinterest')" jpeg-downlode="vm.jpegExport('userinterest')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+						<pdf-generater options="dirPdfOptions"></pdf-generater>
+						<jpeg-generater options="dirJpegOptions"></jpeg-generater>
+					</h5>
+				</div>
+				<div class="container-fluid">
+					<table class="table">
+						<div ng-if="vm.userInterestSegment.data !=0">
+							<tbody>
+							<tr ng-repeat="userInterest in vm.userInterestSegment.data">
+								<td class="col-lg-6" ng-click="vm.goToOtherPages('segmentDetails', userInterest.audienceSegmentCode, userInterest.type)" style="cursor: pointer;">{{userInterest.type}}</td>
+								<td class="col-lg-6 text-right text-bold padding-4">
+									<div class="progress age-group-progressbar width-100-per" data-toggle="tooltip" data-placement="top" tooltip="{{userInterest.share ? userInterest.share : 0}}%">
+										<div class="progress-bar" style="width:{{userInterest.scaledShare}}%">
+											<span class="sr-only"></span>
+										</div>
+									</div>
+								</td>
+							</tr>
+							</tbody>
+						</div>
+					</table>
+					<div ng-if="vm.userInterestSegment.data == 0" ng-repeat="message in vm.userInterestSegment.messageStatus">
+						<p class="text-center user-report-page-message-show" style="color: #64c1ac; font-size: 20px;">{{message}}</p>
+					</div>
+				</div>
+			</div>
+			<div id="uservisitor" class="panel panel-flat user-report-page-card">
+				<div  class="panel-heading">
+					<h5 class="text-bold title-border-bottom">
+						{{vm.pageTamplate.referrerType.display}}
+						<gear-configuration pdf-downlode="vm.pdfExport('uservisitor')" jpeg-downlode="vm.jpegExport('uservisitor')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+						<pdf-generater options="dirPdfOptions"></pdf-generater>
+						<jpeg-generater options="dirJpegOptions"></jpeg-generater>
+					</h5>
+				</div>
+				<nvd3 options="vm.refferalTypeData.chartOptions" data="vm.refferalTypeData.chartData"></nvd3>
+				<div class="container-fluid user-report-page-card">
+					<table class="table datatable-fixed-left" width="100%">
+						<thead>
+						<tr>
+							<th>Channels</th>
+							<th class="text-right">Pageviews</th>
+							<th class="col-lg-3"></th>
+						</tr>
+						</thead>
+						<div ng-if="vm.refferalTypeData.data !=0">
+							<tbody>
+							<tr ng-repeat="source in vm.refferalTypeData.data">
+								<td ng-click="vm.goToOtherPages('source', source.referrerTypeId, source.type)" style="cursor: pointer;"><span class="color-span pull-left" style="margin-right: 5px;margin-top: 3px; margin-left: 5px; border-color: {{source.color}}"></span>{{source.type}}</td>
+								<td class="text-right col-lg-3 text-bold">{{source.count }}</td>
+								<td style="padding-left: 0px; width: 100px;">
+									<div class="progress" data-toggle="tooltip" data-placement="top" title="{{source.share}}%">
+										<div class="progress-bar" style="width:{{source.scaledShare}}%">
+											<span class="sr-only"></span>
+										</div>
+									</div>
+								</td>
+							</tr>
+							</tbody>
+						</div>
+					</table>
+					<div ng-if="vm.refferalTypeData.data == 0" ng-repeat="message in vm.refferalTypeData.messageStatus">
+						<p class="text-center user-report-page-message-show" style="color: #64c1ac; font-size: 20px;">{{message}}</p>
+					</div>
+				</div>
+			</div>
+			<div id="devicename" class="panel panel-flat user-report-page-card" style=" padding-bottom: 20px;">
+				<div class="panel-heading">
+					<h5 class="text-bold title-border-bottom"><!-- {{vm.pageTamplate.referrerType.display}} --><!-- Device Name -->
+						<gear-configuration pdf-downlode="vm.pdfExport('devicename')" jpeg-downlode="vm.jpegExport('devicename')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+						<pdf-generater options="dirPdfOptions"></pdf-generater>
+						<jpeg-generater options="dirJpegOptions"></jpeg-generater>
+					</h5>
+				</div>
+				<div class="text-center" ng-repeat="device in vm.deviceName.data" style="margin-bottom: 20px;">
+					<img src="{{device.deviceImage}}" style="width: 250px; height: 260px">
+				</div>
+				<table class="table" width="100%">
+					<tbody>
+					<div class="col-lg-6" ng-if="vm.deviceName.data !=0">
+						<ul ng-click="vm.goToOtherPages('deviceProfile')" class="nav text-left" style="margin-bottom:5px !important; cursor: pointer;">
+							<li>Device Name</li>
+							<li>Device Type</li>
+							<li>Device OS</li>
+							<li>Screen Resoluation</li>
+						</ul>
+					</div>
+					<div class="col-lg-6">
+						<ul class="nav text-right" ng-click="vm.goToOtherPages('deviceProfile')" style="margin-bottom:5px!important ; cursor: pointer;" ng-repeat="device in vm.deviceName.data">
+							<li class="text-bold">{{device.modelName}}</li>
+							<li class="text-bold">{{device.type}}</li>
+							<li class="text-bold">{{device.os}}</li>
+							<li class="text-bold">{{device.screen_properties}}</li>
+						</ul>
+					</div>
+					</tbody>
+				</table>
+				<div ng-if="vm.deviceName.data == 0" ng-repeat="message in vm.deviceName.messageStatus">
+					<p class="text-center user-report-page-message-show" style="color: #64c1ac; font-size: 20px;">{{message}}</p>
+				</div>
+			</div>
+			<div id="useraccess" class="panel panel-flat user-report-page-card">
+				<div class="panel-heading">
+					<h5 class="text-bold title-border-bottom">
+						{{vm.pageTamplate.userDetailsCity.display}}
+						<gear-configuration pdf-downlode="vm.pdfExport('useraccess')" jpeg-downlode="vm.jpegExport('useraccess')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+						<pdf-generater options="dirPdfOptions"></pdf-generater>
+						<jpeg-generater options="dirJpegOptions"></jpeg-generater>
+					</h5>
+				</div>
+				<table class="table datatable-fixed-left" width="100%">
+					<thead>
+					<tr>
+						<th class="text-bold">City</th>
+						<th class="text-bold text-right">Pageviews</th>
+						<th class="text-bold text-right"></th>
+					</tr>
+					</thead>
+					<div ng-if="vm.userAccessLocation.data !=0">
+						<tbody>
+						<tr ng-click="vm.goToOtherPages('audienceGeography')" style="cursor: pointer;" ng-repeat="userAccess in vm.userAccessLocation.data">
+							<td>{{userAccess.type}}</td>
+							<td class="text-right text-bold">{{userAccess.count }}</td>
+							<td class="text-right text-bold padding-4">
+								<div class="progress age-group-progressbar" data-toggle="tooltip" data-placement="top" tooltip="{{userAccess.share ? userAccess.share : 0}}%">
+									<div class="progress-bar" style="width:{{userAccess.scaledShare}}%">
+										<span class="sr-only"></span>
+									</div>
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</div>
+				</table>
+				<div ng-if="vm.userAccessLocation.data == 0" ng-repeat="message in vm.userAccessLocation.messageStatus">
+					<p class="text-center user-report-page-message-show" style="color: #64c1ac; font-size: 20px;">{{message}}</p>
+				</div>
+			</div>
+			<div id="usernetwork" class="panel panel-flat user-report-page-card">
+				<div class="panel-heading">
+					<h5 class="text-bold title-border-bottom">
+						{{vm.pageTamplate.userDetailsISP.display}}
+						<gear-configuration pdf-downlode="vm.pdfExport('usernetwork')" jpeg-downlode="vm.jpegExport('usernetwork')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+						<pdf-generater options="dirPdfOptions"></pdf-generater>
+						<jpeg-generater options="dirJpegOptions"></jpeg-generater>
+					</h5>
+				</div>
+				<table class="table text-nowrap" width="100%">
+					<thead>
+					<tr>
+						<th class="text-bold">ISP</th>
+						<th class="text-bold text-right">Pageviews</th>
+						<th class="text-bold text-right"></th>
+					</tr>
+					</thead>
+					<div ng-if="vm.userNetworkService.data !=0">
+						<tbody>
+						<tr ng-click="vm.goToOtherPages('deviceProfile')" style="cursor: pointer;" ng-repeat="userNetwork in vm.userNetworkService.data">
+							<td>{{userNetwork.type}}</td>
+							<td class="text-right text-bold">{{userNetwork.count }}</td>
+							<td class="text-right text-bold padding-4">
+								<div class="progress age-group-progressbar" data-toggle="tooltip" data-placement="top" tooltip="{{userNetwork.share ? userNetwork.share : 0}}%">
+									<div class="progress-bar" style="width:{{userNetwork.scaledShare}}%">
+										<span class="sr-only"></span>
+									</div>
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</div>
+				</table>
+				<div ng-if="vm.userNetworkService.data == 0" ng-repeat="message in vm.userNetworkService.messageStatus">
+					<p class="text-center user-report-page-message-show" style="color: #64c1ac; font-size: 20px;">{{message}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

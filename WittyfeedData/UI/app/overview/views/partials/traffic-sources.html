@@ -1,0 +1,47 @@
+<div class="col-md-4 panel panel-flat">
+    <div class="panel-heading">
+        <h5 class="text-bold"> Traffic Sources</h5>
+    </div>
+    <nvd3 options="vm.refferalTypeData.chartOptions" data="vm.refferalTypeData.chartData"></nvd3>
+    <table class="table datatable-fixed-left" width="100%">
+        <thead>
+            <tr>
+                <th>Channels</th>
+                <th class="text-right">Pageviews</th>
+                <th class="text-right">Share</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="source in vm.refferalTypeData.data">
+                <td>{{source.type}}</td>
+                <td class="text-right">{{source.count }}</td>
+                <td class="text-right">{{source.share}}%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="col-md-8 panel panel-flat">
+    <div class="panel-heading">
+        <h5 class="text-bold"> Top Referring Domain</h5>
+    </div>
+    <table class="table datatable-fixed-left" width="100%">
+        <thead>
+            <tr>
+                <th>Domain</th>
+                <th class="text-right">Links</th>
+                <th class="text-right">Share</th>
+                <th class="text-right">Pageviews</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="topreferal in vm.topRefferalData.data">
+                <td>{{topreferal.type}}</td>
+                <td class="text-right">{{topreferal.count }}</td>
+                <td class="text-right">-</td>
+                <td class="text-right">-</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

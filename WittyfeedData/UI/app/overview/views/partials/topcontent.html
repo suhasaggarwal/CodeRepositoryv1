@@ -1,0 +1,73 @@
+<div class="panel panel-flat row">
+    <div class="panel-heading ">
+        <h5 class="text-bold">Top Content</h5>
+    </div>
+    <div class="col-md-3">
+    <table class="table text-nowrap">
+        <thead>
+            <tr>
+                <th>Articles</th>
+                <th class="text-right">Pageviews</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+
+                </td>
+                <td class="text-right">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="col-md-3">
+    <table class="table text-nowrap ">
+        <thead>
+            <tr>
+                <th>Sections</th>
+                <th class="text-right ">Reviews</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="section in vm.sectionContentData.data ">
+                <td>{{section.type}}</td>
+                <td class="text-right ">{{section.count}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="col-md-3">
+    <table class="table text-nowrap ">
+        <thead>
+            <tr>
+                <th>Topic/Tags</th>
+                <th class="text-right ">Pageviews</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>-</td>
+                <td class="text-right">-</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="col-md-3">
+    <table class="table text-nowrap">
+        <thead>
+            <tr>
+                <th>Authors</th>
+                <th class="text-right">Pageviews</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>-</td>
+                <td class="text-right ">-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

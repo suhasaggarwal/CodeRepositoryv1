@@ -1,0 +1,96 @@
+<div>
+<div class="row" style="margin-left: 3px;margin-right: 3px;">
+    <h5 class="text-bold title-border-bottom">{{vm.pageTamplate.refcurrentoriginal.display}}
+        <gear-configuration pdf-downlode="vm.pdfExport('sectionContent')" jpeg-downlode="vm.jpegExport('sectionContent')" update-data="vm.sectionContentDataUpdate()"></gear-configuration>
+        <pdf-generater options="dirPdfOptions"></pdf-generater>
+        <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+    </h5>    
+</div>
+
+<div class="panel panel-flat" ng-if="vm.bottomNavigationStatus == true" style="margin-bottom: 8px;">
+    <ul class="nav nav-tabs" style="margin-bottom:1px !important">
+       <li>
+            <h6 class="text-bold" style="margin-left:20px;">{{vm.pageTamplate.refcurrentoriginal.display}} :</h6>
+        </li>
+        <li class="dropdown" ng-show="vm.authorNameHide">
+            <a href="#" ng-click="vm.selectAuthorFilterData()" data-toggle="dropdown">
+               Author
+            </a>
+            <ul class="dropdown-menu pre-scrollable" style="padding: 1px;width:200px; height:200px; padding-bottom: 12px;">
+                <li ng-repeat="author in vm.authorFilterData.data">
+                    <a href="" ng-click="vm.selectSpecificAuthorName(author.authorId)">{{author.authorName}}</a>
+                </li>
+            </ul>     
+        </li>
+        <li role="presentation"><a href="" target="_blank" ng-click="" data-target="_self">Section</a></li>           
+        <li>
+            <li>
+                <h6 class="text-bold">Export as :</h6></li>
+        </li>
+         <!-- <js-xls onread="read">XLS</js-xls> -->
+        <li role="presentation"><a href="#" ng-click="vm.exportData(vm.sectionContentData.data)">XLS</a> </li>
+        <li><a href="javascript:void(0)" ng-csv="vm.sectionContentData.data" csv-header="vm.csvHeader" filename="Articles.csv">CSV</a></li>
+        <!--<li><a href="javascript:void(0)">PPT</a></li>  -->
+    </ul>
+</div>
+
+<div id="sectionContent" class="panel panel-flat">
+    <div class="container-fluid">
+        <div class="col-lg-12">
+            <div>       
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-bold col-lg-2">Post</th>
+                            <th class="text-bold col-lg-2" style="padding-left: 0px;">Author</th>
+                            <!-- <th class="text-bold text-right col-lg-2">Trend</th> -->
+                            <th class="text-bold text-right col-lg-2">Vistors</th>
+                            <th class="text-bold text-right col-lg-2">Avg. Time (in min) </th>
+                            <th class="text-bold text-right col-lg-2">{{ vm.selectMatricLabel }}</th>
+                        </tr>
+                    </thead>
+                    <div ng-if="vm.sectionContentData.data !=0">
+                        <tbody>
+                            <tr ng-repeat="post in vm.sectionContent">
+                                <!-- <td>{{post.publisher_pages}}</td> -->
+                                <td class="full-site-trading-Content" data-toggle="tooltip" data-placement="top" tooltip="{{post.type}}" style="cursor: pointer;" ng-click="vm.goToOtherPages('overview', post.articleId, post.publisher_pages)">
+                                    <img ng-src="{{post.articleImage}}" style="width: 30px; height: 30px;padding-left: 0px; margin-right: 10px;">{{post.type}}
+                                </td>
+                               <!--  <td style="max-width:40%; padding: 0px;">
+                                    <div>{{post.type}}</div>
+                                </td> -->
+                                <td style="padding: 0px;">{{post.authorName}}</td>
+                                <!-- <td class="text-right">-</td> -->
+                                <td class="text-right text-bold">{{post.visitorCount}}</td>
+                                <td class="text-right text-bold">{{post.averageTime}}</td>
+                                <td class="text-right text-bold">{{post.pageviews}}</td>
+                            </tr>
+                        </tbody>
+                    </div>
+                </table>
+                <div ng-if="vm.sectionContentData.data == 0" ng-repeat="message in vm.sectionContentData.messageStatus">
+                    <p class="text-center" style="color: #64c1ac; margin-top: 60px; font-size: 20px;">{{message}}</p>
+                </div>
+            </div>
+            <div ng-if="vm.sectionContentData.data.length > 11">               
+                    <div class="col-lg-12 text-right" style="margin-bottom: 4%">
+                        <pagination 
+                              ng-model="vm.sectionContentData.currentPage"
+                              total-items="vm.sectionContentData.data.length"
+                              max-size="5"  
+                              boundary-links="true"
+                              boundary-link-numbers="true"
+                              previous-text="&lsaquo;"
+                              next-text="&rsaquo;"
+                              first-text="&laquo;"
+                              last-text="&raquo;"
+                              items-per-page="vm.sectionContentData.numPerPage"
+                              ng-change="sectionContentPaging()">
+                        </pagination>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,196 @@
+<div class="traffic-distribution-info">
+   <!--  <h5 class="text-bold title-border-bottom">
+        {{vm.pageTamplate.trafficType.display}}
+    </h5> -->
+    <div class="row" ng-if="!vm.pageVersionData.data || vm.pageVersionData.data.length == 0">
+        <div class="col-md-12">
+            <div id="traffic-distribution" class="panel panel-flat">
+                <div class="panel-heading">
+                    <h5 class="text-bold title-border-bottom">
+                        {{vm.pageTamplate.trafficType.display}}
+                        <gear-configuration pdf-downlode="vm.pdfExport('traffic-distribution')" jpeg-downlode="vm.jpegExport('traffic-distribution')" update-data="vm.trafficDistributUpdate()"></gear-configuration>
+                        <pdf-generater options="dirPdfOptions"></pdf-generater>
+                        <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+                    </h5>
+                </div>
+                <h5 class="title-border-bottom" style="margin-left: 4%;margin-right: 5%"></h5>
+                <div class="container-fluid">
+                    <div class="col-md-3">
+                        <nvd3 options="vm.trafficDistributionData.chartOptions" data="vm.trafficDistributionData.chartData"></nvd3>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="table-responsive">
+                            <table class="table text-nowrap">
+                                <div ng-if="vm.trafficDistributionData.data != 0">
+                                    <tbody>
+                                    <tr ng-repeat="traffic in vm.trafficDistributionData.data" style="border-bottom:1px solid #ddd;border-top:0px !important">
+                                        <td class="" style="border-top:0px !important"><span class="color-span pull-left" style="margin-right: 5px;margin-top: 3px; margin-left: 5px; border-color: {{traffic.color}}"></span>{{traffic.type}}
+                                            <!-- <br/>
+                                            <small class="text-size-small ">{{traffic.count}}</small> --></td>
+                                        <td class="text-right text-bold" style="border-top:0px !important">{{traffic.count}}</td>
+                                    </tr>
+                                    </tbody>
+                                </div>
+                            </table>
+                            <div ng-if="vm.trafficDistributionData.data == 0" ng-repeat="message in vm.trafficDistributionData.messageStatus">
+                                <p class="text-center" style="color: #64c1ac; margin-top: 85px; font-size: 20px;">{{message}}</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <nvd3 options="vm.siteExperienceData.chartOptions" data="vm.siteExperienceData.chartData"></nvd3>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="table-responsive">
+                            <table class="table text-nowrap">
+                                <div ng-if="vm.siteExperienceData.data != 0">
+                                    <tbody>
+                                    <tr ng-repeat="siteExperience in vm.siteExperienceData.data" style="border-bottom:1px solid #ddd;border-top:0px !important">
+                                        <td class="" style="border-top:0px !important"><span class="color-span pull-left" style="margin-right: 5px;margin-top: 3px; margin-left: 5px; border-color: {{siteExperience.color}}"></span>{{siteExperience.type}}
+                                            <!--  <br/>
+                                             <small class="text-size-small ">{{siteExperience.count}}</small> --></td>
+                                        <td class="text-right text-bold" style="border-top:0px !important">{{siteExperience.count}}</td>
+                                    </tr>
+                                    </tbody>
+                                </div>
+                            </table>
+                            <div ng-if="vm.siteExperienceData.data == 0" ng-repeat="message in vm.siteExperienceData.messageStatus">
+                                <p class="text-center" style="color: #64c1ac; margin-top: 85px; font-size: 20px;">{{message}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-if="vm.pageVersionData.data && vm.pageVersionData.data.length > 0">
+        <div class="col-md-6">
+            <div id="traffic-distribution" class="panel panel-flat overview-traffic-distribution">
+                <div class="panel-heading">
+                    <h5 class="text-bold title-border-bottom">
+                        {{vm.pageTamplate.trafficType.display}}
+                        <gear-configuration pdf-downlode="vm.pdfExport('traffic-distribution')" jpeg-downlode="vm.jpegExport('traffic-distribution')" update-data="vm.trafficDistributUpdate()"></gear-configuration>
+                        <pdf-generater options="dirPdfOptions"></pdf-generater>
+                        <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+                    </h5>
+                </div>
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <nvd3 options="vm.trafficDistributionData.chartOptions" data="vm.trafficDistributionData.chartData"></nvd3>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="table-responsive">
+                            <table class="table text-nowrap">
+                                <div ng-if="vm.trafficDistributionData.data != 0">
+                                    <tbody>
+                                    <tr ng-repeat="traffic in vm.trafficDistributionData.data" style="border-bottom:1px solid #ddd;border-top:0px !important">
+                                        <td class="" style="border-top:0px !important"><span class="color-span pull-left" style="margin-right: 5px;margin-top: 3px; margin-left: 5px; border-color: {{traffic.color}}"></span>{{traffic.type}}
+                                            <!-- <br/>
+                                            <small class="text-size-small ">{{traffic.count}}</small> --></td>
+                                        <td class="text-right text-bold" style="border-top:0px !important">{{traffic.count}}</td>
+                                    </tr>
+                                    </tbody>
+                                </div>
+                            </table>
+                            <div ng-if="vm.trafficDistributionData.data == 0" ng-repeat="message in vm.trafficDistributionData.messageStatus">
+                                <p class="text-center" style="color: #64c1ac; margin-top: 85px; font-size: 20px;">{{message}}</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr class="margin-20"/>
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <nvd3 options="vm.siteExperienceData.chartOptions" data="vm.siteExperienceData.chartData"></nvd3>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="table-responsive">
+                            <table class="table text-nowrap">
+                                <div ng-if="vm.siteExperienceData.data != 0">
+                                    <tbody>
+                                    <tr ng-repeat="siteExperience in vm.siteExperienceData.data" style="border-bottom:1px solid #ddd;border-top:0px !important">
+                                        <td class="" style="border-top:0px !important"><span class="color-span pull-left" style="margin-right: 5px;margin-top: 3px; margin-left: 5px; border-color: {{siteExperience.color}}"></span>{{siteExperience.type}}
+                                            <!--  <br/>
+                                             <small class="text-size-small ">{{siteExperience.count}}</small> --></td>
+                                        <td class="text-right text-bold" style="border-top:0px !important">{{siteExperience.count}}</td>
+                                    </tr>
+                                    </tbody>
+                                </div>
+                            </table>
+                            <div ng-if="vm.siteExperienceData.data == 0" ng-repeat="message in vm.siteExperienceData.messageStatus">
+                                <p class="text-center" style="color: #64c1ac; margin-top: 85px; font-size: 20px;">{{message}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="pageversion" class="panel panel-flat overview-traffic-distribution">
+                <div class="panel-heading">
+                    <h5 class="text-bold title-border-bottom">
+                        <!-- {{ vm.templateData.cardtitletemplate.pageVersion}} -->
+                        {{vm.pageTamplate.pageVersion.display}}
+                        <gear-configuration pdf-downlode="vm.pdfExport('pageversion')" jpeg-downlode="vm.jpegExport('pageversion')" update-data="vm.pageVersionDataUpdate()"></gear-configuration>
+                        <pdf-generater options="dirPdfOptions"></pdf-generater>
+                        <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+                    </h5>
+                    <div class="container-fluid">
+                        <div>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="text-bold">Page</th>
+                                    <th class=" text-right text-bold col-lg-3" style="padding-right: 0px">Avg. Time (in min)</th>
+                                    <th class="text-bold col-lg-3" style="padding-right: 0px">Total Time</th>
+                                    <th class="text-bold">Visitors</th>
+                                    <th class="col-lg-3"></th>
+                                </tr>
+                                </thead>
+                                <div ng-if="vm.pageVersionData.data != 0">
+                                    <tbody  ng-class="{'fade' : vm.pageVersionData.startFade}">
+                                    <tr ng-hide="$index < vm.pageVersionData.start || $index > vm.pageVersionData.end "  ng-repeat="pages in vm.pageVersionData.data">
+                                        <td class=" ">{{pages.articleVersion}}</td>
+                                        <td class=" text-right text-bold">{{pages.averageTime}}</td>
+                                        <td class=" text-right text-bold">{{pages.count}}</td>
+                                        <td class=" text-right text-bold">{{( pages.visitorCount )? ( pages.visitorCount) : 0 }}</td>
+                                        <td class="text-right">
+                                            <div class="progress" data-toggle="tooltip" data-placement="top" tooltip="{{pages.share}}%">
+                                                <div class="progress-bar" style="width:{{pages.scaledShare}}%">
+                                                    <span class="sr-only"></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </div>
+                            </table>
+                        </div>
+                        <div ng-if="vm.pageVersionData.data == 0" ng-repeat="message in vm.pageVersionData.messageStatus">
+                            <p class="text-center" style="color: #64c1ac; margin-top: 200px; font-size: 20px;">{{message}}</p>
+                        </div>
+                        <div ng-if="vm.pageVersionData.data.length > 10">
+                            <div class="col-lg-12 text-right" style="margin-bottom: 0%">
+                                <pagination
+                                        ng-model="vm.pageVersionData.currentPage"
+                                        total-items="vm.pageVersionData.data.length"
+                                        max-size="5"
+                                        boundary-links="true"
+                                        boundary-link-numbers="true"
+                                        previous-text="&lsaquo;"
+                                        next-text="&rsaquo;"
+                                        first-text="&laquo;"
+                                        last-text="&raquo;"
+                                        ng-change="pageVersionDataPaging()">
+                                </pagination>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

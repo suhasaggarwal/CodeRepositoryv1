@@ -1,0 +1,259 @@
+<div class="panel col-md-4 live-publishing-operations-card">
+<div class="row ">
+            <div class="row" id="tab10">
+                <div class="panel-heading">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                        <h5 class="text-bold no-padding"><!-- Visitor --></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- <button class="pull-right btn btn-default live-top-head-heading">Live Now</button> -->
+                            <label class="pull-right live-top-head-heading" style="background-color:#e8e3e3;padding: 10px;">Live Now</label>
+                        </div>
+                    </div>
+                </div>
+            </div>             
+            <live-gear-configuration pdf-downlode="vm.pdfExport('visitors')" jpeg-downlode="vm.jpegExport('visitors')" update-data="vm.visitorsCountUpdate()"></live-gear-configuration>
+              <pdf-generater options="dirPdfOptions"></pdf-generater>
+              <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+            <div style="margin-top: 55px">
+                <h2 class="no-padding no-margin text-center">
+                    <div>
+                        <p class="text-bold key-metrics-number">{{vm.visitorsCount}}</p>
+                    </div>
+                </h2>
+            </div>
+            <div id="visitors" style="background-color: white;">
+            <div style="text-align: center; margin-bottom: 3px;">
+                <span>+{{vm.visitorsGraph}}%vs</span>
+                <span>Graph</span>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="min-width: 350px; min-height: 260px;">
+                    <cr-analytic-column-chart></cr-analytic-column-chart>
+                </div>
+            </div>
+            <div class="row">
+                <div class="table-responsive">
+                    <div class="media-left col-md-6 no-padding">
+                        <nvd3 ng-click="vm.goToOtherPages('source')" style="cursor: pointer;" options="vm.refferalTypeData.chartOptions" data="vm.refferalTypeData.chartData"></nvd3>
+                        <ul ng-repeat="vistor in vm.refferalTypeData.data">
+                            <li class="list-style-none" ng-click="vm.goToOtherPages('source')" style="cursor: pointer;">
+                                <span class="color-span" id="color_span" ng-style="{'border-color': vistor.color}"></span>
+                                {{vistor.type}} - {{vistor.share}}</li>
+                        </ul>
+                        <div ng-if="vm.refferalTypeData.data == 0" ng-repeat="message in vm.refferalTypeData.messageStatus">
+                            <p class="text-center" style="color: #64c1ac; font-size: 20px;">{{message}}</p>
+                            </div>
+                    </div>
+                    <div class=" media-right col-md-6 no-padding">
+                        <nvd3 ng-click="vm.goToOtherPages('visitorType')" style="cursor: pointer;" options="vm.visitors.chartOptions" data="vm.visitors.chartData"></nvd3>
+                        <ul ng-repeat="vistorType in vm.visitors.data">
+                            <li class="list-style-none" ng-click="vm.goToOtherPages('visitorType')" style="cursor: pointer;">
+                                <span class="color-span" ng-style="{'border-color': vistorType.color}"></span>
+                                {{vistorType.type}} - {{vistorType.share}}</li>
+                        </ul>
+                        <div ng-if="vm.visitors.data == 0" ng-repeat="message in vm.visitors.messageStatus">
+                            <p class="text-center" style="color: #64c1ac; font-size: 20px;">{{message}}</p>
+                            </div>
+                    </div>
+
+                </div>
+            </div>           
+            <div class="panel-heading" style="padding-top: 0px; padding-bottom: 0px;">
+                <h5 class="text-bold">{{vm.pageTamplate.device.display}}</h5>
+            </div>
+            <div class="container-fluid">
+             <table class="table text-nowrap">
+                     <tbody>
+                <tr>
+                    <td>
+                        <div class="media-left col-md-2">
+                            <i class="icon-laptop visitor-device-size" style="font-size: 175%;"></i>
+                        </div>
+                        <div class="media-left col-md-4" ng-click="vm.goToOtherPages('deviceProfile')" style="cursor: pointer;">
+                            <span class="" >Computer</span>
+                        </div>
+                        <div class="text-right col-md-2" style="padding: 0px;">
+                            <span class="text-right no-margin text-bold">{{vm.deviceTypes.data[0]}}</span>
+                        </div>
+                        <div class="media-left col-md-3" style="padding: 0px;margin-left: 16px;">
+                            <div class="progress" data-toggle="tooltip" tooltip="{{vm.deviceTypes.shareData[0] ? vm.deviceTypes.shareData[0] : 0}}%" tooltip-placement="top" >
+                                <div class="progress-bar" style="width:{{vm.deviceTypes.scaledShareDate[0]}}%">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>                    
+                        <div class="media-left col-md-2">
+                            <i class="icon-tablet visitor-device-size" style="font-size: 175%;"></i>
+                        </div>
+                        <div class="media-left col-md-4" ng-click="vm.goToOtherPages('deviceProfile')" style="cursor: pointer;">
+                            <span class="">Mobile</span>
+                        </div>
+                        <div class="text-right col-md-2" style="padding: 0px;">
+                            <span class="text-right no-margin text-bold">{{vm.deviceTypes.data[1]}}</span>
+                        </div>
+                        <div class="media-left col-md-3" style="padding: 0px;margin-left: 16px;">
+                            <div class="progress" data-toggle="tooltip" data-placement="top" tooltip="{{vm.deviceTypes.shareData[1] ? vm.deviceTypes.shareData[1] : 0}}%">
+                                <div class="progress-bar" style="width:{{vm.deviceTypes.scaledShareDate[1]}}%">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="media-left col-md-2">
+                            <i class="icon-tablet visitor-device-size" style="font-size: 175%;"></i>
+                        </div>
+                        <div class="media-left col-md-4" ng-click="vm.goToOtherPages('deviceProfile')" style="cursor: pointer;">
+                            <span class="">Tablet</span>
+                        </div>
+                        <div class="text-right col-md-2" style="padding: 0px;">
+                            <span class="text-right no-margin text-bold">{{vm.deviceTypes.data[2]}}</span>
+                        </div>
+                        <div class="media-left col-md-3" style="padding: 0px; margin-left: 16px;">
+                            <div class="progress" data-toggle="tooltip" data-placement="top" tooltip="{{vm.deviceTypes.shareData[2] ? vm.deviceTypes.shareData[2] : 0}}%">
+                                <div class="progress-bar" style="width:{{vm.deviceTypes.scaledShareDate[2]}}%">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="media-left col-md-2">
+                            <i class="icon-display4 visitor-device-size" style="font-size: 175%;"></i>
+                        </div>
+                        <div class="media-left col-md-4" ng-click="vm.goToOtherPages('deviceProfile')" style="cursor: pointer;">
+                            <span class="">Smart TV</span>
+                        </div>
+                        <div class="text-right col-md-2" style="padding: 0px;">
+                            <span class="text-right no-margin text-bold">{{vm.deviceTypes.data[3]}}</span>
+                        </div>
+                        <div class="media-left col-md-3" style="padding: 0px; margin-left: 16px;">
+                            <div class="progress" data-toggle="tooltip" data-placement="top" 
+                            tooltip="{{vm.deviceTypes.shareData[3] ? vm.deviceTypes.shareData[3] : 0}}%">
+                                <div class="progress-bar" style="width:{{vm.deviceTypes.scaledShareDate[3]}}%">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+            </div>
+</div>
+<!-- </div>
+ <div class="col-lg-4"> -->
+
+    <div class="row">
+         <div class="panel " style="width: 100%; margin-top: 30px;">
+            <div class="col-lg-12">       
+                <h5 class="text-bold title-border-bottom">
+                {{vm.pageTamplate.newContent.display}}
+                <live-gear-configuration pdf-downlode="vm.pdfExport('New_Content')" jpeg-downlode="vm.jpegExport('New_Content')" update-data="vm.publishingOperationsUpdate()"></live-gear-configuration>
+                      <pdf-generater options="dirPdfOptions"></pdf-generater>
+                      <jpeg-generater options="dirJpegOptions"></jpeg-generater></h5>
+                      <div id="New_Content" style="background-color: white;">
+                    <div class="row">
+                        <div class="panel-heading" style="height: 145px">
+                            <div class="col-lg-5" ng-click="vm.goToOtherPages('topArticles')" style="cursor: pointer;">
+                                <p class="media-left text-bold">New Content</p>
+                                    <div  class="col-lg-5" ng-repeat="content in vm.newContent.data">
+                                        <p class="text-center media-left text-bold">{{content.count}}</p>
+                                    </div>                           
+                            </div>
+                            <div class="col-lg-7" ng-click="vm.goToOtherPages('topArticles')" style="cursor: pointer;">
+                            <button class="btn btn-default live-top-head-heading" style="margin-left: 45px">Publish Today</button>
+                            </div>
+                            <div class="col-lg-7">
+                             <!-- <publishing-operations-chart option="vm.publishingOperationsData"></publishing-operations-chart> -->
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="title-border-bottom"></h5>
+                    <div class="row">
+                        <div class="panel-heading" style="height: 137px">
+                            <div class="col-lg-5" ng-click="vm.goToOtherPages('topArticles')" style="cursor: pointer;">
+                                <p class="media-left text-bold" style="padding: 0px;">Other Content</p>
+                                    <div class="panel-heading">
+                                        <div class="col-lg-5" ng-repeat="other in vm.otherContent.data">
+                                            <p class="text-center media-left text-bold">{{other.count}}</p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-lg-7" ng-click="vm.goToOtherPages('topArticles')" style="cursor: pointer;"> 
+                                <!--  <publishing-operations-chart option="vm.publishingOperationsData"></publishing-operations-chart> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <h5 class="text-bold title-border-bottom"></h5>
+                    <div id="Top_Authors" style="background-color: white" class="row container-fluid">
+                        <div class="panel-heading" style="padding-top: 35px;">
+                            <div class="col-lg-6">                            
+                                <h5 class="text-bold" ng-click="vm.goToOtherPages('author')" style="cursor: pointer;"><!-- {{vm.pageTamplate.newContent.display}} Top Authors--></h5>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="nav text-right pull-right" style="margin-bottom:5px !important">
+                                    <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle btn-default text-right audience-insights-dropdown" style="width: max-content; background-color: #e2e0e0;">{{vm.selectMatricLabel}}<b class="caret"></b></a>
+                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <li ng-repeat="value in vm.templateData.dropdownValues.keyMetric">
+                                        <a href="javascript:void(0)" ng-click="vm.byTimeSpentEngagementTimeFilter( value.dropdown )">{{ value.dropdown }}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <live-gear-configuration pdf-downlode="vm.pdfExport('Top_Authors')" jpeg-downlode="vm.jpegExport('Top_Authors')" update-data="vm.topAuthorsUpdate()"></live-gear-configuration>
+                          <pdf-generater options="dirPdfOptions"></pdf-generater>
+                          <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+                        <div style="height: 350px;margin-top: 35px">
+                            <table class="table text-nowrap">
+                                <div ng-if="vm.topAuthorsData != 0">
+                                    <tbody>
+                                        <tr ng-repeat="author in vm.topAuthorsData">
+                                            <td ng-click="vm.goToOtherPages('author', author.authorId, author.articleAuthor)" style="cursor: pointer;">{{author.articleAuthor}}</td>
+                                            <td class="text-right text-bold" >{{author.count}}</td>
+                                        </tr>
+                                    </tbody>
+                                </div>
+                            </table>
+                             <div ng-if="vm.topAuthorsData == 0" ng-repeat="message in vm.topAuthors.messageStatus">
+                            <p class="text-center" style="color: #64c1ac; margin-top: 60px; font-size: 20px;">{{message}}</p>
+                            </div>
+                        </div>
+                        <div ng-if="vm.topAuthors.data.length > 7">
+                            <div class="col-lg-12 text-right" style="margin-bottom: 3%">
+                                 <pagination 
+                                      ng-model="vm.topAuthors.currentPage"
+                                      total-items="vm.topAuthors.data.length"
+                                      max-size="5"  
+                                      boundary-links="true"
+                                      boundary-link-numbers="true"
+                                      previous-text="&lsaquo;"
+                                      next-text="&rsaquo;"
+                                      first-text="&laquo;"
+                                      last-text="&raquo;"
+                                      ng-change="topAuthorsPaging()">
+                                </pagination>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+  

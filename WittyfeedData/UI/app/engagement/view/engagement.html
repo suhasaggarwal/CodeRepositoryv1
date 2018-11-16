@@ -1,0 +1,157 @@
+<div id="article-view" class="page-header page-header-default margin-12" style="margin-top: 10px;margin-left: 10px;margin-right: 10px;">
+    <div class="page-header-content padding-top-10 over-view-class">
+        <div class="row">
+           <div class="col-lg-8 pull-left">
+             <h5 class="text-bold">{{vm.headerTitle}}</h5>
+            </div>
+          <cr-common-date-picker></cr-common-date-picker>
+        </div>
+    </div>
+</div>
+<div class="tab-menu" ng-if="vm.topNavigationStatus == true">
+    <div class="row">
+        <div id="sticky-anchor"></div>
+        <ul class="nav nav-tabs" id="sticky-nav" style="margin-bottom:5px !important">
+            <li role="presentation"><a href="javascript:void(0)" target="_blank" ng-click="vm.findFrequency()" data-target="_self">Frequency</a></li>
+            <li role="presentation"><a class="tab-menu" href="javascript:void(0)" target="_blank" ng-click="vm.findRecovery()" data-target="_self">Recency</a></li>
+            <li role="presentation" id="isegment"><a class="tab-menu" href="javascript:void(0)" target="_self" ng-click="vm.findTimeSpent()">Time Spent</a></li>
+             <li role="presentation" id="isegment"><a class="tab-menu" href="javascript:void(0)" target="_self" ng-click="vm.findPageDepth()">Page Depth</a></li>
+             <li class="pull-right pageview-section">
+                    <label  class="audience-keymetric-label">{{ vm.selectMatricLabel }} : </label>
+                    <ul class="breadcrumb-elements pull-right">
+                        <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon-fix" style="background-color: transparent"><b class="caret"></b></a>
+                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                <li ng-repeat="value in vm.templateData.dropdownValues.keyMetric">
+                                    <a href="javascript:void(0)" ng-click="vm.keyMetricFitler( value.apifilter )">{{ value.dropdown }}</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+        </ul>
+    </div> 
+</div>
+<div id="engagement" class="col-lg-12" style="min-height: 1030px;">
+    <div class="col-lg-12">
+        <div class="row" style="height: 300px;">
+       		<div class="panel panel-flat" style="min-height: 1000px;">
+                <div class="panel-heading ">
+                    <h5 class="text-bold title-border-bottom">{{vm.tableTitle}}
+                     <gear-configuration pdf-downlode="vm.pdfExport('engagement')" jpeg-downlode="vm.jpegExport('engagement')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+                    <pdf-generater options="dirPdfOptions"></pdf-generater>
+                    <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+                    </h5>
+                </div>
+	       		<table class="table">
+	       			<thead>
+	       				<th class="col-lg-3 text-bold">{{vm.tableColumnName}}</th>
+	       				<th class="col-lg-2 text-bold">Session</th>
+	       				<th class="col-lg-2 text-bold">{{ vm.selectMatricLabel }}</th>
+	       				<th class="col-lg-5 text-bold text-center">Page Depth vs. Site Average</th>
+	       			</thead>
+                    <div class="vm.audienceEngaement.data != 0">
+    	       			<tbody>
+    	       				<tr ng-repeat="engaement in vm.audienceEngaement.data">
+    	       					<td class="col-lg-3 text-center tab-menu" ng-click="vm.gotoAnchor(1,$event, engaement.type )" style="cursor: pointer;">{{engaement.type}}</td>
+                                <td class="col-lg-2 text-right padding-12">{{engaement.count}}
+                                    <div class="progress age-group-progressbar" data-toggle="tooltip" data-placement="top" tooltip="{{engaement.share}}%">
+                                        <div class="progress-bar" style="width:{{engaement.scaledShare}}%">
+                                            <span class="sr-only"></span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="col-lg-2 text-right">{{engaement.totalvisits}}
+                                    <div class="progress age-group-progressbar" data-toggle="tooltip" data-placement="top" tooltip="{{engaement.sharetotalvisits}}%">
+                                        <div class="progress-bar" style="width:{{engaement.scaledsharetotalvisits}}%">
+                                            <span class="sr-only"></span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="col-lg-5 text-right no-padding no-margin" >
+
+                                    <div class="row">
+                                        <div class="col-md-2 count-div"><div class="margin-top-20 no-padding dotdot" style="  margin-top: 35%;">{{engaement.sessioncomparison}}</div></div>
+                                        <div class="col-md-5 frequency-progress-middle-div">
+                                            <div ng-if="engaement.sessioncomparison < 0" class="progress age-group-progressbar margin-top-progress-div" style="border-radius: 0;margin-left: 20px;">
+                                                <div class="progress-bar pull-right" style="width:{{engaement.scaledsessioncomparison | positive}}%;">
+                                                    <span class="sr-only"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 no-padding-left right-progress-div">
+                                            <div  ng-if="engaement.sessioncomparison > 0" class="progress age-group-progressbar margin-top-progress-div" style="border-radius: 0;margin-right: 20px;">
+                                                <div class="progress-bar" style="width:{{engaement.scaledsessioncomparison | positive}}%;">
+                                                    <span class="sr-only"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </div>
+	       		</table>
+                <div ng-if="vm.audienceEngaement.data == 0" ng-repeat="message in vm.audienceEngaement.messageStatus">
+                    <p class="text-center" style="color: #64c1ac;margin-top: 100px;font-size: 20px;height: 200px;">{{message}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-12">
+    <div id="Engaement_client" class="col-lg-12">
+        <div class="row" id="tab1">
+            <div class="panel panel-flat" id="tab1" style="min-height: 670px;">
+                <div class="panel-heading">
+                    <h5 class="text-bold title-border-bottom">Top Engagement Client - {{vm.topEngagementClientId}}
+                     <gear-configuration pdf-downlode="vm.pdfExport('Engaement_client')" jpeg-downlode="vm.jpegExport('Engaement_client')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+                    <pdf-generater options="dirPdfOptions"></pdf-generater>
+                    <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+                    </h5>
+                </div>
+                <table class="table">
+                    <thead>
+                        <th class="text-bold">Client ID</th>
+                        <!-- <th class="text-bold">Trend</th> -->
+                        <th class="text-right text-bold">Sessions</th>
+                        <th class="text-right text-bold">Total Time</th>
+                        <th class="text-right text-bold">Avg. Time (in min)</th>
+                        <th class="text-right text-bold">{{ vm.selectMatricLabel }}</th>
+                    </thead>
+                    <div class="vm.topEngagementClient.data != 0">
+                        <tbody ng-class="{'fade' : vm.topEngagementClient.startFade}">
+                            <tr ng-hide="$index < vm.topEngagementClient.start || $index > vm.topEngagementClient.end " ng-repeat="topEngaement in vm.topEngagementClient.data">
+                                <td ng-click="vm.goToOtherPages('userExplorer', topEngaement.cookie_id)" style="cursor: pointer;">{{topEngaement.cookie_id}}</td>
+                                <!-- <td class="col-lg-3">-</td> -->
+                                <td class="text-right text-bold">{{topEngaement.sessionCount}}</td>
+                                <td class="text-right text-bold">{{topEngaement.engagementTime}}</td>
+                                <td class="text-right text-bold">{{topEngaement.averageTime}}</td>
+                                <td class="text-right text-bold">{{topEngaement.count}}</td>
+                            </tr>
+                        </tbody>
+                    </div>
+                </table>
+                <div ng-if="vm.topEngagementClient.data == 0" ng-repeat="message in vm.topEngagementClient.messageStatus">
+                    <p class="text-center" style="color: #64c1ac;margin-top: 100px;font-size: 20px;height: 200px;">{{message}}</p>
+                </div>
+                <div ng-if="vm.topEngagementClient.data.length > 10">
+                    <div class="col-lg-12 text-right" style="margin-bottom: 0%">
+                        <pagination 
+                              ng-model="vm.topEngagementClient.currentPage"
+                              total-items="vm.topEngagementClient.data.length"
+                              max-size="5"  
+                              boundary-links="true"
+                              boundary-link-numbers="true"
+                              previous-text="&lsaquo;"
+                              next-text="&rsaquo;"
+                              first-text="&laquo;"
+                              last-text="&raquo;"
+                              ng-change="topEngagementClientPaging()">
+                        </pagination>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

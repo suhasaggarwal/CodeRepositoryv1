@@ -1,0 +1,35 @@
+<div class="panel panel-flat">
+    <div class="panel-heading">
+        <h5 class="text-bold">Audience Interest Segments</h5>
+    </div>
+    <div class="container-fluid">
+        <table class="table datatable-fixed-left" width="100%">
+            <thead>
+                <tr>
+                    <th class="text-muted text-bold">Interest Segment </th>
+                    <th class="text-right text-muted text-semibold">Avg. Time (in min)</th>
+                    <th class="text-right text-muted text-semibold">Visitors</th>
+                    <th class="text-right text-muted text-semibold">3rd Party Universe</th>
+                    <th class="text-right text-muted text-semibold">Pageviews</th>
+                    <th class="col-md-2"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="interest in vm.audienceSegment.data">
+                    <td class="text-bold">{{interest.type}}</td>
+                    <td class="text-right text-muted">{{interest.averageTime }}</td>
+                    <td class="text-right text-muted">{{interest.visitorCount }}</td>
+                    <td class="text-right text-muted">{{interest.externalWorldCount }}</td>
+                    <td class="text-right text-bold">{{interest.count }}</td>
+                    <td class="text-right">
+                        <div class="progress">
+                            <div class="progress-bar" style="width:{{interest.share}}%">
+                                <span class="sr-only"></span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

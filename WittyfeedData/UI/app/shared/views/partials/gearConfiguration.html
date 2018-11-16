@@ -1,0 +1,24 @@
+<ul class="breadcrumb-elements pull-right">
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle card-title-icon" data-toggle="dropdown">
+            <i class="icon-gear"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <!-- <li><a href="#" ng-click="updateData()"><i class="icon-database-refresh"></i> Update</a></li> -->
+            <li><a ng-model="hide" ng-click="pdfDownlode()">Export to PDF</a>
+            </li>
+            <li><a ng-model="hide" ng-click="jpegDownlode()">Export to JPEG</a>
+            </li>
+
+            <li ng-if="showMaxNumber">
+                <div style="    padding: 8px 16px; font-weight: normal;">
+                    <span> Number to show: </span>
+                    <div class="clear-both">
+                        <input type="number" style="width: 40px; margin-left: 5px;" min="5" ng-model="numberToShow" placeholder="5">
+                        <button type="button" class="btn-small btn-primary apply-date-range-button" ng-click="applyNumberChangeToShow(numberToShow);">Apply</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>

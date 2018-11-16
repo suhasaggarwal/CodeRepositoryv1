@@ -1,0 +1,70 @@
+<div id="keymatric" class="panel panel-flat overview-key-metrics-card">
+    <div class="panel-heading ">
+        <h5 class="text-bold title-border-bottom card-heading"> <!-- {{ vm.templateData.cardtitletemplate.totalViews}} -->
+        {{vm.pageTamplate.totalViews.display}}
+             <gear-configuration pdf-downlode="vm.pdfExport('keymatric')" jpeg-downlode="vm.jpegExport('keymatric')" update-data="vm.keyMatricUpdate()" show-max-number="vm.maxNumberShow('keyMetric');"></gear-configuration>
+            <pdf-generater options="dirPdfOptions"></pdf-generater>
+            <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+        </h5>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="padding-left: 10px;">
+            <div class="col-lg-3">
+                <ul class="list-inline">
+                    <li>
+                        <div class="text-bold">Visitors</div>
+                        <div class="text-bold text-left key-metrics-number">{{vm.uniqueVisitors}}</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="list-inline">
+                    <li>
+                        <div class="text-bold">Pageviews</div>
+                        <div class="text-bold text-left key-metrics-number">{{vm.totalPageViews }}</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul class="list-inline">
+                    <li>
+                        <div class="text-bold">Engage Time (in min)</div>
+                        <div class="text-bold text-left key-metrics-number">{{vm.engagementTime }}</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2 no-padding">
+                <ul class="list-inline">
+                    <li>
+                        <div class="text-bold">Min / Visitor</div>
+                        <div class="text-bold text-left key-metrics-number">{{vm.minutesVisitor}}</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="btn-group btn-group-sm pull-right padding-right-12" role="group" aria-label="..." style="z-index: 0;">
+        <button class="btn btn-default" ng-click="vm.onResolutionSelection('hour')" ng-class="{'btn-active':resolutions['day']}">
+            Hour
+        </button>
+        <button class="btn btn-default" ng-click="vm.onResolutionSelection('day')" ng-class="{'btn-active':resolutions['day']}">
+            Day
+        </button>
+        <button class="btn btn-default" ng-click="vm.onResolutionSelection('week')" ng-class="{'btn-active':resolutions['week']}">
+            Week
+        </button>
+        <button class="btn btn-default" ng-click="vm.onResolutionSelection('month')" ng-class="{'btn-active':resolutions['month']}">
+            Month
+        </button>
+        <button class="btn btn-default" ng-click="vm.onResolutionSelection('year')" ng-class="{'btn-active':resolutions['year']}">
+            Year
+        </button>
+    </div>    
+        <div ng-if="vm.totalPageViewsByDate.data.length == 0 || !vm.totalPageViewsByDate.data"      ng-repeat="message in vm.totalPageViewsByDate.messageStatus" class="col-lg-12">
+            <p class="text-center" style="color: #64c1ac; font-size: 20px;line-height: 15;">{{message}}</p>
+        </div>
+    <div ng-show="vm.totalPageViewsByDate.data.length != 0" class="container-fluid">
+        <cr-analytic-area-chart></cr-analytic-area-chart>
+        <span class="text-bold capitalize-text" style="padding-left: 240px;">{{vm.clickEvent}}</span>
+    </div>    
+</div>

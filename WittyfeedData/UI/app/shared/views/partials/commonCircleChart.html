@@ -1,0 +1,35 @@
+<div>    
+    <nvd3 options="vm.genderData.chartOptions" data="vm.genderData.chartData"></nvd3>
+    <div class="row">
+        <div class="col-lg-12">
+            <h1></h1>
+        </div>
+    </div>
+    <table class="table datatable-fixed-left" width="100%">
+        <thead>
+        <tr>
+            <th class=" text-semibold">{{ vm.sectionThreeTitle}}</th>
+            <th class=" text-right text-semibold">{{ vm.selectMatricLabel }}</th>
+            <th></th>
+        </tr>
+        </thead>
+        <div ng-if="vm.genderData.data !=0">
+            <tbody>
+            <tr ng-repeat="gender in vm.genderData.data">
+                <td ng-click="vm.goToOtherPages('genderProfile', gender.genderId)" style="cursor: pointer;" class=" text-semibold"><span class="color-span pull-left" style="margin-right: 5px;margin-top: 3px; margin-left: 5px; border-color: {{gender.color}}"></span>{{gender.type}}</td>
+                <td class=" text-right text-bold">{{gender.count}}</td>
+                <td class="text-center padding-12">
+                    <div class="progress age-group-progressbar" data-toggle="tooltip" data-placement="top" tooltip="{{gender.share}}%">
+                        <div class="progress-bar" style="width:{{gender.scaledShare}}%">
+                            <span class="sr-only"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </div>
+    </table>
+    <div ng-if="vm.genderData.data == 0" ng-repeat="message in vm.genderData.messageStatus">
+        <p class="text-center" style="color: #64c1ac; margin-top: 60px; font-size: 20px;">{{message}}</p>
+    </div>
+</div>

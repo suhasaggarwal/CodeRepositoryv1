@@ -1,0 +1,99 @@
+<div>
+<div class="row">
+    <ul class="nav nav-tabs margin-left-0" style="margin-bottom:5px !important; border-bottom: none;">
+        <li><a href="">Summary</a></li>
+        <li><a href="">Engagement</a></li>
+        <li><a href="">Traffic Performance</a></li>
+         <li><h5>Key Matric</h5></li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-bold">{{vm.selectDrodown }}<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="javascript:void(0)" ng-click="vm.topPageViewsFilter('visitors')">Visitors</a></li>
+                <li><a href="javascript:void(0)" ng-click="vm.topPageViewsFilter('pageviews')">{{ vm.selectMatricLabel }}</a></li>
+                <li><a href="javascript:void(0)" ng-click="vm.topPageViewsFilter('engagement')">Engagement Time</a>
+            </ul>
+            </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+         <div class="panel-heading">
+                <h5 class="text-bold">Gender Traffic</h5>
+            </div>
+            <div class="container-fluid">
+                <nvd3 options="vm.genderData.chartOptions" data="vm.genderData.chartData"></nvd3>
+                <table class="table datatable-fixed-left" width="100%">
+                    <thead>
+                        <tr>
+                            <th class=" text-semibold">Gender</th>
+                            <th class=" text-right text-semibold">{{ vm.selectMatricLabel }}</th>
+                            <th class=" text-right text-semibold">Share</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="gender in vm.genderData.data">
+                            <td>{{gender.type}}</td>
+                            <td>{{gender.count }}</td>
+                            <td class="text-right">
+                                <h6 class=" no-margin">{{gender.share}}</h6>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  
+<div class="col-md-6">
+        <div class="panel panel-flat">
+           <date-series-chart id="container" option="vm.totalPageViewsByDate.chartData" style="min-width: 310px; height: 350px; margin: 0 auto"></date-series-chart>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="text-bold">Engagement by Income</h5>
+            </div>
+           <date-series-chart id="container" option="vm.totalPageViewsByDate.chartData" style="min-width: 310px; height: 350px; margin: 0 auto"></date-series-chart>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="text-bold"> </h5>
+           <date-series-chart id="container" option="vm.totalPageViewsByDate.chartData" style="min-width: 310px; height: 350px; margin: 0 auto"></date-series-chart>
+        </div>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="panel panel-flat">
+        <table>
+            <thead>
+                <th>Income Level</th>
+                <th>Thrend</th>
+                <th>Vistors</th>
+                <th>Avg. Time (in min) </th>
+                <th>{{ vm.selectMatricLabel }}</th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</div>

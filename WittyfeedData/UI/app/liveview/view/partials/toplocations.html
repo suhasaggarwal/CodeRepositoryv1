@@ -1,0 +1,93 @@
+<div class="col-lg-8">
+    <div id="Locations" class="panel padding-top-10 live-map-card">
+        <!-- <div class="panel-flat">
+                </div> -->
+        <div class="col-md-8">
+            <div id="mapview" >
+                <div class="panel-heading" style="margin-top: 11px;">
+                    <div class="col-md-4 text-bold"><h5 class="text-bold" ng-click="vm.goToOtherPages('audienceGeography')" style="cursor: pointer;">{{vm.pageTamplate.LatLong.display}}
+                    </h5></div>
+                    <div class="col-md-6">
+                        <!-- <select class="bootstrap-select form-control top-location-select" ng-options="latLongValue.dropdown for latLongValue in vm.templateData.dropdownLatLongValues.latLong"
+                                ng-model="latLongValue.dropdown" data-width="100%" style="padding-left: 65px;"
+                          ng-change="vm.onChangeMapView(latLongValue.dropdown)">
+                            <option value="" disabled selected>Global</option>
+                        </select> -->
+                        <ul style="list-style-type: none; margin-bottom:5px !important">
+                             <li class="pull-right">
+                                <label class="audience-keymetric-label text-bold">{{vm.mapHeader }} : </label>
+                                <ul class="breadcrumb-elements pull-right">
+                                    <li class="dropdown">
+                                   <a href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                             <li ng-repeat="latLongValue in vm.templateData.dropdownLatLongValues.latLong">
+                                            <a href="javascript:void(0)" ng-click="vm.onChangeMapView(latLongValue.dropdown)">{{ latLongValue.dropdown }}</a>
+                                        </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+               <div style="padding-top: 42px;">
+                    <cr-analytic-countries-map ng-show="vm.mapType == 'Countries'"></cr-analytic-countries-map>
+                    <cr-analytic-state-map ng-show="vm.mapType == 'States'"></cr-analytic-state-map>
+                    <cr-analytic-city-map ng-show="vm.mapType == 'Cities'"></cr-analytic-city-map>
+               </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div id="geo-location">
+                <div class="container-fluid">
+                    <div class="row">
+                        <live-gear-configuration pdf-downlode="vm.pdfExport('Locations')" jpeg-downlode="vm.jpegExport('Locations')" update-data="vm.locationUpdate()"></live-gear-configuration>
+                      <pdf-generater options="dirPdfOptions"></pdf-generater>
+                      <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+                    </div>
+                   <div class="row">
+                        <span class=" text-bold top-location-label" >{{vm.pageTamplate.city.display}}</span>
+                    <ul style="list-style-type: none; margin-bottom:5px !important">
+                         <li class="pull-right">
+                            <label class="audience-keymetric-label text-bold">{{vm.locationHeader }} : </label>
+                            <ul class="breadcrumb-elements pull-right">
+                                <li class="dropdown">
+                               <a href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                         <li ng-repeat="region in vm.templateData.dropdownLocationsValues.locations">
+                                        <a href="javascript:void(0)" ng-click="vm.fillLocationData(region.dropdown)">{{ region.dropdown }}</a>
+                                    </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>  
+                   </div>
+                </div>
+                <table class="table datatable-fixed-left" style="width: 200px;">
+                    <thead>
+                    <tr>
+                        <th class="">{{vm.locationHeader}}</th>                        
+                        <th class=" text-right"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="city in vm.cityData.data">
+                        <td class="text-muted" ng-click="vm.goToOtherPages('audienceGeography')" style="cursor: pointer;">
+                            <a href="javascript:void(0)" ng-click="vm.selectedLocationData(city)" class="capitalize-text live-map-Content" style="color: #333333;">{{city.type}}</a>
+                        </td>
+                         <td class="text-right padding-12">
+                            <div class="progress " data-toggle="tooltip" data-placement="top" tooltip="{{city.share}}%">
+                                <div class="progress-bar" style="width:{{city.scaledShare}}%">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </td>
+                        
+                    </tr>
+                    </tbody>
+                </table>           
+            </div>
+        </div>
+    </div>
+</div>

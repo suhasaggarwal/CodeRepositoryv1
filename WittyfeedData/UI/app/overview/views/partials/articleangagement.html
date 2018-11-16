@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="text-bold"> Article Engagement</h6>
+            </div>
+            <div class="container-fluid">
+                <div class="col-md-6">
+                    <nvd3 options="vm.articleEngagementData.chartOptions" data="vm.articleEngagementData.chartData"></nvd3>
+                </div>
+                <div class="col-md-6">
+                    <div class="table-responsive">
+                        <table class="table text-nowrap">
+                            <tbody>
+                                <tr ng-repeat="articleEngagement in vm.articleEngagementData.data" style="border-bottom:1px solid #ddd;border-top:0px !important">
+                                    <td class="text-muted text-semibold" style="border-top:0px !important">{{articleEngagement.type}}
+                                        <br/>
+                                        <small class="text-size-small text-muted">{{articleEngagement.count}}</small></td>
+                                    <td class="text-right text-bold" style="border-top:0px !important">{{articleEngagement.share}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="text-bold"> Post Reffered From This</h6>
+            </div>
+            <div class="container-fluid">
+                <table class="table datatable-fixed-left" width="100%">
+                    <thead>
+                        <tr>
+                            <th class="text-muted col-md-6">Title</th>
+                            <th class="text-center text-muted col-md-4">Reffered Views</th>
+                            <th class="col-md-2"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="article in vm.clickedArticleData.data">
+                            <td class="text-muted">{{article.type}}</td>
+                            <td class="text-center text-bold">{{article.count }}</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:{{article.share}}%">
+                                        <span class="sr-only"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 

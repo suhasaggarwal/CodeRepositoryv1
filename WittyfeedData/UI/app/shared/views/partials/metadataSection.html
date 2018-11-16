@@ -1,0 +1,33 @@
+<div>
+    <div class="col-lg-2 " style="padding-left: 0; padding-right: 0; width: 130px;">
+        <div class="thumbnail-div">
+            <img src="{{ vm.metadata.mainimage }}" style="width: 120px; height: 100px" class="metadata-img">
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="clear-both">
+            <h4 class="no-padding-top no-margin-top text-overflow-class">
+                <a class="text-semibold metadata-title" href="{{vm.metadata.articleUrl}}"
+                   target="_blank" title="{{ vm.metadata.articletitle }}">{{ vm.metadata.articletitle }}</a>
+            </h4>
+            <a class="title-open-new-tab-icon" ng-href="{{vm.metadata.articleUrl}}" onclick="" target="_blank" title="{{ vm.metadata.articletitle }}">
+                <i class="icon-new-tab"></i></a>
+        </div>
+        <div class="clear-both">
+            <div class="pull-left">
+                <span class="metadata-title-child-label">Author: </span><span ng-click="vm.goToOtherPages('author', vm.metadata.authorId, vm.metadata.author)" style="cursor: pointer;" ng-bind="vm.metadata.author"></span>
+            </div>
+            <div class="pull-left metadata-title-child-label-margin">
+                <span class="metadata-title-child-label">Section: </span><span ng-click="vm.goToOtherPages('section', vm.metadata.sectionid)" style="cursor: pointer;" ng-bind="vm.metadata.sectionname"></span>
+            </div>
+            <div class="pull-left">
+                <span class="metadata-title-child-label">Publish Date: </span><span ng-bind="vm.metadata.publishdate"></span>
+            </div>
+        </div>
+        <div class="padding-top-10 clear-both">
+            <span class="metadata-title-child-label">Tag: </span>
+            <span ng-repeat="tag in vm.metadata.tags"><label class="title-tag-label">{{ tag }}</label></span>
+        </div>
+    </div>
+    <cr-common-date-picker style="margin-left: 41px;"></cr-common-date-picker>
+</div>

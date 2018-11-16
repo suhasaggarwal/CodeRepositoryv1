@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="col-lg-1" >
+		<label class="text-bold" style="font-size: 17px; margin-left: 10px;">Filter :</label>
+	</div>
+    <div class="col-lg-11 pull-left filter-history-div" style="padding: inherit;">
+        <label ng-if="filterHistory.cardName" ng-repeat="filterHistory in vm.filterHistories">
+            <b>{{ filterHistory.cardName }} : </b>
+            {{ filterHistory.name }}
+            <i class="glyphicon glyphicon-remove" style="cursor: pointer;" ng-click="vm.removedFilter(filterHistory);"></i>
+        </label>
+    </div>
+</div>

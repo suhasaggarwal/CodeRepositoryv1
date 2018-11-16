@@ -1,0 +1,54 @@
+<div class="col-lg-4">
+    <div class="pull-right">
+        <div style="width: 100%; clear: both;">
+            <!-- <ul class="nav nav-tabs margin-left-0 no-padding select-header-metric-ul date-range-drop-down pull-right" style="margin-right: 0 !important;">
+            <li class="dropdown select-header-metric">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle select-header-metric-a no-padding "> {{ vm.selectDateLabel }} <b class="caret pull-right"></b></a>
+                <ul class="dropdown-menu">
+                    <li ng-repeat="date in vm.templateData.dropdownValues.calenderFilter">
+                        <a href="javascript:void(0)" ng-click="vm.selectDateDropDown( date )"> {{ date.timespan }}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul> -->
+        <ul style="list-style-type: none; margin-bottom:5px !important">
+             <li class="pull-right">
+                <label class="audience-keymetric-label text-bold">{{ vm.selectDateLabel }}</label>
+                <ul class="breadcrumb-elements pull-right">
+                    <li class="dropdown">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon-fix" style="background-color: transparent"><b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                             <li ng-repeat="date in vm.templateData.dropdownValues.calenderFilter">
+                            <a href="javascript:void(0)" ng-click="vm.selectDateDropDown( date )"> {{ date.timespan }}</a>
+                        </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul> 
+        </div>
+        <div>
+            <div ng-if="!vm.disabledDate" style="clear: both;">
+                <div class="pull-left" ng-class="{'pointer-events-none': vm.disabledDate}">
+                    <div id="datesDiv" style="width: 220px;">
+                        <ng-form name="dates_form">
+                            <div class="input-group pull-left" style="width:105px;">
+                                <input name="dateFrom" id="dateFrom" class="form-control " datetimepicker="" ng-model="vm.datePicker.date.startDate" options="vm.datepickerOption" validate-before="dates_form.dateTo" ng-change="vm.onChangeDates(vm.datePicker.date.startDate, vm.datePicker.date.endDate)">
+                                <span class="input-group-addon no-padding">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                            <div class="input-group" style="width:105px; padding-left: 10px;">
+                                <input name="dateTo" id="dateTo" class="form-control " datetimepicker="" ng-model="vm.datePicker.date.endDate" options="vm.datepickerOption" validate-after="dates_form.dateFrom" ng-change="vm.onChangeDates(vm.datePicker.date.startDate, vm.datePicker.date.endDate)">
+                                <span class="input-group-addon no-padding">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </ng-form>
+                    </div>
+                </div>
+                <button type="button" class="btn-small btn-primary apply-date-range-button" ng-click="vm.applyDate('custom');">Apply</button>
+            </div>
+        </div>
+    </div>
+</div>

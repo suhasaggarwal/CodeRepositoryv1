@@ -1,0 +1,145 @@
+<div class="row">
+    <div class="col-lg-12 audience-header-content">
+        <cr-audience-header-dir></cr-audience-header-dir>
+    </div>
+</div>
+<a id="audience-engagemnet-section"></a>
+<div class=" row" id="tab1"></div>
+<div class="row content-row" id="topsection">
+    <div class="panel content" id="key-metric-link">
+    <h5 class="text-bold title-border-bottom">{{vm.pageTamplate.pageName}}        
+        </h5>       
+        <div class="col-lg-5 border-right" id="Gender_Traffic">
+        <gear-configuration pdf-downlode="vm.pdfExport('Gender_Traffic')" jpeg-downlode="vm.jpegExport('Gender_Traffic')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+        <pdf-generater options="dirPdfOptions"></pdf-generater>
+        <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+            <cr-common-circle-chart-dir></cr-common-circle-chart-dir>
+        </div>
+        <div class="col-lg-7" id="keymatric">
+        <gear-configuration pdf-downlode="vm.pdfExport('keymatric')" jpeg-downlode="vm.jpegExport('keymatric')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+        <pdf-generater options="dirPdfOptions"></pdf-generater>
+        <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+            <div class="btn-group btn-group-sm pull-right padding-right-12" role="group" aria-label="..." style="margin-right: 57px;">
+                <button class="btn btn-default btn-group-item active" ng-click="vm.selectAggregatebyFilter('date')" ng-class="{'btn-active':resolutions['date']}">
+                    Day
+                </button>
+                 <button class="btn btn-default btn-group-item" ng-click="vm.selectAggregatebyFilter('hour')" ng-class="{'btn-active':resolutions['hour']}">
+                    Hour
+                </button>
+                <button class="btn btn-default btn-group-item" ng-click="vm.selectAggregatebyFilter('minute')" ng-class="{'btn-active':resolutions['minute']}">
+                    Minute
+                </button>
+            </div>
+            <cr-analytic-stack-area-chart></cr-analytic-stack-area-chart>
+            <!--<cr-analytic-multi-area-chart></cr-analytic-multi-area-chart>-->
+        </div>
+    </div>
+</div>
+<div  class="row content-row" id="tab2">
+    <div class=" panel content" id="audience-profile-section" >
+        <div class="panel-heading" style="padding: 0px;">
+            <h5 class="text-bold title-border-bottom">{{vm.pageTamplate.pageSubtitle}}                 
+            </h5>
+        </div>
+        <div class="col-lg-5" id="Engagement_by_Gender_TrafficFirst">
+        <gear-configuration pdf-downlode="vm.pdfExport('Engagement_by_Gender_TrafficFirst')" jpeg-downlode="vm.jpegExport('Engagement_by_Gender_TrafficFirst')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+                <pdf-generater options="dirPdfOptions"></pdf-generater>
+                <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+            <!--<cr-stacked-bar-chart></cr-stacked-bar-chart>-->
+            <cr-analytic-stack-bar-chart></cr-analytic-stack-bar-chart>
+        </div>
+        <div class="col-lg-7" id="Engagement_by_Gender_TrafficSecand">
+        <gear-configuration pdf-downlode="vm.pdfExport('Engagement_by_Gender_TrafficSecand')" jpeg-downlode="vm.jpegExport('Engagement_by_Gender_TrafficSecand')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+                <pdf-generater options="dirPdfOptions"></pdf-generater>
+                <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+            <div ng-if="vm.engagementLineChartData.data != 0">
+                 <cr-analytic-multi-value-axes-chart></cr-analytic-multi-value-axes-chart>
+            </div>
+            <div ng-if="vm.engagementLineChartData.data == 0" ng-repeat="message in vm.engagementLineChartData.messageStatus">
+                    <p class="text-center" style="color: #64c1ac; margin-top: 100px; font-size: 20px;">{{message}}</p>
+                </div>
+        </div>
+    </div>
+</div>
+<div class="row tab-menu" id="menu-center" ng-if="vm.bottomNavigationStatus == true">
+    <ul class="nav nav-tabs margin-left-0" style="margin-bottom:5px !important; border-bottom: none;">        
+        <li class="active"><a href="javascript:void(0)"  ng-click="vm.selectDevice()" ng-class="{'font-bold': selectedBottomTab.device}">Device</a></li>
+        <li><a class="tab-menu" href="javascript:void(0)" ng-click="vm.selectBrand()"  ng-class="{'font-bold': selectedBottomTab.brand}">Brand</a></li>
+        <li><a class="tab-menu" href="javascript:void(0)" ng-click="vm.selectModelName()" ng-class="{'font-bold': selectedBottomTab.modelName}">Model Name</a></li>
+        <li><a class="tab-menu" href="javascript:void(0)" ng-click="vm.selectOperating()" ng-class="{'font-bold': selectedBottomTab.operating}">Operating System</a></li>
+        <li><a class="tab-menu" href="javascript:void(0)" ng-click="vm.selectScreen()" ng-class="{'font-bold': selectedBottomTab.screen}">Screen Resolution</a></li>
+         <li><a class="tab-menu" href="javascript:void(0)" ng-click="vm.selectService()" ng-class="{'font-bold': selectedBottomTab.service}">Service Provider</a></li>
+        <li><a class="tab-menu" href="javascript:void(0)" ng-click="vm.selectOrgnization()" ng-class="{'font-bold': selectedBottomTab.organization}">Organization</a></li>
+    </ul>
+</div>
+<div id="tab3">
+    <div class="row content-row" id="Engagement_by_Gender_TrafficThird">
+        <div id="interest-segment-section" class=" panel content">
+            <div class="col-lg-12">
+            <gear-configuration pdf-downlode="vm.pdfExport('Engagement_by_Gender_TrafficThird')" jpeg-downlode="vm.jpegExport('Engagement_by_Gender_TrafficThird')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+            <pdf-generater options="dirPdfOptions"></pdf-generater>
+            <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+            <div >
+                <table class="table text-nowrap">
+                    <thead>
+                        <tr>
+                            <th class="text-bold">{{vm.sectionThreeTitle}}</th>
+                            <!-- <th class="text-right text-bold">Trend</th> -->
+                            <th class="text-right text-bold">Vistors</th>
+                            <th class="text-right text-bold">Avg. Time (in min)</th>
+                            <th class="text-right text-bold">{{ vm.selectMatricLabel }}</th>
+                            <th class="text-right text-bold"></th>
+                        </tr>
+                    </thead>
+                    <div ng-if="vm.audienceSegmentDevice.data != 0">
+                    <tbody>
+                        <tr ng-repeat="profile in vm.audienceSegment">
+                            <td ng-click="vm.goToOtherPages('overview', profile.articleId, profile.publisher_pages)">{{profile.type}}<span style="padding-left: 5%">{{profile.osversion}}</span></td>
+                            <!-- <td class="text-right">-</td> -->
+                            <td class="text-right text-bold">{{profile.visitorCount}}</td>
+                            <td class="text-right text-bold">{{profile.averageTime}}</td>
+                            <td class="text-right text-bold">{{profile.count}}</td>
+                            <td class="text-right padding-12">
+                                <div class="progress age-group-progressbar" data-toggle="tooltip" data-placement="top" tooltip="{{profile.share}}%">
+                                    <div class="progress-bar" style="width:{{profile.scaledShare}}%">
+                                        <span class="sr-only"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </div>
+                </table>
+                <div ng-if="vm.audienceSegmentDevice.data == 0" ng-repeat="message in vm.audienceSegmentDevice.messageStatus">
+                    <p class="text-center" style="color: #64c1ac; margin-top: 60px; font-size: 20px;">{{message}}</p>
+                </div>
+            </div>          
+                <div ng-if="vm.audienceSegmentDevice.data.length > 10">
+                        <div class="col-lg-12 text-right" style="margin-bottom: -10%">
+                            <pagination 
+                                  ng-model="vm.audienceSegmentDevice.currentPage"
+                                  total-items="vm.audienceSegmentDevice.data.length"
+                                  max-size="5"  
+                                  boundary-links="true"
+                                  boundary-link-numbers="true"
+                                  previous-text="&lsaquo;"
+                                  next-text="&rsaquo;"
+                                  first-text="&laquo;"
+                                  last-text="&raquo;"
+                                  ng-change="audienceSegmentDevicePaging()">
+                            </pagination>
+                        </div>               
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+  $('button').click( function() {
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+});
+</script>
+
+

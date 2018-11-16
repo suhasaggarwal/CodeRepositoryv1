@@ -1,0 +1,104 @@
+<div class="col-md-3 no-padding" >
+    <div class="panel panel-flat live-view-visitor-div">
+          <div class="panel-heading">
+              <h5 class="text-bold title-border-bottom no-padding">{{vm.pageTamplate.refcurrentoriginal.display}}
+                  <live-gear-configuration pdf-downlode="vm.pdfExport('last30MintContent')" jpeg-downlode="vm.jpegExport('last30MintContent')" update-data="vm.sectionLast30MintUpdate()"></live-gear-configuration>
+                  <pdf-generater options="dirPdfOptions"></pdf-generater>
+                  <jpeg-generater options="dirJpegOptions"></jpeg-generater></h5>
+              <div class="row">
+                  <div class="col-md-12 no-padding" style="margin-top: 10%;">
+                      <div class="col-md-6">
+                        <label class="live-top-head-heading" style="background-color:#e8e3e3;padding: 10px; margin-left: -15%;">Last 30 Mint</label>  
+                      </div>
+                      <div class="col-md-6">
+                          <ul class="nav margin-top-5 pull-right">
+                              <li class="dropdown">
+                                  <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right btn-default padding-7" style="width: max-content; background-color: #e2e0e0;"> {{ vm.selectMatricLabel }}<b class="caret"></b></a>
+                                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                          <li class="pull-left" ng-repeat="value in vm.templateData.dropdownValues.keyMetric">
+                                              <a href="javascript:void(0)" ng-click="vm.sectionLast30MintFitler( value.apifilter )">{{ value.dropdown }}</a>
+                                          </li>
+                                      </ul>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  
+              </div>        
+          </div>        
+          <div class="container-fluid" style="height: 412px;">
+              <table id="last30MintContent" style="background-color: white" class="table">
+                  <div class="vm.sectionLast30MintContentData.data != 0">
+                      <tbody>
+                          <tr ng-repeat="sectionLast30Mint in vm.sectionLast30Mint" style="height: 43px;">
+                             <!--  <td class="padding-7 trading-Content" ng-click="vm.goToOtherPages('overview', sectionLast30Mint.articleId, sectionLast30Mint.publisher_pages)" style="cursor: pointer;" data-toggle="tooltip" data-placement="top" tooltip="{{sectionLast30Mint.type}}">{{sectionLast30Mint.type}}</td> -->
+                             <td class="padding-7 trading-Content" data-toggle="tooltip" data-placement="top" tooltip="{{sectionLast30Mint.type}}">{{sectionLast30Mint.type}}</td>
+                              <td class="text-right padding-7 text-bold" >{{sectionLast30Mint.count}}</td>
+                          </tr>
+                      </tbody>
+                  </div>              
+              </table>
+              <div ng-if="vm.sectionLast30MintContentData.data == 0" ng-repeat="message in vm.sectionLast30MintContentData.messageStatus">
+                  <p class="text-center" style="color: #64c1ac; margin-top: 60px; font-size: 20px;">{{message}}</p>
+              </div> 
+          </div>
+          <div ng-if="vm.sectionLast30MintContentData.data.length > 11">
+              <div class="col-lg-12 text-right" style="margin-bottom: 8%">
+               <pagination 
+                    ng-model="vm.sectionLast30MintContentData.currentPage"
+                    total-items="vm.sectionLast30MintContentData.data.length"
+                    max-size="3"  
+                     boundary-links="true"
+                      boundary-link-numbers="true"
+                      previous-text="&lsaquo;"
+                      next-text="&rsaquo;"
+                      first-text="&laquo;"
+                      last-text="&raquo;"
+                    items-per-page="vm.sectionLast30MintContentData.numPerPage"
+                    ng-change="sectionLast30MintPaging()">
+              </pagination>
+              </div>
+          </div>
+          <div id="Today" class="container-fluid" style="margin-top: 59px; height: 482px; background-color: white">
+              <div class="title-border-bottom">
+                  <label class="live-top-head-heading " style="background-color:#e8e3e3;padding: 10px; margin-bottom: 27px;">Today</label>
+                      <live-gear-configuration pdf-downlode="vm.pdfExport('Today')" jpeg-downlode="vm.jpegExport('Today')" update-data="vm.sectionTodayUpdate()"></live-gear-configuration>
+                      <pdf-generater options="dirPdfOptions"></pdf-generater>
+                      <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+              </div>
+              <table class="table">
+                   <div class="vm.sectionTodayContentData.data != 0">
+                        <tbody>
+                            <tr ng-repeat="sectionToday in vm.sectionToday" style="height: 43px;">
+                                <!-- <td class="padding-7 trading-Content" ng-click="vm.goToOtherPages('overview', sectionToday.articleId, sectionToday.publisher_pages)" style="cursor: pointer;" data-toggle="tooltip" data-placement="top" tooltip="{{sectionToday.type}}">{{sectionToday.type}}</td> -->
+                                 <td class="padding-7 trading-Content" data-toggle="tooltip" data-placement="top" tooltip="{{sectionToday.type}}">{{sectionToday.type}}</td>
+                                <td class="text-right padding-7 text-bold" >{{sectionToday.count}}</td>
+                            </tr>
+                        </tbody>
+                    </div>
+              </table>
+              <div ng-if="vm.sectionTodayContentData.data == 0" ng-repeat="message in vm.sectionTodayContentData.messageStatus">
+                  <p class="text-center" style="color: #64c1ac; margin-top: 60px; font-size: 20px;">{{message}}</p>
+              </div>
+          </div>
+          <div ng-if="vm.sectionTodayContentData.data.length > 11">
+              <div class="col-lg-12 text-right" style="margin-bottom: 3%">
+                   <pagination 
+                        ng-model="vm.sectionTodayContentData.currentPage"
+                        total-items="vm.sectionTodayContentData.data.length"
+                        max-size="3"  
+                        boundary-links="true"
+                        boundary-link-numbers="true"
+                        previous-text="&lsaquo;"
+                        next-text="&rsaquo;"
+                        first-text="&laquo;"
+                        last-text="&raquo;"
+                        items-per-page="vm.sectionTodayContentData.numPerPage"
+                        ng-change="sectionTodayContentDataPaging()">
+                  </pagination>
+              </div>
+          </div>
+    </div>
+</div>

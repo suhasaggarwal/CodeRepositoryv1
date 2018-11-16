@@ -1,0 +1,51 @@
+<div class="audience-interest-info">
+  <!--   <h5 class="text-bold card-heading">{{ vm.templateData.cardtitletemplate.audience_segment}}
+     {{vm.pageTamplate.audience_segment.display}}
+    </h5> -->
+    <h5 aman="nirav" class="text-bold head-heading">{{vm.pageTamplate.audience_segment.display}}</h5>
+    <div id="audience-interest" class="panel panel-flat">
+        <div class="container-fluid">
+            <span><gear-configuration pdf-downlode="vm.pdfExport('audience-interest')" jpeg-downlode="vm.jpegExport('audience-interest')" update-data="vm.audienceSegmentUpdate()" show-max-number="vm.maxNumberShow('show')" type="'audienceInterest'" ></gear-configuration>
+            <pdf-generater options="dirPdfOptions"></pdf-generater>
+            <jpeg-generater options="dirJpegOptions"></jpeg-generater></span>
+            <div>
+                <table id="example-advanced" class="table treetable" style="margin-top: 30px;">
+                    <thead>
+                    <tr>
+                        <th class="table-card-heading" style="font-weight: bold;">Interest Segment</th>
+                        <th class=" text-right table-card-heading" style="font-weight: bold;">Avg. Time (in min) </th>
+                        <th class=" text-right table-card-heading" style="font-weight: bold;">Visitors</th>
+                        <th class=" text-right table-card-heading" style="font-weight: bold;"><!-- 3rd Party Universe -->External Behaviour</th>
+                        <th class=" text-right table-card-heading" style="font-weight: bold;"><!-- {{ vm.selectMatricLabel }} -->Pageviews</th>
+                        <th class=" text-right col-lg-4" style="width: 100px;"></th>
+                    </tr>
+                    </thead>
+                    <div ng-if="vm.audienceSegment.responseData !=0">
+                        <tbody id="treeBody">
+                       
+                        </tbody>
+                    </div>
+                </table>
+                <div ng-if="vm.audienceSegment.responseData == 0" ng-repeat="message in vm.audienceSegment.messageStatus">
+                    <p class="text-center" style="color: #64c1ac; margin-top: 60px; font-size: 20px;">{{message}}</p>
+                </div>
+            </div>
+                <div ng-if="vm.audienceSegment.responseData.length > 10">
+                    <div class="col-lg-12 text-right" style="margin-bottom: 2%">
+                        <pagination 
+                              ng-model="vm.audienceSegment.currentPage"
+                              total-items="vm.audienceSegment.responseData.length"
+                              max-size="5"  
+                              boundary-links="true"
+                              boundary-link-numbers="true"
+                              previous-text="&lsaquo;"
+                              next-text="&rsaquo;"
+                              first-text="&laquo;"
+                              last-text="&raquo;"
+                              ng-change="audienceSegmentPaging()">
+                        </pagination>
+                    </div>                    
+                </div>
+        </div>
+    </div>
+</div>

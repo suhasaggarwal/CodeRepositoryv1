@@ -1,0 +1,80 @@
+<div class="col-md-4 panel panel-flat">
+    <div class="panel-heading">
+        <h5 class="text-bold"> Traffic Sources
+         <ul class="breadcrumb-elements pull-right">
+                        <li><a href="#" class="card-title-icon"><i class="icon-arrow-right15"></i></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle card-title-icon" data-toggle="dropdown">
+                                <i class="icon-gear"></i>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#"><i class="icon-database-refresh"></i> Update</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </h5>
+    </div>
+    <nvd3 options="vm.refferalTypeData.chartOptions" data="vm.refferalTypeData.chartData"></nvd3>
+    <table class="table datatable-fixed-left" width="100%">
+        <thead>
+            <tr>
+                <th>Channels</th>
+                <th class="text-right">Pageviews</th>
+                <th class="text-right">Share</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="source in vm.refferalTypeData.data">
+                <td>{{source.type}}</td>
+                <td class="text-right">{{source.count}}</td>
+                <td class="text-right">{{source.share}}%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="col-md-8 panel panel-flat">
+    <div class="panel-heading">
+        <h5 class="text-bold"> Top Referring Domain
+        <ul class="breadcrumb-elements pull-right">
+                        <li><a href="#" class="card-title-icon"><i class="icon-arrow-right15"></i></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle card-title-icon" data-toggle="dropdown">
+                                <i class="icon-gear"></i>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#"><i class="icon-database-refresh"></i> Update</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </h5>
+    </div>
+    <table class="table datatable-fixed-left" width="100%">
+        <thead>
+            <tr>
+                <th>Domain</th>
+                <th class="text-right">Links</th>
+                <th class="text-right">Share</th>
+                <th class="text-right">Pageviews</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="topreferal in vm.topRefferalData.data">
+                <td>{{topreferal.domainName}}</td>
+                <td class="text-right">{{topreferal.likes}}</td>
+                <td class="text-right">{{topreferal.share}}</td>
+                <td class="text-right">{{topreferal.count}}</td>
+                <td class="text-right">
+                     <div class="progress">
+                            <div class="progress-bar" style="width:{{topreferal.share}}%">
+                                <span class="sr-only"></span>
+                            </div>
+                        </div>
+                </td>               
+               
+            </tr>
+        </tbody>
+    </table>
+</div>

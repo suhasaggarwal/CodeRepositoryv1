@@ -1,0 +1,60 @@
+
+<div class="panel panel-flat row">
+    <div class="panel-heading ">
+       <!--  <ul class="breadcrumb-elements pull-right">
+            <li><a href="#" class="card-title-icon"><i class="icon-arrow-right15"></i></a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle card-title-icon" data-toggle="dropdown">
+                    <i class="icon-gear"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#" ng-click="vm.sectionContentDataUpdate()"><i class="icon-database-refresh"></i> Update</a></li>
+                </ul>
+            </li>
+        </ul> -->
+        <gear-configuration update-data="vm.sectionContentDataUpdate()"></gear-configuration>
+        <div class="col-lg-12">
+            <table class="table text-nowrap">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="text-nowrap">
+                            <h6>Post</h6></th>
+                        <th class="text-nowrap">
+                            <h6>Author</h6></th>
+                        <th class="text-nowrap">
+                            <h6>Trend</h6></th>
+                        <th class="text-nowrap">
+                            <h6>Vistors</h6></th>
+                        <th class="text-nowrap">
+                            <h6>Avg. Time (in min) </h6></th>
+                        <th class="text-nowrap">
+                            <h6>Pageviews</h6></th>
+                    </tr>
+                </thead>
+                <tbody ng-class="{'fade' : vm.sectionContentData.startFade}">
+                    <tr ng-hide="$index < vm.sectionContentData.start || $index > vm.sectionContentData.end " ng-repeat="post in vm.sectionContentData.data">
+                        <!-- <td>{{post.publisher_pages}}</td> -->
+                        <td>
+                            <img src="{{post.articleImage}}" style="width: 50px; height: 50px;padding-left: 0">
+                        </td>
+                        <td>
+                            <div style="width:290px; overflow-x:scroll">{{post.type}}</div>
+                        </td>
+                        <td>{{post.authorName}}</td>
+                        <td>-</td>
+                        <td>{{post.visitorCount}}</td>
+                        <td>{{post.averageTime}}min</td>
+                        <td>{{post.pageviews}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <paging class="small" page="vm.sectionContentData.currentPage" page-size="vm.sectionContentData.numPerPage" total="vm.sectionContentData.data.length" adjacent="1" show-prev-next="true" show-first-last="true" text-next-class="icon-arrow-right5" text-prev-class="icon-arrow-left5" text-first-class="icon-backward2" text-last-class="icon-forward3" paging-action="sectionContentPaging('Paging Clicked', page, pageSize, total)">
+                </paging>
+            </div>
+        </div>
+    </div>
+</div>

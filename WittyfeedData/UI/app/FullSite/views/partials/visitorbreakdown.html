@@ -1,0 +1,99 @@
+<div class="panel panel-flat">
+    <div class="panel-heading ">
+        <h5 class="text-bold">Visitor Breakdown</h5>
+    </div>
+    <div class="row">
+        <div class="table-responsive col-md-7">
+            <table class="table table-lg text-nowrap">
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="media-left col-md-8">
+                                <span class="text-muted">Visitor Type</span>
+                            </div>
+                            <div class="media-right col-md-4">
+                                <span class="text-muted text-right">Share</span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="visitor in vm.visitors.data">
+                        <td>
+                            <div class="media-left col-md-4">
+                                <small class="text-muted">{{visitor.type}}</small>
+                            </div>
+                            <div class="media-left col-md-4">
+                                <small class="text-muted">{{visitor.count}}</small>
+                            </div>
+                            <div class="media-right col-md-4">
+                                <h6 class="text-bold no-margin text-right">{{visitor.share}}</h6>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-5">
+            <nvd3 options="vm.visitors.chartOptions" data="vm.visitors.chartData"></nvd3>
+             <!--<a href="#" class="btn btn-xs btn-primary">View Audience Engagement </a>-->
+        </div>
+    </div>
+    <div class="panel-heading">
+        <h6 class="text-bold"> Devices</h6>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-lg text-nowrap">
+            <tbody>
+                <tr>
+                    <td class="col-md-6">
+                        <div class="media-left col-md-2">
+                            <i class="icon-laptop"></i>
+                        </div>
+                        <div class="media-left col-md-6">
+                            <span class="text-muted">Computer</span>
+                        </div>
+                        <div class="media-left col-md-2">
+                            <h6 class="text-bold no-margin">{{vm.deviceTypes[0]}}</h6>
+                        </div>
+                    </td>
+                    <td class="col-md-6">
+                        <div class="media-left col-md-2">
+                            <i class="icon-tablet"></i>
+                        </div>
+                        <div class="media-left col-md-6">
+                            <span class="text-muted">Mobile</span>
+                        </div>
+                        <div class="media-left col-md-2">
+                            <h6 class="text-bold no-margin">{{vm.deviceTypes[1]}}</h6>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-6">
+                        <div class="media-left col-md-2">
+                            <i class="icon-tablet"></i>
+                        </div>
+                        <div class="media-left col-md-6">
+                            <span class="text-muted">Tablet</span>
+                        </div>
+                        <div class="media-left col-md-2">
+                            <h6 class="text-bold no-margin">{{vm.deviceTypes[2]}}</h6>
+                        </div>
+                    </td>
+                    <td class="col-md-6">
+                        <div class="media-left col-md-2">
+                            <i class="icon-display4"></i>
+                        </div>
+                        <div class="media-left col-md-6">
+                            <span class="text-muted">Smart TV</span>
+                        </div>
+                        <div class="media-left col-md-2">
+                            <h6 class="text-bold no-margin">{{vm.deviceTypes[3]}}</h6>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

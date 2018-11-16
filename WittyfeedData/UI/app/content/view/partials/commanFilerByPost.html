@@ -1,0 +1,27 @@
+<div class="row">
+<div class="row" style="margin-left: 3px;margin-right: 3px;">
+<h5 class="text-bold title-border-bottom"><!-- Top Content -->
+        {{vm.pageTamplate.refcurrentoriginal.display}}
+        <gear-configuration pdf-downlode="vm.pdfExport('sectionContent')" jpeg-downlode="vm.jpegExport('sectionContent')" update-data="vm.sectionContentDataUpdate()"></gear-configuration>
+        <pdf-generater options="dirPdfOptions"></pdf-generater>
+        <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+    </h5>    
+</div>
+	<div class="tab-content" style="margin-bottom: 8px;">
+        <ul class="nav nav-tabs" style="margin-bottom:1px !important">
+           <!-- <li>
+                <h6 class="text-bold" style="margin-left:20px;">{{vm.filterName}}</h6>
+            </li>
+            <li role="presentation"><a href="javascript:void(0)" target="_blank" ng-click="vm.selectFilterFirst()" data-target="_self">{{vm.sectionName}}</a></li>
+            <li><a href="javascript:void(0)" target="_blank" ng-click="vm.selectFilterSecand()" data-target="_self">{{vm.tagName}}</a></li> -->
+            <li>
+                <li>
+                    <h6 class="text-bold" style="margin-left:20px;">Export as :</h6></li>
+            </li>
+             <!-- <js-xls onread="read">XLS</js-xls> -->
+            <li role="presentation"><a href="#" ng-click="vm.exportData(vm.sectionContentData.data)">XLS</a> </li>
+            <li><a href="javascript:void(0)" ng-csv="vm.sectionContentData.data" csv-header="vm.csvHeader" filename="Articles.csv">CSV</a></li>
+            <!--<li><a href="javascript:void(0)">PPT</a></li>-->
+        </ul>
+    </div>
+</div>

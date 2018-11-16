@@ -1,0 +1,193 @@
+<div>
+    <h5 class="text-bold head-heading"><!-- Top Content{{ vm.templateData.cardtitletemplate.refcurrentoriginal}} -->
+    {{vm.pageTamplate.refcurrentoriginal.display}}
+    </h5>    
+    <div class="row">
+        <div class="col-md-6">
+        <gear-configuration pdf-downlode="vm.pdfExport('article_titles')" jpeg-downlode="vm.jpegExport('article_titles')" update-data="vm.clickedArticleDataUpdate()" show-max-number="vm.maxNumberShow('show')" type="'articleEngagement'"></gear-configuration>
+                <pdf-generater options="dirPdfOptions"></pdf-generater>
+                <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+        <div class="panel container-fluid full-site-top-content">
+            <div style="height: 330px;" id="article_titles">
+                <table class="table datatable-fixed-left">
+                    <thead>
+                        <tr>
+                            <th class="text-left col-md-6 table-card-heading"><!-- Articles --></th>
+                            <th class="text-right col-md-6 table-card-heading">{{ vm.selectMatricLabel }}</th>
+                        </tr>
+                    </thead>
+                     <div ng-if="vm.clickedArticleData.data !=0">
+                        <tbody>
+                              <tr ng-repeat="articles in vm.clickedArticle">
+                                  <td class="full-site-trading-Content" ng-click="vm.goToOtherPages('overview', articles.articleId, articles.publisher_pages)" style="cursor: pointer;" data-toggle="tooltip" data-placement="top" tooltip="{{articles.type}}"><img ng-src="{{articles.articleImage}}" class="top-content-img" style="margin-right: 10px;">{{articles.type}}</td>
+                                  <td class="text-right text-bold">{{articles.count}}</td>
+                              </tr>
+                        </tbody>
+                    </div>
+                </table>
+                <div ng-if="vm.clickedArticleData.data == 0" ng-repeat="message in vm.clickedArticleData.messageStatus">
+                            <p class="text-center" style="color: #64c1ac; margin-top: 100px; font-size: 20px;">{{message}}</p>
+                </div>
+            </div>
+            <button class="btn btn-default top-content-button" ng-click="vm.goToOtherPages('topArticles')">View Details</button>
+           <!--  <div ng-if="vm.clickedArticleData.data.length > 6">                
+                    <div class="col-lg-12 text-right" style="padding-top: 12px;">
+                        <pagination 
+                              ng-model="vm.clickedArticleData.currentPage"
+                              total-items="vm.clickedArticleData.data.length"
+                              max-size="5"  
+                              boundary-links="true"
+                              boundary-link-numbers="true"
+                              previous-text="&lsaquo;"
+                              next-text="&rsaquo;"
+                              first-text="&laquo;"
+                              last-text="&raquo;"
+                              items-per-page="vm.clickedArticleData.numPerPage"
+                              ng-change="clickedArticleDataPaging()">
+                        </pagination>
+                    </div>
+            </div>   -->          
+            </div>
+        </div>
+        <div class="col-md-6" id="Sections">
+        <gear-configuration pdf-downlode="vm.pdfExport('Sections')" jpeg-downlode="vm.jpegExport('Sections')" update-data="vm.clickedArticleDataUpdate()" show-max-number="vm.maxNumberShow('show')" type="'articleEngagement'"></gear-configuration>
+                <pdf-generater options="dirPdfOptions"></pdf-generater>
+                <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+            <div class="panel container-fluid full-site-top-content">
+             <div style="height: 330px;">
+                <table class="table datatable-fixed-left" width="1000%">
+                    <thead>
+                        <tr>
+                            <th class="text-left col-md-6 table-card-heading">{{templateData.section.templateData.section.display}}</th>
+                            <th class="text-right col-md-6 table-card-heading">{{ vm.selectMatricLabel }}</th>
+                        </tr>
+                    </thead>
+                    <div ng-if="vm.sectionContentData.data !=0">
+                        <tbody>
+                            <tr ng-repeat="section in vm.sectionContent">
+                                <td class="full-site-trading-Content capitalize-text" ng-click="vm.goToOtherPages('section', section.sectionid, section.type)" style="cursor: pointer;">{{section.type}}</td>
+                                <td class="text-right text-bold">{{section.count}}</td>
+                            </tr>
+                        </tbody>
+                    </div>
+                </table>
+                <div ng-if="vm.sectionContentData.data == 0" ng-repeat="message in vm.sectionContentData.messageStatus">
+                            <p class="text-center" style="color: #64c1ac; margin-top: 100px; font-size: 20px;">{{message}}</p>
+                </div>
+            </div>
+            <button class="btn btn-default top-content-button" ng-click="vm.goToOtherPages('sectionSummary')">View Details</button>
+            <!-- <div ng-if="vm.sectionContentData.data.length > 6">               
+                    <div class="col-lg-12 text-right" style="padding-top: 12px;">
+                        <pagination 
+                              ng-model="vm.sectionContentData.currentPage"
+                              total-items="vm.sectionContentData.data.length"
+                              max-size="5"  
+                              boundary-links="true"
+                              boundary-link-numbers="true"
+                              previous-text="&lsaquo;"
+                              next-text="&rsaquo;"
+                              first-text="&laquo;"
+                              last-text="&raquo;"
+                              items-per-page="vm.sectionContentData.numPerPage"
+                              ng-change="sectionContentDataPaging()">
+                        </pagination>
+                    </div>
+                </div> -->           
+            </div>
+        </div>
+   </div> 
+    <div class="row">
+        <div id="Topic" class="col-md-6">
+                <gear-configuration pdf-downlode="vm.pdfExport('Topic')" jpeg-downlode="vm.jpegExport('Topic')" update-data="vm.clickedArticleDataUpdate()" show-max-number="vm.maxNumberShow('show')" type="'articleEngagement'"></gear-configuration>
+                <pdf-generater options="dirPdfOptions"></pdf-generater>
+                <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+            <div class="panel container-fluid full-site-top-content">
+             <div style="height: 330px;">
+                <table class="table datatable-fixed-left">
+                    <thead>
+                        <tr>
+                            <th class="table-card-heading">{{templateData.topic.templateData.tag.display}}</th>
+                            <th class="text-right table-card-heading">{{ vm.selectMatricLabel }}</th>
+                        </tr>
+                    </thead>
+                    <div ng-if="vm.tagContentData.data !=0">
+                        <tbody>
+                            <tr ng-repeat="tag in vm.tagContent">
+                                <td class="capitalize-text" ng-click="vm.goToOtherPages('topic', tag.tagId, tag.type)" style="cursor: pointer;">{{tag.type}}</td>
+                                <td class="text-right text-bold">{{tag.count}}</td>
+                            </tr>
+                        </tbody>
+                    </div>
+                </table>
+                <div ng-if="vm.tagContentData.data == 0" ng-repeat="message in vm.tagContentData.messageStatus">
+                            <p class="text-center" style="color: #64c1ac; margin-top: 100px; font-size: 20px;">{{message}}</p>
+                </div>
+            </div>
+            <button class="btn btn-default top-content-button" ng-click="vm.goToOtherPages('topicSummary')">View Details</button>
+            <!-- <div ng-if="vm.tagContentData.data.length > 6">               
+                    <div class="col-lg-12 text-right" style="padding-top: 12px;">
+                        <pagination 
+                              ng-model="vm.tagContentData.currentPage"
+                              total-items="vm.tagContentData.data.length"
+                              max-size="5"  
+                              boundary-links="true"
+                              boundary-link-numbers="true"
+                              previous-text="&lsaquo;"
+                              next-text="&rsaquo;"
+                              first-text="&laquo;"
+                              last-text="&raquo;"
+                              items-per-page="vm.tagContentData.numPerPage"
+                              ng-change="tagContentDataPaging()">
+                        </pagination>
+                    </div>
+                </div> -->
+            </div>            
+        </div>
+        <div class="col-md-6" id="Authors">
+        <gear-configuration pdf-downlode="vm.pdfExport('Authors')" jpeg-downlode="vm.jpegExport('Authors')" update-data="vm.clickedArticleDataUpdate()" show-max-number="vm.maxNumberShow('show')" type="'articleEngagement'"></gear-configuration>
+                <pdf-generater options="dirPdfOptions"></pdf-generater>
+                <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+            <div class="panel container-fluid full-site-top-content">
+                <div style="height: 330px;">
+                    <table class="table datatable-fixed-left">
+                            <thead>
+                                <tr>
+                                    <th class="table-card-heading">{{templateData.author.templateData.Author.display}}</th>
+                                    <th class="text-right table-card-heading">{{ vm.selectMatricLabel }}</th>
+                                </tr>
+                            </thead>
+                            <div ng-if="vm.authorsContentData.data !=0">
+                                <tbody>
+                                    <tr ng-repeat="section in vm.authorsContent">
+                                        <td class="text-left capitalize-text" ng-click="vm.goToOtherPages('author', section.authorId, section.type)" style="cursor: pointer;">{{section.type}}</td>
+                                        <td class="text-right text-bold">{{section.count}}</td>
+                                    </tr>
+                                </tbody>
+                            </div>
+                    </table>
+                    <div ng-if="vm.authorsContentData.data == 0" ng-repeat="message in vm.authorsContentData.messageStatus">
+                            <p class="text-center" style="color: #64c1ac; margin-top: 100px; font-size: 20px;">{{message}}</p>
+                    </div>
+                </div>
+                <button class="btn btn-default top-content-button" ng-click="vm.goToOtherPages('authorSummary')">View Details</button>
+<!--                 <div ng-if="vm.authorsContentData.data.length > 6">
+                        <div class="col-lg-12 text-right" style="padding-top: 12px;">
+                            <pagination 
+                                  ng-model="vm.authorsContentData.currentPage"
+                                  total-items="vm.authorsContentData.data.length"
+                                  max-size="5"  
+                                  boundary-links="true"
+                                  boundary-link-numbers="true"
+                                  previous-text="&lsaquo;"
+                                  next-text="&rsaquo;"
+                                  first-text="&laquo;"
+                                  last-text="&raquo;"
+                                  items-per-page="vm.authorsContentData.numPerPage"
+                                  ng-change="authorsContentDataPaging()">
+                            </pagination>
+                        </div>
+                    </div>  -->              
+            </div>
+        </div>       
+    </div>
+</div>

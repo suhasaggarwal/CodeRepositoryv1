@@ -1,0 +1,137 @@
+<div id="visitor" class="panel container-fluid overview-key-metrics-card">
+    <div class="panel-heading ">
+        <h5 class="text-bold title-border-bottom card-heading"><span ng-click="vm.goToOtherPages('visitorType')" style="cursor: pointer;">{{vm.pageTamplate.visitorType.display}}</span>
+             <gear-configuration pdf-downlode="vm.pdfExport('visitor')" jpeg-downlode="vm.jpegExport('visitor')" update-data="vm.genderDataUpdate()"></gear-configuration>
+                        <pdf-generater options="dirPdfOptions"></pdf-generater>
+                        <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+        </h5>
+    </div>
+    <div class="row">
+        <div class="table-responsive col-md-7" style="height: 200px;">
+            <table class="table text-nowrap">
+                <thead>
+                    <tr>
+                        <th class="text-bold table-card-heading">Visitor Type</th>
+                        <th class="text-center text-bold table-card-heading" style="padding: 0px;">{{ vm.selectMatricLabel }}</th>
+                       <!--  <th style="padding-left: 0px;"></th> -->
+                    </tr>
+                </thead>
+                <div ng-if="vm.visitors.data != 0">
+                    <tbody>
+                        <tr ng-repeat="visitor in vm.visitors.data" ng-click="vm.goToOtherPages('visitorType')" style="cursor: pointer">
+                            <td ><span class="color-span pull-left" style="margin-right: 5px;margin-top: 3px; margin-left: 5px; border-color: {{visitor.color}}"></span>{{visitor.type}}</td>
+                            <td class="text-right text-bold">{{visitor.count}}</td>
+                        </tr>
+                </tbody>    
+                </div>
+            </table>
+            <div ng-if="vm.visitors.data == 0" ng-repeat="message in vm.visitors.messageStatus">
+                <p class="text-center" style="color: #64c1ac; margin-top: 85px;font-size: 20px;">{{message}}</p>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <nvd3 options="vm.visitors.chartOptions" data="vm.visitors.chartData"></nvd3>
+             <!--<a href="#" class="btn btn-xs btn-primary">View Audience Engagement </a>-->
+        </div>
+    </div>
+    <div class="panel-heading no-padding-top-bottom">
+        <div class="col-md-5" style="padding: 0px;">
+            <p class="text-bold table-card-heading" ng-click="vm.goToOtherPages('deviceProfile')" style="cursor: pointer;">
+                {{vm.pageTamplate.device.display}}
+            </p>
+        </div>
+        <div class="col-md-7" style="padding: 0px;">
+            <p class="text-bold table-card-heading">{{vm.selectMatricLabel}}</p>
+        </div>
+    </div>
+    <div>    
+        <table class="table text-nowrap">
+            <tbody>
+                <tr>
+                    <td ng-show="vm.deviceTypes.data[0]">
+                        <div class="media-left col-md-1">
+                            <i class="icon-laptop visitor-device-size" style="font-size: 175%;"></i>
+                        </div>
+                        <div class="media-left col-md-3" ng-click="vm.goToOtherPages('deviceTypeProfile', vm.deviceTypes.deviceTypeId[0], vm.deviceTypes.data[0])" style="cursor: pointer;">
+                            <span class="" >Computer</span>
+                        </div>
+                        <div class="text-right col-md-3" style="padding-right: 20px;">
+                            <span class="text-right no-margin text-bold">{{vm.deviceTypes.data[0]}}</span>
+                        </div>
+                        <div class="media-left col-md-5">
+                            <div class="progress" data-toggle="tooltip" tooltip="{{vm.deviceTypes.shareData[0] ? vm.deviceTypes.shareData[0] : 0}}%" tooltip-placement="top" >
+                                <div class="progress-bar" style="width:{{vm.deviceTypes.scaledShareDate[0]}}%">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td ng-show="vm.deviceTypes.data[1]">                    
+                        <div class="media-left col-md-1">
+                            <i class="icon-mobile visitor-device-size" style="font-size: 175%;"></i>
+                        </div>
+                        <div class="media-left col-md-3" ng-click="vm.goToOtherPages('deviceTypeProfile', vm.deviceTypes.deviceTypeId[1], vm.deviceTypes.data[1])" style="cursor: pointer;">
+                            <span class="">Mobile</span>
+                        </div>
+                         <div class="text-right col-md-3" style="padding-right: 20px;">
+                            <span class="text-right no-margin text-bold">{{vm.deviceTypes.data[1]}}</span>
+                        </div>
+                       <div class="media-left col-md-5">
+                            <div class="progress" data-toggle="tooltip" data-placement="top" tooltip="{{vm.deviceTypes.shareData[1] ? vm.deviceTypes.shareData[1] : 0}}%">
+                                <div class="progress-bar" style="width:{{vm.deviceTypes.scaledShareDate[1]}}%">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td ng-show="vm.deviceTypes.data[2]">
+                        <div class="media-left col-md-1">
+                            <i class="icon-tablet visitor-device-size" style="font-size: 175%;"></i>
+                        </div>
+                        <div class="media-left col-md-3" ng-click="vm.goToOtherPages('deviceTypeProfile', vm.deviceTypes.deviceTypeId[2], vm.deviceTypes.data[2])" style="cursor: pointer;">
+                            <span class="">Tablet</span>
+                        </div>
+                         <div class="text-right col-md-3" style="padding-right: 20px;">
+                            <span class="text-right no-margin text-bold">{{vm.deviceTypes.data[2]}}</span>
+                        </div>
+                        <div class="media-left col-md-5">
+                            <div class="progress" data-toggle="tooltip" data-placement="top" tooltip="{{vm.deviceTypes.shareData[2] ? vm.deviceTypes.shareData[2] : 0}}%">
+                                <div class="progress-bar" style="width:{{vm.deviceTypes.scaledShareDate[2]}}%">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td ng-show="vm.deviceTypes.data[3]">
+                        <div class="media-left col-md-1">
+                            <i class="icon-display4 visitor-device-size" style="font-size: 175%;"></i>
+                        </div>
+                        <div class="media-left col-md-3" ng-click="vm.goToOtherPages('deviceTypeProfile', vm.deviceTypes.deviceTypeId[3], vm.deviceTypes.data[3])" style="cursor: pointer;">
+                            <span class="">Smart TV</span>
+                        </div>
+                        <div class="text-right col-md-3" style="padding-right: 20px;">
+                            <span class="text-right no-margin text-bold">{{vm.deviceTypes.data[3]}}</span>
+                        </div>
+                        <div class="media-left col-md-5">
+                            <div class="progress" data-toggle="tooltip" data-placement="top" 
+                            tooltip="{{vm.deviceTypes.shareData[3] ? vm.deviceTypes.shareData[3] : 0}}%">
+                                <div class="progress-bar" style="width:{{vm.deviceTypes.scaledShareDate[3]}}%">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <div ng-if="vm.deviceTypes.deviceData == 0" ng-repeat="message in vm.deviceTypes.messageStatus">
+                        <p class="text-center" style="color: #64c1ac; margin-top: 65px; font-size: 20px;">{{message}}</p>
+            </div>
+        </table>
+    </div>
+</div>

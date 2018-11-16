@@ -1,0 +1,126 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="text-bold">Device Traffic</h5>
+            </div>
+            <div class="container-fluid container-fluid-audience">
+                <nvd3 options="vm.deviceTypes.chartOptions" data="vm.deviceTypes.chartData"></nvd3>
+                 <table class="table table-lg text-nowrap">
+                <thead>
+                    <tr>                       
+                        <th class="text-muted">Device</th>
+                        <th class="text-muted">{{ vm.selectMatricLabel }}</th>
+                        <th class="media-right">Share</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="visitor in vm.deviceTypes.data">
+                        <td>{{visitor.type}}</td>
+                        <td>{{visitor.count }}</td>
+                        <td>
+                            <div class="media-right col-md-4">
+                                    <h6 class="text-bold no-margin text-right">{{visitor.share}}%</h6>
+                                </div>
+                        </td>                     
+                    </tr>
+                </tbody>
+            </table>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+           <date-series-chart id="container" option="vm.totalPageViewsByDate.chartData" style="min-width: 310px; height: 350px; margin: 0 auto"></date-series-chart>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="text-bold">Engagement by Device</h5>
+            </div>
+           <date-series-chart id="container" option="vm.totalPageViewsByDate.chartData" style="min-width: 310px; height: 350px; margin: 0 auto"></date-series-chart>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="text-bold"> </h5>
+           <date-series-chart id="container" option="vm.totalPageViewsByDate.chartData" style="min-width: 310px; height: 350px; margin: 0 auto"></date-series-chart>
+        </div>
+    </div>
+</div>
+</div>
+<div>
+    <ul class="nav nav-tabs margin-left-0" style="margin-bottom:5px !important; border-bottom: none;">
+        <li><a href="javascript:void(0)" ng-click="vm.selectDevice()">Device</a></li>
+        <li><a href="javascript:void(0)" ng-click="vm.selectBrand()">Brand</a></li>
+        <li><a href="javascript:void(0)" ng-click="vm.selectService()">Service Provider</a></li>
+        <li><a href="javascript:void(0)" ng-click="vm.selectOperating()">Operating System</a></li>
+        <li><a href="javascript:void(0)" ng-click="vm.selectScreen()">Screen Sige</a></li>
+        <li><a href="javascript:void(0)" ng-click="vm.selectOrgnization()">Organization</a></li>
+        <li class="dropdown media-right">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-bold">{{vm.selectDrodown }}<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="javascript:void(0)" ng-click="vm.topPageViewsFilter('visitors')">Visitors</a></li>
+                <li><a href="javascript:void(0)" ng-click="vm.topPageViewsFilter('pageviews')">Pageviews</a></li>
+                <li><a href="javascript:void(0)" ng-click="vm.topPageViewsFilter('engagement')">Engagement Time</a>
+            </ul>
+            </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="panel panel-flat">
+        <table class="table text-nowrap">
+            <thead>
+                <tr>
+                    <th>Brand Name</th>
+                    <th class="text-right">Thrend</th>
+                    <th class="text-right">Vistors</th>
+                    <th class="text-right">Avg. Time (in min)</th>
+                    <th class="text-right">{{ vm.selectMatricLabel }}</th>
+                    <th class="text-right"></th>
+                </tr>
+            </thead>
+            <tbody ng-class="{'fade' : vm.audienceSegmentDevice.startFade}">
+                <tr ng-hide="$index < vm.audienceSegmentDevice.start || $index > vm.audienceSegmentDevice.end " ng-repeat="profile in vm.audienceSegmentDevice.data">
+                    <td>{{profile.type}}</td>
+                    <td class="text-right">-</td>
+                    <td class="text-right">-</td>
+                    <td class="text-right">-</td>
+                    <td class="text-right">{{profile.count}}</td>
+                    <td class="text-right">
+                        <div class="progress">
+                            <div class="progress-bar" style="width:{{profile.share}}%">
+                                <span class="sr-only"></span>
+                            </div>
+                        </div>                       
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="col-lg-12 text-center">
+            <paging 
+                    class="small"
+                    page="vm.audienceSegmentDevice.currentPage"
+                    page-size="vm.audienceSegmentDevice.numPerPage"
+                    total="vm.audienceSegmentDevice.data.length"
+                    adjacent="1"
+                    show-prev-next="true"
+                    show-first-last="true"
+                    text-next-class="icon-arrow-right5"
+                    text-prev-class="icon-arrow-left5"
+                    text-first-class="icon-backward2"
+                    text-last-class="icon-forward3"
+                    paging-action="audienceSegmentDevicePaging('Paging Clicked', page, pageSize, total)"
+             >
+            </paging>
+                </div>
+    </div>
+</div>

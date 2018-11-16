@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd">
+
+	<diskStore path="java.io.tmpdir" />
+
+	<!--cacheManagerPeerProviderFactory
+		class="net.sf.ehcache.distribution.RMICacheManagerPeerProviderFactory"
+		properties="peerDiscovery=manual,rmiUrls=//127.0.0.1:40002/keyCodeRepository"
+		/-->
+<!--  
+	<cacheManagerPeerProviderFactory
+		class="net.sf.ehcache.distribution.jgroups.JGroupsCacheManagerPeerProviderFactory"
+		properties="connect=TCP(start_port=7900):
+        TCPPING(initial_hosts=127.0.0.1[7800],127.0.0.1[7900];port_range=10;timeout=3000;
+        		num_initial_members=3;up_thread=true;down_thread=true):
+        VERIFY_SUSPECT(timeout=1500;down_thread=false;up_thread=false):
+        pbcast.NAKACK(down_thread=true;up_thread=true;gc_lag=100;retransmit_timeout=3000):
+        pbcast.GMS(join_timeout=5000;join_retry_timeout=2000;shun=false;
+        		print_local_addr=false;down_thread=true;up_thread=true)"   
+		propertySeparator="::"/>
+  -->
+	
+	<!--cacheManagerPeerListenerFactory
+		class="net.sf.ehcache.distribution.RMICacheManagerPeerListenerFactory"
+		properties="hostName=127.0.0.1, port=40001, socketTimeoutMills=2000" /-->
+
+	<cache name="keyCodeRepository" maxElementsInMemory="2160000"
+		eternal="false" overflowToDisk="true" diskPersistent="false"
+		diskExpiryThreadIntervalSeconds="120">
+		
+		<!--cacheEventListenerFactory
+			class="net.sf.ehcache.distribution.RMICacheReplicatorFactory"
+			properties="replicateAsynchronously=true, replicatePuts=true, replicateUpdates=true, replicateUpdatesViaCopy= false, replicateRemovals= true" /-->
+	</cache>
+
+	<defaultCache maxElementsInMemory="1000000" eternal="false"
+		overflowToDisk="true" timeToIdleSeconds="360000" timeToLiveSeconds="360000"
+		diskPersistent="false" diskExpiryThreadIntervalSeconds="120" />
+</ehcache>

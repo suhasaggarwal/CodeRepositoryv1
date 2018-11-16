@@ -1,0 +1,139 @@
+<div class="row">
+        <div class="col-lg-12 audience-header-content">
+            <cr-audience-header-dir></cr-audience-header-dir>
+        </div>
+</div>
+<div class="tab-menu">
+    <div id="menu-center" class="row">
+        <div id="sticky-anchor"></div>
+            <ul class="nav nav-tabs" id="sticky-nav" style="margin-bottom:5px !important">                
+                <li class="pull-right pageview-section">
+                    <label  class="audience-keymetric-label">{{ vm.selectMatricLabel }} : </label>
+                    <ul class="breadcrumb-elements pull-right">
+                        <li class="dropdown">
+                       <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon-fix" style="background-color: transparent"><b class="caret"></b></a>
+                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                <li ng-repeat="value in vm.templateData.dropdownValues.keyMetric">
+                                    <a href="javascript:void(0)" ng-click="vm.keyMetricFitler( value.apifilter )">{{ value.dropdown }}</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class=" row panel content-row">
+	<div id="traffic" class=" panel-flat">
+        <div class="panel-heading sources-card">
+            <h5 class="text-bold title-border-bottom">
+            {{vm.pageTamplate.referrerType.display}}
+                    <gear-configuration pdf-downlode="vm.pdfExport('traffic')" jpeg-downlode="vm.jpegExport('traffic')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+                    <pdf-generater options="dirPdfOptions"></pdf-generater>
+                    <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+            </h5>
+            <div class="col-lg-3">
+             	<nvd3  options="vm.refferalTypeData.chartOptions" data="vm.refferalTypeData.chartData"></nvd3>
+            </div>
+            <h1></h1>
+            <div class="col-lg-9">
+                <table class="table" width="100%">
+                    <thead>
+                    <tr>
+                        <th class="text-bold">Channels</th>
+                        <th class="text-right text-bold">Pageviews</th>
+                        <th></th>
+                        <th class="text-right text-bold">Links</th>
+                        <th class="text-right text-bold">Visitors</th>
+                        <th class="text-right text-bold">Avg. Time (in min) </th>
+                        <th class="text-right text-bold">Total Time Spent</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="source in vm.refferalTypeData.data">
+                        <td ng-click="vm.goToOtherPages(vm.pageMap['Source'])" style="cursor: pointer;"><span class="color-span pull-left" style="margin-right: 5px;margin-top: 3px; margin-left: 5px; border-color: {{source.color}}"></span>{{source.type}}</td>
+                        <td class="text-right text-bold">{{source.count }}</td>
+                        <td class="text-right padding-12">
+                            <div class="progress age-group-progressbar" data-toggle="tooltip" data-placement="top" tooltip="{{source.share ? source.share : 0}}%">
+                                <div class="progress-bar" style="width:{{source.scaledShare}}%">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-right text-bold">{{source.likes}}</td>
+                        <td class="text-right text-bold">{{source.visitorCount}}</td>
+                        <td class="text-right text-bold">{{source.avgTime}}</td>
+                        <td class="text-right text-bold">{{source.engagementTime}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div ng-if="vm.topRefferalData.data == 0" ng-repeat="message in vm.topRefferalData.messageStatus">
+                    <p class="text-center" style="color: #64c1ac; margin-top: 60px; font-size: 20px;">{{message}}</p>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+<div class="row content-row">
+        <div class="panel panel-flat">
+	        <div id="domain" class="panel-heading">
+	            <h5 class="text-bold title-border-bottom">{{vm.pageTamplate.reforiginal.display}}
+	             <gear-configuration pdf-downlode="vm.pdfExport('domain')" jpeg-downlode="vm.jpegExport('domain')" update-data="vm.topRefferalDataUpdate()"></gear-configuration>
+	                    <pdf-generater options="dirPdfOptions"></pdf-generater>
+	                    <jpeg-generater options="dirJpegOptions"></jpeg-generater>
+	            </h5>
+	            <table id="example-domain-advanced" class="table treetable">
+	                <thead>
+	                    <tr>
+	                        <th style="font-weight: bold;">Domain</th>
+	                        <th style="font-weight: bold;">Channel</th>
+	                        <th class="text-right" style="font-weight: bold;">Avg. Time (in min)</th>
+	                        <th class="text-right" style="font-weight: bold;">Visitors</th>
+	                        <th class="text-right" style="font-weight: bold;">Likes</th>
+	                        <th class="text-right" style="font-weight: bold;">Pageviews</th>
+	                        <th class="text-right" style="width: 115px;"></th>
+	                    </tr>
+	                    </thead>
+	                    <div ng-if="vm.topRefferalData.data !=0">
+		                    <!-- <tbody ng-class="{'fade' : vm.topRefferalData.startFade}">
+			                    <tr ng-hide="$index < vm.topRefferalData.start || $index > vm.topRefferalData.end " ng-repeat="topReffer in vm.topRefferalData.data">
+				                    <td>{{topReffer.type}}</td>
+				                    <td class="text-right">-</td>
+				                    <td class="text-right">{{topReffer.avgTime}}</td>
+				                     <td class="text-right">{{topReffer.visitorCount}}</td>
+				                     <td class="text-right">{{topReffer.likes}}</td>
+					                <td class="text-right">{{topReffer.count | number:0}}</td>
+					                <td class="text-right padding-12">
+		                                <div class="progress age-group-progressbar" data-toggle="tooltip" data-placement="top" title="{{topReffer.share}}%">
+		                                    <div class="progress-bar" style="width:{{topReffer.share}}%">
+		                                        <span class="sr-only"></span>
+		                                    </div>
+		                                </div>
+		                            </td>
+		                		</tr>
+		                    </tbody> -->
+	                    </div>
+	            </table>
+	            <div ng-if="vm.topRefferalData.data == 0" ng-repeat="message in vm.topRefferalData.messageStatus">
+                    <p class="text-center" style="color: #64c1ac; margin-top: 60px; font-size: 20px;">{{message}}</p>
+                </div>
+		        <div ng-if="vm.topRefferalData.data.length > 10">
+	                    <div class="text-right">
+	                        <pagination 
+	                              ng-model="vm.topRefferalData.currentPage"
+	                              total-items="vm.topRefferalData.data.length"
+	                              max-size="5"  
+	                              boundary-links="true"
+                                  boundary-link-numbers="true"
+                                  previous-text="&lsaquo;"
+                                  next-text="&rsaquo;"
+                                  first-text="&laquo;"
+                                  last-text="&raquo;"
+	                              ng-change="topRefferalPaging()">
+	                        </pagination>
+	                    </div>	                
+	            </div>
+            </div>
+   		</div>
+    </div>

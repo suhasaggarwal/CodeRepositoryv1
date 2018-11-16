@@ -1,0 +1,263 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><img src="app/styles/images/cr_insights-logo.png" alt="" style="width: 100%; height: 100%"></a>
+        <ul class="nav navbar-nav pull-right visible-xs-block">
+            <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+            <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-mobile">   
+        <div >
+         <ul class="nav navbar-nav">
+            <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+        </ul>
+        </div>
+       
+        <div class="col-lg-4">
+             <select-site-id></select-site-id>
+        </div>
+        
+             <ul class="nav navbar-nav navbar-right" ng-controller="userCtrl">
+            <li class="dropdown dropdown-user">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="app/styles/images/image.png" alt="">
+                    <span>{{loggedInUserData.firstname}} {{ loggedInUserData.lastname }}</span>
+                    <i class="caret"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <!-- <li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+                    <li><a href="#"><i class="icon-coins"></i> My balance</a></li>
+                    <li><a href="#"><span class="badge badge-warning pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="icon-cog5"></i> Account settings</a></li> -->
+                    <li><a href="javascript:void(0);" ng-click="logOut();"><i class="icon-switch2"></i> Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+       
+       
+    </div>
+</div>
+<!-- /main navbar -->
+<!-- Page container -->
+<div class="page-container">
+    <!-- Page content -->
+    <div class="page-content">
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-main sidebar-fixed">
+            <div class="sidebar-content">
+                <!-- User menu -->
+                <div class="sidebar-user">
+                    <div class="category-content">
+                        <div class="media">
+                            <a href="#" class="media-left"><img src="app/styles/images/image.png" class="img-circle img-sm" alt=""></a>
+                            <div class="media-body">
+                                <span class="media-heading text-semibold">{{loggedInUserData.firstname}} {{ loggedInUserData.lastname }}</span>
+                                <div class="text-size-mini text-muted">
+                                    <i class="icon-pin text-size-small"></i> &nbsp;{{loggedInUserData.state}} , {{ loggedInUserData.city }}
+                                </div>
+                            </div>
+                            <!-- <div class="media-right media-middle">
+                                <ul class="icons-list">
+                                    <li>
+                                        <a href="#"><i class="icon-cog3"></i></a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /user menu -->
+                <!-- Main navigation -->
+                <div class="sidebar-category sidebar-category-visible" >
+                    <div class="category-content no-padding">
+                        <ul id="leftNavBar" class="navigation navigation-main navigation-accordion">
+                            <!-- Main -->
+                            <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+                            <li>
+                                <a ui-sref="home.fullsite" id="fullSiteNavLink"><i class="icon-home4"></i> <span>{{templateData.fullSite.pageName}}</span></a>
+                            </li>
+                            <!--<li>
+                                <a ui-sref="home.overview"><i class="icon-home4"></i> <span>Article</span></a>
+                            </li>-->
+                            <li>
+                                <a ui-sref="home.liveview" id="liveNavLink"><i class="icon-stack"></i> <span><!-- Live View -->{{templateData.liveView.pageName}}</span></a>
+                            </li>
+                             <li>
+                                <a class=" has-ul" id="sourceNavLink">
+                                    <i class="icon-home4"></i>
+                                    <span><!-- Source -->{{templateData.source.pageName}}</span>
+                                </a>
+                                <ul class="hidden-ul" style="margin-left: -15px;">
+                                    <li>
+                                        <a ui-sref="home.sourceTraffic" id="sourceTrafficNavLink">
+                                            <i class="icon-home4"></i>
+                                            <span><!-- Traffic Source -->{{templateData.source.children.trafficSourceSummary.pageName}}</span></a>
+                                    </li>
+                                    <!--<li>
+                                        <a ui-sref="home.sourceTrafficDetails">
+                                            <i class="icon-home4"></i>
+                                            <span>Traffic Source Details</span></a>
+                                    </li>-->
+                                    
+                                </ul>
+                            </li>                                                   
+                            <!--<li>
+                                <a ui-sref="home.segmentdetails">
+                                    <i class="icon-home4"></i>
+                                    <span>Segment Details</span></a>
+                            </li>-->
+                            <li>
+                                <a class=" has-ul" id="audienceNavLink">
+                                    <i class="icon-home4"></i>
+                                    <span><!-- Audience -->{{templateData.audience.pageName}}</span>
+                                </a>
+                                <ul class="hidden-ul" style="margin-left: -15px;">
+                                    <li>
+                                        <a ui-sref="home.audience_segment" id="audienceSegmentNavLink">
+                                            <i class="icon-home4"></i>
+                                            <span><!-- Audience Segment -->{{templateData.audience.children.audienceSegmentGender.pageName}}</span></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="home.audience_agegroup" id="ageGroupNavLink">
+                                            <i class="icon-home4"></i>
+                                            <span><!-- Age Group -->{{templateData.audience.children.ageGroup.pageName}}</span></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="home.audience_gendertraffic" id="genderTrafficNavLink">
+                                            <i class="icon-home4"></i>
+                                            <span><!-- Gender Traffic -->{{templateData.audience.children.genderTraffic.pageName}}</span></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="home.audience_incomelevel" id="incomeLevelNavLink">
+                                            <i class="icon-home4"></i>
+                                            <span><!-- Income Level -->{{templateData.audience.children.incomeLevel.pageName}}</span></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="home.audience_deviceprofile" id="deviceProfileNavLink">
+                                            <i class="icon-home4"></i>
+                                            <span><!-- Device Profile -->{{templateData.audience.children.deviceProfile.pageName}}</span></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="home.audience_audiencegeography" id="audienceGeographyNavLink">
+                                            <i class="icon-home4"></i>
+                                            <span><!-- Audience Geography -->{{templateData.audience.children.audienceGeography.pageName}}</span></a>
+                                    </li>
+                                     <li>
+                                        <a ui-sref="home.audience_visitortype" id="visitorTypeNavLink">
+                                            <i class="icon-home4"></i>
+                                            <span><!-- Visitor Type -->{{templateData.audience.children.visitorType.pageName}}</span></a>
+                                    </li>
+                                </ul>
+                            </li>                            
+                            <!--<li>
+                                <a ui-sref="home.section"><i class="icon-home4"></i> <span>Section</span></a>
+                            </li>-->
+                             <li>
+                                <a class="has-ul" id="contentNavLink">
+                                    <i class="icon-home4"></i>
+                                    <span><!-- Content -->{{templateData.content.pageName}}</span>
+                                </a>
+                                <ul class="hidden-ul" style="margin-left: -15px;">
+                                    <!--<li>
+                                        <a ui-sref="home.content_author">
+                                            <i class="icon-home4"></i>
+                                            <span>Author</span></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="home.content_topic">
+                                            <i class="icon-home4"></i>
+                                            <span>Topic</span></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="home.content_userexplorer">
+                                            <i class="icon-home4"></i>
+                                            <span>User Explorer</span></a>
+                                    </li>-->
+                                    <li>
+                                        <a ui-sref="home.content_authorsummary" id="authorSummaryNavLink">
+                                            <i class="icon-home4"></i>
+                                            <span><!-- Author Summary -->{{templateData.content.children.authorSummary.pageName}}</span></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="home.content_topicsummary" id="topicSummaryNavLink">
+                                            <i class="icon-home4"></i>
+                                            <span><!-- Topic Summary -->{{templateData.content.children.topicSummary.pageName}}</span></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="home.content_toparticles" id="topArticlesNavLink">
+                                            <i class="icon-home4"></i>
+                                            <span><!-- Top Articles -->{{templateData.content.children.topArticles.pageName}}</span></a>
+                                    </li>
+                                     <li>
+                                        <a ui-sref="home.section_summary" id="sectionSummaryNavLink">
+                                            <i class="icon-home4"></i>
+                                            <span><!-- Section Summary -->{{templateData.content.children.sectionSummary.pageName}}</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a ui-sref="home.engagement_frequency" id="engagementNavLink">
+                                    <i class="icon-home4"></i>
+                                    <span><!-- Engagement -->{{templateData.engagement.pageName}}</span></a>
+                            </li>
+                            <!-- <li>
+                                <a class="has-ul">
+                                    <i class="icon-home4"></i>
+                                    <span>Engagement</span>
+                                </a>
+                                <ul class="hidden-ul">
+                                    <li>
+                                        <a ui-sref="home.engagement_frequency">
+                                            <i class="icon-home4"></i>
+                                            <span>Frequency</span></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="home.engagement_timespent">
+                                            <i class="icon-home4"></i>
+                                            <span>Time Spent</span></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="home.engagement_pagedepth">
+                                            <i class="icon-home4"></i>
+                                            <span>Page Depth</span></a>
+                                    </li>
+                                     <li>
+                                        <a ui-sref="home.engagement_recency">
+                                            <i class="icon-home4"></i>
+                                            <span>Recency Secsion</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </li> -->
+                            <!-- /main -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- /main navigation -->
+            </div>
+        </div>
+        <!-- /main sidebar -->
+        <!-- Main content -->
+        <div class="content-wrapper" ui-view>
+        </div>
+        <!-- /main content -->
+    </div>
+    <!-- /page content -->
+</div>
+<!-- /page container -->
+<script>
+
+     $('.navigation-main').find('li').has('ul').children('a').on('click', function (e) {
+        e.preventDefault();
+
+        // Collapsible
+        $(this).parent('li').not('.disabled').not($('.sidebar-xs').not('.sidebar-xs-indicator').find('.navigation-main').children('li')).toggleClass('active').children('ul').slideToggle();
+
+        // Accordion
+        if ($('.navigation-main').hasClass('navigation-accordion')) {
+            $(this).parent('li').not('.disabled').not($('.sidebar-xs').not('.sidebar-xs-indicator').find('.navigation-main').children('li')).siblings(':has(.has-ul)').removeClass('active').children('ul').slideUp();
+        }
+    });
+</script>

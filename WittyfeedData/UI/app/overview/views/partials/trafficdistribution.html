@@ -1,0 +1,85 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="text-bold">Traffic Distribution</h5>
+            </div>
+            <div class="container-fluid">
+                <div class="col-md-6">
+                    <nvd3 options="vm.trafficDistributionData.chartOptions" data="vm.trafficDistributionData.chartData"></nvd3>
+                </div>
+                <div class="col-md-6">
+                    <div class="table-responsive">
+                        <table class="table text-nowrap">
+                            <tbody>
+                                <tr ng-repeat="traffic in vm.trafficDistributionData.data" style="border-bottom:1px solid #ddd;border-top:0px !important">
+                                    <td class="text-muted text-semibold" style="border-top:0px !important">{{traffic.type}}
+                                        <br/>
+                                        <small class="text-size-small text-muted">{{traffic.count}}</small></td>
+                                    <td class="text-right text-bold" style="border-top:0px !important">{{traffic.share}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr class="margin-20"/>
+            <div class="container-fluid">
+                <div class="col-md-6">
+                    <nvd3 options="vm.siteExperienceData.chartOptions" data="vm.siteExperienceData.chartData"></nvd3>
+                </div>
+                <div class="col-md-6">
+                    <div class="table-responsive">
+                        <table class="table text-nowrap">
+                            <tbody>
+                                <tr ng-repeat="siteExperience in vm.siteExperienceData.data" style="border-bottom:1px solid #ddd;border-top:0px !important">
+                                    <td class="text-muted text-semibold" style="border-top:0px !important">{{siteExperience.type}}
+                                        <br/>
+                                        <small class="text-size-small text-muted">{{siteExperience.count}}</small></td>
+                                    <td class="text-right text-bold" style="border-top:0px !important">{{siteExperience.share}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="text-bold">Page Versions</h5>
+            </div>
+            <div class="container-fluid">
+                <table class="table datatable-fixed-left" width="100%">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="text-muted text-semibold">Page</th>
+                            <th class="text-muted text-right text-semibold">Avg Time (in min) </th>
+                            <th class="text-muted text-right text-semibold">Total Time</th>
+                            <th class="text-muted text-right text-semibold">Visitors</th>
+                            <th class="col-md-2"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="page in vm.pageVersionData">
+                            <td text-muted text-semibold>{{ $index + 1 }}</td>
+                            <td class="text-muted text-semibold">{{page.articleVersion}}</td>
+                            <td class="text-muted text-right text-semibold">{{( page.averageTime )? ( page.averageTime ) : 0 }}</td>
+                            <td class="text-muted text-right text-semibold"></td>
+                            <td class="text-muted text-right text-bold">{{( page.visitorCount )? ( page.visitorCount ) : 0 }}</td>
+                            <td class="text-right">
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:{{page.share}}%">
+                                        <span class="sr-only"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

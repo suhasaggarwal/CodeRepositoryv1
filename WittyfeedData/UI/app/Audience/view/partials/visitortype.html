@@ -1,0 +1,82 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="text-bold">Visitor Type</h5>
+            </div>
+            <div class="container-fluid container-fluid-audience">
+                <nvd3 options="vm.visitors.chartOptions" data="vm.visitors.chartData"></nvd3>
+                 <table class="table table-lg text-nowrap">
+                <thead>
+                    <tr>
+                        <th class="text-muted text-semibold">Visitor Type</th>
+                        <th class="text-muted text-right text-semibold">{{ vm.selectMatricLabel }}</th>
+                        <th class="text-muted text-right text-semibold">Share</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="visitor in vm.visitors.data">
+                        <td>{{visitor.type}}</td>
+                        <td>{{visitor.count }}</td>
+                        <td>
+                            <div class="media-right col-md-4">
+                                    <h6 class="text-bold no-margin text-right">{{visitor.share}}%</h6>
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+           <date-series-chart id="container" option="vm.totalPageViewsByDate.chartData" style="min-width: 310px; height: 350px; margin: 0 auto"></date-series-chart>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="text-bold">Engagement by Visitor Type</h5>
+            </div>
+           <date-series-chart id="container" option="vm.totalPageViewsByDate.chartData" style="min-width: 310px; height: 350px; margin: 0 auto"></date-series-chart>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="text-bold"> </h5>
+           <date-series-chart id="container" option="vm.totalPageViewsByDate.chartData" style="min-width: 310px; height: 350px; margin: 0 auto"></date-series-chart>
+        </div>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="panel panel-flat">
+        <table>
+            <thead>
+                <th>Visitor Type</th>
+                <th>Thrend</th>
+                <th>Vistors</th>
+                <th>Avg. Time (in min)</th>
+                <th>{{ vm.selectMatricLabel }}</th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

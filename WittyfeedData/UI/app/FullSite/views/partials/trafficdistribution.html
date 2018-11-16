@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="text-bold"> Traffic Distribution</h5>
+            </div>          
+             <nvd3 options="vm.refferalTypeData.chartOptions" data="vm.refferalTypeData.chartData"></nvd3>
+             <div class="container-fluid">
+                
+             </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="text-bold">Page Version</h5>
+           
+             <div class="container-fluid">
+                <table class="table datatable-fixed-left" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Page</th>
+                            <th class="text-right">Avg. Time (in min)</th>
+                            <th class="text-right">Total Time</th>
+                            <th class="text-right">Vistior</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="topreferal in vm.topPageVersionData.data">
+                            <td>{{topreferal.type}}</td>
+                            <td class="text-right">{{topreferal.count }}</td>
+                            <td class="text-right">{{topreferal.share}}</td>
+                            <td class="text-right">-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
+              </div>
+        </div>
+    </div>
+</div>
+ 

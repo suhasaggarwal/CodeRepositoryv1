@@ -1,0 +1,68 @@
+<div class="col-md-4">
+    <div class="panel col-md-12">
+        <div class="panel panel-flat">
+            <div class="col-md-6 text-muted">
+                <h6 class="text-bold"><!--  Audience Insights --></h6>
+            </div>
+            <!--  <div class="col-md-6">
+                                <ul class="nav text-right" style="margin-bottom:5px !important">
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle btn-default text-right audience-insights-dropdown">Last 30 Days Audience<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">-</a></li>
+                                            <li><a href="#">-</a></li>
+                                            <li><a href="#">-</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div> -->
+        </div>
+        <!-- <div class="container-fluid">
+                            <div class="media-left col-md-4">
+                                <h5>Interests</h5>
+                                <table class="table">
+                                    <tbody>
+                                    <tr ng-repeat="audience in vm.audienceSegment.data">
+                                       <!--  <td class="text-right text-bold padding-4">
+                                            <div class="progress age-group-progressbar width-100-per">
+                                                <div class="progress-bar" style="width:{{audience.share}}%"><p>{{audience.type}}</p>
+                                                    <span class="sr-only"></span>
+                                                </div>
+                                            </div>
+                                        </td> -->
+        <td class="text-left" ng-class="{'fade' : vm.cityData.startFade}">
+            <div class="progress" data-toggle="tooltip" data-placement="top" tooltip="{{audience.share}}%">
+                <div class="progress-bar" style="width:{{audience.share}}%">
+                    <span class="sr-only"></span>
+                </div>
+            </div>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    <div class="media-right col-md-8" style="padding: 4px">
+        <nvd3 options="vm.genderData.chartOptions" data="vm.genderData.chartData"></nvd3>
+        <div class="audience-insights-div">
+            <ul ng-repeat="gender in vm.genderData.data">
+                <li class="list-style-none">
+                    <span class="color-span" ng-style="{'border-color': gender.color}"></span> {{gender.type}}
+                </li>
+            </ul>
+        </div>
+        <nvd3 options="vm.ageGroupData.chartOptions" data="vm.ageGroupData.chartData"></nvd3>
+        <ul ng-repeat="gender in vm.ageGroupData.data">
+            <li class="list-style-none">
+                <span class="color-span" ng-style="{'border-color': gender.color}"></span> {{gender.type}}
+            </li>
+        </ul>
+        <nvd3 options="vm.incomeData.chartOptions" data="vm.incomeData.chartData"></nvd3>
+        <ul ng-repeat="gender in vm.incomeData.data">
+            <li class="list-style-none">
+                <span class="color-span" ng-style="{'border-color': gender.color}"></span> {{gender.type}}
+            </li>
+        </ul>
+    </div>
+</div> -->
+</div>
+</div>

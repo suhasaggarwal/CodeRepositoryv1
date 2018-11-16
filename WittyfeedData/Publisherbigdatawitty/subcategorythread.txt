@@ -1,0 +1,1 @@
+SELECT count(*) as count,subcategory  FROM subcategorycomputeindex where cookie_id in (SELECT distinct(cookie_id) FROM enhanceduserdatapatrika where channel_name = 'Womanseraindia_indiagate' and date between '2017-01-01' and '2017-01-31' Order by cookie_id limit 4283,8564) group by subcategory limit 20000000
