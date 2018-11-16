@@ -31,7 +31,7 @@ Does enhancement of raw data points - Has been discussed.
 2)Proptiger In-house DMP - Done for Demo Purpose with support for local Property based segments.
 
 
-3)Lenskart  In-house DMP - Demoed before with support for local lenskart segments.
+3)Lenskart  In-house DMP - Demoed before with support for local lenskart Eyeglasses based segments.
 
 
 4)Crawling is divided in two stages -
