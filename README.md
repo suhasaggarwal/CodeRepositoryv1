@@ -159,7 +159,7 @@ Semantic Engine is set up in Servers and code can be obtained from there.
 
 
 
-Wittyfeed Servers 
+Servers 
 ---------------------
 
 Node name : WittyFeedLoadBalancer
