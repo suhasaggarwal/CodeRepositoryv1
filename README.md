@@ -85,9 +85,11 @@ Publisherbigdatawitty
 Main publisherDashboard with BigData and Approximation Support.
 Generates a war file using maven build which is deployed in tomcat and APIs will start.
  
+
+ Spider Set up 
+ For spiders set up in scrapy please refer to wittyfeed servers.
+ 
 ----------------------------------------------------------------------------------------------------
-
-
 
 
 Adserver Support - This involves scaled Adserver with support for Elasticsearch and new Tracker - Response based Tracker for Chatbot module which takes user response corresponding to questions asked from users.
