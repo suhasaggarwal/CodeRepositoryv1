@@ -1,0 +1,72 @@
+Server Maintenance Commands for ISP Elasticsearch Server
+
+curl -XDELETE 'http://localhost:9200/enhanceduserdata/core2/_query' -d '
+  {
+    "query": {
+        "range": {
+         "request_time": {
+            "lte": "now-10d"
+          }
+        }
+     }
+   }'
+
+
+ curl -XDELETE 'http://localhost:9200/userprofilestore/core2/_query' -d '
+   {
+    "query": {
+        "range": {
+          "request_time": {
+            "lte": "now-2d"
+          }
+        }
+      }
+   }'
+
+ curl -XDELETE 'http://localhost:9200/enhanceduserdatabeta1/core2/_query' -d '
+    {
+      "query": {
+       "bool": {
+          "must": [
+                   {
+                    "term" : { "channel_name" : "alliance_broadband" }
+                   },
+                   {
+                  "range" : {"request_time" : {"lte": "now-60d"}}
+                   }
+          ]
+       }
+      }
+   }'
+
+curl -XDELETE 'http://localhost:9200/enhanceduserdatabeta1/core2/_query' -d '
+     {
+          "query": {
+            "bool": {
+              "must": [
+                       {
+                       "term" : { "channel_name" : "voindia_toefl" }
+                     },
+                       {
+                      "range" : {"request_time" : {"lte": "now-30d"}}
+                     }
+            ]
+           }
+         }
+      }'
+
+curl -XDELETE 'http://localhost:9200/enhanceduserdatabeta1/core2/_query' -d '
+      {
+          "query": {
+            "bool": {
+              "must": [
+                       {
+                        "term" : { "EntityId" : "voindia_passback_1" }
+                     },
+                       {
+                      "range" : {"request_time" : {"lte": "now-30d"}}
+                    }
+             ]
+           }
+         }
+      }'
