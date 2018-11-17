@@ -106,7 +106,7 @@ Adserver Support - This involves scaled Adserver with support for Elasticsearch 
 
 
 
-Semantic Engine is set up in Servers and code can be obtained from there. 
+Semantic Engine is set up in Servers and Python code can be obtained from there. 
 
 1)IAB based classifier - Python 
 
