@@ -6,13 +6,16 @@ Code includes the following -
 
 Files - 
 
-a)DemographicsClassifierFullscanWittyfeed
+a)EngagementTimeComputation 
+
+Engagement Time Computation - Solution which scales by using consecutive requests from cookie difference.
+
+
+b)DemographicsClassifierFullscanWittyfeed
 
 Demography Enhancement 
 
-b)EngagementTimeComputation 
 
-Engagement Time Computation - Solution which scales by using consecutive requests from cookie difference.
 c)EntityDataSync
 
 EntityDataSync - This Module fetches Entity data for a url from Entity index and does enhancement of data points corresponding to url.
