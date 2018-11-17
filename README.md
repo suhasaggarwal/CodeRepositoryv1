@@ -115,7 +115,7 @@ Semantic Engine is set up in Servers and Python code can be obtained from there.
 
 4)Custom Taxonomy based Classifier - Python
 
-5)Emotion Recognition From Faces - Python
+5)Emotion Recognition From Facial Expressions - Python
 
 -------------------------------------------------------------------------------------------------------------------------------
 //Javascript based scripts 
