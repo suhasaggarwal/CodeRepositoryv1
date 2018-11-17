@@ -12,7 +12,7 @@ Demography Enhancement - Has been discussed.
 
 b)EngagementTimeComputation 
 
-Engagement Time Computation - Solution which scales based on consecutive requests difference. Has been discussed.
+Engagement Time Computation - Solution which scales based on consecutive requests from cookie difference. Has been discussed.
 
 c)EntityDataSync
 
