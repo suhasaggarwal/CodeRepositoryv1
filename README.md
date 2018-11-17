@@ -98,7 +98,7 @@ Generates a war file using maven build which is deployed in tomcat and APIs will
 ----------------------------------------------------------------------------------------------------
 
 
-Adserver Support - This involves scaled Adserver with support for Elasticsearch and new Tracker - Response based Tracker for Chatbot module which takes user response corresponding to questions asked from users.
+Adserver Support - This involves scaled Adserver with support for Elasticsearch and new Tracker - Response based Tracker for Chatbot/QA module which takes user response corresponding to questions asked from users.
 
 ----------------------------------------------------------------------------------------------------------
 
@@ -197,7 +197,6 @@ IP : 101.53.137.240 / 172.16.105.247
 Username : root
 Password : 058d@4222
 
-
 Node name : Classifier-BigData/ Machine Learning Server
 IP : 101.53.130.215 / 172.16.103.138
 Username : root
@@ -212,7 +211,6 @@ Node name : SegmentSync/Real Time Persona Fetch Server
 IP : 101.53.138.39 / 172.16.106.17
 Username : root
 Password : fbbd@9751
-
 
 Node name : CuberootWebApplication/ISP Server code Hosted.
 IP : 205.147.103.82 / 172.16.102.251
