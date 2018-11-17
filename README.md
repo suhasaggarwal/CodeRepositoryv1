@@ -87,7 +87,7 @@ Generates a war file using maven build which is deployed in tomcat and APIs will
  
 
  Spider Set up 
- For spiders set up in scrapy please refer to wittyfeed servers.
+ For spiders set up in scrapy please refer to wittyfeed Middleware Server.
  
 ----------------------------------------------------------------------------------------------------
 
