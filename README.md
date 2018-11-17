@@ -80,10 +80,14 @@ Scrapy crawls these urls in delta url file and fill Entity index in ES
 Generate a Runnable jar file using Following java Class having main method.
 GetMiddlewareData.java
 
-
 Publisherbigdatawitty
 Main publisherDashboard with BigData and Approximation Support.
 Generates a war file using maven build which is deployed in tomcat and APIs will start.
+ 
+Wittyfeed Categories data Sync uses Machine Learning APIs which are set up on Machine Learning server to generate IAB categories corresponding to url and store it in Entity index.
+Delta url generator for delta crawling - (incremental according to new urls added on daily basis) is also present in this module. Filenames are self explainatory - DeltaUrls*
+ 
+ 
  
  Python/JS scripts
 --------------------
