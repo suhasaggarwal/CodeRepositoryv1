@@ -214,6 +214,11 @@ IP : 101.53.138.39 / 172.16.106.17
 Username : root
 Password : fbbd@9751
 
+Node name : RecommendationEngine
+IP : 101.53.137.61 / 172.16.102.107
+Username : root
+Password : a6ce@e9b6
+
 Node name : CuberootWebApplication/ISP Server code Hosted.
 IP : 205.147.103.82 / 172.16.102.251
 Username : root
