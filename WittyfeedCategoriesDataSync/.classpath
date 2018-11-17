@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/annotations-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/apache-logging-log4j.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/catalina.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/catalina-ant.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/catalina-ha.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/catalina-tribes.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/com.mysql.jdbc_5.1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/commons-codec-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/commons-configuration-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/ecj-4.4.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/ehcache-2.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/el-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/elasticsearch-1.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/jasper.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/jasper-el.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/jsoup-1.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/jsp-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/logback-classic-0.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/logback-core-0.9.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/lucene-analyzers-common-4.10.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/lucene-core-4.10.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/mysql-connector-java-5.1.17-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/slf4j.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/slf4j-log4j12-1.7.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/spymemcached-2.8.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/stanford-corenlp-3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Suhas Aggarwal/Downloads/DMPCore-master/DMPCore-master/jarlibrary/wurfl-1.3.1.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

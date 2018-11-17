@@ -1,0 +1,132 @@
+https://www.wittyfeed.com;news;_news__
+_news__
+news
+Current results: 0
+https://www.wittyfeed.com/story/65200/sharmaji-vs-frustrated-launda-engineering-video;technology and computing;_technology and computing_consumer electronics_tv and video equipment_
+_technology.and.computing_consumer.electronics_tv.and.video.equipment_
+technology.and.computing
+Current results: 0
+https://www.wittyfeed.com/story/65195/india-ka-pulse-young-indians-changed-the-course-of-india;education;_education_english as a second language_
+_education_english.as.a.second.language_
+education
+Current results: 1
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON2y:_education_english.as.a.second.language_
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON2y:[art and entertainment, automotive and vehicles, business and industrial, careers, education, family and parenting, finance, food and drink, health and fitness, hobbies and interests, home and garden, law, govt and politics, news, pets, real estate, religion and spirituality, science, shopping, society, sports, style and fashion, technology and computing, travel]
+https://www.wittyfeed.com/story/65193/sanju-teaser-out-by-rajkumar-hirani-ranbir-kapoor-perfectly-portraying-sanjay-dutt-biopic;art and entertainment;_art and entertainment_movies and tv_bollywood_
+_art.and.entertainment_movies.and.tv_bollywood_
+art.and.entertainment
+Current results: 0
+https://www.wittyfeed.com/story/65187/these-things-also-happen-in-tech-fests-techmats-2018;education;_education_alumni and reunions_
+_education_alumni.and.reunions_
+education
+Current results: 1
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON2v:_education_alumni.and.reunions_
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON2v:[art and entertainment, automotive and vehicles, business and industrial, careers, education, family and parenting, finance, food and drink, health and fitness, hobbies and interests, home and garden, law, govt and politics, news, pets, real estate, religion and spirituality, science, shopping, society, sports, style and fashion, technology and computing, travel]
+https://www.wittyfeed.com/story/65179/saroj-khan-statement-about-casting-couch-in-bollywood-film-industry;art and entertainment;_art and entertainment_movies and tv_bollywood_
+_art.and.entertainment_movies.and.tv_bollywood_
+art.and.entertainment
+Current results: 1
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON2x:_art.and.entertainment_movies.and.tv_bollywood_
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON2x:[art and entertainment, automotive and vehicles, business and industrial, careers, education, family and parenting, finance, food and drink, health and fitness, hobbies and interests, home and garden, law, govt and politics, news, pets, real estate, religion and spirituality, science, shopping, society, sports, style and fashion, technology and computing, travel]
+https://www.wittyfeed.com/story/65177/rana-ayyubs-false-comment-fake-news-dainik-jagran-post-kathua-rape-case;news;_news_international news_
+_news_international.news_
+news
+Current results: 1
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON2w:_news_international.news_
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON2w:[art and entertainment, automotive and vehicles, business and industrial, careers, education, family and parenting, finance, food and drink, health and fitness, hobbies and interests, home and garden, law, govt and politics, news, pets, real estate, religion and spirituality, science, shopping, society, sports, style and fashion, technology and computing, travel]
+https://www.wittyfeed.com/story/65170/video-of-sachin-tendulkar-playing-gully-cricket;sports;_sports_cricket_
+_sports_cricket_
+sports
+Current results: 0
+https://www.wittyfeed.com/story/65167/pakistani-cricketer-hasan-ali-wicket-taking-step-at-wagah-border-bsf;law, govt and politics;_law, govt and politics_armed forces_marines_
+_law.govt.and.politics_armed.forces_marines_
+law.govt.and.politics
+Current results: 0
+https://www.wittyfeed.com/story/65166/milind-soman-ankita-konwar-marriage;art and entertainment;_art and entertainment_movies and tv_bollywood_
+_art.and.entertainment_movies.and.tv_bollywood_
+art.and.entertainment
+Current results: 1
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON2z:_art.and.entertainment_movies.and.tv_bollywood_
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON2z:[art and entertainment, automotive and vehicles, business and industrial, careers, education, family and parenting, finance, food and drink, health and fitness, hobbies and interests, home and garden, law, govt and politics, news, pets, real estate, religion and spirituality, science, shopping, society, sports, style and fashion, technology and computing, travel]
+https://www.wittyfeed.com/story/65159/spicy-food-lovers-be-like-video;food and drink;_food and drink_food_salads_
+_food.and.drink_food_salads_
+food.and.drink
+Current results: 0
+https://www.wittyfeed.com/story/65158/what-girls-do-in-washroom-at-parties-video;family and parenting;_family and parenting_babies and toddlers_baby clothes_
+_family.and.parenting_babies.and.toddlers_baby.clothes_
+family.and.parenting
+Current results: 0
+https://www.wittyfeed.com/story/65156/difference-between-mind-and-soul;style and fashion;_style and fashion_beauty_face and body care_body care_
+_style.and.fashion_beauty_face.and.body.care_body.care_
+style.and.fashion
+Current results: 0
+https://www.wittyfeed.com/story/65152/indore-model-harassed-takes-to-twitter;art and entertainment;_art and entertainment_movies and tv_bollywood_
+_art.and.entertainment_movies.and.tv_bollywood_
+art.and.entertainment
+Current results: 1
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON20:_art.and.entertainment_movies.and.tv_bollywood_
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON20:[art and entertainment, automotive and vehicles, business and industrial, careers, education, family and parenting, finance, food and drink, health and fitness, hobbies and interests, home and garden, law, govt and politics, news, pets, real estate, religion and spirituality, science, shopping, society, sports, style and fashion, technology and computing, travel]
+https://www.wittyfeed.com/story/65150/india-ka-pulse-reasons-why-smoking-is-considered-casual;health and fitness;_health and fitness_addiction_smoking addiction_
+_health.and.fitness_addiction_smoking.addiction_
+health.and.fitness
+Current results: 1
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON21:_health.and.fitness_addiction_smoking.addiction_
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON21:[art and entertainment, automotive and vehicles, business and industrial, careers, education, family and parenting, finance, food and drink, health and fitness, hobbies and interests, home and garden, law, govt and politics, news, pets, real estate, religion and spirituality, science, shopping, society, sports, style and fashion, technology and computing, travel]
+https://www.wittyfeed.com/story/65148/i-cancelled-cab-because-driver-was-a-muslim-abhishek-mishra;art and entertainment;_art and entertainment_movies and tv_bollywood_
+_art.and.entertainment_movies.and.tv_bollywood_
+art.and.entertainment
+Current results: 1
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON22:_art.and.entertainment_movies.and.tv_bollywood_
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON22:[art and entertainment, automotive and vehicles, business and industrial, careers, education, family and parenting, finance, food and drink, health and fitness, hobbies and interests, home and garden, law, govt and politics, news, pets, real estate, religion and spirituality, science, shopping, society, sports, style and fashion, technology and computing, travel]
+https://www.wittyfeed.com/story/65145/why-do-rapes-happen;society;_society_crime_sexual offence_rape_
+_society_crime_sexual.offence_rape_
+society
+Current results: 1
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON23:_society_crime_sexual.offence_rape_
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON23:[art and entertainment, automotive and vehicles, business and industrial, careers, education, family and parenting, finance, food and drink, health and fitness, hobbies and interests, home and garden, law, govt and politics, news, pets, real estate, religion and spirituality, science, shopping, society, sports, style and fashion, technology and computing, travel]
+https://www.wittyfeed.com/story/65144/an-oxford-alumni-abandoned-by-his-children-who-live-in-the-uk-needs-help;law, govt and politics;_law, govt and politics_commentary_
+_law.govt.and.politics_commentary_
+law.govt.and.politics
+Current results: 1
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON24:_law.govt.and.politics_commentary_
+Categorisation Data Updated
+
+AWMwvWhrB0FlBerFON24:[art and entertainment, automotive and vehicles, business and industrial, careers, education, family and parenting, finance, food and drink, health and fitness, hobbies and interests, home and garden, law, govt and politics, news, pets, real estate, religion and spirituality, science, shopping, society, sports, style and fashion, technology and computing, travel]
