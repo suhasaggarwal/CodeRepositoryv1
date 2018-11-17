@@ -197,6 +197,13 @@ IP : 101.53.130.215 / 172.16.103.138
 Username : root
 Password : 6wAPasO89LyB
 
+Node name : WittyFeedPreparationServer/Web Crawling Server 
+IP : 101.53.137.127 / 172.16.104.87
+Username : root
+Password : 5582@5928
+
+
+
 Node name : CuberootWebApplication/ISP Server code Hosted.
 IP : 205.147.103.82 / 172.16.102.251
 Username : root
