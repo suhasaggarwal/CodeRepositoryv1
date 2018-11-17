@@ -106,7 +106,7 @@ Adserver Support - This involves scaled Adserver with support for Elasticsearch 
 
 ----------------------------------------------------------------------------------------------------------
 
-Semantic Engine is set up in Servers and Python code can be obtained from there. 
+Semantic Engine is set up in ML Servers and Python code can be obtained from there. 
 
 Machine Learning APIs being used in Entity Index generator modules can be seen here for reference -
 http://semantics.dc.cuberoot.co/CuberootSemantics.html
