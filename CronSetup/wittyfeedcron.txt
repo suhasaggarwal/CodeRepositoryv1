@@ -1,0 +1,79 @@
+10 * * * * java -jar /root/jars2/edbpwitty1807.jar > /root/logdirectory/genericenhancer-$(date +\%Y\%m\%d\%H\%M\%S).txt
+20 * * * * java -jar /root/jars2/edswf1807.jar > /root/logdirectory/entitysync-$(date +\%Y\%m\%d\%H\%M\%S).txt
+30 * * * * java -jar /root/jars2/dcwitty1807.jar > /root/logdirectory/demographyclassifier-$(date +\%Y\%m\%d\%H\%M\%S).txt
+40 * * * * java -jar /root/jars2/etcwitty1807.jar > /root/logdirectory/etcompute-$(date +\%Y\%m\%d\%H\%M\%S).txt
+*/5 * * * * /root/datamigration.sh > /root/logdirectory/logdatacopy.txt
+#1 * * * * java -jar /root/jars/deltaurlsync.jar > /root/logdirectory/deltaurl-$(date +\%Y\%m\%d\%H\%M\%S).txt
+#7 * * * * cd /root/wittyfeed/wittyfeed/spiders && scrapy crawl wittyfeed
+#25 * * * * curl -XPOST 172.16.105.231:9200/entity/core2/_bulk --data-binary @/root/wittyfeed/wittyfeed/spiders/wittyfeeditemslatest.json
+#35 * * * * java -jar /root/jars/categoriessyncbulkv2.jar > /root/logdirectory/categoriessync-$(date +\%Y\%m\%d\%H\%M\%S).txt
+#45 * * * * cd /root/wittyfeed/wittyfeed/spiders && rm -f wittyfeeditemslatest.json
+55 * * * * java -jar /root/jars/entitysyncwittyfeedg2.jar > /root/logdirectory/entitysyncg2-$(date +\%Y\%m\%d\%H\%M\%S).txt
+2 * * * * java -jar /root/jars/categorycleanv1.jar
+7 * * * * sh /root/wittyfeedcrawl.sh > /root/logdirectory/entityuploadlog-$(date +\%Y\%m\%d\%H\%M\%S).txt
+25 * * * * curl -XPOST 172.16.105.231:9200/entity/core2/_bulk --data-binary @/root/wittyfeed/wittyfeed/spiders/wittyfeeditemsdelta.json
+35 * * * * java -jar /root/jars/catsyncwitty.jar > /root/logdirectory/categoriessync1-$(date +\%Y\%m\%d\%H\%M\%S).txt
+45 * * * * cd /root/wittyfeed/wittyfeed/spiders && rm -f wittyfeeditemsdelta.json
+
+05 11 * * * java -jar /root/uncrawledurlsdata/generateuncrawledurls.jar
+25 11 * * * sh /root/gyanchandcrawl.sh > /root/logdirectory/entityuploadloggyanchand-$(date +\%Y\%m\%d\%H\%M\%S).txt
+27 13 * * * curl -XPOST 172.16.105.231:9200/entity/core2/_bulk --data-binary @/root/wittyfeedgyanchand/wittyfeedgyanchand/spiders/wittyfeeditemsgyanchanddelta.json
+37 13 * * * java -jar /root/uncrawledurlsdata/categoriseuncrawledurls.jar > /root/logdirectory/categoriessync2-$(date +\%Y\%m\%d\%H\%M\%S).txt
+48 13 * * * cd /root/wittyfeedgyanchand/wittyfeedgyanchand/spiders && rm -f wittyfeeditemsgyanchanddelta.json
+50 13 * * * cd /root && rm -f fulluncrawledurls.txt
+51 13 * * * java -jar /root/uncrawledurlsdata/edssyncdeltageeksmate.jar
+59 13 * * * java -jar /root/uncrawledurlsdata/edssyncdeltafoodmate.jar
+07 14 * * * java -jar /root/uncrawledurlsdata/edssyncdeltaduniadigest.jar
+17 14 * * * java -jar /root/uncrawledurlsdata/edssyncdeltawittyfeed.jar
+28 14 * * * java -jar /root/uncrawledurlsdata/edssyncdeltainnervoicejar.jar
+
+
+05 23 * * * java -jar /root/uncrawledurlsdata/generateuncrawledurls.jar
+25 23 * * * sh /root/gyanchandcrawl.sh > /root/logdirectory/entityuploadloggyanchand-$(date +\%Y\%m\%d\%H\%M\%S).txt
+27 01 * * * curl -XPOST 172.16.105.231:9200/entity/core2/_bulk --data-binary @/root/wittyfeedgyanchand/wittyfeedgyanchand/spiders/wittyfeeditemsgyanchanddelta.json
+37 01 * * * java -jar /root/uncrawledurlsdata/categoriseuncrawledurls.jar > /root/logdirectory/categoriessync2-$(date +\%Y\%m\%d\%H\%M\%S).txt
+48 01 * * * cd /root/wittyfeedgyanchand/wittyfeedgyanchand/spiders && rm -f wittyfeeditemsgyanchanddelta.json
+50 01 * * * cd /root && rm -f fulluncrawledurls.txt
+53 01 * * * java -jar /root/uncrawledurlsdata/edssyncdeltageeksmate.jar
+59 01 * * * java -jar /root/uncrawledurlsdata/edssyncdeltafoodmate.jar
+05 02 * * * java -jar /root/uncrawledurlsdata/edssyncdeltaduniadigest.jar
+11 02 * * * java -jar /root/uncrawledurlsdata/edssyncdeltawittyfeed.jar
+16 02 * * * java -jar /root/uncrawledurlsdata/edssyncdeltainnervoicejar.jar
+
+
+
+14 * * * * sh /root/wittyfeedmecrawl.sh > /root/logdirectory/entityuploadlogwittyme-$(date +\%Y\%m\%d\%H\%M\%S).txt
+29 * * * * curl -XPOST 172.16.105.231:9200/entity/core2/_bulk --data-binary @/root/wittyfeedme/wittyfeedme/spiders/wittyfeeditemsmedelta.json
+39 * * * * java -jar /root/jars/catsyncwittyme.jar > /root/logdirectory/categoriessync3-$(date +\%Y\%m\%d\%H\%M\%S).txt
+49 * * * * cd /root/wittyfeedme/wittyfeedme/spiders && rm -f wittyfeeditemsmedelta.json
+
+50 * * * * java -jar /root/catcleang1.jar
+
+1 * * * * java -jar /root/wittyfeeddeltav3.jar
+5 * * * * java -jar /root/wittyfeedmedeltav1.jar
+3 * * * * java -jar /root/wittyfeedgyanchanddelta.jar
+
+#35 * * * * java -jar /root/entityjars/enhancergeeksmatelonger.jar
+#45 * * * * java -jar /root/entityjars/enhancerfoodmatelonger.jar
+#55 * * * * java -jar /root/entityjars/enhancerduniyadigestlonger.jar
+6 * * * * java -jar /root/jars2/edbpgm1807.jar
+19 * * * * java -jar /root/jars2/edbpfm1807.jar
+31 * * * * java -jar /root/jars2/edbpdd1807.jar
+45 * * * * java -jar /root/jars2/edbpinnervoice1807.jar
+
+9 * * * * java -jar /root/jars2/edsgm1807.jar
+22 * * * * java -jar /root/jars2/edsfm1807.jar
+31 * * * * java -jar /root/jars2/edsinnervoice1807.jar
+47 * * * * java -jar /root/jars2/edsdd1807.jar
+
+
+12 * * * * java -jar /root/jars2/dcgm1807.jar
+24 * * * * java -jar /root/jars2/dcfm1807.jar
+39 * * * * java -jar /root/jars2/dcinnervoice1807.jar
+52 * * * * java -jar /root/jars2/ddwitty1807.jar
+
+
+1 * * * * java -jar /root/jars5/channelcleanerwitty.jar
+16 * * * * java -jar /root/jars5/enhancewittyfeedindia.jar
+26 * * * * java -jar /root/jars5/entitywittyfeedindia.jar
+36 * * * * java -jar /root/jars5/demographywittyfeedindia.jar
