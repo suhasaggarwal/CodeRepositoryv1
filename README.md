@@ -85,9 +85,15 @@ Publisherbigdatawitty
 Main publisherDashboard with BigData and Approximation Support.
 Generates a war file using maven build which is deployed in tomcat and APIs will start.
  
+ Python/JS scripts
+--------------------
 
  Spider Set up 
  For spiders set up in scrapy please refer to wittyfeed Middleware Server.
+ 
+ Data Collection 
+ For Wittyfeed Data Collection set up, please refer to wittyfeed Data Collection Server.
+ 
  
 ----------------------------------------------------------------------------------------------------
 
@@ -151,6 +157,40 @@ Semantic Engine is set up in Servers and code can be obtained from there.
        });
     </script>
 
+
+
+Wittyfeed Servers 
+---------------------
+
+Node name : WittyFeedLoadBalancer
+IP : 101.53.137.16 / 172.16.105.233
+Username : root
+Password : P3KvWEe5z8ah
+
+Node name : WittyfeedDataCollector
+IP : 101.53.136.167 / 172.16.105.228
+Username : root
+Password : 9510@23ce
+
+Node name : WittyFeedLiveES
+IP : 101.53.137.126 / 172.16.105.229
+Username : root
+Password : d477@32ab
+
+Node name : WittyFeedMiddlewareNode
+IP : 101.53.137.134 / 172.16.105.230
+Username : root
+Password : d9f5@8032
+
+Node name : WittyFeedEnhancedIndex
+IP : 101.53.137.155 / 172.16.105.231
+Username : root
+Password : fa38@efcb
+
+Node name : WittyFeedInsightsServer
+IP : 101.53.137.158 / 172.16.105.232
+Username : root
+Password : ab07@e6bc
 
 
 
