@@ -192,7 +192,7 @@ IP : 101.53.137.158 / 172.16.105.232
 Username : root
 Password : ab07@e6bc
 
-Node name : Classifier-BigData
+Node name : Classifier-BigData/ Machine Learning Server
 IP : 101.53.130.215 / 172.16.103.138
 Username : root
 Password : 6wAPasO89LyB
