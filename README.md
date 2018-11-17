@@ -72,6 +72,7 @@ Generate a Runnable jar file using Following java Class having main method.
 Does entity based enhancement in cookie's data points. 
 SpecificFieldEnhancer.java
 
+Channel names and date range can be modified in Java files for in-house DMP set up.
 
 Delta Urls generator for Delta Crawling.
 Set custom time range in code using Calendar. Example shown in code.
