@@ -47,6 +47,19 @@ C)Generates url from which requests is logged in Elasticsearch.
 Url Set is generated twice in a day.
 If url has not already been crawled before and is not present in Entity index, it is crawled and its entity data is added in Entity index.
 
+Wittyfeed Functional Urls - 
+
+Elasticsearch Index view - 
+
+Enhanced index -
+http://cuberootanalytics.dc.cuberoot.co:5602/#/settings/indices/enhanceduserdatabeta1?_g=()&_a=(tab:indexedFields)
+
+Live index - 
+http://cuberootanalytics.dc.cuberoot.co:5601/#/discover?_g=()&_a=(columns:!(_source),index:livedmpindex,interval:auto,query:(query_string:(analyze_wildcard:!t,query:'*')),sort:!(request_time,desc))
+
+Publisher Dashboard view -
+http://publisherplatform.dc.cuberoot.co/
+
 
 ReadMe for Modules  - How to Run code on Servers
 -------------------------------------------------
@@ -86,6 +99,9 @@ Generates a war file using maven build which is deployed in tomcat and APIs will
  
 Wittyfeed Categories data Sync uses Machine Learning APIs which are set up on Machine Learning server to generate IAB categories corresponding to url and store it in Entity index.
 Delta url generator for delta crawling - (incremental according to new urls added on daily basis) is also present in this module. Filenames are self explainatory - DeltaUrls*
+ 
+ 
+ 
  
  
  
