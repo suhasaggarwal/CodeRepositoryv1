@@ -192,6 +192,12 @@ IP : 101.53.137.158 / 172.16.105.232
 Username : root
 Password : ab07@e6bc
 
+Node name : WittyfeedMetadataServer
+IP : 101.53.137.240 / 172.16.105.247
+Username : root
+Password : 058d@4222
+
+
 Node name : Classifier-BigData/ Machine Learning Server
 IP : 101.53.130.215 / 172.16.103.138
 Username : root
