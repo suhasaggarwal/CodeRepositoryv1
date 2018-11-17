@@ -208,7 +208,7 @@ IP : 101.53.137.127 / 172.16.104.87
 Username : root
 Password : 5582@5928
 
-Node name : SegmentSync/Real Time Persona Fetch for Server
+Node name : SegmentSync/Real Time Persona Fetch Server
 IP : 101.53.138.39 / 172.16.106.17
 Username : root
 Password : fbbd@9751
