@@ -1,0 +1,26 @@
+    1  ls
+    2  cd /var/www/html
+    3  cd dcdoe2
+    4  cd docde2
+    5  date
+    6  cd dcode2
+    7  ls
+    8  vi dmpbasedc.js
+    9  cd hdnkde4380fsgtu/
+   10  ls
+   11  vi index.php
+   12  vi datetest.php
+   13  vi index.php
+   14  vi datetest.php
+   15  php datetest.php
+   16  vi datetest.php
+   17  cd ~
+   18  ls
+   19  grep "doc" enhanceduserdatabetav1.json 
+   20  grep "doc" enhanceduserdatabetav1.json | wc -l
+   21  history
+   22  ls
+   23  curl -XPUT "http://172.16.105.231:9200/enhanceduserdatabeta1/_mapping/core2?ignore_conflicts=true" -d@enhanceduserdatabetav1.json
+   24  ls
+   25  curl -XPUT "http://172.16.105.231:9200/entity/_mapping/core2?ignore_conflicts=true" -d@entitydatamappingv1.json
+   26  history > commandlogv1.txt

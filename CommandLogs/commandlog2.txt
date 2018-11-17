@@ -1,0 +1,126 @@
+    1  ls
+    2  sudo apt-get install apache2
+    3  sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+    4  php -version
+    5  php --version
+    6  sudo vi /var/www/html/info.php
+    7  sudo ufw allow 80
+    8  ls
+    9  cp -r * /var/www/html
+   10  cd /var/www/html
+   11  ls
+   12  cat /etc/hosts
+   13  sudo service apache2 restart
+   14  wget 172.16.105.229:9200
+   15  ls
+   16  vi elastic.php
+   17  php elastic.php
+   18  sudo apt-get install curl
+   19  sudo service apache2 restart
+   20  sudo apt-get install php5-curl
+   21  sudo service apache2 restart
+   22  LS
+   23  ls
+   24  cat elastic.php
+   25  php elastic.php
+   26  ls
+   27  cd ~
+   28  ls
+   29  vi elastic.php
+   30  cd /var/www/html
+   31  ls
+   32  vi elastic.php
+   33  php elastic.php
+   34  vi elastic.php
+   35  cd ~
+   36  ls
+   37  cat liveindexmapping.json 
+   38  cat liveindexmapping.json | grep "cookie"
+   39  vi liveindexmapping.json 
+   40  cat liveindexmapping.json | grep "cookie"
+   41  ls
+   42  curl -XPUT "http://172.16.105.229:9200/livedmpindex/_mapping/core2?ignore_conflicts=true" -d@liveindexmapping.json
+   43  cat livedmpindex.json
+   44  cat liveindexmapping.json
+   45  curl -XPUT "http://172.16.105.229:9200/livedmpindex/_mapping/core2?ignore_conflicts=true" -d@liveindexmapping.json
+   46  ls
+   47  cd /var/www/html
+   48  ls
+   49  cat elastic.php 
+   50  php elastic.php 
+   51  cd ~
+   52  ls
+   53  cat liveindexmapping.json 
+   54  curl -XPUT "http://172.16.105.229:9200/livedmpindex/_mapping/core2?ignore_conflicts=true" -d@liveindexmapping.json
+   55  cd /var/www/html
+   56  cd docde2
+   57  cd dcode2
+   58  s
+   59  ls
+   60  vi dmpbasedc.js 
+   61  ls
+   62  cd hdnkde4380fsgtu/
+   63  ls
+   64  vi index
+   65  vi index.php 
+   66  cd ~
+   67  ls
+   68  cd /var/www/html
+   69  ls
+   70  cd dcode2
+   71  ls
+   72  cd hdnkde4380fsgtu/
+   73  ls
+   74  vi index.php
+   75  cd ..
+   76  ls
+   77  cd ..
+   78  ls
+   79  cd dcode2
+   80  ls
+   81  vi dmpbasedc.js 
+   82  ls
+   83  cd ..
+   84  ls
+   85  vi dmpbasedc.js
+   86  cd /var/log
+   87  ls
+   88  cd ~
+   89  ls
+   90  cd /var/log/apach2
+   91  cd /var/log/apache2
+   92  ls -lah
+   93  cat error.log
+   94  cat access.log
+   95  cd /var/www/html
+   96  ls
+   97  cd dcode2
+   98  ls
+   99  vi dmpbasedc.js 
+  100  cd hdnkde4380fsgtu/
+  101  ls
+  102  vi index.php
+  103  wget 172.16.105.229:9200
+  104  cat index
+  105  cat index.html
+  106  cat index
+  107  vi index.php
+  108  cd /var/www/html
+  109  ls
+  110  vi elastic.php
+  111  history
+  112  ls
+  113  vi elastic.php
+  114  php elastic.php
+  115  vi elastic.php
+  116  php elastic.php
+  117  vi elastic.php
+  118  php elastic.php
+  119  vi elastic.php
+  120  cd ~
+  121  ls
+  122  history
+  123  ls
+  124  cat entitydatamappingv1.json 
+  125  ls
+  126  history > commandlogv5.txt

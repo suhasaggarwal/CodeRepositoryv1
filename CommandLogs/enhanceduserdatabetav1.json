@@ -1,0 +1,374 @@
+    {
+        "properties": {
+          "ISP": {
+            "type": "string"
+          },
+          "QuarterValue": {
+            "type": "string"
+          },
+          "ageGroup": {
+            "type": "string"
+          },
+          "agegroup": {
+            "type": "string"
+          },
+          "audience_segment": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "authorName": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "battery": {
+            "type": "string"
+          },
+          "br_user_agent": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "brandName": {
+            "type": "string"
+          },
+          "brand_disp": {
+            "type": "string"
+          },
+          "browser_disp": {
+            "type": "string"
+          },
+          "browser_name": {
+            "type": "string"
+          },
+          "browser_version": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "browserversion": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "campaignId": {
+            "type": "string"
+          },
+          "campaign_mapping": {
+            "type": "string"
+          },
+          "canvas_installed": {
+            "type": "string"
+          },
+          "channel_id": {
+            "type": "string"
+          },
+          "channel_name": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "city_disp": {
+            "type": "string"
+          },
+          "clickedurl": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "clickurloriginal": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "colors": {
+            "type": "string"
+          },
+          "cookie_id": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "cookiehash": {
+            "type": "long",
+            "doc_values": true
+          },
+          "country": {
+            "type": "string"
+          },
+          "creativeId": {
+            "type": "string"
+          },
+          "date": {
+            "type": "date",
+            "doc_values": true,
+            "format": "yyyy-MM-dd"
+          },
+          "description": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "device": {
+            "type": "string"
+          },
+          "device_type": {
+            "type": "string"
+          },
+          "display": {
+            "type": "string"
+          },
+          "dual_orientation": {
+            "type": "string"
+          },
+          "engagementTime": {
+            "type": "integer",
+            "doc_values": true
+          },
+          "fingerprint_id": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "font_installed": {
+            "type": "string"
+          },
+          "frontcamera": {
+            "type": "string"
+          },
+          "gender": {
+            "type": "string"
+          },
+          "gif_animated": {
+            "type": "string"
+          },
+          "hotspot": {
+            "type": "string"
+          },
+          "hseries": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "incomelevel": {
+            "type": "string"
+          },
+          "installed_activex": {
+            "type": "string"
+          },
+          "ip": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "isWireless": {
+            "type": "string"
+          },
+          "isp_disp": {
+            "type": "string"
+          },
+          "lat_long": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "latitude_longitude": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "latlong": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "localStoragecuid": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "localStorageid": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "mastercookie_id": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "modelName": {
+            "type": "string"
+          },
+          "org_disp": {
+            "type": "string"
+          },
+          "organisation": {
+            "type": "string"
+          },
+          "os_disp": {
+            "type": "string"
+          },
+          "page_meta_tag": {
+            "type": "string"
+          },
+          "page_title": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "parameters": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "picture_gif": {
+            "type": "string"
+          },
+          "picture_jpg": {
+            "type": "string"
+          },
+          "picture_png": {
+            "type": "string"
+          },
+          "plugin": {
+            "type": "string"
+          },
+          "postalcode": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "price": {
+            "type": "long"
+          },
+          "price_range": {
+            "type": "integer",
+            "doc_values": true
+          },
+          "primarycamera": {
+            "type": "string"
+          },
+          "processor": {
+            "type": "string"
+          },
+          "productId": {
+            "type": "string"
+          },
+          "publishDate": {
+            "type": "date",
+            "doc_values": true,
+            "format": "yyyy-MM-dd HH:mm:ss"
+          },
+          "publishDatev1": {
+            "type": "date",
+            "doc_values": true,
+            "format": "yyyy-MM-dd"
+          },
+          "publisher_id": {
+            "type": "string"
+          },
+          "publisher_name": {
+            "type": "string"
+          },
+          "refcurrent": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "refcurrentoriginal": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "referrer": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "referrerType": {
+            "type": "string"
+          },
+          "reforiginal": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "request_time": {
+            "type": "date",
+            "doc_values": true,
+            "format": "yyyy-MM-dd HH:mm:ss"
+          },
+          "resolution_properties": {
+            "type": "string"
+          },
+          "screen_properties": {
+            "type": "string"
+          },
+          "screen_resoln": {
+            "type": "string"
+          },
+          "section": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "session_id": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "sessionhash": {
+            "type": "long",
+            "doc_values": true
+          },
+          "size": {
+            "type": "long"
+          },
+          "sourceUrl": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "state": {
+            "type": "string"
+          },
+          "streaming_3gpp": {
+            "type": "string"
+          },
+          "streaming_mov": {
+            "type": "string"
+          },
+          "streaming_mp4": {
+            "type": "string"
+          },
+          "streaming_video": {
+            "type": "string"
+          },
+          "subcategory": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "system_os": {
+            "type": "string"
+          },
+          "tag": {
+            "type": "string",
+            "index": "not_analyzed",
+            "doc_values": true
+          },
+          "time_zone": {
+            "type": "string"
+          },
+          "top_url": {
+            "type": "string"
+          },
+          "ux_full_desktop": {
+            "type": "string"
+          },
+          "visitor_id": {
+            "type": "string"
+          }
+        }
+      }
+    

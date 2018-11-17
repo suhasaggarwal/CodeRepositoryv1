@@ -1,0 +1,10 @@
+10 * * * * java -jar /root/jars/genericenhancerbulk.jar > /root/logdirectory/genericenhancer-$(date +\%Y\%m\%d\%H\%M\%S).txt
+20 * * * * java -jar /root/jars/entitysyncbulk.jar > /root/logdirectory/entitysync-$(date +\%Y\%m\%d\%H\%M\%S).txt
+30 * * * * java -jar /root/jars/demographybulk.jar > /root/logdirectory/demographyclassifier-$(date +\%Y\%m\%d\%H\%M\%S).txt
+40 * * * * java -jar /root/jars/etcompute.jar > /root/logdirectory/etcompute-$(date +\%Y\%m\%d\%H\%M\%S).txt
+*/5 * * * * /root/datamigration.sh > /root/logdirectory/logdatacopy.txt
+1 * * * * java -jar /root/jars/deltaurlsync.jar > /root/logdirectory/deltaurl-$(date +\%Y\%m\%d\%H\%M\%S).txt
+7 * * * * cd /root/wittyfeed/wittyfeed/spiders && scrapy crawl wittyfeed
+25 * * * * curl -XPOST 172.16.105.231:9200/entity/core2/_bulk --data-binary @/root/wittyfeed/wittyfeed/spiders/wittyfeeditemslatest.json
+35 * * * * java -jar /root/jars/categoriessyncbulkv2.jar > /root/logdirectory/categoriessync-$(date +\%Y\%m\%d\%H\%M\%S).txt
+45 * * * * cd /root/wittyfeed/wittyfeed/spiders && rm -f wittyfeeditemslatest.json

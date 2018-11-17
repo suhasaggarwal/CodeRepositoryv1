@@ -1,0 +1,43 @@
+{
+      "properties" : {
+
+             "date" : {
+                      "type" : "date",
+                      "format" : "YYYY-MM-dd"
+            },
+        
+        
+            "CampaignName" : {
+	                      "type" : "string"
+	                     
+             },
+        
+        
+          "Reach" : {
+	                      "type" : "long"
+            },
+        
+        
+          "Impressions" : {
+	                      "type" : "long"
+	                    
+            },
+        
+          "Clicks" : {
+	                      "type" : "long"
+            },
+        
+           "Revenue" : {
+		             "type" : "long"
+            },
+         "CTR" : {
+	            "type" : "double"
+            },
+         "CPC" : {
+	           "type" : "double"
+            }
+        
+        
+        }
+        
+        }
