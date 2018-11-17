@@ -8,12 +8,11 @@ Files -
 
 a)DemographicsClassifierFullscanWittyfeed
 
-Demography Enhancement - Has been discussed. 
+Demography Enhancement 
 
 b)EngagementTimeComputation 
 
-Engagement Time Computation - Solution which scales based on consecutive requests from cookie difference. Has been discussed.
-
+Engagement Time Computation - Solution which scales by using consecutive requests from cookie difference.
 c)EntityDataSync
 
 EntityDataSync - This Module fetches Entity data for a url from Entity index and does enhancement of data points corresponding to url.
@@ -25,7 +24,7 @@ This code is universal and will scale on very large number of records as it can 
 
 e)enhanceddatabulkprocesswittyfeed
 
-Does enhancement of raw data points - Has been discussed.
+Does enhancement of raw data points
 
 
 2)Proptiger In-house DMP - Done for Demo Purpose with support for local Property based segments.
