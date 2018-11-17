@@ -113,7 +113,7 @@ Semantic Engine is set up in Servers and code can be obtained from there.
 
 3)Recommendation module in Python 
 
-
+4)Custom Taxonomy based Classifier - Python
 
 
 -------------------------------------------------------------------------------------------------------------------------------
