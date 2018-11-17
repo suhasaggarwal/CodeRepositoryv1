@@ -20,7 +20,7 @@ EntityDataSync - This Module fetches Entity data for a url from Entity index and
 
 d)Publisherbigdatawitty
 
-Publisher Dashboard which approximation support for queries which takes long time and trips Circuit Breaker, causes Out of Memory Errors on very large number of records.
+Publisher Dashboard with approximation support for queries which takes long time and trips Circuit Breaker, causes Out of Memory Errors on very large number of records.
 This code is universal and will scale on very large number of records as it can be seen on wittyfeed code running at present.
 
 e)enhanceddatabulkprocesswittyfeed
