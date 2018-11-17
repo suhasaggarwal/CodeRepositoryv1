@@ -48,7 +48,52 @@ C)Generates url from which requests is logged in Elasticsearch.
 Url Set is generated twice in a day.
 If url has not already been crawled before and is not present in Entity index, it is crawled and its entity data is added in Entity index.
 
+
+ReadMe for Modules  - How to Run code on Servers
+-------------------------------------------------
+
+DemographyClassifier 
+
+Generate a Runnable jar file using Following java Class having main method.
+getDemographicsFullDataorInterval.java
+
+EngagementTimeComputation 
+
+Generate a Runnable jar file using Following java Class having main method.
+ComputeEngagementTime.java
+
+EnhanceUserData
+
+Generate a Runnable jar file using Following java Class having main method.
+EnhanceUserDataDaily.java
+
+EntityDataSync
+Generate a Runnable jar file using Following java Class having main method.
+SpecificFieldEnhancer.java
+
+
+Delta Urls generator for Delta Crawling.
+Set custom time range in code using Calendar. Example shown in code.
+This code generates delta url file  4 times in a day as set in cron.
+Scrapy crawls these urls in delta url file and fill Entity index in ES 
+Generate a Runnable jar file using Following java Class having main method.
+GetMiddlewareData.java
+
+
+Publisherbigdatawitty
+Main publisherDashboard with BigData and Approximation Support.
+Generates a war file using maven build which is deployed in tomcat and APIs will start.
+ 
+----------------------------------------------------------------------------------------------------
+
+
+
+
 Adserver Support - This involves scaled Adserver with support for Elasticsearch and new Tracker - Response based Tracker for Chatbot module which takes user response corresponding to questions asked from users.
+
+----------------------------------------------------------------------------------------------------------
+
+
 
 
 Semantic Engine is set up in Servers and code can be obtained from there. 
@@ -60,6 +105,9 @@ Semantic Engine is set up in Servers and code can be obtained from there.
 3)Recommendation module in Python 
 
 
+
+
+-------------------------------------------------------------------------------------------------------------------------------
 //Javascript based scripts 
 
 <script src="https://cuberoottagmanager.dc.cuberoot.co/dcode2/dmpbasedc.js" defer></script>
