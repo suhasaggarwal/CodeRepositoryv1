@@ -69,6 +69,7 @@ EnhanceUserDataDaily.java
 
 EntityDataSync
 Generate a Runnable jar file using Following java Class having main method.
+Does entity based enhancement in cookie's data points. 
 SpecificFieldEnhancer.java
 
 
