@@ -14,3 +14,7 @@ Tamil
 https://s3-us-west-1.amazonaws.com/fasttext-vectors/word-vectors-v2/cc.ta.300.vec.gz
 Oriya
 https://s3-us-west-1.amazonaws.com/fasttext-vectors/word-vectors-v2/cc.or.300.vec.gz
+Hindi
+https://s3-us-west-1.amazonaws.com/fasttext-vectors/word-vectors-v2/cc.hi.300.vec.gz
+Bengali
+https://s3-us-west-1.amazonaws.com/fasttext-vectors/word-vectors-v2/cc.bn.300.vec.gz
