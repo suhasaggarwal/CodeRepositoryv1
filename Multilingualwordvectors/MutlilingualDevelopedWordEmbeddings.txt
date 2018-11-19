@@ -1,0 +1,16 @@
+300 Dimension word embeddings
+
+Gujrati
+https://s3-us-west-1.amazonaws.com/fasttext-vectors/word-vectors-v2/cc.gu.300.vec.gz
+Sanskrit
+https://s3-us-west-1.amazonaws.com/fasttext-vectors/word-vectors-v2/cc.sa.300.vec.gz
+Telugu
+https://s3-us-west-1.amazonaws.com/fasttext-vectors/word-vectors-v2/cc.te.300.vec.gz
+Assamese
+https://s3-us-west-1.amazonaws.com/fasttext-vectors/word-vectors-v2/cc.as.300.vec.gz
+Malayalam
+https://s3-us-west-1.amazonaws.com/fasttext-vectors/word-vectors-v2/cc.ml.300.vec.gz
+Tamil
+https://s3-us-west-1.amazonaws.com/fasttext-vectors/word-vectors-v2/cc.ta.300.vec.gz
+Oriya
+https://s3-us-west-1.amazonaws.com/fasttext-vectors/word-vectors-v2/cc.or.300.vec.gz
