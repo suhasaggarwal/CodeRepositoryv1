@@ -1,0 +1,483 @@
+Id,sectionMap
+1,Entertainment
+2,Fashion
+3,Food
+4,Lifestyle
+5,Trending
+6,Biztech
+7,Wedding
+8,Eyeglasses
+9,Sunglasses
+Segmentb0,Section Name
+Segmentb1,Madipakkam; Chennai
+Segmentb2,Velachery; Chennai
+Segmentb3,Wakad; Pune
+Segmentb4,Baner; Pune
+Segmentb5,Medavakkam; Chennai
+Segmentb6,Whitefield Hope Farm Junction; Bangalore
+Segmentb7,Horamavu; Bangalore
+Segmentb8,Thoraipakkam OMR; Chennai
+Segmentb9,Kondhwa; Pune
+Segmentb10,KR Puram; Bangalore
+Segmentb11,Dhayari; Pune
+Segmentb12,Perungudi; Chennai
+Segmentb13,Hadapsar; Pune
+Segmentb14,Kothrud; Pune
+Segmentb15,Vadgaon Budruk; Pune
+Segmentb16,Bavdhan; Pune
+Segmentb17,Mahadevapura; Bangalore
+Segmentb18,Ramamurthy Nagar; Bangalore
+Segmentb19,Jakkur; Bangalore
+Segmentb20,Perumbakkam; Chennai
+Segmentb21,Banaswadi; Bangalore
+Segmentb22,Kovilambakkam; Chennai
+Segmentb23,Rajarajeshwari Nagar; Bangalore
+Segmentb24,Ambegaon Budruk; Pune
+Segmentb25,Frazer Town; Bangalore
+Segmentb26,Warje; Pune
+Segmentb27,Marathahalli; Bangalore
+Segmentb28,Hebbal; Bangalore
+Segmentb29,Undri; Pune
+Segmentb30,Madambakkam; Chennai
+Segmentb31,Hennur; Bangalore
+Segmentb32,CV Raman Nagar; Bangalore
+Segmentb33,Aundh; Pune
+Segmentb34,East Tambaram; Chennai
+Segmentb35,Thanisandra; Bangalore
+Segmentb36,Balewadi; Pune
+Segmentb37,Sus; Pune
+Segmentb38,Varthur; Bangalore
+Segmentb39,Deccan Gymkhana; Pune
+Segmentb40,ITPL; Bangalore
+Segmentb41,Alandur; Chennai
+Segmentb42,Pashan; Pune
+Segmentb43,Pallavaram; Chennai
+Segmentb44,Yeshwantpur; Bangalore
+Segmentb45,Narayanapura on Hennur Main Road; Bangalore
+Segmentb46,Kalyan Nagar; Bangalore
+Segmentb47,Jalahalli; Bangalore
+Segmentb48,Sarjapur Road Wipro To Railway Crossing; Bangalore
+Segmentb49,Katraj; Pune
+Segmentb50,Kengeri; Bangalore
+Segmentb51,Ravet; Pune
+Segmentb52,NIBM Annex Mohammadwadi; Pune
+Segmentb53,Uttarahalli; Bangalore
+Segmentb54,Ramagondanahalli; Bangalore
+Segmentb55,Thiyagaraya Nagar; Chennai
+Segmentb56,Tathawade; Pune
+Segmentb57,Electronic City Phase 1; Bangalore
+Segmentb58,Thiruvanmiyur; Chennai
+Segmentb59,Kasavanahalli Off Sarjapur Road; Bangalore
+Segmentb60,Pimple Gurav; Pune
+Segmentb61,Chromepet; Chennai
+Segmentb62,Rahatani; Pune
+Segmentb63,Alandi; Pune
+Segmentb64,Pimple Saudagar; Pune
+Segmentb65,Andheri East; Mumbai
+Segmentb66,Kharadi; Pune
+Segmentb67,Bellandur; Bangalore
+Segmentb68,Handewadi; Pune
+Segmentb69,Thalambur; Chennai
+Segmentb70,Electronic City Phase 2; Bangalore
+Segmentb71,Kondapur; Hyderabad
+Segmentb72,Yelahanka; Bangalore
+Segmentb73,Nanganallur; Chennai
+Segmentb74,Wanowrie; Pune
+Segmentb75,Sanjay Nagar; Bangalore
+Segmentb76,Hinjewadi; Pune
+Segmentb77,Sai Baba Ashram; Bangalore
+Segmentb78,Kumaraswamy Layout; Bangalore
+Segmentb79,Hitech City; Hyderabad
+Segmentb80,Mahalunge; Pune
+Segmentb81,Palavakkam; Chennai
+Segmentb82,Banashankari; Bangalore
+Segmentb83,Brookefield; Bangalore
+Segmentb84,Navallur; Chennai
+Segmentb85,Indira Nagar; Bangalore
+Segmentb86,Sahakar Nagar; Bangalore
+Segmentb87,West Mambalam; Chennai
+Segmentb88,Karve Nagar; Pune
+Segmentb89,Andheri West; Mumbai
+Segmentb90,Kannamangala; Bangalore
+Segmentb91,Rajaji Nagar; Bangalore
+Segmentb92,Adyar; Chennai
+Segmentb93,Pimple Nilakh; Pune
+Segmentb94,Chikkanayakanahalli at Off Sarjapur; Bangalore
+Segmentb95,Mundhwa; Pune
+Segmentb96,Kodigehalli; Bangalore
+Segmentb97,Kadugodi; Bangalore
+Segmentb98,Sarjapur Road Post Railway Crossing; Bangalore
+Segmentb99,RMV; Bangalore
+Segmentb100,Pallikaranai; Chennai
+Segmentb101,Doddanekundi; Bangalore
+Segmentb102,Kuvempu Layout on Hennur Main Road; Bangalore
+Segmentb103,Avalahalli Off Sarjapur Road; Bangalore
+Segmentb104,Karapakkam; Chennai
+Segmentb105,Bibwewadi; Pune
+Segmentb106,Harlur; Bangalore
+Segmentb107,Padmanabha Nagar; Bangalore
+Segmentb108,Manjari; Pune
+Segmentb109,Gowrivakkam; Chennai
+Segmentb110,Serilingampally; Hyderabad
+Segmentb111,Kannur on Thanisandra Main Road; Bangalore
+Segmentb112,Nikol; Ahmedabad
+Segmentb113,Subramanyapura; Bangalore
+Segmentb114,Guduvancheri; Chennai
+Segmentb115,Kodambakkam; Chennai
+Segmentb116,Chikkagubbi on Hennur Main Road; Bangalore
+Segmentb117,Bachupally; Hyderabad
+Segmentb118,Gaac82b3ceae411d8bc38bced7a1fff559
+Segmentb119,Gultekdi; Pune
+Segmentb120,Pimpri; Pune
+Segmentb121,Bommanahalli; Bangalore
+Segmentb122,Vengaivasal; Chennai
+Segmentb123,Siruseri; Chennai
+Segmentb124,Anagalapura Near Hennur Main Road; Bangalore
+Segmentb125,Choolaimedu; Chennai
+Segmentb126,Chikhali; Pune
+Segmentb127,Kanathur Reddikuppam; Chennai
+Segmentb128,Nungambakkam; Chennai
+Segmentb129,Budigere Cross; Bangalore
+Segmentb130,Guindy; Chennai
+Segmentb131,Dattavadi; Pune
+Segmentb132,Domlur; Bangalore
+Segmentb133,Sholinganallur; Chennai
+Segmentb134,Hosa Road; Bangalore
+Segmentb135,Nagarbhavi; Bangalore
+Segmentb136,Vijay Nagar; Bangalore
+Segmentb137,Jogeshwari East; Mumbai
+Segmentb138,Padappai; Chennai
+Segmentb139,Seshadripuram; Bangalore
+Segmentb140,Malleswaram; Bangalore
+Segmentb141,Akurdi; Pune
+Segmentb142,Kodihalli on Old Airport Road; Bangalore
+Segmentb143,Odhav; Ahmedabad
+Segmentb144,Basaveswarnagar; Bangalore
+Segmentb145,Vidyaranyapura; Bangalore
+Segmentb146,Chinchwad; Pune
+Segmentb147,Moolacheri; Chennai
+Segmentb148,Ashok Nagar; Chennai
+Segmentb149,JP Nagar Phase 6; Bangalore
+Segmentb150,Perungalathur; Chennai
+Segmentb151,Ashok Nagar; Bangalore
+Segmentb152,Phursungi; Pune
+Segmentb153,Begur; Bangalore
+Segmentb154,Powai; Mumbai
+Segmentb155,Vandalur; Chennai
+Segmentb156,Moshi; Pune
+Segmentb157,Teynampet; Chennai
+Segmentb158,Sarjapur Road Till Wipro; Bangalore
+Segmentb159,Kudlu; Bangalore
+Segmentb160,Rajarhat; Kolkata
+Segmentb161,Gottigere; Bangalore
+Segmentb162,Saidapet; Chennai
+Segmentb163,Mandavelipakkam; Chennai
+Segmentb164,Vastral; Ahmedabad
+Segmentb165,Dubai Marina; Dubai
+Segmentb166,Chamarajpet; Bangalore
+Segmentb167,Konanakunte; Bangalore
+Segmentb168,HSR Layout; Bangalore
+Segmentb169,Swargate; Pune
+Segmentb170,BTM Layout; Bangalore
+Segmentb171,Besant Nagar; Chennai
+Segmentb172,Padur; Chennai
+Segmentb173,Shivaji Nagar; Pune
+Segmentb174,JP Nagar Phase 1; Bangalore
+Segmentb175,Thergaon; Pune
+Segmentb176,New Town; Kolkata
+Segmentb177,Mylapore; Chennai
+Segmentb178,Sarjapur; Bangalore
+Segmentb179,Nelamangala Town; Bangalore
+Segmentb180,Ulsoor; Bangalore
+Segmentb181,Alwarpet; Chennai
+Segmentb182,Koramangala; Bangalore
+Segmentb183,Sadashiv Peth; Pune
+Segmentb184,Bommasandra; Bangalore
+Segmentb185,Pragathi Nagar Kukatpally; Hyderabad
+Segmentb186,Appa Junction Peerancheru; Hyderabad
+Segmentb187,Nizampet; Hyderabad
+Segmentb188,Wagholi; Pune
+Segmentb189,Sadashiva Nagar; Bangalore
+Segmentb190,Dum Dum Park; Kolkata
+Segmentb191,Hulimavu; Bangalore
+Segmentb192,Kalpakkam; Chennai
+Segmentb193,Motera; Ahmedabad
+Segmentb194,Kumbalgodu; Bangalore
+Segmentb195,Vasanth Nagar; Bangalore
+Segmentb196,West Tambaram; Chennai
+Segmentb197,Royapettah; Chennai
+Segmentb198,Tollygunge; Kolkata
+Segmentb199,Junnasandra; Bangalore
+SegmentD0,Madipakkam; Chennai
+SegmentD1,Thoraipakkam OMR; Chennai
+SegmentD2,Velachery; Chennai
+SegmentD3,Medavakkam; Chennai
+SegmentD4,Baner; Pune
+SegmentD5,Wakad; Pune
+SegmentD6,Whitefield Hope Farm Junction; Bangalore
+SegmentD7,Horamavu; Bangalore
+SegmentD8,Kondhwa; Pune
+SegmentD9,KR Puram; Bangalore
+SegmentD10,Banaswadi; Bangalore
+SegmentD11,Vadgaon Budruk; Pune
+SegmentD12,Mahadevapura; Bangalore
+SegmentD13,Bavdhan; Pune
+SegmentD14,Dhayari; Pune
+SegmentD15,Hadapsar; Pune
+SegmentD16,Kovilambakkam; Chennai
+SegmentD17,Perungudi; Chennai
+SegmentD18,Jakkur; Bangalore
+SegmentD19,Kothrud; Pune
+SegmentD20,Ramamurthy Nagar; Bangalore
+SegmentD21,Rajarajeshwari Nagar; Bangalore
+SegmentD22,Perumbakkam; Chennai
+SegmentD23,Ambegaon Budruk; Pune
+SegmentD24,Frazer Town; Bangalore
+SegmentD25,Hebbal; Bangalore
+SegmentD26,Marathahalli; Bangalore
+SegmentD27,Undri; Pune
+SegmentD28,ITPL; Bangalore
+SegmentD29,Madambakkam; Chennai
+SegmentD30,Warje; Pune
+SegmentD31,Hennur; Bangalore
+SegmentD32,Pallavaram; Chennai
+SegmentD33,Aundh; Pune
+SegmentD34,Balewadi; Pune
+SegmentD35,East Tambaram; Chennai
+SegmentD36,Varthur; Bangalore
+SegmentD37,Alandur; Chennai
+SegmentD38,CV Raman Nagar; Bangalore
+SegmentD39,Kalyan Nagar; Bangalore
+SegmentD40,Pashan; Pune
+SegmentD41,Sus; Pune
+SegmentD42,Kengeri; Bangalore
+SegmentD43,Thanisandra; Bangalore
+SegmentD44,Yeshwantpur; Bangalore
+SegmentD45,Deccan Gymkhana; Pune
+SegmentD46,Jalahalli; Bangalore
+SegmentD47,Alandi; Pune
+SegmentD48,Narayanapura on Hennur Main Road; Bangalore
+SegmentD49,Tathawade; Pune
+SegmentD50,Kasavanahalli Off Sarjapur Road; Bangalore
+SegmentD51,Katraj; Pune
+SegmentD52,Ravet; Pune
+SegmentD53,Uttarahalli; Bangalore
+SegmentD54,Andheri East; Mumbai
+SegmentD55,Kharadi; Pune
+SegmentD56,Thiruvanmiyur; Chennai
+SegmentD57,Thiyagaraya Nagar; Chennai
+SegmentD58,Electronic City Phase 1; Bangalore
+SegmentD59,Ramagondanahalli; Bangalore
+SegmentD60,Sarjapur Road Wipro To Railway Crossing; Bangalore
+SegmentD61,Electronic City Phase 2; Bangalore
+SegmentD62,Kondapur; Hyderabad
+SegmentD63,Bellandur; Bangalore
+SegmentD64,Nanganallur; Chennai
+SegmentD65,Rahatani; Pune
+SegmentD66,Sai Baba Ashram; Bangalore
+SegmentD67,NIBM Annex Mohammadwadi; Pune
+SegmentD68,Pimple Saudagar; Pune
+SegmentD69,Handewadi; Pune
+SegmentD70,Pimple Gurav; Pune
+SegmentD71,Hinjewadi; Pune
+SegmentD72,Yelahanka; Bangalore
+SegmentD73,Brookefield; Bangalore
+SegmentD74,Chromepet; Chennai
+SegmentD75,Sanjay Nagar; Bangalore
+SegmentD76,Thalambur; Chennai
+SegmentD77,Banashankari; Bangalore
+SegmentD78,Wanowrie; Pune
+SegmentD79,Karve Nagar; Pune
+SegmentD80,West Mambalam; Chennai
+SegmentD81,Kumaraswamy Layout; Bangalore
+SegmentD82,Adyar; Chennai
+SegmentD83,Andheri West; Mumbai
+SegmentD84,Chikkanayakanahalli at Off Sarjapur; Bangalore
+SegmentD85,Pimple Nilakh; Pune
+SegmentD86,Kannamangala; Bangalore
+SegmentD87,Palavakkam; Chennai
+SegmentD88,Mahalunge; Pune
+SegmentD89,Navallur; Chennai
+SegmentD90,Kodigehalli; Bangalore
+SegmentD91,Mundhwa; Pune
+SegmentD92,Hitech City; Hyderabad
+SegmentD93,Pallikaranai; Chennai
+SegmentD94,Rajaji Nagar; Bangalore
+SegmentD95,Sahakar Nagar; Bangalore
+SegmentD96,Bibwewadi; Pune
+SegmentD97,RMV; Bangalore
+SegmentD98,Indira Nagar; Bangalore
+SegmentD99,Bachupally; Hyderabad
+SegmentD100,Doddanekundi; Bangalore
+SegmentD101,Guduvancheri; Chennai
+SegmentD102,Kadugodi; Bangalore
+SegmentD103,Kuvempu Layout on Hennur Main Road; Bangalore
+SegmentD104,Sarjapur Road Post Railway Crossing; Bangalore
+SegmentD105,Serilingampally; Hyderabad
+SegmentD106,Avalahalli Off Sarjapur Road; Bangalore
+SegmentD107,Karapakkam; Chennai
+SegmentD108,Manjari; Pune
+SegmentD109,Subramanyapura; Bangalore
+SegmentD110,Gultekdi; Pune
+SegmentD111,Kannur on Thanisandra Main Road; Bangalore
+SegmentD112,Padmanabha Nagar; Bangalore
+SegmentD113,Pimpri; Pune
+SegmentD114,Anagalapura Near Hennur Main Road; Bangalore
+SegmentD115,Budigere Cross; Bangalore
+SegmentD116,Chikkagubbi on Hennur Main Road; Bangalore
+SegmentD117,Guindy; Chennai
+SegmentD118,Kodambakkam; Chennai
+SegmentD119,Nikol; Ahmedabad
+SegmentD120,Vengaivasal; Chennai
+SegmentD121,Bommanahalli; Bangalore
+SegmentD122,Kanathur Reddikuppam; Chennai
+SegmentD123,Kodihalli on Old Airport Road; Bangalore
+SegmentD124,gaac82b3ceae411d8bc38bced7a1fff559
+SegmentD125,Harlur; Bangalore
+SegmentD126,Vijay Nagar; Bangalore
+SegmentD127,Gowrivakkam; Chennai
+SegmentD128,Perungalathur; Chennai
+SegmentD129,Siruseri; Chennai
+SegmentD130,Basaveswarnagar; Bangalore
+SegmentD131,Domlur; Bangalore
+SegmentD132,Jogeshwari East; Mumbai
+SegmentD133,Powai; Mumbai
+SegmentD134,Rajarhat; Kolkata
+SegmentD135,Vandalur; Chennai
+SegmentD136,Vidyaranyapura; Bangalore
+SegmentD137,Akurdi; Pune
+SegmentD138,Begur; Bangalore
+SegmentD139,Chikhali; Pune
+SegmentD140,Choolaimedu; Chennai
+SegmentD141,Dattavadi; Pune
+SegmentD142,Gottigere; Bangalore
+SegmentD143,JP Nagar Phase 6; Bangalore
+SegmentD144,Nagarbhavi; Bangalore
+SegmentD145,Nungambakkam; Chennai
+SegmentD146,Padur; Chennai
+SegmentD147,Shivaji Nagar; Pune
+SegmentD148,Ashok Nagar; Chennai
+SegmentD149,Chinchwad; Pune
+SegmentD150,JP Nagar Phase 1; Bangalore
+SegmentD151,Kudlu; Bangalore
+SegmentD152,Moolacheri; Chennai
+SegmentD153,Odhav; Ahmedabad
+SegmentD154,Padappai; Chennai
+SegmentD155,Sholinganallur; Chennai
+SegmentD156,Swargate; Pune
+SegmentD157,Teynampet; Chennai
+SegmentD158,HSR Layout; Bangalore
+SegmentD159,Malleswaram; Bangalore
+SegmentD160,Vastral; Ahmedabad
+SegmentD161,BTM Layout; Bangalore
+SegmentD162,Hosa Road; Bangalore
+SegmentD163,Kalpakkam; Chennai
+SegmentD164,Mogappair; Chennai
+SegmentD165,Moshi; Pune
+SegmentD166,Pragathi Nagar Kukatpally; Hyderabad
+SegmentD167,Seshadripuram; Bangalore
+SegmentD168,Thergaon; Pune
+SegmentD169,Ulsoor; Bangalore
+SegmentD170,Alwarpet; Chennai
+SegmentD171,Mandavelipakkam; Chennai
+SegmentD172,Motera; Ahmedabad
+SegmentD173,New Town; Kolkata
+SegmentD174,Phursungi; Pune
+SegmentD175,Saidapet; Chennai
+SegmentD176,Appa Junction Peerancheru; Hyderabad
+SegmentD177,Ashok Nagar; Bangalore
+SegmentD178,Besant Nagar; Chennai
+SegmentD179,Dubai Marina; Dubai
+SegmentD180,JP Nagar Phase 8; Bangalore
+SegmentD181,Jogeshwari West; Mumbai
+SegmentD182,Junnasandra; Bangalore
+SegmentD183,Konanakunte; Bangalore
+SegmentD184,Koramangala; Bangalore
+SegmentD185,Mylapore; Chennai
+SegmentD186,Royapettah; Chennai
+SegmentD187,Sadashiva Nagar; Bangalore
+SegmentD188,Sarjapur Road Till Wipro; Bangalore
+SegmentD189,Tollygunge; Kolkata
+SegmentD190,Abiramapuram; Chennai
+SegmentD191,Behala; Kolkata
+SegmentD192,Chamarajpet; Bangalore
+SegmentD193,Hulimavu; Bangalore
+SegmentD194,JP Nagar Phase 9; Bangalore
+SegmentD195,Jeevan Bima Nagar; Bangalore
+SegmentD196,Lake Town; Kolkata
+SegmentD197,Nelamangala Town; Bangalore
+SegmentD198,Nizampet; Hyderabad
+SegmentD199,Perambur; Chennai
+SegmentD200,Sarjapur; Bangalore
+SegmentD201,Wagholi; Pune
+SegmentD202,Bhosari; Pune
+SegmentD203,Gahunje; Pune
+SegmentD204,Hansol; Ahmedabad
+SegmentD205,Kasba Peth; Pune
+SegmentD206,Kogilu; Bangalore
+SegmentD207,Pammal; Chennai
+SegmentD208,Sadashiv Peth; Pune
+SegmentD209,Vasanth Nagar; Bangalore
+SegmentD210,West Tambaram; Chennai
+SegmentD211,Bennigana Halli; Bangalore
+SegmentD212,Bilekahalli; Bangalore
+SegmentD213,Bommasandra; Bangalore
+SegmentD214,Chandanagar; Hyderabad
+SegmentD215,Dasarahalli on Tumkur Road; Bangalore
+SegmentD216,Dhanori; Pune
+SegmentD217,Dum Dum Park; Kolkata
+SegmentD218,Ghatkopar West; Mumbai
+SegmentD219,Goregaon East; Mumbai
+SegmentD220,Hesaraghatta; Bangalore
+SegmentD221,Kelambakkam; Chennai
+SegmentD222,Khordha; Bhubaneswar
+SegmentD223,Mokila; Hyderabad
+SegmentD224,Murugesh Palya; Bangalore
+SegmentD225,Nagawara; Bangalore
+SegmentD226,Netaji Nagar; Kolkata
+SegmentD227,Raj Nagar Extension; Ghaziabad
+SegmentD228,Richmond Town; Bangalore
+SegmentD229,Talaghattapura; Bangalore
+SegmentD230,Vibhutipura; Bangalore
+SegmentD231,Virar; Mumbai
+SegmentD232,Arera Colony; Bhopal
+SegmentD233,Bhawani Peth; Pune
+SegmentD234,Carmelaram; Bangalore
+SegmentD235,Howrah; Kolkata
+SegmentD236,JP Nagar Phase 4; Bangalore
+SegmentD237,Kasarwadi; Pune
+SegmentD238,Kukatpally; Hyderabad
+SegmentD239,Kurla; Mumbai
+SegmentD240,Nana Chiloda; Ahmedabad
+SegmentD241,Nandambakkam; Chennai
+SegmentD242,Near Peenya Industrial Area; Bangalore
+SegmentD243,Patia; Bhubaneswar
+SegmentD244,Sarojini Nagar; Lucknow
+SegmentD245,Shivaji Nagar; Bangalore
+SegmentD246,Shreerang Nagar; Nashik
+SegmentD247,Sughad; Ahmedabad
+SegmentD248,Aliganj; Lucknow
+SegmentD249,Alipore; Kolkata
+SegmentD250,Ayanambakkam; Chennai
+SegmentD251,Baguihati; Kolkata
+SegmentD252,Chhawla; Delhi
+SegmentD253,Dapodi; Pune
+SegmentD254,Kumbalgodu; Bangalore
+SegmentD255,Nayabad; Kolkata
+SegmentD256,Neelankarai; Chennai
+SegmentD257,Parvati Darshan; Pune
+SegmentD258,Raja Annamalai Puram; Chennai
+SegmentD259,Shankarpalli; Hyderabad
+SegmentD260,Shivane; Pune
+SegmentD261,Tiruvallur; Chennai
+aa1,Coorg; Karnataka; india
+aa2,Manali; himachal pradesh; india
+aa3,Coorg; karnataka; india
+aa4,Coorg; undefined; india
+aa5,Ooty; undefined; india
+aa6,Manali; Himachal Pradesh; india
+aa7,Ooty; tamil nadu; india
+aa8,Mumbai; maharashtra; india
+aa9,Coorg; karnataka; India
+
+

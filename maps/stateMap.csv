@@ -1,0 +1,4109 @@
+id,states
+0,canillo
+1,la massana
+2,encamp
+3,andorra la vella
+4,ordino
+5,sant julia de loria
+6,escaldes engordany
+7,sharjah
+8,umm al quwain
+9,ras al khaimah
+10,dubai
+11,fujairah
+12,abu dhabi
+13,ajman
+14,parvan
+15,kabol
+16,takhar
+17,kapisa
+18,helmand
+19,vardak
+20,oruzgan
+21,panjshir
+22,sar e pol
+23,zabol
+24,lowgar
+25,baghlan
+26,daykondi
+27,kandahar
+28,farah
+29,paktia
+30,kondoz
+31,faryab
+32,bamian
+33,nangarhar
+34,jowzjan
+35,badakhshan
+36,ghazni
+37,balkh
+38,herat
+39,badghis
+40,konar
+41,nimruz
+42,ghowr
+43,samangan
+44,nurestan
+45,paktika
+46,khowst
+47,laghman
+48,saint mary
+49,saint george
+50,saint john
+51,barbuda
+52,saint peter
+53,saint philip
+54,saint paul
+55,redonda
+56,elbasan
+57,vlore
+58,korce
+59,tirane
+60,durres
+61,berat
+62,kukes
+63,gjirokaster
+64,shkoder
+65,fier
+66,lezhe
+67,diber
+68,ararat
+69,geghark'unik'
+70,yerevan
+71,syunik'
+72,aragatsotn
+73,tavush
+74,vayots' dzor
+75,shirak
+76,kotayk'
+77,lorri
+78,armavir
+79,moxico
+80,luanda
+81,benguela
+82,huambo
+83,lunda sul
+84,malanje
+85,namibe
+86,huila
+87,bie
+88,cunene
+89,cuanza sul
+90,zaire
+91,cuanza norte
+92,bengo
+93,lunda norte
+94,cuando cubango
+95,uige
+96,cabinda
+97,misiones
+98,chubut
+99,rio negro
+100,jujuy
+101,formosa
+102,san juan
+103,santiago del estero
+104,san luis
+105,tierra del fuego
+106,corrientes
+107,neuquen
+108,buenos aires
+109,salta
+110,chaco
+111,mendoza
+112,la rioja
+113,la pampa
+114,entre rios
+115,cordoba
+116,catamarca
+117,santa fe
+118,tucuman
+119,distrito federal
+120,santa cruz
+121,tirol
+122,burgenland
+123,wien
+124,karnten
+125,vorarlberg
+126,salzburg
+127,oberosterreich
+128,niederosterreich
+129,steiermark
+130,western australia
+131,victoria
+132,tasmania
+133,northern territory
+134,south australia
+135,new south wales
+136,queensland
+137,australian capital territory
+138,xankandi
+139,bilasuvar
+140,cabrayil
+141,calilabad
+142,zaqatala
+143,goranboy
+144,agdam
+145,quba
+146,xocali
+147,agstafa
+148,lankaran
+149,samux
+150,ganca
+151,qusar
+152,haciqabul
+153,mingacevir
+154,masalli
+155,astara
+156,agcabadi
+157,yardimli
+158,xocavand
+159,samkir
+160,naftalan
+161,baki
+162,abseron
+163,lacin
+164,qax
+165,saki
+166,qazax
+167,qobustan
+168,ismayilli
+169,gadabay
+170,fuzuli
+171,oguz
+172,samaxi
+173,imisli
+174,zangilan
+175,barda
+176,xanlar
+177,goycay
+178,kalbacar
+179,qubadli
+180,xizi
+181,agdas
+182,zardab
+183,tartar
+184,salyan
+185,yevlax
+186,lerik
+187,beylaqan
+188,neftcala
+189,lankaran
+190,daskasan
+191,ali bayramli
+192,balakan
+193,saki
+194,yevlax
+195,agsu
+196,davaci
+197,sumqayit
+198,naxcivan
+199,sabirabad
+200,qabala
+201,xacmaz
+202,tovuz
+203,ucar
+204,siyazan
+205,susa
+206,susa
+207,kurdamir
+208,saatli
+209,federation of bosnia and herzegovina
+210,republika srpska
+211,brcko district
+212,saint philip
+213,saint lucy
+214,saint michael
+215,saint andrew
+216,saint george
+217,saint john
+218,saint thomas
+219,saint james
+220,saint joseph
+221,saint peter
+222,christ church
+223,dhaka
+224,rangpur
+225,barisal
+226,chittagong
+227,sylhet
+228,rajshahi
+229,khulna
+230,luxembourg
+231,west vlaanderen
+232,hainaut
+233,namur
+234,oost vlaanderen
+235,brabant wallon
+236,wallonia
+237,flanders
+238,vlaams brabant
+239,brussels hoofdstedelijk gewest
+240,limburg
+241,antwerpen
+242,liege
+243,noumbiel
+244,sanmatenga
+245,ziro
+246,namentenga
+247,tapoa
+248,bazega
+249,seno
+250,kadiogo
+251,yagha
+252,nayala
+253,kourweogo
+254,loroum
+255,zoundweogo
+256,kouritenga
+257,leraba
+258,zondoma
+259,mouhoun
+260,boulgou
+261,gnagna
+262,kenedougou
+263,soum
+264,oubritenga
+265,komoe
+266,sanguie
+267,sissili
+268,banwa
+269,passore
+270,koulpelogo
+271,ganzourgou
+272,houet
+273,yatenga
+274,poni
+275,bam
+276,oudalan
+277,boulkiemde
+278,komondjari
+279,kompienga
+280,sourou
+281,gourma
+282,kossi
+283,bale
+284,ioba
+285,tuy
+286,bougouriba
+287,naouri
+288,sofiya
+289,shumen
+290,silistra
+291,smolyan
+292,lovech
+293,montana
+294,veliko turnovo
+295,khaskovo
+296,sliven
+297,burgas
+298,stara zagora
+299,blagoevgrad
+300,vratsa
+301,plovdiv
+302,kurdzhali
+303,dobrich
+304,kyustendil
+305,varna
+306,grad sofiya
+307,razgrad
+308,pernik
+309,pazardzhik
+310,mikhaylovgrad
+311,gabrovo
+312,pleven
+313,vidin
+314,ruse
+315,yambol
+316,turgovishte
+317,al hadd
+318,madinat
+319,jidd hafs
+320,al mintaqah ash shamaliyah
+321,al mintaqah al gharbiyah
+322,al asimah
+323,ash shamaliyah
+324,ar rifa
+325,mintaqat juzur hawar
+326,madinat hamad
+327,al manamah
+328,al mintaqah al wusta
+329,sitrah
+330,al wusta
+331,al muharraq
+332,al janubiyah
+333,gitega
+334,kirundo
+335,ruyigi
+336,bururi
+337,rutana
+338,makamba
+339,mwaro
+340,kayanza
+341,muramvya
+342,muyinga
+343,bujumbura
+344,cankuzo
+345,karuzi
+346,cibitoke
+347,ngozi
+348,bubanza
+349,atlanyique
+350,mono
+351,borgou
+352,donga
+353,alibori
+354,littoral
+355,oueme
+356,zou
+357,plateau
+358,kouffo
+359,atakora
+360,collines
+361,hamilton
+362,smiths
+363,devonshire
+364,southampton
+365,saint george
+366,hamilton
+367,saint george's
+368,warwick
+369,pembroke
+370,sandys
+371,paget
+372,collines
+373,kouffo
+374,littoral
+375,plateau
+376,zou
+377,alibori
+378,donga
+379,tutong
+380,belait
+381,brunei and muara
+382,temburong
+383,oueme
+384,potosi
+385,tarija
+386,la paz
+387,cochabamba
+388,santa cruz
+389,chuquisaca
+390,el beni
+391,oruro
+392,pando
+393,pernambuco
+394,tocantins
+395,rio grande do norte
+396,para
+397,rio de janeiro
+398,sergipe
+399,bahia
+400,mato grosso do sul
+401,ceara
+402,santa catarina
+403,maranhao
+404,rondonia
+405,distrito federal
+406,amapa
+407,minas gerais
+408,parana
+409,alagoas
+410,paraiba
+411,piaui
+412,acre
+413,goias
+414,espirito santo
+415,roraima
+416,mato grosso
+417,sao paulo
+418,amazonas
+419,rio grande do sul
+420,mayaguana
+421,long island
+422,governor's harbour
+423,bimini
+424,san salvador and rum cay
+425,inagua
+426,harbour island
+427,high rock
+428,rock sound
+429,fresh creek
+430,exuma
+431,freeport
+432,new providence
+433,kemps bay
+434,marsh harbour
+435,ragged island
+436,cat island
+437,acklins and crooked islands
+438,green turtle cay
+439,sandy point
+440,nichollstown and berry islands
+441,geylegphug
+442,daga
+443,samchi
+444,samdrup
+445,tashigang
+446,punakha
+447,mongar
+448,chirang
+449,paro
+450,tongsa
+451,ha
+452,wangdi phodrang
+453,lhuntshi
+454,thimphu
+455,shemgang
+456,pemagatsel
+457,bumthang
+458,chhukha
+459,central
+460,kgatleng
+461,kgalagadi
+462,southern
+463,south east
+464,ghanzi
+465,north west
+466,north east
+467,kweneng
+468,mahilyowskaya voblasts'
+469,brestskaya voblasts'
+470,minskaya voblasts'
+471,minsk
+472,vitsyebskaya voblasts'
+473,homyel'skaya voblasts'
+474,hrodzyenskaya voblasts'
+475,belize
+476,cayo
+477,corozal
+478,orange walk
+479,toledo
+480,stann creek
+481,manitoba
+482,new brunswick
+483,british columbia
+484,newfoundland
+485,saskatchewan
+486,prince edward island
+487,alberta
+488,northwest territories
+489,nunavut
+490,nova scotia
+491,quebec
+492,yukon territory
+493,ontario
+494,equateur
+495,maniema
+496,orientale
+497,bas congo
+498,sud kivu
+499,katanga
+500,nord kivu
+501,bandundu
+502,kinshasa
+503,kasai oriental
+504,ouaka
+505,ombella mpoko
+506,sangha mbaere
+507,bamingui bangoran
+508,haut mbomou
+509,ouham pende
+510,ouham
+511,mambere kadei
+512,bangui
+513,haute kotto
+514,basse kotto
+515,mbomou
+516,nana grebizi
+517,lobaye
+518,cuvette ouest
+519,kemo
+520,nana mambere
+521,cuvette ouest
+522,cuvette
+523,pool
+524,sangha
+525,likouala
+526,plateaux
+527,kouilou
+528,niari
+529,bouenza
+530,lekoumou
+531,brazzaville
+532,schaffhausen
+533,vaud
+534,geneve
+535,ticino
+536,uri
+537,obwalden
+538,jura
+539,basel stadt
+540,thurgau
+541,aargau
+542,ausser rhoden
+543,fribourg
+544,nidwalden
+545,luzern
+546,zug
+547,neuchatel
+548,basel landschaft
+549,bern
+550,sankt gallen
+551,graubunden
+552,valais
+553,inner rhoden
+554,glarus
+555,schwyz
+556,solothurn
+557,zurich
+558,haut sassandra
+559,worodougou
+560,denguele
+561,savanes
+562,moyen comoe
+563,marahoue
+564,fromager
+565,zanzan
+566,sud comoe
+567,agneby
+568,lacs
+569,lagunes
+570,dix huit montagnes
+571,sud bandama
+572,vallee du bandama
+573,bas sassandra
+574,n'zi comoe
+575,bafing
+576,moyen cavally
+577,bio bio
+578,los lagos
+579,region metropolitana
+580,libertador general bernardo o'higgins
+581,araucania
+582,los lagos
+583,antofagasta
+584,valparaiso
+585,atacama
+586,coquimbo
+587,los rios
+588,magallanes y de la antartica chilena
+589,arica y parinacota
+590,tarapaca
+591,aisen del general carlos ibanez del campo
+592,tarapaca
+593,maule
+594,littoral
+595,nord
+596,centre
+597,est
+598,sud ouest
+599,extreme nord
+600,sud
+601,ouest
+602,nord ouest
+603,adamaoua
+604,yunnan
+605,qinghai
+606,shanxi
+607,jilin
+608,hubei
+609,guangxi
+610,henan
+611,xinjiang
+612,zhejiang
+613,tianjin
+614,fujian
+615,nei mongol
+616,guizhou
+617,ningxia
+618,beijing
+619,jiangsu
+620,liaoning
+621,sichuan
+622,shandong
+623,hebei
+624,shanghai
+625,xizang
+626,shaanxi
+627,heilongjiang
+628,chongqing
+629,hunan
+630,gansu
+631,jiangxi
+632,anhui
+633,hainan
+634,guangdong
+635,casanare
+636,bolivar
+637,cesar
+638,caldas
+639,putumayo
+640,vaupes
+641,huila
+642,quindio
+643,arauca
+644,cordoba
+645,antioquia
+646,santander
+647,boyaca
+648,risaralda
+649,valle del cauca
+650,la guajira
+651,sucre
+652,san andres y providencia
+653,cundinamarca
+654,caqueta
+655,magdalena
+656,atlantico
+657,meta
+658,narino
+659,distrito especial
+660,tolima
+661,cauca
+662,amazonas
+663,vichada
+664,choco
+665,guainia
+666,guaviare
+667,norte de santander
+668,heredia
+669,alajuela
+670,limon
+671,san jose
+672,guanacaste
+673,puntarenas
+674,cartago
+675,santiago de cuba
+676,matanzas
+677,isla de la juventud
+678,holguin
+679,sancti spiritus
+680,las tunas
+681,villa clara
+682,camaguey
+683,pinar del rio
+684,guantanamo
+685,ciudad de la habana
+686,la habana
+687,granma
+688,cienfuegos
+689,ciego de avila
+690,maio
+691,sao nicolau
+692,santa cruz
+693,sao vicente
+694,santa catarina
+695,boa vista
+696,praia
+697,mosteiros
+698,paul
+699,sao filipe
+700,ribeira grande
+701,brava
+702,sal
+703,tarrafal
+704,sao domingos
+705,sao miguel
+706,nicosia
+707,famagusta
+708,paphos
+709,limassol
+710,kyrenia
+711,larnaca
+712,moravskoslezsky kraj
+713,karlovarsky kraj
+714,jihomoravsky kraj
+715,hlavni mesto praha
+716,pardubicky kraj
+717,jihocesky kraj
+718,stredocesky kraj
+719,olomoucky kraj
+720,kralovehradecky kraj
+721,vysocina
+722,zlinsky kraj
+723,liberecky kraj
+724,ustecky kraj
+725,plzensky kraj
+726,bremen
+727,sachsen
+728,nordrhein westfalen
+729,brandenburg
+730,niedersachsen
+731,berlin
+732,schleswig holstein
+733,saarland
+734,thuringen
+735,hamburg
+736,sachsen anhalt
+737,rheinland pfalz
+738,hessen
+739,mecklenburg vorpommern
+740,bayern
+741,baden wurttemberg
+742,tadjoura
+743,dikhil
+744,obock
+745,djibouti
+746,ali sabieh
+747,arta
+748,hovedstaden
+749,midtjylland
+750,syddanmark
+751,sjelland
+752,nordjylland
+753,saint john
+754,saint paul
+755,saint patrick
+756,saint joseph
+757,saint andrew
+758,saint mark
+759,saint david
+760,saint luke
+761,saint peter
+762,saint george
+763,puerto plata
+764,distrito nacional
+765,santo domingo
+766,san jose de ocoa
+767,dajabon
+768,santiago
+769,sanchez ramirez
+770,samana
+771,el seibo
+772,pedernales
+773,elias pina
+774,la vega
+775,duarte
+776,espaillat
+777,san cristobal
+778,monsenor nouel
+779,hato mayor
+780,baoruco
+781,monte plata
+782,distrito nacional
+783,maria trinidad sanchez
+784,independencia
+785,peravia
+786,barahona
+787,la romana
+788,san pedro de macoris
+789,valverde
+790,san juan
+791,peravia
+792,la altagracia
+793,salcedo
+794,monte cristi
+795,azua
+796,santiago rodriguez
+797,tipaza
+798,mascara
+799,annaba
+800,constantine
+801,medea
+802,relizane
+803,ain temouchent
+804,saida
+805,skikda
+806,naama
+807,blida
+808,mostaganem
+809,m'sila
+810,souk ahras
+811,oum el bouaghi
+812,tissemsilt
+813,jijel
+814,djelfa
+815,ghardaia
+816,ain defla
+817,ouargla
+818,bouira
+819,tiaret
+820,bordj bou arreridj
+821,illizi
+822,oran
+823,setif
+824,biskra
+825,tizi ouzou
+826,batna
+827,bechar
+828,alger
+829,tlemcen
+830,tindouf
+831,mila
+832,sidi bel abbes
+833,el oued
+834,adrar
+835,bejaia
+836,el bayadh
+837,guelma
+838,khenchela
+839,laghouat
+840,chlef
+841,el tarf
+842,boumerdes
+843,tamanghasset
+844,tebessa
+845,pastaza
+846,napo
+847,los rios
+848,tungurahua
+849,orellana
+850,esmeraldas
+851,sucumbios
+852,el oro
+853,carchi
+854,imbabura
+855,pichincha
+856,galapagos
+857,zamora chinchipe
+858,canar
+859,cotopaxi
+860,chimborazo
+861,manabi
+862,morona santiago
+863,guayas
+864,bolivar
+865,loja
+866,azuay
+867,jogevamaa
+868,harjumaa
+869,tartumaa
+870,parnu
+871,kohtla jarve
+872,valgamaa
+873,parnumaa
+874,jarvamaa
+875,saaremaa
+876,laanemaa
+877,laane virumaa
+878,vorumaa
+879,viljandimaa
+880,tartu
+881,hiiumaa
+882,sillamae
+883,narva
+884,raplamaa
+885,ida virumaa
+886,polvamaa
+887,tallinn
+888,asyut
+889,al minya
+890,suhaj
+891,al wadi al jadid
+892,matruh
+893,ash sharqiyah
+894,al bahr al ahmar
+895,al minufiyah
+896,al fayyum
+897,al gharbiyah
+898,al buhayrah
+899,aswan
+900,shamal sina'
+901,janub sina'
+902,bur sa'id
+903,kafr ash shaykh
+904,al iskandariyah
+905,qina
+906,al qalyubiyah
+907,al jizah
+908,dumyat
+909,al isma'iliyah
+910,al qahirah
+911,bani suwayf
+912,ad daqahliyah
+913,as suways
+914,al uqsur
+915,anseba
+916,debub
+917,gash barka
+918,debubawi k'eyih bahri
+919,ma'akel
+920,semenawi k'eyih bahri
+921,galicia
+922,pais vasco
+923,canarias
+924,extremadura
+925,asturias
+926,navarra
+927,islas baleares
+928,murcia
+929,andalucia
+930,madrid
+931,catalonia
+932,castilla la mancha
+933,cantabria
+934,comunidad valenciana
+935,castilla y leon
+936,aragon
+937,la rioja
+938,afar
+939,yedebub biheroch bihereseboch na hizboch
+940,sumale
+941,amara
+942,dire dawa
+943,adis abeba
+944,gambela hizboch
+945,oromiya
+946,tigray
+947,hareri hizb
+948,binshangul gumuz
+949,aland
+950,southern finland
+951,eastern finland
+952,western finland
+953,oulu
+954,lapland
+955,eastern
+956,western
+957,central
+958,rotuma
+959,northern
+960,pohnpei
+961,kosrae
+962,chuuk
+963,yap
+964,provence alpes cote d'azur
+965,auvergne
+966,pays de la loire
+967,rhone alpes
+968,limousin
+969,aquitaine
+970,nord pas de calais
+971,basse normandie
+972,bourgogne
+973,midi pyrenees
+974,haute normandie
+975,franche comte
+976,lorraine
+977,corse
+978,picardie
+979,poitou charentes
+980,centre
+981,languedoc roussillon
+982,alsace
+983,bretagne
+984,ile de france
+985,champagne ardenne
+986,nyanga
+987,estuaire
+988,woleu ntem
+989,haut ogooue
+990,ogooue maritime
+991,ogooue lolo
+992,ogooue ivindo
+993,moyen ogooue
+994,ngounie
+995,portsmouth
+996,st. helens
+997,southampton
+998,stirling
+999,scottish borders, the
+1000,rhondda cynon taff
+1001,southwark
+1002,cumbria
+1003,hampshire
+1004,haringey
+1005,renfrewshire
+1006,clackmannanshire
+1007,down
+1008,carrickfergus
+1009,bath and north east somerset
+1010,kingston upon hull, city of
+1011,kensington and chelsea
+1012,wirral
+1013,oldham
+1014,staffordshire
+1015,windsor and maidenhead
+1016,darlington
+1017,hammersmith and fulham
+1018,poole
+1019,craigavon
+1020,doncaster
+1021,sunderland
+1022,glasgow city
+1023,edinburgh, city of
+1024,merthyr tydfil
+1025,ballymoney
+1026,ballymena
+1027,havering
+1028,armagh
+1029,west dunbartonshire
+1030,surrey
+1031,pembrokeshire
+1032,newham
+1033,cookstown
+1034,peterborough
+1035,hartlepool
+1036,kirklees
+1037,warrington
+1038,merton
+1039,aberdeenshire
+1040,north east lincolnshire
+1041,wakefield
+1042,north yorkshire
+1043,trafford
+1044,york
+1045,greenwich
+1046,strabane
+1047,herefordshire
+1048,lambeth
+1049,hertford
+1050,newport
+1051,gateshead
+1052,hounslow
+1053,coventry
+1054,devon
+1055,birmingham
+1056,monmouthshire
+1057,midlothian
+1058,telford and wrekin
+1059,east dunbartonshire
+1060,belfast
+1061,north lincolnshire
+1062,norfolk
+1063,south gloucestershire
+1064,bedfordshire
+1065,cardiff
+1066,northumberland
+1067,bridgend
+1068,sefton
+1069,stoke on trent
+1070,highland
+1071,bolton
+1072,northamptonshire
+1073,blackburn with darwen
+1074,knowsley
+1075,east riding of yorkshire
+1076,harrow
+1077,denbighshire
+1078,bedfordshire
+1079,wrexham
+1080,ceredigion
+1081,rotherham
+1082,flintshire
+1083,newcastle upon tyne
+1084,derby
+1085,limavady
+1086,tower hamlets
+1087,enfield
+1088,kent
+1089,bracknell forest
+1090,liverpool
+1091,south tyneside
+1092,newry and mourne
+1093,conwy
+1094,plymouth
+1095,fife
+1096,bromley
+1097,central bedfordshire
+1098,oxfordshire
+1099,ards
+1100,falkirk
+1101,east lothian
+1102,shropshire
+1103,south lanarkshire
+1104,newtownabbey
+1105,orkney
+1106,warwickshire
+1107,torfaen
+1108,lisburn
+1109,castlereagh
+1110,north lanarkshire
+1111,hillingdon
+1112,wiltshire
+1113,stockport
+1114,west berkshire
+1115,rochdale
+1116,bradford
+1117,north ayrshire
+1118,perth and kinross
+1119,moyle
+1120,blackpool
+1121,omagh
+1122,swindon
+1123,manchester
+1124,dungannon
+1125,north down
+1126,dundee city
+1127,southend on sea
+1128,ealing
+1129,croydon
+1130,bristol, city of
+1131,gloucestershire
+1132,north tyneside
+1133,barking and dagenham
+1134,solihull
+1135,lewisham
+1136,leicestershire
+1137,sheffield
+1138,larne
+1139,leicester
+1140,dorset
+1141,slough
+1142,durham
+1143,kingston upon thames
+1144,gwynedd
+1145,neath port talbot
+1146,suffolk
+1147,brighton and hove
+1148,somerset
+1149,dudley
+1150,coleraine
+1151,derry
+1152,nottinghamshire
+1153,nottingham
+1154,brent
+1155,cornwall
+1156,barnsley
+1157,west lothian
+1158,sandwell
+1159,dumfries and galloway
+1160,london, city of
+1161,moray
+1162,powys
+1163,carmarthenshire
+1164,tameside
+1165,stockton on tees
+1166,caerphilly
+1167,calderdale
+1168,cheshire
+1169,cheshire east
+1170,wolverhampton
+1171,waltham forest
+1172,antrim
+1173,lancashire
+1174,essex
+1175,milton keynes
+1176,bexley
+1177,shetland islands
+1178,islington
+1179,luton
+1180,south ayrshire
+1181,rutland
+1182,bury
+1183,argyll and bute
+1184,sutton
+1185,banbridge
+1186,wandsworth
+1187,isle of wight
+1188,leeds
+1189,barnet
+1190,westminster
+1191,isles of scilly
+1192,redcar and cleveland
+1193,magherafelt
+1194,east ayrshire
+1195,halton
+1196,worcestershire
+1197,eilean siar
+1198,north somerset
+1199,walsall
+1200,middlesbrough
+1201,wigan
+1202,blaenau gwent
+1203,swansea
+1204,vale of glamorgan, the
+1205,torbay
+1206,lincolnshire
+1207,richmond upon thames
+1208,derbyshire
+1209,camden
+1210,cheshire west and chester
+1211,redbridge
+1212,buckinghamshire
+1213,wokingham
+1214,medway
+1215,reading
+1216,inverclyde
+1217,aberdeen city
+1218,east sussex
+1219,bournemouth
+1220,east renfrewshire
+1221,hackney
+1222,thurrock
+1223,angus
+1224,cambridgeshire
+1225,isle of anglesey
+1226,west sussex
+1227,salford
+1228,fermanagh
+1229,saint andrew
+1230,saint john
+1231,saint george
+1232,saint mark
+1233,saint patrick
+1234,saint david
+1235,ninotsmindis raioni
+1236,senakis raioni
+1237,p'ot'i
+1238,lanch'khut'is raioni
+1239,martvilis raioni
+1240,dedop'listsqaros raioni
+1241,dmanisis raioni
+1242,t'elavis raioni
+1243,kaspis raioni
+1244,vanis raioni
+1245,k'ut'aisi
+1246,bolnisis raioni
+1247,rust'avi
+1248,abashis raioni
+1249,baghdat'is raioni
+1250,mestiis raioni
+1251,gori
+1252,sach'kheris raioni
+1253,goris raioni
+1254,aspindzis raioni
+1255,akhalgoris raioni
+1256,t'erjolis raioni
+1257,lagodekhis raioni
+1258,zestap'onis raioni
+1259,gardabanis raioni
+1260,ajaria
+1261,akhalts'ikhis raioni
+1262,khobis raioni
+1263,ch'khorotsqus raioni
+1264,khashuris raioni
+1265,akhmetis raioni
+1266,ozurget'is raioni
+1267,t'ianet'is raioni
+1268,tsalenjikhis raioni
+1269,lentekhis raioni
+1270,t'et'ritsqaros raioni
+1271,akhalk'alak'is raioni
+1272,kharagaulis raioni
+1273,tsqaltubo
+1274,gurjaanis raioni
+1275,abkhazia
+1276,marneulis raioni
+1277,onis raioni
+1278,dushet'is raioni
+1279,ts'ageris raioni
+1280,t'bilisi
+1281,k'arelis raioni
+1282,sagarejos raioni
+1283,khonis raioni
+1284,ch'okhatauris raioni
+1285,samtrediis raioni
+1286,mts'khet'is raioni
+1287,qazbegis raioni
+1288,zugdidi
+1289,qvarlis raioni
+1290,zugdidis raioni
+1291,chiat'ura
+1292,borjomis raioni
+1293,adigenis raioni
+1294,javis raioni
+1295,tsalkis raioni
+1296,tqibuli
+1297,ambrolauris raioni
+1298,sighnaghis raioni
+1299,upper east
+1300,ashanti
+1301,greater accra
+1302,central
+1303,northern
+1304,volta
+1305,upper west
+1306,western
+1307,brong ahafo
+1308,eastern
+1309,ostgronland
+1310,vestgronland
+1311,nordgronland
+1312,western
+1313,north bank
+1314,banjul
+1315,lower river
+1316,upper river
+1317,central river
+1318,kissidougou
+1319,siguiri
+1320,dabola
+1321,yomou
+1322,nzerekore
+1323,lola
+1324,kindia
+1325,koubia
+1326,kerouane
+1327,telimele
+1328,koundara
+1329,conakry
+1330,fria
+1331,kouroussa
+1332,faranah
+1333,kankan
+1334,tougue
+1335,mandiana
+1336,boffa
+1337,dubreka
+1338,mamou
+1339,gaoual
+1340,labe
+1341,pita
+1342,boke
+1343,forecariah
+1344,lelouma
+1345,coyah
+1346,macenta
+1347,beyla
+1348,mali
+1349,dinguiraye
+1350,gueckedou
+1351,dalaba
+1352,wele nzas
+1353,litoral
+1354,bioko sur
+1355,bioko norte
+1356,annobon
+1357,kie ntem
+1358,centro sur
+1359,aitolia kai akarnania
+1360,trikala
+1361,kastoria
+1362,evritania
+1363,dhodhekanisos
+1364,fthiotis
+1365,khios
+1366,thesprotia
+1367,fokis
+1368,korinthia
+1369,preveza
+1370,zakinthos
+1371,lakonia
+1372,larisa
+1373,kerkira
+1374,kikladhes
+1375,argolis
+1376,khania
+1377,evros
+1378,pella
+1379,xanthi
+1380,ioannina
+1381,samos
+1382,drama
+1383,rethimni
+1384,voiotia
+1385,magnisia
+1386,kilkis
+1387,rodhopi
+1388,messinia
+1389,ilia
+1390,serrai
+1391,imathia
+1392,khalkidhiki
+1393,thessaloniki
+1394,kardhitsa
+1395,levkas
+1396,evvoia
+1397,arta
+1398,pieria
+1399,iraklion
+1400,kozani
+1401,kefallinia
+1402,grevena
+1403,kavala
+1404,florina
+1405,attiki
+1406,lesvos
+1407,arkadhia
+1408,akhaia
+1409,lasithi
+1410,izabal
+1411,retalhuleu
+1412,sacatepequez
+1413,suchitepequez
+1414,santa rosa
+1415,quetzaltenango
+1416,el progreso
+1417,alta verapaz
+1418,guatemala
+1419,san marcos
+1420,quiche
+1421,jutiapa
+1422,peten
+1423,chimaltenango
+1424,huehuetenango
+1425,chiquimula
+1426,zacapa
+1427,baja verapaz
+1428,totonicapan
+1429,solola
+1430,escuintla
+1431,jalapa
+1432,cacheu
+1433,bafata
+1434,gabu
+1435,tombali
+1436,quinara
+1437,bolama
+1438,biombo
+1439,bissau
+1440,oio
+1441,mahaica berbice
+1442,demerara mahaica
+1443,east berbice corentyne
+1444,cuyuni mazaruni
+1445,pomeroon supenaam
+1446,barima waini
+1447,upper takutu upper essequibo
+1448,potaro siparuni
+1449,upper demerara berbice
+1450,essequibo islands west demerara
+1451,yoro
+1452,cortes
+1453,olancho
+1454,copan
+1455,atlantida
+1456,choluteca
+1457,lempira
+1458,colon
+1459,valle
+1460,francisco morazan
+1461,santa barbara
+1462,comayagua
+1463,intibuca
+1464,islas de la bahia
+1465,la paz
+1466,gracias a dios
+1467,el paraiso
+1468,ocotepeque
+1469,zagrebacka
+1470,sibensko kninska
+1471,grad zagreb
+1472,zadarska
+1473,dubrovacko neretvanska
+1474,viroviticko podravska
+1475,brodsko posavska
+1476,vukovarsko srijemska
+1477,medimurska
+1478,koprivnicko krizevacka
+1479,osjecko baranjska
+1480,varazdinska
+1481,istarska
+1482,sisacko moslavacka
+1483,karlovacka
+1484,krapinsko zagorska
+1485,splitsko dalmatinska
+1486,licko senjska
+1487,pozesko slavonska
+1488,bjelovarsko bilogorska
+1489,primorsko goranska
+1490,nord
+1491,nord ouest
+1492,sud est
+1493,sud
+1494,ouest
+1495,nord est
+1496,nippes
+1497,grand' anse
+1498,artibonite
+1499,centre
+1500,bacs kiskun
+1501,fejer
+1502,borsod abauj zemplen
+1503,pecs
+1504,szekesfehervar
+1505,baranya
+1506,tatabanya
+1507,veszprem
+1508,hajdu bihar
+1509,szolnok
+1510,gyor moson sopron
+1511,salgotarjan
+1512,sopron
+1513,komarom esztergom
+1514,jasz nagykun szolnok
+1515,budapest
+1516,hodmezovasarhely
+1517,erd
+1518,debrecen
+1519,zala
+1520,szeged
+1521,nagykanizsa
+1522,kecskemet
+1523,bekescsaba
+1524,bekes
+1525,eger
+1526,szekszard
+1527,tolna
+1528,kaposvar
+1529,vas
+1530,veszprem
+1531,miskolc
+1532,szombathely
+1533,csongrad
+1534,nograd
+1535,nyiregyhaza
+1536,pest
+1537,heves
+1538,gyor
+1539,somogy
+1540,szabolcs szatmar bereg
+1541,zalaegerszeg
+1542,dunaujvaros
+1543,sumatera selatan
+1544,gorontalo
+1545,maluku utara
+1546,nusa tenggara timur
+1547,papua
+1548,sulawesi barat
+1549,kepulauan bangka belitung
+1550,irian jaya barat
+1551,bali
+1552,aceh
+1553,sulawesi tenggara
+1554,kalimantan selatan
+1555,lampung
+1556,kepulauan riau
+1557,jawa tengah
+1558,sulawesi selatan
+1559,jakarta raya
+1560,maluku
+1561,bengkulu
+1562,nusa tenggara barat
+1563,riau
+1564,banten
+1565,sulawesi tengah
+1566,kalimantan tengah
+1567,sumatera barat
+1568,sumatera utara
+1569,kalimantan barat
+1570,sulawesi utara
+1571,jawa timur
+1572,yogyakarta
+1573,jambi
+1574,kalimantan timur
+1575,jawa barat
+1576,laois
+1577,carlow
+1578,clare
+1579,galway
+1580,kerry
+1581,offaly
+1582,wicklow
+1583,dublin
+1584,donegal
+1585,sligo
+1586,waterford
+1587,kildare
+1588,wexford
+1589,mayo
+1590,cavan
+1591,monaghan
+1592,cork
+1593,roscommon
+1594,westmeath
+1595,tipperary
+1596,louth
+1597,meath
+1598,limerick
+1599,kilkenny
+1600,longford
+1601,leitrim
+1602,hazafon
+1603,yerushalayim
+1604,hefa
+1605,tel aviv
+1606,hamerkaz
+1607,hadarom
+1608,uttarakhand
+1609,uttar pradesh
+1610,haryana
+1611,kerala
+1612,jammu and kashmir
+1613,andaman and nicobar islands
+1614,himachal pradesh
+1615,karnataka
+1616,goa
+1617,assam
+1618,madhya pradesh
+1619,orissa
+1620,nagaland
+1621,andhra pradesh
+1622,tripura
+1623,daman and diu
+1624,arunachal pradesh
+1625,chandigarh
+1626,sikkim
+1627,meghalaya
+1628,delhi
+1629,puducherry
+1630,dadra and nagar haveli
+1631,tamil nadu
+1632,west bengal
+1633,mizoram
+1634,bihar
+1635,punjab
+1636,manipur
+1637,maharashtra
+1638,rajasthan
+1639,jharkhand
+1640,chhattisgarh
+1641,gujarat
+1642,lakshadweep
+1643,diyala
+1644,al anbar
+1645,al muthanna
+1646,al basrah
+1647,dahuk
+1648,as sulaymaniyah
+1649,karbala'
+1650,arbil
+1651,al qadisiyah
+1652,ninawa
+1653,salah ad din
+1654,at ta'mim
+1655,maysan
+1656,an najaf
+1657,babil
+1658,baghdad
+1659,wasit
+1660,dhi qar
+1661,esfahan
+1662,bushehr
+1663,semnan
+1664,bakhtaran
+1665,semnan province
+1666,markazi
+1667,kohkiluyeh va buyer ahmadi
+1668,gilan
+1669,yazd
+1670,zanjan
+1671,east azarbaijan
+1672,ilam
+1673,mazandaran
+1674,qazvin
+1675,mazandaran
+1676,zanjan
+1677,markazi
+1678,yazd
+1679,golestan
+1680,kerman
+1681,khorasan e shemali
+1682,khuzestan
+1683,alborz
+1684,zanjan
+1685,fars
+1686,hormozgan
+1687,kordestan
+1688,markazi
+1689,azarbayjan e bakhtari
+1690,qom
+1691,khorasan
+1692,khorasan e janubi
+1693,sistan va baluchestan
+1694,chahar mahall va bakhtiari
+1695,khorasan e razavi
+1696,ardabil
+1697,kerman
+1698,lorestan
+1699,hamadan
+1700,tehran
+1701,kjosarsysla
+1702,austurland
+1703,gullbringusysla
+1704,arnessysla
+1705,sudur mulasysla
+1706,austur hunavatnssysla
+1707,sudur tingeyjarsysla
+1708,nordur mulasysla
+1709,myrasysla
+1710,suourland
+1711,vestur skaftafellssysla
+1712,skagafjardarsysla
+1713,suournes
+1714,vestur hunavatnssysla
+1715,hofuoborgarsvaoio
+1716,vestfiroir
+1717,strandasysla
+1718,eyjafjardarsysla
+1719,borgarfjardarsysla
+1720,norourland eystra
+1721,vestur isafjardarsysla
+1722,snafellsnes  og hnappadalssysla
+1723,vesturland
+1724,austur skaftafellssysla
+1725,norourland vestra
+1726,rangarvallasysla
+1727,nordur tingeyjarsysla
+1728,vestur bardastrandarsysla
+1729,veneto
+1730,liguria
+1731,abruzzi
+1732,campania
+1733,friuli venezia giulia
+1734,lombardia
+1735,basilicata
+1736,sicilia
+1737,valle d'aosta
+1738,marche
+1739,puglia
+1740,molise
+1741,calabria
+1742,trentino alto adige
+1743,lazio
+1744,sardegna
+1745,toscana
+1746,emilia romagna
+1747,piemonte
+1748,umbria
+1749,saint mary
+1750,saint thomas
+1751,portland
+1752,trelawny
+1753,kingston
+1754,saint catherine
+1755,westmoreland
+1756,hanover
+1757,saint james
+1758,manchester
+1759,saint andrew
+1760,clarendon
+1761,saint elizabeth
+1762,saint ann
+1763,al aqabah
+1764,amman
+1765,jarash
+1766,al balqa'
+1767,az zaraqa
+1768,at tafilah
+1769,ajlun
+1770,al mafraq
+1771,al karak
+1772,madaba
+1773,ma'an
+1774,irbid
+1775,shiga
+1776,niigata
+1777,nagasaki
+1778,kanagawa
+1779,yamagata
+1780,ishikawa
+1781,saitama
+1782,kyoto
+1783,mie
+1784,tokyo
+1785,okayama
+1786,nagano
+1787,kagoshima
+1788,fukuoka
+1789,shimane
+1790,saga
+1791,hiroshima
+1792,tottori
+1793,shizuoka
+1794,yamanashi
+1795,ibaraki
+1796,wakayama
+1797,iwate
+1798,tokushima
+1799,kumamoto
+1800,aichi
+1801,toyama
+1802,nara
+1803,fukushima
+1804,kochi
+1805,aomori
+1806,osaka
+1807,miyagi
+1808,akita
+1809,tochigi
+1810,kagawa
+1811,ehime
+1812,fukui
+1813,hyogo
+1814,oita
+1815,yamaguchi
+1816,chiba
+1817,gifu
+1818,okinawa
+1819,hokkaido
+1820,miyazaki
+1821,gumma
+1822,rift valley
+1823,eastern
+1824,western
+1825,nyanza
+1826,north eastern
+1827,coast
+1828,nairobi area
+1829,central
+1830,talas
+1831,batken
+1832,ysyk kol
+1833,bishkek
+1834,osh
+1835,naryn
+1836,osh
+1837,chuy
+1838,jalal abad
+1839,kampong chhnang
+1840,banteay meanchey
+1841,phnum penh
+1842,prey veng
+1843,kampong thum
+1844,pailin
+1845,batdambang
+1846,batdambang
+1847,kracheh
+1848,preah seihanu
+1849,pursat
+1850,svay rieng
+1851,siem reap
+1852,stung treng
+1853,ratanakiri kiri
+1854,mondulkiri
+1855,kampot
+1856,phnum penh
+1857,kampong cham
+1858,takeo
+1859,preah vihear
+1860,ratanakiri
+1861,koh kong
+1862,kandal
+1863,kampong speu
+1864,line islands
+1865,phoenix islands
+1866,gilbert islands
+1867,grande comore
+1868,moheli
+1869,anjouan
+1870,trinity palmetto point
+1871,saint george basseterre
+1872,saint thomas lowland
+1873,saint john figtree
+1874,saint thomas middle island
+1875,saint paul charlestown
+1876,saint george gingerland
+1877,saint paul capisterre
+1878,saint james windward
+1879,saint anne sandy point
+1880,saint peter basseterre
+1881,christ church nichola town
+1882,saint john capisterre
+1883,saint mary cayon
+1884,p'yongyang si
+1885,namp'o si
+1886,hamgyong namdo
+1887,hamgyong bukto
+1888,najin sonbong si
+1889,kaesong si
+1890,kangwon do
+1891,hwanghae namdo
+1892,p'yongan bukto
+1893,chagang do
+1894,hwanghae bukto
+1895,p'yongan namdo
+1896,yanggang do
+1897,pusan jikhalsi
+1898,ch'ungch'ong bukto
+1899,cheju do
+1900,kyongsang namdo
+1901,taejon jikhalsi
+1902,kyonggi do
+1903,taegu jikhalsi
+1904,ch'ungch'ong namdo
+1905,cholla namdo
+1906,ulsan gwangyoksi
+1907,kyongsang bukto
+1908,kangwon do
+1909,seoul t'ukpyolsi
+1910,cholla bukto
+1911,inch'on jikhalsi
+1912,kwangju jikhalsi
+1913,al ahmadi
+1914,al jahra
+1915,hawalli
+1916,mubarak al kabir
+1917,al kuwayt
+1918,al farwaniyah
+1919,midland
+1920,creek
+1921,western
+1922,south town
+1923,spot bay
+1924,eastern
+1925,west end
+1926,stake bay
+1927,east kazakhstan
+1928,qaraghandy
+1929,south kazakhstan
+1930,north kazakhstan
+1931,zhambyl
+1932,qyzylorda
+1933,bayqonyr
+1934,mangghystau
+1935,astana
+1936,aqmola
+1937,almaty
+1938,pavlodar
+1939,west kazakhstan
+1940,aqtobe
+1941,almaty city
+1942,qostanay
+1943,atyrau
+1944,champasak
+1945,savannakhet
+1946,oudomxai
+1947,khammouan
+1948,houaphan
+1949,phongsali
+1950,xaignabouri
+1951,saravan
+1952,attapu
+1953,vientiane
+1954,xiangkhoang
+1955,louang namtha
+1956,louangphrabang
+1957,aakk,r
+1958,beqaa
+1959,liban nord
+1960,baalbek hermel
+1961,liban sud
+1962,beqaa
+1963,liban nord
+1964,beyrouth
+1965,mont liban
+1966,nabatiye
+1967,al janub
+1968,castries
+1969,praslin
+1970,micoud
+1971,soufriere
+1972,dennery
+1973,anse la raye
+1974,gros islet
+1975,vieux fort
+1976,laborie
+1977,dauphin
+1978,choiseul
+1979,triesen
+1980,balzers
+1981,schellenberg
+1982,river gee
+1983,ruggell
+1984,eschen
+1985,triesenberg
+1986,mauren
+1987,planken
+1988,vaduz
+1989,gbarpolu
+1990,schaan
+1991,gamprin
+1992,central
+1993,western
+1994,uva
+1995,sabaragamuwa
+1996,southern
+1997,eastern
+1998,north western
+1999,north central
+2000,northern
+2001,river cess
+2002,lofa
+2003,montserrado
+2004,monrovia
+2005,maryland
+2006,bong
+2007,grand gedeh
+2008,lofa
+2009,sino
+2010,margibi
+2011,grand cape mount
+2012,grand cape mount
+2013,river gee
+2014,maryland
+2015,grand bassa
+2016,gbarpolu
+2017,nimba
+2018,quthing
+2019,butha buthe
+2020,qachas nek
+2021,mafeteng
+2022,maseru
+2023,mokhotlong
+2024,thaba tseka
+2025,mohales hoek
+2026,berea
+2027,leribe
+2028,utenos apskritis
+2029,marijampoles apskritis
+2030,siauliu apskritis
+2031,panevezio apskritis
+2032,taurages apskritis
+2033,telsiu apskritis
+2034,klaipedos apskritis
+2035,vilniaus apskritis
+2036,kauno apskritis
+2037,alytaus apskritis
+2038,luxembourg
+2039,diekirch
+2040,grevenmacher
+2041,riga
+2042,rigas
+2043,tukuma
+2044,daugavpils
+2045,kuldigas
+2046,ogres
+2047,aluksnes
+2048,madonas
+2049,ventspils
+2050,saldus
+2051,valkas
+2052,limbazu
+2053,jelgava
+2054,valmieras
+2055,jelgavas
+2056,dobeles
+2057,talsu
+2058,liepaja
+2059,ventspils
+2060,preilu
+2061,bauskas
+2062,ludzas
+2063,liepajas
+2064,balvu
+2065,jurmala
+2066,cesu
+2067,jekabpils
+2068,daugavpils
+2069,gulbenes
+2070,rezeknes
+2071,aizkraukles
+2072,rezekne
+2073,kraslavas
+2074,ash shati'
+2075,ghadamis
+2076,tarabulus
+2077,tarhunah
+2078,murzuq
+2079,surt
+2080,zlitan
+2081,an nuqat al khams
+2082,yafran
+2083,al fatih
+2084,tubruq
+2085,awbari
+2086,sabha
+2087,az zawiyah
+2088,misratah
+2089,darnah
+2090,al khums
+2091,sawfajjin
+2092,al jufrah
+2093,gharyan
+2094,al kufrah
+2095,al aziziyah
+2096,ajdabiya
+2097,banghazi
+2098,al jabal al akhdar
+2099,rabat sale zemmour zaer
+2100,chaouia ouardigha
+2101,meknes tafilalet
+2102,tanger tetouan
+2103,souss massa dr,a
+2104,fes boulemane
+2105,gharb chrarda beni hssen
+2106,tadla azilal
+2107,doukkala abda
+2108,oriental
+2109,taza al hoceima taounate
+2110,guelmim es smara
+2111,la,youne boujdour sakia el hamra
+2112,grand casablanca
+2113,marrakech tensift al haouz
+2114,la condamine
+2115,monaco
+2116,monte carlo
+2117,telenesti
+2118,soldanesti
+2119,dubasari
+2120,leova
+2121,cantemir
+2122,stefan voda
+2123,glodeni
+2124,cahul
+2125,calarasi
+2126,gagauzia
+2127,ungheni
+2128,cimislia
+2129,rezina
+2130,donduseni
+2131,criuleni
+2132,ocnita
+2133,edinet
+2134,basarabeasca
+2135,orhei
+2136,soroca
+2137,singerei
+2138,riscani
+2139,bender
+2140,stinga nistrului
+2141,hincesti
+2142,falesti
+2143,taraclia
+2144,floresti
+2145,straseni
+2146,anenii noi
+2147,chisinau
+2148,balti
+2149,causeni
+2150,briceni
+2151,ialoveni
+2152,drochia
+2153,nisporeni
+2154,mahajanga
+2155,fianarantsoa
+2156,antsiranana
+2157,toamasina
+2158,antananarivo
+2159,toliara
+2160,makedonski brod
+2161,makedonska kamenica
+2162,novaci
+2163,zitose
+2164,staravina
+2165,kondovo
+2166,bogomila
+2167,dolna banjica
+2168,strumica
+2169,sveti nikole
+2170,zelenikovo
+2171,vinica
+2172,krivogastani
+2173,resen
+2174,kamenjane
+2175,orasac
+2176,ilinden
+2177,struga
+2178,podares
+2179,zletovo
+2180,suto orizari
+2181,dolneni
+2182,bac
+2183,karbinci
+2184,berovo
+2185,vrapciste
+2186,kocani
+2187,kavadarci
+2188,murtino
+2189,cair
+2190,tearce
+2191,kumanovo
+2192,vranestica
+2193,kuklis
+2194,cucer sandevo
+2195,cair
+2196,konopiste
+2197,cesinovo
+2198,stip
+2199,dojran
+2200,kriva palanka
+2201,capari
+2202,valandovo
+2203,labunista
+2204,vasilevo
+2205,zajas
+2206,bistrica
+2207,demir kapija
+2208,bogdanci
+2209,sopotnica
+2210,blatec
+2211,tetovo
+2212,izvor
+2213,jegunovce
+2214,orizari
+2215,rankovce
+2216,makedonski brod
+2217,dzepciste
+2218,delcevo
+2219,saraj
+2220,lozovo
+2221,caska
+2222,gevgelija
+2223,ohrid
+2224,kratovo
+2225,kukurecani
+2226,sipkovica
+2227,negotino polosko
+2228,oslomej
+2229,mogila
+2230,novo selo
+2231,centar zupa
+2232,debar
+2233,gazi baba
+2234,struga
+2235,lipkovo
+2236,drugovo
+2237,konce
+2238,veles
+2239,sopiste
+2240,radovis
+2241,brvenica
+2242,strumica
+2243,pehcevo
+2244,debar
+2245,belcista
+2246,veles
+2247,negotino
+2248,valandovo
+2249,gostivar
+2250,ohrid
+2251,aracinovo
+2252,dobrusevo
+2253,delogozdi
+2254,petrovec
+2255,vratnica
+2256,demir hisar
+2257,tetovo
+2258,kisela voda
+2259,zrnovci
+2260,studenicani
+2261,star dojran
+2262,dorce petrov
+2263,caska
+2264,bosilovo
+2265,mavrovi anovi
+2266,topolcani
+2267,lukovo
+2268,kicevo
+2269,rostusa
+2270,krusevo
+2271,srbinovo
+2272,probistip
+2273,gradsko
+2274,prilep
+2275,samokov
+2276,bogovinje
+2277,gostivar
+2278,prilep
+2279,kumanovo
+2280,centar
+2281,velesta
+2282,jegunovce
+2283,plasnica
+2284,rosoman
+2285,vitoliste
+2286,cegrane
+2287,meseista
+2288,zelino
+2289,demir hisar
+2290,vevcani
+2291,karpos
+2292,bitola
+2293,kosel
+2294,oblesevo
+2295,klecevce
+2296,staro nagoricane
+2297,kavadarci
+2298,aerodrom
+2299,vrutok
+2300,miravci
+2301,bamako
+2302,gao
+2303,sikasso
+2304,tombouctou
+2305,kidal
+2306,kayes
+2307,mopti
+2308,segou
+2309,koulikoro
+2310,kayah state
+2311,yangon
+2312,shan state
+2313,rangoon
+2314,chin state
+2315,karan state
+2316,kachin state
+2317,sagaing
+2318,magwe
+2319,mandalay
+2320,mon state
+2321,irrawaddy
+2322,rakhine state
+2323,pegu
+2324,tenasserim
+2325,bayanhongor
+2326,suhbaatar
+2327,govi altay
+2328,ulaanbaatar
+2329,erdenet
+2330,selenge
+2331,dornogovi
+2332,dundgovi
+2333,arhangay
+2334,tov
+2335,darhan uul
+2336,ovorhangay
+2337,bulgan
+2338,dornod
+2339,uvs
+2340,bayan olgiy
+2341,dzavhan
+2342,hovsgol
+2343,darhan
+2344,hentiy
+2345,govisumber
+2346,orhon
+2347,omnogovi
+2348,hovd
+2349,ilhas
+2350,macau
+2351,tagant
+2352,brakna
+2353,hodh ech chargui
+2354,gorgol
+2355,inchiri
+2356,trarza
+2357,hodh el gharbi
+2358,guidimaka
+2359,dakhlet nouadhibou
+2360,tiris zemmour
+2361,adrar
+2362,assaba
+2363,saint anthony
+2364,saint georges
+2365,saint peter
+2366,moka
+2367,cargados carajos
+2368,rodrigues
+2369,grand port
+2370,port louis
+2371,savanne
+2372,riviere du rempart
+2373,agalega islands
+2374,pamplemousses
+2375,flacq
+2376,plaines wilhems
+2377,black river
+2378,gaafu dhaalu
+2379,kaafu
+2380,raa
+2381,thaa
+2382,gaafu alifu
+2383,faafu 
+2384,haa dhaalu
+2385,haa alifu
+2386,meemu
+2387,alifu
+2388,maale
+2389,dhaalu
+2390,baa
+2391,gnaviyani
+2392,laamu
+2393,noonu
+2394,vaavu
+2395,seenu
+2396,lhaviyani
+2397,shaviyani
+2398,nkhotakota
+2399,blantyre
+2400,salima
+2401,chitipa
+2402,lilongwe
+2403,dowa
+2404,thyolo
+2405,dedza
+2406,mzimba
+2407,kasungu
+2408,ntcheu
+2409,chiradzulu
+2410,ntchisi
+2411,mwanza
+2412,chikwawa
+2413,mangochi
+2414,phalombe
+2415,mchinji
+2416,nkhata bay
+2417,likoma
+2418,karonga
+2419,balaka
+2420,rumphi
+2421,machinga
+2422,nsanje
+2423,zomba
+2424,mulanje
+2425,michoacan de ocampo
+2426,tlaxcala
+2427,puebla
+2428,tamaulipas
+2429,coahuila de zaragoza
+2430,zacatecas
+2431,chiapas
+2432,campeche
+2433,baja california
+2434,jalisco
+2435,mexico
+2436,chihuahua
+2437,morelos
+2438,yucatan
+2439,hidalgo
+2440,guanajuato
+2441,baja california sur
+2442,oaxaca
+2443,sinaloa
+2444,nayarit
+2445,distrito federal
+2446,nuevo leon
+2447,tabasco
+2448,colima
+2449,durango
+2450,quintana roo
+2451,queretaro de arteaga
+2452,san luis potosi
+2453,guerrero
+2454,veracruz llave
+2455,sonora
+2456,aguascalientes
+2457,kedah
+2458,melaka
+2459,selangor
+2460,sarawak
+2461,terengganu
+2462,putrajaya
+2463,johor
+2464,pahang
+2465,sabah
+2466,kelantan
+2467,negeri sembilan
+2468,pulau pinang
+2469,perlis
+2470,labuan
+2471,kuala lumpur
+2472,perak
+2473,cabo delgado
+2474,gaza
+2475,maputo
+2476,tete
+2477,nampula
+2478,inhambane
+2479,zambezia
+2480,manica
+2481,maputo
+2482,niassa
+2483,sofala
+2484,otjozondjupa
+2485,kunene
+2486,hardap
+2487,okahandja
+2488,owambo
+2489,damaraland
+2490,grootfontein
+2491,okavango
+2492,oshana
+2493,erongo
+2494,maltahohe
+2495,omusati
+2496,boesmanland
+2497,otjiwarongo
+2498,bethanien
+2499,kaokoland
+2500,namaland
+2501,outjo
+2502,oshikoto
+2503,omaheke
+2504,tsumeb
+2505,karibib
+2506,hereroland oos
+2507,caprivi oos
+2508,kavango
+2509,rehoboth
+2510,windhoek
+2511,ohangwena
+2512,mariental
+2513,keetmanshoop
+2514,karas
+2515,omaruru
+2516,luderitz
+2517,hereroland wes
+2518,karasburg
+2519,swakopmund
+2520,caprivi
+2521,gobabis
+2522,diffa
+2523,dosso
+2524,niamey
+2525,agadez
+2526,niamey
+2527,tahoua
+2528,maradi
+2529,zinder
+2530,zamfara
+2531,niger
+2532,rivers
+2533,osun
+2534,kaduna
+2535,nassarawa
+2536,ebonyi
+2537,kogi
+2538,adamawa
+2539,benue
+2540,oyo
+2541,plateau
+2542,ogun
+2543,jigawa
+2544,yobe
+2545,delta
+2546,bayelsa
+2547,enugu
+2548,katsina
+2549,cross river
+2550,gombe
+2551,anambra
+2552,bauchi
+2553,kano
+2554,abia
+2555,lagos
+2556,sokoto
+2557,ondo
+2558,kebbi
+2559,borno
+2560,imo
+2561,edo
+2562,taraba
+2563,akwa ibom
+2564,ekiti
+2565,kwara
+2566,federal capital territory
+2567,rio san juan
+2568,rivas
+2569,carazo
+2570,granada
+2571,masaya
+2572,madriz
+2573,autonoma atlantico norte
+2574,leon
+2575,chontales
+2576,zelaya
+2577,chinandega
+2578,jinotega
+2579,managua
+2580,esteli
+2581,nueva segovia
+2582,region autonoma atlantico sur
+2583,boaco
+2584,matagalpa
+2585,limburg
+2586,utrecht
+2587,overijssel
+2588,drenthe
+2589,gelderland
+2590,flevoland
+2591,groningen
+2592,zuid holland
+2593,noord brabant
+2594,noord holland
+2595,zeeland
+2596,friesland
+2597,ostfold
+2598,sogn og fjordane
+2599,sor trondelag
+2600,hedmark
+2601,more og romsdal
+2602,nordland
+2603,troms
+2604,oslo
+2605,finnmark
+2606,vest agder
+2607,vestfold
+2608,buskerud
+2609,hordaland
+2610,nord trondelag
+2611,oppland
+2612,akershus
+2613,rogaland
+2614,aust agder
+2615,telemark
+2616,sagarmatha
+2617,bheri
+2618,kosi
+2619,narayani
+2620,karnali
+2621,mahakali
+2622,bagmati
+2623,rapti
+2624,dhawalagiri
+2625,seti
+2626,janakpur
+2627,lumbini
+2628,gandaki
+2629,mechi
+2630,anabar
+2631,ewa
+2632,denigomodu
+2633,anibare
+2634,aiwo
+2635,uaboe
+2636,boe
+2637,meneng
+2638,buada
+2639,nibok
+2640,baiti
+2641,ijuw
+2642,yaren
+2643,anetan
+2644,southland
+2645,northland
+2646,canterbury
+2647,west coast
+2648,waikato
+2649,manawatu wanganui
+2650,taranaki
+2651,hawke's bay
+2652,wellington
+2653,gisborne
+2654,otago
+2655,marlborough
+2656,nelson
+2657,bay of plenty
+2658,chatham islands
+2659,auckland
+2660,az zahirah
+2661,masqat
+2662,musandam
+2663,ad dakhiliyah
+2664,al batinah
+2665,ash sharqiyah
+2666,al wusta
+2667,zufar
+2668,los santos
+2669,san blas
+2670,darien
+2671,bocas del toro
+2672,veraguas
+2673,herrera
+2674,cocle
+2675,chiriqui
+2676,colon
+2677,panama
+2678,lambayeque
+2679,junin
+2680,san martin
+2681,ucayali
+2682,puno
+2683,ayacucho
+2684,huancavelica
+2685,cajamarca
+2686,tumbes
+2687,la libertad
+2688,cusco
+2689,arequipa
+2690,ica
+2691,amazonas
+2692,moquegua
+2693,lima
+2694,tacna
+2695,madre de dios
+2696,callao
+2697,ancash
+2698,apurimac
+2699,pasco
+2700,loreto
+2701,huanuco
+2702,piura
+2703,western
+2704,sandaun
+2705,gulf
+2706,new ireland
+2707,east sepik
+2708,west new britain
+2709,madang
+2710,east new britain
+2711,north solomons
+2712,national capital
+2713,northern
+2714,manus
+2715,milne bay
+2716,eastern highlands
+2717,morobe
+2718,western highlands
+2719,enga
+2720,central
+2721,southern highlands
+2722,chimbu
+2723,roxas
+2724,palayan
+2725,trece martires
+2726,batanes
+2727,cavite city
+2728,malaybalay
+2729,abra
+2730,negros occidental
+2731,san jose del monte
+2732,capiz
+2733,misamis occidental
+2734,kalinga
+2735,tagaytay
+2736,tawitawi
+2737,maguindanao
+2738,negros occidental
+2739,mindoro occidental
+2740,legaspi
+2741,lanao del norte
+2742,las pinas
+2743,dumaguete
+2744,bulacan
+2745,cebu city
+2746,zamboanga
+2747,davao del norte
+2748,gingoog
+2749,toledo
+2750,iligan
+2751,la union
+2752,manila
+2753,batangas city
+2754,batangas
+2755,marawi
+2756,guimaras
+2757,camiguin
+2758,lanao del sur
+2759,sorsogon
+2760,passi
+2761,pangasinan
+2762,romblon
+2763,bago
+2764,mandaue
+2765,san carlos
+2766,davao del sur
+2767,bohol
+2768,caloocan
+2769,cebu
+2770,lucena
+2771,nueva ecija
+2772,nueva vizcaya
+2773,agusan del sur
+2774,butuan
+2775,agusan del norte
+2776,laoag
+2777,ilocos sur
+2778,cagayan
+2779,laguna
+2780,naga
+2781,cotabato
+2782,dagupan
+2783,negros oriental
+2784,quezon city
+2785,bais
+2786,camarines norte
+2787,navotas
+2788,muntinlupa
+2789,mountain
+2790,puerto princesa
+2791,masbate
+2792,himamaylan
+2793,cabanatuan
+2794,zambales
+2795,general santos
+2796,calbayog
+2797,camarines sur
+2798,quirino
+2799,rizal
+2800,biliran
+2801,iloilo
+2802,tangub
+2803,lipa
+2804,danao
+2805,surigao del norte
+2806,eastern samar
+2807,sulu
+2808,sultan kudarat
+2809,kalinga apayao
+2810,siquijor
+2811,ilocos norte
+2812,tagbilaran
+2813,bukidnon
+2814,south cotabato
+2815,dipolog
+2816,san carlos
+2817,basilan
+2818,lapu lapu
+2819,ozamis
+2820,paranaque
+2821,zamboanga del sur
+2822,sarangani
+2823,ormoc
+2824,antique
+2825,oroquieta
+2826,benguet
+2827,canlaon
+2828,catanduanes
+2829,pasay
+2830,san pablo
+2831,aklan
+2832,isabela
+2833,marinduque
+2834,palawan
+2835,la carlota
+2836,angeles
+2837,north cotabato
+2838,iloilo city
+2839,cagayan de oro
+2840,sipalay
+2841,surigao del sur
+2842,olongapo
+2843,surigao del norte
+2844,zambales
+2845,bataan
+2846,basilan city
+2847,cadiz
+2848,davao
+2849,aurora
+2850,santiago
+2851,tacloban
+2852,compostela valley
+2853,mindoro oriental
+2854,surigao
+2855,leyte
+2856,pagadian
+2857,san jose
+2858,bacolod
+2859,misamis oriental
+2860,northern samar
+2861,san juan
+2862,southern leyte
+2863,cavite
+2864,davao city
+2865,ifugao
+2866,zamboanga del norte
+2867,iriga
+2868,baguio
+2869,samar
+2870,malabon
+2871,quezon
+2872,pampanga
+2873,dapitan
+2874,albay
+2875,tarlac
+2876,silay
+2877,davao oriental
+2878,zamboanga
+2879,islamabad
+2880,balochistan
+2881,federally administered tribal areas
+2882,punjab
+2883,azad kashmir
+2884,northern areas
+2885,sindh
+2886,north west frontier
+2887,warminsko mazurskie
+2888,swietokrzyskie
+2889,opolskie
+2890,kujawsko pomorskie
+2891,pomorskie
+2892,podlaskie
+2893,lodzkie
+2894,malopolskie
+2895,podkarpackie
+2896,slaskie
+2897,lubelskie
+2898,dolnoslaskie
+2899,mazowieckie
+2900,lubuskie
+2901,wielkopolskie
+2902,zachodniopomorskie
+2903,gaza
+2904,west bank
+2905,castelo branco
+2906,lisboa
+2907,madeira
+2908,guarda
+2909,braganca
+2910,braga
+2911,aveiro
+2912,beja
+2913,leiria
+2914,azores
+2915,faro
+2916,porto
+2917,portalegre
+2918,setubal
+2919,viana do castelo
+2920,coimbra
+2921,santarem
+2922,evora
+2923,vila real
+2924,viseu
+2925,canindeyu
+2926,alto parana
+2927,concepcion
+2928,misiones
+2929,central
+2930,paraguari
+2931,caazapa
+2932,amambay
+2933,caaguazu
+2934,presidente hayes
+2935,san pedro
+2936,alto paraguay
+2937,asuncion
+2938,cordillera
+2939,boqueron
+2940,neembucu
+2941,guaira
+2942,itapua
+2943,jariyan al batnah
+2944,al wakrah municipality
+2945,umm salal
+2946,umm sa'id
+2947,al jumaliyah
+2948,al wakrah
+2949,ar rayyan
+2950,ad dawhah
+2951,al khawr
+2952,al ghuwariyah
+2953,madinat ach shamal
+2954,salaj
+2955,sibiu
+2956,satu mare
+2957,mehedinti
+2958,bacau
+2959,suceava
+2960,tulcea
+2961,caras severin
+2962,braila
+2963,dambovita
+2964,neamt
+2965,galati
+2966,brasov
+2967,olt
+2968,gorj
+2969,botosani
+2970,constanta
+2971,maramures
+2972,covasna
+2973,ialomita
+2974,prahova
+2975,dolj
+2976,timis
+2977,cluj
+2978,arad
+2979,harghita
+2980,bihor
+2981,mures
+2982,valcea
+2983,giurgiu
+2984,vrancea
+2985,hunedoara
+2986,buzau
+2987,teleorman
+2988,calarasi
+2989,vaslui
+2990,bucuresti
+2991,ilfov
+2992,arges
+2993,alba
+2994,iasi
+2995,bistrita nasaud
+2996,vojvodina
+2997,kosovo
+2998,yaroslavl'
+2999,arkhangel'sk
+3000,zabaykal'skiy kray
+3001,amur
+3002,novgorod
+3003,altaisky krai
+3004,chelyabinsk
+3005,astrakhan'
+3006,dagestan
+3007,tyumen'
+3008,kalmyk
+3009,evenk
+3010,ingush
+3011,aginsky buryatsky ao
+3012,vologda
+3013,sakha
+3014,bashkortostan
+3015,buryat
+3016,moscow city
+3017,saratov
+3018,leningrad
+3019,perm'
+3020,krasnodar
+3021,stavropol'
+3022,yamal nenets
+3023,karelia
+3024,smolensk
+3025,tomsk
+3026,yevrey
+3027,adygeya, republic of
+3028,vladimir
+3029,kamchatka
+3030,sakhalin
+3031,chechnya
+3032,krasnoyarsk
+3033,kursk
+3034,udmurt
+3035,komi
+3036,moskva
+3037,tuva
+3038,kemerovo
+3039,orel
+3040,primor'ye
+3041,tula
+3042,kamchatskiy kray
+3043,orenburg
+3044,kurgan
+3045,kirov
+3046,mordovia
+3047,pskov
+3048,taymyr
+3049,penza
+3050,nenets
+3051,omsk
+3052,krasnoyarskiy kray
+3053,chukot
+3054,karachay cherkess
+3055,chita
+3056,koryak
+3057,belgorod
+3058,north ossetia
+3059,samara
+3060,bryansk
+3061,rostov
+3062,magadan
+3063,chuvashia
+3064,ivanovo
+3065,ul'yanovsk
+3066,nizhegorod
+3067,ryazan'
+3068,volgograd
+3069,khabarovsk
+3070,tver'
+3071,khanty mansiy
+3072,kaliningrad
+3073,kabardin balkar
+3074,tambovskaya oblast
+3075,tatarstan
+3076,mariy el
+3077,kostroma
+3078,lipetsk
+3079,saint petersburg city
+3080,gorno altay
+3081,murmansk
+3082,kaluga
+3083,novosibirsk
+3084,voronezh
+3085,irkutsk
+3086,permskiy kray
+3087,sverdlovsk
+3088,khakass
+3089,sud
+3090,kibungo
+3091,est
+3092,ouest
+3093,kigali
+3094,nord
+3095,butare
+3096,kigali
+3097,gitarama
+3098,ha'il
+3099,tabuk
+3100,al madinah
+3101,najran
+3102,al jawf
+3103,al qasim
+3104,makkah
+3105,ar riyad
+3106,al bahah
+3107,ash sharqiyah
+3108,al hudud ash shamaliyah
+3109,asir province
+3110,jizan
+3111,western
+3112,isabel
+3113,choiseul
+3114,central
+3115,rennell and bellona
+3116,malaita
+3117,temotu
+3118,guadalcanal
+3119,makira
+3120,cascade
+3121,anse etoile
+3122,grand' anse
+3123,bel ombre
+3124,takamaka
+3125,saint louis
+3126,mont buxton
+3127,pointe la rue
+3128,anse royale
+3129,anse louis
+3130,bel air
+3131,beau vallon
+3132,mont fleuri
+3133,plaisance
+3134,anse aux pins
+3135,baie lazare
+3136,port glaud
+3137,glacis
+3138,anse boileau
+3139,grand' anse
+3140,la digue
+3141,la riviere anglaise
+3142,baie sainte anne
+3143,upper nile
+3144,ash shamaliyah
+3145,kassala
+3146,al khartum
+3147,bahr al ghazal
+3148,river nile
+3149,darfur
+3150,kurdufan
+3151,central equatoria state
+3152,ash sharqiyah
+3153,northern darfur
+3154,al istiwa'iyah
+3155,al wahadah state
+3156,al wusta
+3157,southern darfur
+3158,southern kordofan
+3159,vasterbottens lan
+3160,varmlands lan
+3161,stockholms lan
+3162,blekinge lan
+3163,vasternorrlands lan
+3164,kalmar lan
+3165,ostergotlands lan
+3166,orebro lan
+3167,kronobergs lan
+3168,jonkopings lan
+3169,jamtlands lan
+3170,vastmanlands lan
+3171,dalarnas lan
+3172,hallands lan
+3173,uppsala lan
+3174,skane lan
+3175,vastra gotaland
+3176,gotlands lan
+3177,gavleborgs lan
+3178,norrbottens lan
+3179,sodermanlands lan
+3180,ascension
+3181,saint helena
+3182,tristan da cunha
+3183,markovci commune
+3184,slovenj gradec urban commune
+3185,krizevci commune
+3186,ljubljana urban commune
+3187,odranci commune
+3188,makole
+3189,mezica commune
+3190,domzale commune
+3191,race fram commune
+3192,zelezniki commune
+3193,lukovica commune
+3194,naklo commune
+3195,ivancna gorica commune
+3196,ig commune
+3197,ormoz commune
+3198,log dragomer
+3199,menges commune
+3200,kostanjevica na krki
+3201,brda commune
+3202,izola isola commune
+3203,sveti jurij v slovenskih goricah
+3204,prevalje commune
+3205,miren kostanjevica commune
+3206,divaca commune
+3207,zalec commune
+3208,loski potok commune
+3209,cerkvenjak commune
+3210,ljubno commune
+3211,brezovica commune
+3212,skofja loka commune
+3213,brezice commune
+3214,radlje ob dravi commune
+3215,vojnik commune
+3216,ravne na koroskem commune
+3217,kanal commune
+3218,polzela commune
+3219,zavrc commune
+3220,novo mesto urban commune
+3221,smartno ob paki commune
+3222,smarje pri jelsah commune
+3223,podvelka commune
+3224,gornja radgona commune
+3225,kocevje commune
+3226,rogasovci commune
+3227,smartno pri litiji commune
+3228,kobilje commune
+3229,mirna pec commune
+3230,dobrovnik dobronak commune
+3231,nova gorica urban commune
+3232,sentilj commune
+3233,braslovce commune
+3234,sentrupert
+3235,pivka commune
+3236,osilnica commune
+3237,dravograd commune
+3238,vrhnika commune
+3239,ilirska bistrica commune
+3240,horjul commune
+3241,kuzma commune
+3242,sodrazica commune
+3243,sostanj commune
+3244,gorenja vas poljane commune
+3245,gorje
+3246,podcetrtek commune
+3247,tolmin commune
+3248,litija commune
+3249,medvode commune
+3250,sentjur pri celju commune
+3251,vransko commune
+3252,cankova commune
+3253,kranj commune
+3254,puconci commune
+3255,turnisce commune
+3256,lenart commune
+3257,ruse commune
+3258,videm commune
+3259,kostel commune
+3260,piran pirano commune
+3261,trzic commune
+3262,cerknica commune
+3263,store commune
+3264,cerkno commune
+3265,muta commune
+3266,sveta ana commune
+3267,radece commune
+3268,sveti andraz v slovenskih goricah commune
+3269,kranjska gora commune
+3270,ribnica na pohorju commune
+3271,grosuplje commune
+3272,rogatec commune
+3273,hrastnik commune
+3274,lendava lendva commune
+3275,preddvor commune
+3276,kidricevo commune
+3277,radenci commune
+3278,benedikt commune
+3279,dornava commune
+3280,jezersko commune
+3281,verzej commune
+3282,komenda commune
+3283,crnomelj commune
+3284,zrece commune
+3285,majsperk commune
+3286,slovenske konjice commune
+3287,velike lasce commune
+3288,oplotnica commune
+3289,velenje urban commune
+3290,solcava commune
+3291,bovec commune
+3292,dolenjske toplice commune
+3293,skocjan commune
+3294,mozirje commune
+3295,nazarje commune
+3296,dobrna commune
+3297,moravce commune
+3298,slovenska bistrica commune
+3299,ribnica commune
+3300,bohinj commune
+3301,crensovci commune
+3302,kamnik commune
+3303,duplek commune
+3304,metlika commune
+3305,mirna
+3306,grad commune
+3307,gornji grad commune
+3308,dobje commune
+3309,smarjesk toplice
+3310,selnica ob dravi commune
+3311,sezana commune
+3312,sveti jurij commune
+3313,crna na koroskem commune
+3314,lasko commune
+3315,dobrepolje commune
+3316,komen commune
+3317,razkrizje commune
+3318,beltinci commune
+3319,dol pri ljubljani commune
+3320,vipava commune
+3321,starse commune
+3322,miklavz na dravskem polju commune
+3323,kozje commune
+3324,trnovska vas commune
+3325,ajdovscina commune
+3326,mislinja commune
+3327,poljcane
+3328,sempeter vrtojba commune
+3329,straza
+3330,destrnik commune
+3331,tisina commune
+3332,hrpelje kozina commune
+3333,trebnje commune
+3334,hodos hodos commune
+3335,loska dolina commune
+3336,zirovnica commune
+3337,trbovlje commune
+3338,murska sobota urban commune
+3339,bloke commune
+3340,tabor commune
+3341,cerklje na gorenjskem commune
+3342,luce commune
+3343,zuzemberk commune
+3344,ptuj urban commune
+3345,semic commune
+3346,hajdina commune
+3347,sredisce ob dravi
+3348,lovrenc na pohorju commune
+3349,recica ob savinji
+3350,vodice commune
+3351,sevnica commune
+3352,postojna commune
+3353,dobrova horjul polhov gradec commune
+3354,hoce slivnica commune
+3355,idrija commune
+3356,rogaska slatina commune
+3357,maribor commune
+3358,celje commune
+3359,borovnica commune
+3360,radovljica commune
+3361,bistrica ob sotli commune
+3362,vuzenica commune
+3363,zagorje ob savi commune
+3364,kobarid commune
+3365,jursinci commune
+3366,apace commune
+3367,gornji petrovci commune
+3368,podlehnik commune
+3369,moravske toplice commune
+3370,krsko commune
+3371,gorisnica commune
+3372,vitanje commune
+3373,bled commune
+3374,sencur commune
+3375,sentjernej commune
+3376,rence vogrsko
+3377,kungota commune
+3378,ljutomer commune
+3379,pesnica commune
+3380,mokronog trebelno
+3381,jesenice commune
+3382,salovci commune
+3383,logatec commune
+3384,zetale commune
+3385,velika polana commune
+3386,koper capodistria urban commune
+3387,trzin commune
+3388,skofljica commune
+3389,ziri commune
+3390,cirkulane commune
+3391,prebold commune
+3392,kosice
+3393,presov
+3394,zilina
+3395,trnava
+3396,banska bystrica
+3397,bratislava
+3398,trencin
+3399,nitra
+3400,western area
+3401,southern
+3402,eastern
+3403,northern
+3404,chiesanuova
+3405,acquaviva
+3406,serravalle
+3407,faetano
+3408,san marino
+3409,borgo maggiore
+3410,domagnano
+3411,monte giardino
+3412,fiorentino
+3413,matam
+3414,fatick
+3415,thies
+3416,dakar
+3417,kolda
+3418,diourbel
+3419,ziguinchor
+3420,saint louis
+3421,tambacounda
+3422,louga
+3423,kaolack
+3424,gedo
+3425,woqooyi galbeed
+3426,hiiraan
+3427,nugaal
+3428,awdal
+3429,togdheer
+3430,banaadir
+3431,bay
+3432,shabeellaha dhexe
+3433,bakool
+3434,galguduud
+3435,jubbada dhexe
+3436,shabeellaha hoose
+3437,sanaag
+3438,mudug
+3439,sool
+3440,woqooyi galbeed
+3441,nugaal
+3442,bari
+3443,jubbada hoose
+3444,commewijne
+3445,para
+3446,wanica
+3447,saramacca
+3448,sipaliwini
+3449,paramaribo
+3450,brokopondo
+3451,coronie
+3452,nickerie
+3453,marowijne
+3454,western equatoria
+3455,unity
+3456,upper nile
+3457,eastern equatoria
+3458,lakes
+3459,warrap
+3460,central equatoria
+3461,northern bahr el ghazal
+3462,jonglei
+3463,western bahr el ghazal
+3464,sao tome
+3465,principe
+3466,morazan
+3467,usulutan
+3468,ahuachapan
+3469,la union
+3470,cuscatlan
+3471,chalatenango
+3472,san miguel
+3473,la paz
+3474,san vicente
+3475,cabanas
+3476,la libertad
+3477,sonsonate
+3478,santa ana
+3479,san salvador
+3480,hamah
+3481,halab
+3482,dar
+3483,al hasakah
+3484,dimashq
+3485,ar raqqah
+3486,dayr az zawr
+3487,rif dimashq
+3488,as suwayda'
+3489,idlib
+3490,tartus
+3491,al qunaytirah
+3492,hims
+3493,al ladhiqiyah
+3494,lubombo
+3495,shiselweni
+3496,manzini
+3497,hhohho
+3498,praslin
+3499,kanem
+3500,moyen chari
+3501,tandjile
+3502,salamat
+3503,guera
+3504,lac
+3505,logone oriental
+3506,borkou ennedi tibesti
+3507,biltine
+3508,mayo kebbi
+3509,ouaddai
+3510,logone occidental
+3511,batha
+3512,chari baguirmi
+3513,savanes
+3514,maritime
+3515,kara
+3516,centrale
+3517,plateaux
+3518,chai nat
+3519,narathiwat
+3520,ubon ratchathani
+3521,sisaket
+3522,prachin buri
+3523,chaiyaphum
+3524,phuket
+3525,phrae
+3526,ranong
+3527,samut sakhon
+3528,nakhon pathom
+3529,phetchaburi
+3530,nan
+3531,nakhon nayok
+3532,kanchanaburi
+3533,lampang
+3534,chachoengsao
+3535,khon kaen
+3536,yala
+3537,nakhon sawan
+3538,udon thani
+3539,phitsanulok
+3540,prachin buri
+3541,maha sarakham
+3542,uttaradit
+3543,phayao
+3544,samut prakan
+3545,nakhon phanom
+3546,phichit
+3547,samut songkhram
+3548,kalasin
+3549,satun
+3550,sakon nakhon
+3551,ratchaburi
+3552,amnat charoen
+3553,pathum thani
+3554,chon buri
+3555,surat thani
+3556,nakhon phanom
+3557,nakhon ratchasima
+3558,pattani
+3559,sa kaeo
+3560,chumphon
+3561,sukhothai
+3562,chiang mai
+3563,trat
+3564,chiang rai
+3565,nonthaburi
+3566,ang thong
+3567,ubon ratchathani
+3568,lop buri
+3569,phangnga
+3570,nakhon si thammarat
+3571,kamphaeng phet
+3572,lamphun
+3573,roi et
+3574,mukdahan
+3575,phetchabun
+3576,phatthalung
+3577,nong bua lamphu
+3578,bueng kan
+3579,krung thep
+3580,tak
+3581,saraburi
+3582,trang
+3583,suphan buri
+3584,songkhla
+3585,surin
+3586,phra nakhon si ayutthaya
+3587,mae hong son
+3588,uthai thani
+3589,prachuap khiri khan
+3590,krabi
+3591,yasothon
+3592,chanthaburi
+3593,loei
+3594,buriram
+3595,nong khai
+3596,rayong
+3597,sing buri
+3598,kuhistoni badakhshon
+3599,nohiyahoi tobei jumhuri
+3600,dushanbe
+3601,sughd
+3602,khatlon
+3603,dili
+3604,ahal
+3605,dashoguz
+3606,mary
+3607,balkan
+3608,lebap
+3609,tunis
+3610,sfax
+3611,jendouba
+3612,bizerte
+3613,kairouan
+3614,sidi bou zid
+3615,aiana
+3616,manouba
+3617,tozeur
+3618,el kef
+3619,ben arous
+3620,siliana
+3621,kasserine
+3622,nabeul
+3623,sousse
+3624,tataouine
+3625,bajah
+3626,al mahdia
+3627,qafsah
+3628,al munastir
+3629,zaghouan
+3630,madanin
+3631,kebili
+3632,gabes
+3633,tongatapu
+3634,vava
+3635,ha
+3636,kastamonu
+3637,burdur
+3638,aydin
+3639,zonguldak
+3640,manisa
+3641,eskisehir
+3642,nevsehir
+3643,kilis
+3644,kirikkale
+3645,kutahya
+3646,denizli
+3647,cankiri
+3648,malatya
+3649,duzce
+3650,kirsehir
+3651,yozgat
+3652,usak
+3653,kocaeli
+3654,hatay
+3655,sinop
+3656,karabuk
+3657,tunceli
+3658,balikesir
+3659,igdir
+3660,yalova
+3661,sivas
+3662,tekirdag
+3663,batman
+3664,bolu
+3665,samsun
+3666,ardahan
+3667,kirklareli
+3668,sanliurfa
+3669,mus
+3670,rize
+3671,diyarbakir
+3672,sirnak
+3673,adana
+3674,giresun
+3675,ankara
+3676,karaman
+3677,van
+3678,aksaray
+3679,tokat
+3680,artvin
+3681,afyonkarahisar
+3682,kayseri
+3683,elazig
+3684,mersin
+3685,amasya
+3686,bilecik
+3687,trabzon
+3688,nigde
+3689,istanbul
+3690,gaziantep
+3691,edirne
+3692,kars
+3693,ordu
+3694,sakarya
+3695,bartin
+3696,osmaniye
+3697,kahramanmaras
+3698,gumushane
+3699,bitlis
+3700,konya
+3701,erzincan
+3702,canakkale
+3703,agri
+3704,bursa
+3705,siirt
+3706,bayburt
+3707,hakkari
+3708,mardin
+3709,erzurum
+3710,isparta
+3711,corum
+3712,bingol
+3713,mugla
+3714,adiyaman
+3715,antalya
+3716,izmir
+3717,saint david
+3718,saint andrew
+3719,san fernando
+3720,saint george
+3721,victoria
+3722,tobago
+3723,saint patrick
+3724,caroni
+3725,port of spain
+3726,nariva
+3727,mayaro
+3728,arima
+3729,t'ai wan
+3730,t'ai pei
+3731,fu chien
+3732,kao hsiung
+3733,mtwara
+3734,rukwa
+3735,zanzibar north
+3736,mbeya
+3737,mara
+3738,pemba north
+3739,manyara
+3740,dar es salaam
+3741,shinyanga
+3742,iringa
+3743,arusha
+3744,kagera
+3745,kilimanjaro
+3746,pwani
+3747,kigoma
+3748,dodoma
+3749,ruvuma
+3750,pemba south
+3751,tabora
+3752,morogoro
+3753,singida
+3754,zanzibar central
+3755,lindi
+3756,zanzibar urban
+3757,mwanza
+3758,tanga
+3759,donets'ka oblast'
+3760,khmel'nyts'ka oblast'
+3761,vinnyts'ka oblast'
+3762,kirovohrads'ka oblast'
+3763,luhans'ka oblast'
+3764,rivnens'ka oblast'
+3765,chernivets'ka oblast'
+3766,ternopil's'ka oblast'
+3767,zhytomyrs'ka oblast'
+3768,cherkas'ka oblast'
+3769,kyyiv
+3770,mykolayivs'ka oblast'
+3771,odes'ka oblast'
+3772,sums'ka oblast'
+3773,kharkivs'ka oblast'
+3774,zakarpats'ka oblast'
+3775,ivano frankivs'ka oblast'
+3776,volyns'ka oblast'
+3777,chernihivs'ka oblast'
+3778,poltavs'ka oblast'
+3779,l'vivs'ka oblast'
+3780,zaporiz'ka oblast'
+3781,khersons'ka oblast'
+3782,kyyivs'ka oblast'
+3783,dnipropetrovs'ka oblast'
+3784,sevastopol'
+3785,krym
+3786,kumi
+3787,mubende
+3788,kibale
+3789,kalangala
+3790,ntungamo
+3791,sembabule
+3792,moyo
+3793,sironko
+3794,nebbi
+3795,kanungu
+3796,bugiri
+3797,kamwenge
+3798,adjumani
+3799,mbarara
+3800,yumbe
+3801,moroto
+3802,kitgum
+3803,mayuge
+3804,masaka
+3805,kotido
+3806,jinja
+3807,kapchorwa
+3808,mbale
+3809,bushenyi
+3810,lira
+3811,tororo
+3812,kamuli
+3813,apac
+3814,kisoro
+3815,iganga
+3816,hoima
+3817,kyenjojo
+3818,rakai
+3819,mukono
+3820,nakasongola
+3821,kayunga
+3822,katakwi
+3823,wakiso
+3824,mpigi
+3825,nakapiripirit
+3826,pallisa
+3827,rukungiri
+3828,kampala
+3829,pader
+3830,kiboga
+3831,kabarole
+3832,bundibugyo
+3833,kaberamaido
+3834,busia
+3835,masindi
+3836,gulu
+3837,kasese
+3838,soroti
+3839,luwero
+3840,arua
+3841,indiana
+3842,guam
+3843,ohio
+3844,northern mariana islands
+3845,maryland
+3846,illinois
+3847,iowa
+3848,south carolina
+3849,montana
+3850,new mexico
+3851,new hampshire
+3852,michigan
+3853,connecticut
+3854,armed forces europe, middle east, & canada
+3855,colorado
+3856,minnesota
+3857,hawaii
+3858,south dakota
+3859,nevada
+3860,georgia
+3861,missouri
+3862,virginia
+3863,alabama
+3864,tennessee
+3865,federated states of micronesia
+3866,virgin islands
+3867,vermont
+3868,north carolina
+3869,north dakota
+3870,district of columbia
+3871,oregon
+3872,maine
+3873,rhode island
+3874,delaware
+3875,armed forces americas
+3876,kansas
+3877,idaho
+3878,wyoming
+3879,massachusetts
+3880,florida
+3881,texas
+3882,alaska
+3883,washington
+3884,utah
+3885,pennsylvania
+3886,armed forces pacific
+3887,arizona
+3888,marshall islands
+3889,new york
+3890,california
+3891,american samoa
+3892,palau
+3893,louisiana
+3894,oklahoma
+3895,mississippi
+3896,west virginia
+3897,nebraska
+3898,kentucky
+3899,arkansas
+3900,wisconsin
+3901,new jersey
+3902,rivera
+3903,rocha
+3904,colonia
+3905,salto
+3906,rio negro
+3907,treinta y tres
+3908,tacuarembo
+3909,montevideo
+3910,artigas
+3911,flores
+3912,san jose
+3913,paysandu
+3914,cerro largo
+3915,soriano
+3916,durazno
+3917,canelones
+3918,lavalleja
+3919,florida
+3920,maldonado
+3921,farghona
+3922,jizzakh
+3923,namangan
+3924,toshkent
+3925,surkhondaryo
+3926,sirdaryo
+3927,toshkent
+3928,andijon
+3929,samarqand
+3930,qoraqalpoghiston
+3931,qashqadaryo
+3932,nawoiy
+3933,jizzax
+3934,khorazm
+3935,bukhoro
+3936,saint andrew
+3937,saint david
+3938,saint george
+3939,charlotte
+3940,saint patrick
+3941,grenadines
+3942,sucre
+3943,dependencias federales
+3944,lara
+3945,nueva esparta
+3946,aragua
+3947,tachira
+3948,carabobo
+3949,anzoategui
+3950,falcon
+3951,distrito federal
+3952,trujillo
+3953,merida
+3954,delta amacuro
+3955,guarico
+3956,apure
+3957,cojedes
+3958,amazonas
+3959,miranda
+3960,vargas
+3961,yaracuy
+3962,monagas
+3963,bolivar
+3964,zulia
+3965,portuguesa
+3966,barinas
+3967,son la
+3968,ha giang
+3969,binh duong
+3970,hoa binh
+3971,thai binh
+3972,lao cai
+3973,cao bang
+3974,dong thap
+3975,dac lak
+3976,gia lai
+3977,thanh hoa
+3978,quang tri
+3979,nam dinh
+3980,thua thien hue
+3981,dong nai
+3982,hai duong
+3983,thai nguyen
+3984,tuyen quang
+3985,bac ninh
+3986,kien giang
+3987,ba ria vung tau
+3988,dien bien
+3989,dak nong
+3990,long an
+3991,can tho
+3992,bac lieu
+3993,tien giang
+3994,quang binh
+3995,ha tinh
+3996,lai chau
+3997,khanh hoa
+3998,kon tum
+3999,hai phong
+4000,lam dong
+4001,phu tho
+4002,lang son
+4003,hau giang
+4004,quang nam
+4005,quang ninh
+4006,yen bai
+4007,bac kan
+4008,ninh binh
+4009,ho chi minh
+4010,soc trang
+4011,ninh thuan
+4012,nghe an
+4013,tra vinh
+4014,ha noi
+4015,da nang
+4016,vinh long
+4017,binh thuan
+4018,quang ngai
+4019,vinh phuc
+4020,binh phuoc
+4021,binh dinh
+4022,ca mau
+4023,tay ninh
+4024,ben tre
+4025,phu yen
+4026,ha nam
+4027,bac giang
+4028,hung yen
+4029,an giang
+4030,malakula
+4031,ambrym
+4032,paama
+4033,torba
+4034,shefa
+4035,efate
+4036,pentecote
+4037,penama
+4038,malampa
+4039,sanma
+4040,shepherd
+4041,epi
+4042,aoba
+4043,tafea
+4044,va
+4045,tuamasaga
+4046,palauli
+4047,fa
+4048,satupa
+4049,gagaifomauga
+4050,atua
+4051,aiga i le tai
+4052,vaisigano
+4053,gaga
+4054,amran
+4055,lahij
+4056,dhamar
+4057,adan
+4058,al hudaydah
+4059,san'a'
+4060,taizz
+4061,ma'rib
+4062,taizz
+4063,al mahwit
+4064,al bayda'
+4065,al mahrah
+4066,lahij
+4067,al bayda'
+4068,hajjah
+4069,abyan
+4070,ad dali
+4071,hadramawt
+4072,shabwah
+4073,al jawf
+4074,ibb
+4075,hajjah
+4076,sa'dah
+4077,ibb
+4078,al jawf
+4079,western cape
+4080,free state
+4081,north west
+4082,north western province
+4083,kwazulu natal
+4084,northern cape
+4085,gauteng
+4086,mpumalanga
+4087,eastern cape
+4088,limpopo
+4089,lusaka
+4090,western
+4091,southern
+4092,copperbelt
+4093,northern
+4094,eastern
+4095,central
+4096,luapula
+4097,north western
+4098,manicaland
+4099,mashonaland central
+4100,matabeleland north
+4101,harare
+4102,mashonaland west
+4103,midlands
+4104,bulawayo
+4105,mashonaland east
+4106,masvingo
+4107,matabeleland south
