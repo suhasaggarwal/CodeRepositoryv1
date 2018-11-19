@@ -1,0 +1,4 @@
+1,15,31,45 * * * * wget http://101.53.137.158:8080/publisherv1/report/v1/TagData
+2,16,32,47 * * * * wget http://101.53.137.158:8080/publisherv1/report/v1/AuthorData
+3,35 * * * * sh curlrequests.sh > logdata.txt
+#20,51 * * * * sh curlrequests1.sh > logdata2.txt

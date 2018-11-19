@@ -1,0 +1,113 @@
+lifestyle,Lifestyle,,,Seg0
+entertainment,Arts & Entertainment,,,Seg1
+technology,Technology & Computing,,,Seg2
+travel,Travel,,,Seg3
+news,News,,,Seg4
+foodbeverages,Food And Drink,,,Seg5
+sports,Sports,,,Seg6
+festivals,/Arts & Entertainment/Festivals,,,Seg7
+religion,Religion & Spirituality,,,Seg8
+business,Business & Industrial,,,Seg9
+education,Education,,,Seg10
+_news_indianews,India News,,,Seg11
+_entertainment_television,Television,,,Seg12
+_travel_airlinetravel,Airline Travel,,,Seg13
+_news_politics,Politics,,,Seg14
+_entertainment_hindibollywood,Bollywood,,,Seg15
+_lifestyle_womenlifestyle,Women 's Fashion,,,Seg16
+_lifestyle_food,Food And Drink,,,Seg17
+_technology_gaming,Video And Computer Games,,,Seg18
+_foodbeverages_ccdlovers,Ccd Lovers,,,Seg19
+_foodbeverages_mcdonaldlovers,Mcdonald Lovers,,,Seg20
+_business_markets,Stocks,,,Seg21
+astrology,Astrology,,,Seg22
+_lifestyle_household,Home Furnishings,,,Seg23
+_lifestyle_healthfitness,Health And Fitness,,,Seg24
+_business_indiabusiness,India Business,,,Seg25
+_foodbeverages_kfclovers,Kfc Lovers,,,Seg26
+_technology_social,Social,,,Seg27
+_foodbeverages_pizzahutlovers, Pizzahut Lovers,,,Seg28
+_foodbeverages_baristalovers, Barista Lovers,,,Seg29
+_entertainment_hindimusic, Hindi Music,,,Seg30
+_sports_cricket, Cricket,,,Seg31
+_lifestyle_fashion, Style And Fashion,,,Seg32
+_technology_mobiles, Mobile Phones,,,Seg33
+_entertainment_englishhollywood, Hollywood,,,Seg34
+_business_companies, Companies,,,Seg35
+_foodbeverages_costalovers, Costa Lovers,,,Seg36
+_business_startups, Startups,,,Seg37
+_travel_places, Tourist Destinations,,,Seg38
+_foodbeverages_costalovers, Costa Lovers,,,Seg39
+_business_startups, Startups,,,Seg40
+_business_internationalbusiness, International Business,,,Seg41
+_entertainment_jokes, Jokes,,,Seg42
+_technology_gadgets, Gadgets,,,Seg43
+_lifestyle_beauty, Beauty,,,Seg44
+_foodbeverages_haldiramlovers, Haldiram Lovers,,,Seg45
+_lifestyle_books,Books And Literature,,,Seg46
+_entertainment_englishmusic, English Music,,,Seg47
+_technology_science, Science,,,Seg48
+_technology_apps, Mobile Applications,,,Seg49
+_technology_pcs, Desktop Applications,,,Seg50
+_lifestyle_clothesaccessories, Clothing,,,Seg51
+technewstechnology, Technology News,,,Seg52
+_lifestyle_homegarden, Home And Garden,,,Seg53
+_foodbeverages_cbtllovers, Cbtl Lovers,,,Seg54
+news, News,,,Seg55
+tech, Technology,,,Seg56
+technology, Technology,,,Seg57
+india,News,,,Seg58
+_sports_hockey, Hockey,,,Seg59
+_sports_football, Football,,,Seg60
+_entertainment_tamilmovies, Tamil Movies,,,Seg61
+Airlinetravel, Airline Travel,,,Seg62
+_lifestyle_womenclothing, Women Clothing,,,Seg63
+_sports_nba, Nba,,,Seg64
+_travel_shopping, Shopping,,,Seg65
+indianhistory, Indian History,,,Seg66
+mobiletabs, Mobile Phones,,,Seg67
+_sports_badminton, Badminton,,,Seg68
+_technology_computing,Software,,,Seg69
+_news_internationalnews,International News,,,Seg70
+indianews,India News,,,Seg71
+_lifestyle_jewellery,Jewelry,,,Seg72
+_lifestyle_menclothing,Men's Fashion,,,Seg73
+_fashion_sarees,Sarees,,,Seg75
+_computers_ink___toner_cartridges,Ink & Toner Cartridges,,,Seg76
+_tv__audio___large_appliances_televisions,Televisions,,,Seg77
+_tv__audio___large_appliances_fans,Fans,,,Seg78
+_computers_inkjet_printers,Inkjet Printers,,,Seg79
+_tv__audio___large_appliances_imported_televisions,Imported Televisions,,,Seg80
+_tv__audio___large_appliances_air_conditioners,Air Conditioners,,,Seg81
+_tv__audio___large_appliances_dth,DTH,,,Seg82
+_tv__audio___large_appliances_geysers,Geysers,,,Seg83
+_tv__audio___large_appliances_washing_machine,Washing Machine,,,Seg84
+_tv__audio___large_appliances_refrigerators,Refrigerators,,,Seg85
+_tv__audio___large_appliances_immersion_rods,Immersion Rods,,,Seg86
+_computers_laser_printers,Laser Printers,,,Seg87
+_home___kitchen_double,Double,,,Seg88
+_home___kitchen_window_curtains,Window Curtains,,,Seg89
+_computers_scanners,Scanners,,,Seg90
+_tv__audio___large_appliances_heaters,Appliances Heaters,,,Seg91
+_home___kitchen_shower_curtains,Shower Curtains,,,Seg92
+_appliances_coffee_makers,Coffee Makers,,,Seg93
+_home___kitchen_king,king,,,Seg94
+_home___kitchen_table_linen_sets,Table Linen Sets,,,Seg95
+_home___kitchen_gloves,Gloves,,,Seg96
+_home___kitchen_fleece___polar_blankets,Fleece and Polar Blankets,,,Seg97
+_home___kitchen_woolen_blankets,Woolen Blankets,,,Seg98
+_home___kitchen_bath_mats,Bath Mats,,,Seg99
+_tv__audio___large_appliances_inverters,Inverters,,,Seg100
+_home___kitchen_door_mats,Door Mats,,,Seg101
+_home___kitchen_sofa_covers,Sofa Covers,,,Seg102
+_tv__audio___large_appliances_stabilizers,Stabilizers,,,Seg103
+_home___kitchen_pillow_covers,Pillow Covers,,,Seg104
+_home___kitchen_aprons,Aprons,,,Seg105
+_home___kitchen_bath_towel,Bath Towel,,,Seg106
+_home___kitchen_table_covers,Table Covers,,,Seg107
+_home___kitchen_door_curtains,Door Curtains,,,Seg108
+tv__audio___large_appliances,TV Audio & Large Appliances,,,Seg109
+fashion,Lifestyle,,,Seg110
+computers,Technology and Computing ,,,Seg111
+home___kitchen,Home And Garden,,,Seg112
+appliances,Appliances,,,Seg113

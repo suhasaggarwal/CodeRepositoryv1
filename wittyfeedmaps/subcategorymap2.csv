@@ -1,0 +1,69 @@
+lifestyle,Lifestyle,,,Seg0
+entertainment,Arts & Entertainment,,,Seg1
+technology,Technology & Computing,,,Seg2
+travel,Travel,,,Seg3
+news,News,,,Seg4
+foodbeverages,food and drink,,,Seg5
+sports,Sports,,,Seg6
+festivals,/Arts & Entertainment/festivals,,,Seg7
+religion,Religion & Spirituality,,,Seg8
+business,business & industrial,,,Seg9
+education,education,,,Seg10
+_news_indianews,indianews,,,Seg11
+_entertainment_television,television,,,Seg12
+_travel_airlinetravel,airlinetravel,,,Seg13
+_news_politics,politics,,,Seg14
+_entertainment_hindibollywood,bollywood,,,Seg15
+_lifestyle_womenlifestyle,Women lifestyle,,,Seg16
+_lifestyle_food,food and drink,,,Seg17
+_technology_gaming,video and computer games,,,Seg18
+_foodbeverages_ccdlovers,ccd lovers,,,Seg19
+_foodbeverages_mcdonaldlovers,mcdonald lovers,,,Seg20
+_business_markets,markets,,,Seg21
+astrology,astrology,,,Seg22
+_lifestyle_household, household,,,Seg23
+_lifestyle_healthfitness,health and fitness,,,Seg24
+_business_indiabusiness,indiabusiness,,,Seg25
+_foodbeverages_kfclovers,kfc lovers,,,Seg26
+_technology_social,social,,,Seg27
+_foodbeverages_pizzahutlovers, pizzahut lovers,,,Seg28
+_foodbeverages_baristalovers, barista lovers,,,Seg29
+_entertainment_hindimusic, hindi music,,,Seg30
+_sports_cricket, cricket,,,Seg31
+_lifestyle_fashion, style and fashion,,,Seg32
+_technology_mobiles, mobile phones,,,Seg33
+_entertainment_englishhollywood, hollywood,,,Seg34
+_business_companies, companies,,,Seg35
+_foodbeverages_costalovers, costa lovers,,,Seg36
+_business_startups, startups,,,Seg37
+_travel_places, tourist destinations,,,Seg38
+_foodbeverages_costalovers, costa lovers,,,Seg39
+_business_startups, startups,,,Seg40
+_business_internationalbusiness, International business,,,Seg41
+_entertainment_jokes, Jokes,,,Seg42
+_technology_gadgets, Gadgets,,,Seg43
+_lifestyle_beauty, beauty,,,Seg44
+_foodbeverages_haldiramlovers, Haldiram Lovers,,,Seg45
+_lifestyle_books,books and literature,,,Seg46
+_entertainment_englishmusic, English Music,,,Seg47
+_technology_science, Science,,,Seg48
+_technology_apps, Mobile Applications,,,Seg49
+_technology_pcs, Desktop Applications,,,Seg50
+_lifestyle_clothesaccessories, Clothing and Accessories,,,Seg51
+technewstechnology, Technolgoy News,,,Seg52
+_lifestyle_homegarden, Home and Garden,,,Seg53
+_foodbeverages_cbtllovers, CBTL Lovers,,,Seg54
+news, News,,,Seg55
+tech, Technology,,,Seg56
+technology, Technology,,,Seg57
+india, News,,,Seg58
+_sports_hockey, Hockey,,,Seg59
+_sports_football, Football,,,Seg60
+_entertainment_tamilmovies, Tamil Movies,,,Seg61
+airlinetravel, Airline Travel,,,Seg62
+_lifestyle_womenclothing, Women Clothing,,,Seg63
+_sports_nba, Nba,,,Seg64
+_travel_shopping, Shopping,,,Seg65
+indianhistory, Indian history,,,Seg66
+mobiletabs, Mobile phones,,,Seg67
+_sports_badminton, Badminton,,,Seg68
