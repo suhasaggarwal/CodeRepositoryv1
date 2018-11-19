@@ -103,7 +103,8 @@ Generates a war file using maven build which is deployed in tomcat and APIs will
 Wittyfeed Categories data Sync uses Machine Learning APIs which are set up on Machine Learning server to generate IAB categories corresponding to url and store it in Entity index.
 Delta url generator for delta crawling - (incremental according to new urls added on daily basis) is also present in this module. Filenames are self explainatory - DeltaUrls*
  
- 
+These jars are then to be put in cron.
+Sample cron file is provided in cron folder.
  
  
  
