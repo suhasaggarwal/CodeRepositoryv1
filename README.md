@@ -115,6 +115,8 @@ Sample cron file is provided in cron folder.
  Spider Set up 
  For spiders set up in scrapy please refer to wittyfeed Middleware Server.
  
+ Scraping server code is present which crawls website and generates a list of urls.
+ 
  Data Collection 
  For Wittyfeed Data Collection set up, please refer to wittyfeed Data Collection Server.
  
