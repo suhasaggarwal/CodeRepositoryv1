@@ -1,0 +1,2 @@
+This javascript fetches Persona form RealTimePersonaFetch server is persona is not cached in user cookie.
+Full Segment Sync Server Setup with tomcat threads configuration for wittyfeed scale is present here - 192.168.106.17 
