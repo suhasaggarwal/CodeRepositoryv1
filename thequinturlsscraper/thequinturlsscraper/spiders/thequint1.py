@@ -38,14 +38,17 @@ class QuintSpider(scrapy.Spider):
         f = ""
         g = ""
         n = ""
-       
+#Use newspaper 3k to derive Article Tags        
+#Use Beautiful Soup to derive all the Entities by parsing webpage Tags, if not derived by existing parser like newspaper 3k
+#For Entities not present in meta tags, custom parser is to be written for here example author parsing from javascript  
+#publish time parsing    
         publishedTime = soup.find("meta", {"property":"article:published_time"})
         if publishedTime is not None:
            b = publishedTime['content']
            print(b)
            n=b.split("+")[0]
            #print("PublishedTime:"+ publishedTime)
-
+#Parse all author entered keywords as they are of high quality and may not be in existing databases from keywords meta tag
         keywords = soup.find("meta", {"name":"keywords"})
         if keywords is not None:
            keywords = keywords['content'].replace(",",";")
@@ -71,6 +74,7 @@ class QuintSpider(scrapy.Spider):
         print(section)
         relevantSection = ""
         relevantSection = section[1]
+#Section Entity parsing        
         print("Section:" + relevantSection)
         article = Article(response.url)
         article.download()
@@ -88,6 +92,7 @@ class QuintSpider(scrapy.Spider):
            t=path 
 
         print(t)
+#Fetches Wikipedia Tag data by supplying Article Url        
         r1 = requests.get("http://192.168.103.138:5001/getTextAnalytics?url=" + response.url.split('?')[0])
         import json
         jData = r1.json()
@@ -95,6 +100,7 @@ class QuintSpider(scrapy.Spider):
         if jData != invalidJSONcheck:
            print(jData)
            for x in jData:
+#Filter out tags with low confidence scores i.e < 0.1              
                if x['rho'] < 0.1:
                   jData.remove(x)
            y = set()
@@ -151,6 +157,7 @@ class QuintSpider(scrapy.Spider):
 
         import json
         # with open('data30.json', 'a') as fp:
+#Dump Entities to Json file which is ingested in ES, sample command in cron and json files generated are checked in       
         import codecs
         fp = codecs.open('quint1.json', mode='a', encoding='utf-8')
         line1 = '{"index":{}}' + "\n"

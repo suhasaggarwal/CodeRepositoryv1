@@ -12,6 +12,8 @@ import codecs
 
 class QuintUrlScraper(scrapy.Spider):
     def getxml():
+#Fetch seed  urls from quint sitemap
+#Use base url if sitemap is absent, it can be directly added to start url and no sitemap parsing is required
        url = "https://www.thequint.com/sitemap/sitemap-section.xml"
 
        http = urllib3.PoolManager()
@@ -33,7 +35,7 @@ class QuintUrlScraper(scrapy.Spider):
     deny_domains = ['facebook.com','twitter.com']
     xml_response = getxml()
     i=0
-
+#Parse XML here
     for content1 in xml_response['urlset'].items():
         if i != 0:
            key,value = content1
@@ -56,6 +58,7 @@ class QuintUrlScraper(scrapy.Spider):
     # iterate over links
         for link in all_links:
             if self.is_absolute(link):
+#Dump url list to file by calling print in callback             
                yield scrapy.http.Request(url=link, callback=self.print(link))
  
     def print(self,link):     
