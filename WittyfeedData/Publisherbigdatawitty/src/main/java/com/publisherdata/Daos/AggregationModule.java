@@ -73701,7 +73701,7 @@ return articlename;
 }
   
   
-  
+  //Sets up ES configuration properties here
   private static InetSocketTransportAddress getTransportAddress()
   {
     String host = System.getenv("ES_TEST_HOST");

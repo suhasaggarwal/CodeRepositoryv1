@@ -1672,7 +1672,7 @@ public class ReportRestController {
 		response1.setCode("404");
 		response1.setStatus("Error");
 		response1.setMessage("Not Found");
-
+        //Use of Mysql is avoided as it slows down ES queries
 		//Site obj = GetMiddlewareData.getSiteName(siteId);
 		Section obj1 = null;
 		Article obj2 = null;
@@ -1705,7 +1705,8 @@ public class ReportRestController {
 		}
 
 	//	siteId = obj.getSiteName();
-		
+		//This part needs to be changed as per client basis
+		//Hard code channel_names or fetch from hashmap loaded in a static manner from configuration file to avoid lag in ES queries
 		if(siteId.equals("2"))
 		siteId = "wittyfeed";
 		
@@ -4045,6 +4046,7 @@ public class ReportRestController {
 		return new ResponseEntity<ArticleResponse>(response, HttpStatus.OK);
 	}
 	
+	//This function needs to be changed site properties need to be changed on client basis
 	@CrossOrigin
 	@RequestMapping(value = "/report/v1/SiteList", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<SiteResponse> getSiteList(
