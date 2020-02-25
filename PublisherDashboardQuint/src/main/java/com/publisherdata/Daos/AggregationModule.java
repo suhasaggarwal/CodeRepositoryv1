@@ -1025,7 +1025,7 @@ public class AggregationModule {
 		deviceMap1 = Collections.unmodifiableMap(deviceMap2);
 		// System.out.println(deviceMap);
 	}
-	
+	//Entity Data is Fetched Here, Check if Entities are getting parsed properly and not breaking due to special characters, but it should take care of almost all cases. 
 	public Article getArticleMetaData(String url) {
 
 		url = URLDecoder.decode(url);
