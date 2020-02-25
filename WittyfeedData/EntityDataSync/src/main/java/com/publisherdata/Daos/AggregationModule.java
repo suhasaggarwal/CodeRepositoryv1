@@ -50,6 +50,8 @@ public class AggregationModule
     throws Exception
   {}
   
+  //Configure ES instance here
+  
   public void setUp()
     throws Exception
   {
@@ -123,7 +125,7 @@ public class AggregationModule
   
 		  }
  
- 
+ //Fetch Entities from ES Entity Index and return all Entities in a DTO
   public Entity getProductData(String channel_name,String ArticleUrl)
 		    throws CsvExtractorException, Exception
 		  {

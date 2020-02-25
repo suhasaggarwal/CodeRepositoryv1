@@ -134,7 +134,7 @@ public class GetMiddlewareData {
 		 
 }
 
-
+   //Calls Entity Fetch Module via Aggregation Module, takes parameters - channel_name and URL whose entities are to be derived
    public static Entity getEntityData(String channel_name, AggregationModule module, String url ) {
 	   
 	 
