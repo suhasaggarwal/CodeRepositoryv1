@@ -194,11 +194,6 @@ http://101.53.130.215/getTextCategory?url=<text>
     </script>
 
 
-Cron for Dashboard server - 
-1,15,31,45 * * * * wget http://localhost:8080/publisherv1/report/v1/TagData
-2,16,32,47 * * * * wget http://localhost:8080/publisherv1/report/v1/AuthorData
-3,35 * * * * sh curlrequests.sh > logdata.txt
-20,51 * * * * wget http://localhost:8080/publisherv1/report/v1/SectionData
 
 
 
