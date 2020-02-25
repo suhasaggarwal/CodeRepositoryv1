@@ -110,7 +110,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 	        this.bulkProcessor = bulkprocessor;
 			 
 	    }
-
+      //Demography rules
 	    @Override
 	    public void run() {
 	    	//Handle the hit...
@@ -774,6 +774,8 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 				String agegroup3[] = {"25_34","35_44"};
 				String agegroup4[] = {"45_54","55_64","45_54","45_54","55_64","65_more"};
 				String agegroup5[] = {"45_54","35_44"};
+			//optimisation for demography data - Get Demography data from quantcast for the website (If demography can't be derived using rules)
+			//Use age Group which is majority for the website in more quantity below array  	
 				String agegroup6[] = {"18_24","25_34","35_44","25_34","Undetermined","Undetermined"};
 				
 				
@@ -826,7 +828,8 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 						
 						
 					}
-					
+				//optimisation for demography data - Get Demography data from quantcast for the website (If demography can't be derived using rules)
+				//Use gender which is majority for the website in more quantity below array 
 					String gender1[] = { "male", "male","male","Undetermined","Undetermined"};
 					
 					
@@ -839,8 +842,10 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 							
 							
 						}	
-					
-						String income1[] = { "low", "medium","medium","medium","high"};
+					//optimisation for demography data - Get Demography data from quantcast for the website (If demography can't be derived using rules)
+					//Use income level which is majority for the website in more quantity below array
+					//More efficient optimisation will be to integrate gender category as derived from word vectors of article and aggregate (it is described in more detail in existing article, it can be experimented with)
+					   String income1[] = { "low", "medium","medium","medium","high"};
 							
 						
 						

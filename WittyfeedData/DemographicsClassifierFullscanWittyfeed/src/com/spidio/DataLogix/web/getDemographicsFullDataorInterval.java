@@ -177,13 +177,14 @@ public class getDemographicsFullDataorInterval {
 		// client, "shopcluesdata",
 		// "core2","cookie_id","575962882.967132425.3646610088.120");
 
+	 //Configure time range and channel here for records enhancement	
 		
 		  String startDate = "now-3h";
   		
 		  String endDate = "now";
 		
 
-		  
+		 
 		
 		 SearchResponse response1 = client.prepareSearch("enhanceduserdatabeta1")
 				.setTypes("core2").setSearchType(SearchType.QUERY_THEN_FETCH)
