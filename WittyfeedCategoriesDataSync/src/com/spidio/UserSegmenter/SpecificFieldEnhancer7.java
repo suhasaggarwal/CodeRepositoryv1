@@ -34,6 +34,8 @@ import org.elasticsearch.search.SearchHit;
 import com.spidio.dataModel.DeviceObject;
 
 //Calls Machine Learning Server API to derive Categories for Article Url
+//Category Enhancer for entity index.
+//These categories are synced in data points by entity enhancer index.
 public class SpecificFieldEnhancer7
 {
 	
