@@ -33,6 +33,7 @@ import org.elasticsearch.search.SearchHit;
 
 import com.spidio.dataModel.DeviceObject;
 
+//Calls Machine Learning Server API to derive Categories for Article Url
 public class SpecificFieldEnhancer7
 {
 	
@@ -135,7 +136,7 @@ public class SpecificFieldEnhancer7
 			
 			
 			br1.close();  	
-	  
+//Reads Url List from file and supply Urls to categoriser API	  
 			List<String> ArticleUrls = new ArrayList<String>();    
 			Scanner s = new Scanner(new File("wittyfeedurl.txt"));
 			
@@ -205,7 +206,7 @@ public class SpecificFieldEnhancer7
           
          }
      
-     
+ //Process Category Data points    
      if(categoryv1 != null){
      	
      	categoryv1 = categoryv1.replace(",",".").replace("   "," ").replace("  ", " ");
@@ -241,7 +242,7 @@ public class SpecificFieldEnhancer7
      SearchHit[] results = IndexCategoriesData2
 				.searchDocumentContent(client, "entity",
 						"core2", "Entity1", url);
-
+//Index categories in ES
      for (SearchHit hit0 : results) {
      
      IndexCategoriesData.updateDocument(client, "entity", "core2",hit0.getId() , "Entity8", categoryv1);
