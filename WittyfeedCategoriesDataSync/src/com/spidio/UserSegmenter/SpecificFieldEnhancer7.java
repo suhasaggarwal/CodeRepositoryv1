@@ -136,12 +136,13 @@ public class SpecificFieldEnhancer7
 			
 			
 			br1.close();  	
-//Reads Url List from file and supply Urls to categoriser API	  
+//Reads Url List from file and supply Urls to categoriser API
+//Split Urls about ?			
 			List<String> ArticleUrls = new ArrayList<String>();    
 			Scanner s = new Scanner(new File("wittyfeedurl.txt"));
 			
 			while (s.hasNext()){
-			   ArticleUrls.add(s.next());
+			   ArticleUrls.add(s.next().trim().split("\\?")[0]);
 			}
 			s.close(); 
      	
