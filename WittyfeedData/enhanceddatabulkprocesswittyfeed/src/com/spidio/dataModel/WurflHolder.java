@@ -11,6 +11,7 @@ public class WurflHolder {
 
 	private static WURFLHolder INSTANCE = null;
 
+	//Loads Singleton Instance of Wurfl Holder
 	public static synchronized WURFLHolder getInstance() {
 
 		if (INSTANCE == null) {

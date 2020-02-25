@@ -41,6 +41,7 @@ public class LocationObject {
 		this.longitude = longitude;
 	}
 
+	//Lat Long data is not accurate as obtained from Maxmind
 	private float latittude;
 	private float longitude;
 

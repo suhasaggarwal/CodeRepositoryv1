@@ -13,7 +13,7 @@ public class LookUpService {
 	public static LookupService lookup;
 
 	private static LookupService INSTANCE = null;
-
+    //Loads Singleton instance of Maxmind Databases (City Database)
 	public static synchronized LookupService getInstance() {
 
 		if (INSTANCE == null) {

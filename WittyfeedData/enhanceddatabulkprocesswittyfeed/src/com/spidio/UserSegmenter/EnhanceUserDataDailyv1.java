@@ -95,7 +95,7 @@ private static TransportClient client;
 	
 	
 	
-	
+	//Uses Executor Framework, available threads equal to number of Processors
 	
 	public static boolean generateData(String startdate, String enddate, Client client, Set<String> lines) throws Exception {
 		// TODO Auto-generated method stub
@@ -111,7 +111,8 @@ private static TransportClient client;
 				.setQuery(QueryBuilders.matchQuery("channel_name","wittyfeed")).setSize(100000).execute()
 				.actionGet();
               */
-		
+		//Configures index,channel,request_time for which enhancement is to be done.. 
+		//Uses scan and scroll, 1000 records fetched per shard
 		SearchResponse response1 = client.prepareSearch("enhanceduserdatabeta1")
 				.setTypes("core2").setSearchType(SearchType.QUERY_THEN_FETCH)
 				.setScroll(new TimeValue(600000))
@@ -133,7 +134,8 @@ private static TransportClient client;
 				for (SearchHit hit : response1.getHits().getHits()) {
 
 					//System.out.println("Records:"+response1.getHits());
-					
+					//Worker thread for each record enhancement
+					//Each Record enhacement runnable submitted to Executor pool
 					Runnable worker = new WorkerThread(hit,client,lines);
 
 					executor.execute(worker);
@@ -141,6 +143,7 @@ private static TransportClient client;
 					// Break condition: No hits are returned
 				}
 				// System.out.println("Number of scrolls:"+count3);
+				//Alive time for each scroll - 600000
 				response1 = client.prepareSearchScroll(response1.getScrollId())
 						.setScroll(new TimeValue(600000)).execute().actionGet();
 				

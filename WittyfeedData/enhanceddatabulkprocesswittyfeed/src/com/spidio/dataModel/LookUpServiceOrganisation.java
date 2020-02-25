@@ -9,7 +9,7 @@ public class LookUpServiceOrganisation {
 	public static LookupService lookup;
 
 	private static LookupService INSTANCE = null;
-
+    //Organisation Database
 	public static synchronized LookupService getInstance() {
 
 		if (INSTANCE == null) {

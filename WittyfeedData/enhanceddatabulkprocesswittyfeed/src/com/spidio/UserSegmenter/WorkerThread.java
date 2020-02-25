@@ -168,6 +168,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 			this.lines = lines1; 
 	    }
 
+	    //Data points enhancement per record
 	    @Override
 	    public void run() {
 	    	//Handle the hit...
@@ -224,7 +225,9 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 					// for time of the day reports
 
 					if (page_title != null) {
-
+                    //All below special characters are replaced with underscore 
+					//This helps prevent string split at the time of indexing, this will lead to data point corruption	
+				    //This should be taken care of if new data point is to be added in enhanced section and mapping of string is set to analyzed
 						page_title = page_title.replace("-", "_").replace(".", "_")
 								.replace(":", "_").replace(" ", "_")
 								.replace("/", "_").replace("//", "_");
@@ -258,7 +261,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 					
 					
 					if (clickedurl != null) {
-
+                    //Click Url enhancement 
 						result.put("clickurloriginal",clickedurl);
 						clickedurl = clickedurl.replace("-", "_").replace(".", "_")
 								.replace(":", "_").replace(" ", "_")
@@ -277,7 +280,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 				     
 				     
 				    
-				     
+				  //Determine Quarter of the day of ES record, Used for generating specific reports   
 				     
 					if (hour < 4)
 						QuarterValue = "Quarter1";
@@ -301,6 +304,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 
 					int idx;
 					result.put("date", date);
+			   //Derives device properties using userAgent passed to Wurfl		
 					deviceProperties = ProcessDeviceData
 							.getDeviceDetails(userAgent);
 
@@ -439,6 +443,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 						 * } else {
 						 */
 						if (ip != null) {
+							//Derives location properties using IPAddress from Maxmind
 							locationProperties = ProcessIPAddress.getIPDetails(ip);
 							if (locationProperties != null) {
 								city = locationProperties.getCity();
@@ -477,12 +482,12 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 					}
 
 					if (ip != null) {
-
+                        //Derives Organisation data from IP Address - Maxmind
 						org = ProcessOrganisationData.getOrgDetails(ip);
 						if (org != null)
 							org = org.replace("-", "_").replace(":", "_").replace(" ", "_")
 						  			.replace("/", "_").replace("//", "_").replace(")","_").replace("(", "_").replace("+", "_").replace("&", "_");
-
+                        //Derives ISP data from IP Address - Maxmind
 						isp = ProcessISPData.getISPDetails(ip);
 						if (isp != null)
 							isp = isp.replace("-", "_").replace(":", "_").replace(" ", "_")
@@ -513,7 +518,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 					
 					 final BytesRef seedAsString = new BytesRef(cookie_id);
 				     long nodeIdSeed = MurmurHash3.hash128(seedAsString.bytes, seedAsString.offset, seedAsString.length, 0, new MurmurHash3.Hash128()).h1;
-				     
+				   //Uses Murmer Hash for cookie hash (Use it for Distinct Count - Speeds up HyperLogLog++ Algorithm used in ES)
 				     result.put("cookiehash", nodeIdSeed);
 					
 					
@@ -523,7 +528,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 					
 					 final BytesRef seedAsString1 = new BytesRef(session_id);
 				     long nodeIdSeed1 = MurmurHash3.hash128(seedAsString1.bytes, seedAsString1.offset, seedAsString1.length, 0, new MurmurHash3.Hash128()).h1;
-				     
+				   //Uses Murmer Hash for session hash (Use it for Distinct Count - Speeds up HyperLogLog++ Algorithm used in ES)
 				     result.put("sessionhash", nodeIdSeed1);
 					
 					
@@ -669,7 +674,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 					    result.put("dual_orientation", deviceProperties.getDual_orientation());
 					    result.put("ux_full_desktop", deviceProperties.getUx_full_desktop());
 					  
-					    
+					    //Identifies device Type
 					    if(deviceProperties.getWireless_device().equals("false"))
 							result.put("device","Computer");
 							
@@ -678,7 +683,11 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 						
 					    if(deviceProperties.getIs_tablet().equals("false") && deviceProperties.getWireless_device().equals("true"))
 					            result.put("device","Mobile");
-					    
+					  
+					    //Below code does mobile device properties enhancement using scraped 91 mobiles data
+					    //This code is commented because at the time of Enhancement fetching from Mysql is slow and does not scale well (possible for low volume clients), possible enhancement is to cache in memory, use Elasticsearch for storing the data
+					    //Index can be created in ES very similar to Entity index and these Entities (extra device properties can be fetched from ES and embedded as data points as below)
+					    //Relevant module - get91mobilesData method in getWurflData
 					    /*
 					    String mobilesId =  deviceProperties.getBrandName()+" "+deviceProperties.getModel_name()+" "+deviceProperties.getMarketing_name()+" "+deviceProperties.getRelease_date();
 					    
@@ -927,7 +936,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 			          }
 					
 					
-					
+					//Does Source Url Enhancement
 			          result.put("sourceUrl", source);
 					
 			          String referrerv1 = (String)result.get("referrer");
@@ -937,8 +946,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 			            
 			            String sourcev1 = "Others";
 			            
-			            
-
+			        
 			            for (String line : lines){    
 			            
 			            	if(line !=null){
@@ -986,7 +994,8 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 			          	    else if(referrerv1.toLowerCase().contains("instagram")|| referrerv2.toLowerCase().contains("instagram")) 	
 			      	              sourcev1="Instagram";
 			        	    
-					
+			      	      //Does Referrer Type Enhancement   
+
 			      	      result.put("referrerType", sourcev1);
 			      	        
 			      	        
@@ -1001,10 +1010,12 @@ import static org.elasticsearch.common.xcontent.XContentFactory.*;
 	    	}
 			
 			 catch (Exception e) {
-
+                //Bulk Process was not used submitting index request for bulk indexing
+				//Though it speeds up module but leads to data loss
+				//Some more configuration trials can be experimented but it is slighly risky, it is available in BulkProcessorModule 
 				//bulkProcessor.add(new IndexRequest().index(ES_INDEX).type(this.hit.getType()).source(result)
 				//	        ); 
-				
+				//In case any Exception occurs Index partial data points Enhancement
 				 IndexCategoriesData.doIndex(client,
 							"enhanceduserdatabeta1", "core2", hit.getId(),result);
 				 e.printStackTrace();

@@ -56,6 +56,7 @@ public class EnhanceUserDataDaily {
 
 private static TransportClient client;
 	
+    //Sets up ElasticSearch Instance, ensures instance is a Singleton
 	public static void setUp()
 		    throws Exception
 		  {
@@ -72,6 +73,7 @@ private static TransportClient client;
 		    System.out.println("Finished the setup process...");
 		  }
 
+	//Configuration for ES
 	private static InetSocketTransportAddress getTransportAddress()
 	  {
 	    String host = null;
@@ -93,7 +95,7 @@ private static TransportClient client;
 	
 	
 	
-
+     //Derives Hostname from url 
 	  public static String getHostName(String url)
 	  {
 	    URI uri = null;
@@ -124,19 +126,24 @@ private static TransportClient client;
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 
+		//Sets up ElasticSearch Instance
 		setUp();
 		
+		//Sets up Date range for ES records for which Enhancement is to be done
+		//Needs to be configured when doing specific enhancement
 	    String startdate = "now-10d";
 	    		
 	    String enddate =  "now";   		
 	
 	    boolean status = false;
-	 
+	   //Set up Wurfl Module
 	    WurflHolder.getInstance();
+	   //Set up Maxmind Module
 	    LookUpService.getInstance();
 	    LookUpServiceISP.getInstance();
 	    LookUpServiceOrganisation.getInstance();
 	    Set<String> lines = new HashSet<String>(FileUtils.readLines(new File("/root/websites.txt")));
+	   //Calls Enhancer generate Data
 	    status = EnhanceUserDataDailyv1.generateData(startdate, enddate, client,lines);
 	   
 	  
