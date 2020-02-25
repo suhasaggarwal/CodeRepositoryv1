@@ -91,6 +91,7 @@ public class AggregationModule
   public static Map<String,List<String>> countrystatecitymap;
   public static Map<String,String> citylatlongMap1;
   
+  //Load static maps to map codes to Different data domains
   static {
       
       String csvFilev1 = "/root/citylatlong.csv";
