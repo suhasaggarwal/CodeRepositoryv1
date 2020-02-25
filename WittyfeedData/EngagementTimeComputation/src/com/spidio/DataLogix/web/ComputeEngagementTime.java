@@ -165,7 +165,8 @@ public class ComputeEngagementTime {
 				  
 		  List<String> requesttime = new ArrayList<String>();		  
 	//Configure Time range here for records enhancement	
-		  String startDate = "now-10d";
+	//Ideal Time configuration for Engagement Time Module	  
+		  String startDate = "now-3h";
   		
 		  String endDate = "now";
 		

@@ -131,7 +131,8 @@ private static TransportClient client;
 		
 		//Sets up Date range for ES records for which Enhancement is to be done
 		//Needs to be configured when doing specific enhancement
-	    String startdate = "now-10d";
+	   // Ideal time configuration (It should not be run on already enhanced data points)
+		String startdate = "now-1h";
 	    		
 	    String enddate =  "now";   		
 	

@@ -178,7 +178,7 @@ public class getDemographicsFullDataorInterval {
 		// "core2","cookie_id","575962882.967132425.3646610088.120");
 
 	 //Configure time range and channel here for records enhancement	
-		
+     //Ideal time configuration is below for demographic Enhancement	
 		  String startDate = "now-3h";
   		
 		  String endDate = "now";
