@@ -1,0 +1,12 @@
+SELECT count(*) as count,subcategory  FROM subcategorycomputeindex where cookie_id in (SELECT distinct(cookie_id) FROM enhanceduserdatapatrika where channel_name = 'Womanseraindia_indiagate' and date between '2017-01-01' and '2017-01-31' Order by cookie_id limit 17129,21410) group by subcategory limit 20000000
+Total cookie subcategory count execution time: 7075
+Total cookie subcategory count execution time: 7088
+Total cookie subcategory count execution time: 7200
+Total cookie subcategory count execution time: 8126
+SELECT count(*) as count,audience_segment FROM audiencesegmentcomputeindex where cookie_id in (SELECT distinct(cookie_id) FROM enhanceduserdatapatrika where channel_name = 'Womanseraindia_indiagate' and date between '2017-01-01' and '2017-01-31' Order by cookie_id limit 4283,8564) group by audience_segment limit 20000000
+Total cookie subcategory count execution time: 9056
+Total cookie subcategory count execution time: 9589
+Total cookie subcategory count execution time: 10162
+Total cookie subcategory count execution time: 11500
+Total cookie subcategory count execution time: 12016
+Total cookie subcategory count execution time: 12142
