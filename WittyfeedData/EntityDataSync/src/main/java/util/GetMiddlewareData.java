@@ -57,7 +57,7 @@ public class GetMiddlewareData {
 		
 		starttimestamp = starttimestamp .replace("/", "-");
 		endtimestamp = endtimestamp.replace("/", "-");
-	    
+//Specify timestamp for delta urls to be generated for crawling 	    
 		starttimestamp = "2017-09-02 00:00:01";
 		endtimestamp = "2017-09-06 23:59:59";
 		
@@ -69,6 +69,7 @@ public class GetMiddlewareData {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+//Get Article List from ES
 		try {
 			ArticleList = mod.getArticleList(channel_name,starttimestamp, endtimestamp);
 		} catch (CsvExtractorException e) {
@@ -91,7 +92,7 @@ public class GetMiddlewareData {
 	    List<String> ArticleList = new ArrayList<String>();
 	    for(int i=0; i< Articles.size(); i++)
 	    {
-	   
+//if Article Url is not in Entity index, it is to be crawled and will be written to List	   
 	    try {
 			flag = module.SearchArticle(Articles.get(i));
 		} catch (CsvExtractorException e) {
@@ -109,7 +110,7 @@ public class GetMiddlewareData {
 	    	
 	       }
 	    }
-	    
+//Delta Url List is dumped to the file, it will be crawled by website scraper on daily batch basis (twice or thrice daily) and new Entities indexed in ES after getting scraped (sample command in cron)    
 	    FileWriter writer = null;
 		try {
 			writer = new FileWriter(filename);
