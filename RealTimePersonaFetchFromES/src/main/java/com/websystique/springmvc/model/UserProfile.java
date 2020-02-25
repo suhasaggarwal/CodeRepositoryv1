@@ -3,112 +3,107 @@ package com.websystique.springmvc.model;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
+//User Persona DTO
 public class UserProfile {
 
-public String city;
+	public String city;
 
-public String getCity() {
-	return city;
-}
+	public String getCity() {
+		return city;
+	}
 
-public void setCity(String city) {
-	this.city = city;
-}
+	public void setCity(String city) {
+		this.city = city;
+	}
 
-public String getCountry() {
-	return country;
-}
+	public String getCountry() {
+		return country;
+	}
 
-public void setCountry(String country) {
-	this.country = country;
-}
+	public void setCountry(String country) {
+		this.country = country;
+	}
 
-public String getMobileDevice() {
-	return mobileDevice;
-}
+	public String getMobileDevice() {
+		return mobileDevice;
+	}
 
-public void setMobileDevice(String mobileDevice) {
-	this.mobileDevice = mobileDevice;
-}
+	public void setMobileDevice(String mobileDevice) {
+		this.mobileDevice = mobileDevice;
+	}
 
+	public List<String> getAffinitySegments() {
+		return AffinitySegments;
+	}
 
+	public void setAffinitySegments(List<String> affinitySegments) {
+		this.AffinitySegments = affinitySegments;
+	}
 
-public List<String> getAffinitySegments() {
-	return AffinitySegments;
-}
+	public String country;
 
-public void setAffinitySegments(List<String> affinitySegments) {
-	this.AffinitySegments = affinitySegments;
-}
+	public String mobileDevice;
 
-public String country;
+	public Set<String> tags;
 
-public String mobileDevice;
+	public Set<String> getTags() {
+		return tags;
+	}
 
-public Set<String> tags;
+	public void setTags(Set<String> tags) {
+		this.tags = tags;
+	}
 
-public Set<String> getTags() {
-	return tags;
-}
+	public Set<String> inMarketSegments;
 
-public void setTags(Set<String> tags) {
-	this.tags = tags;
-}
+	public Set<String> getInMarketSegments() {
+		return inMarketSegments;
+	}
 
-public Set<String> inMarketSegments;
-public Set<String> getInMarketSegments() {
-	return inMarketSegments;
-}
+	public void setInMarketSegments(Set<String> inMarketSegments) {
+		this.inMarketSegments = inMarketSegments;
+	}
 
-public void setInMarketSegments(Set<String> inMarketSegments) {
-	this.inMarketSegments = inMarketSegments;
-}
+	public List<String> AffinitySegments;
 
-public List<String> AffinitySegments;
+	public Set<String> section;
 
-public Set<String> section;
+	public Set<String> getSection() {
+		return section;
+	}
 
+	public void setSection(Set<String> section) {
+		this.section = section;
+	}
 
+	public String age;
 
-public Set<String> getSection() {
-	return section;
-}
+	public String getAge() {
+		return age;
+	}
 
-public void setSection(Set<String> section) {
-	this.section = section;
-}
+	public void setAge(String age) {
+		this.age = age;
+	}
 
-public String age;
+	public String getGender() {
+		return gender;
+	}
 
-public String getAge() {
-	return age;
-}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
 
-public void setAge(String age) {
-	this.age = age;
-}
+	public String getIncomelevel() {
+		return incomelevel;
+	}
 
-public String getGender() {
-	return gender;
-}
+	public void setIncomelevel(String incomelevel) {
+		this.incomelevel = incomelevel;
+	}
 
-public void setGender(String gender) {
-	this.gender = gender;
-}
+	public String gender;
 
-public String getIncomelevel() {
-	return incomelevel;
-}
-
-public void setIncomelevel(String incomelevel) {
-	this.incomelevel = incomelevel;
-}
-
-public String gender;
-
-public String incomelevel;
-
-
+	public String incomelevel;
 
 }

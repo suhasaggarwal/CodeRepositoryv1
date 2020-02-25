@@ -1222,7 +1222,7 @@ public class getCookiePersonaDetails {
 	        //   System.out.println(deviceMap);
 	          }
   
-	          
+	       //Set up Elasticsearch here for fetching persona corresponding to User Cookie   
 	          public static TransportClient client;
 	          
 	          public static void setUp()
@@ -1252,8 +1252,8 @@ public class getCookiePersonaDetails {
 	          
 	          
 	          
-	          
-	          
+	//More data points in User Persona can be added here (as fetched from enhanced data points index)          
+	//Most of the data points as per requirement earlier are already supported          
 	public static String getCookieData(HttpServletRequest request) {
 		
 		try {
