@@ -73395,6 +73395,9 @@ return mins.toString()+"."+sec.toString();
   {
     SearchDao searchDao = getSearchDao();
     QueryAction queryAction = searchDao.explain(query);
+    //Caches Elasticsearch Queries in Ehcache, this saves lot of latencies for fetching data from the Network
+    //Key,Value Format(Corresponding SQL query Equivalent, Query Result)
+    //To scale up - Do vertical scaling for ehcache, use horizontal scaling for distributed Ehcache set up, if there are multiple Publisher Dashboard nodes but it is not applicable at present as we use single machine only - but it will add to network latencies
     EhCacheKeyCodeRepository ehcache = EhCacheKeyCodeRepository.getInstance();
     Object execution = null;
     CSVResult results  = (CSVResult)ehcache.get(query,false);
