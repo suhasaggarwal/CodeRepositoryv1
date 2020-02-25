@@ -3862,14 +3862,15 @@ public class ReportRestController {
 	
 	
 	
-	
+	//Template Data needs to be changed on client basis if card titles are to be modified - For example e-commerce store, financial website
 	@CrossOrigin
 	@RequestMapping(value = "/report/v1/TemplateData", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<DashboardTemplate> getTemplatedata(
 			@RequestParam("siteid") String siteid) {
-	//	System.out.println("ArticleUrl " + articleurl);
-		
-        siteid="2";
+	//System.out.println("ArticleUrl " + articleurl);
+	//Set site id=1 here, to avoid changing template entries if Card titles don't have to be customised 
+	//Correponding to this siteId, entries are already there in Mysql	
+        siteid="1";
 		DashboardTemplate obj = reportService.getTemplatedata(siteid);
 		if(obj==null)
 			return new ResponseEntity<DashboardTemplate>(obj, HttpStatus.NOT_FOUND);	

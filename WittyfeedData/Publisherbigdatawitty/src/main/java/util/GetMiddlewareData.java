@@ -1094,7 +1094,8 @@ public class GetMiddlewareData {
  }
 
    public static DashboardTemplate getDashboardTemplate( String Id ) {
-	  
+	  //Caches static Template Data in Ehcache
+	  //
 	   EhCacheKeyCodeRepository2 ehcache = EhCacheKeyCodeRepository2.getInstance();
 	   DashboardTemplate object  = (DashboardTemplate)ehcache.get(Id,false);
 	   if(object == null || object.equals("")){
