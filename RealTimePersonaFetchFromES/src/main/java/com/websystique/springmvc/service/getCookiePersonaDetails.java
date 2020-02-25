@@ -1253,7 +1253,8 @@ public class getCookiePersonaDetails {
 	          
 	          
 	//More data points in User Persona can be added here (as fetched from enhanced data points index)          
-	//Most of the data points as per requirement earlier are already supported          
+	//Most of the data points as per requirement earlier are already supported 
+    //Fetches Cookie persona from enhanced index and is called by javascript embedded in client website, check code repo for javascripts provided to client          
 	public static String getCookieData(HttpServletRequest request) {
 		
 		try {
