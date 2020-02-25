@@ -41,6 +41,7 @@ class computeIAB(Resource):
         text = args['url']
         import urllib.parse
         text=urllib.parse.unquote(text)
+#Query ES to fetch data supplied to ML word vectors based API
         uri_search = 'http://192.168.101.132:9200/entity/core2/_search'
         queryresult = self.search(uri_search, text)
         text1 = text
@@ -53,7 +54,7 @@ class computeIAB(Resource):
                     if text is not None:
 #                       print(tags)
                        break
-
+#Support for Hindi Language website, pass url path as Article title is in Hindi 
         if "hindi.thequint" in text1:       
            text = urllib.parse.urlparse(text1).path
            text = text.replace(r'/',' ').replace('-',' ')
@@ -77,6 +78,7 @@ class computeIAB(Resource):
             for doc in data:
                  if doc['_source'] is not None:
 #                    print(doc['_source'])
+# Fetches Url Tags from ES
                     tags = doc['_source']['Entity6']
                     if tags is not None:
 #                       print(tags)
@@ -88,7 +90,7 @@ class computeIAB(Resource):
         l = g
         if l is "":
             l = y
-
+#If tags are not available use Article Title,Url path 
 #        print(l.lower().replace("-", " ").replace(","," ").replace(";"," "))
         r = requests.get("http://localhost:5000/IAB/" + l.lower().replace("-", " ").replace(","," ").replace(";"," "))
 #        print(r.content)

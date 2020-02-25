@@ -21,7 +21,7 @@ class computeIAB(Resource):
         import urllib
         text=urllib.parse.unquote(urllib.parse.unquote(text)) 
         sentence_1 = text
-       
+# Derive sentence word vector and pass it to category vector similarity function       
         sentence_1_avg_vector = avg_feature_vector(sentence_1.split(), model, num_features=300,index2word_set=set(model.wv.index2word))
         #print(sentence_1_avg_vector)
         return computeSimilarity(sentence_1_avg_vector,model)
@@ -41,7 +41,8 @@ class computeIAB(Resource):
 def loadModel():
         #Connect to databse
     global modeldata 
-    if modeldata is None:        
+    if modeldata is None:    
+# Load wikipedia word vectors            
        modeldata = KeyedVectors.load_word2vec_format("/root/fastText-master/word2vecdata/wiki.en.vec")
 # redis_db.set('model', model)
        #modeldata= KeyedVectors.load_word2vec_format("googlenews",binary=True)
@@ -75,7 +76,7 @@ def avg_feature_vector(words, model, num_features, index2word_set):
 
 
 #get average vector for sentence 1
-
+#Read Category Data from Category File
 fname="segments1.txt"
 with open(fname) as f:
      content = f.readlines()
@@ -102,14 +103,17 @@ def computeSimilarity(sentence_1_avg_vector,model):
         sentence_2 = y
         i = i+1
         import memcache
+#Cache Category Word vectors in Memcached
         mc = memcache.Client(['127.0.0.1:11211'], debug=0)
 
 #    mc.set(y, sentence_2_avg_vector)
         k = y.replace(" ","").replace(",","").replace("'","")
    # print(k)
+# Get category word vectors from memcached
         value = mc.get(k+"wiki")
 
 #        print(i)
+# Derive cosine similarity with category word vectors to figure out the category
         if value is not None:
             sen1_sen2_similarity =  cosine_similarity(sentence_1_avg_vector,value)
 
