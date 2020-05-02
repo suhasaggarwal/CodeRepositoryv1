@@ -1,0 +1,167 @@
+Current results: 2
+Categorisation Data Updated
+
+Measurement:AXE-8YCCutugd-Zqk8WR:1
+Categorisation Data Updated
+
+Measurement:AXE-8ZC1utugd-Zqk8Zq:1
+Current results: 1
+Categorisation Data Updated
+
+Measurement:AXE-9sRoutugd-ZqlAqg:1
+Current results: 1
+Categorisation Data Updated
+
+Measurement:AXE-nkNdCFpND4aqQsjU:1
+Current results: 1
+Categorisation Data Updated
+
+Measurement:AXE--abKsQ_J8HhTHP4i:1
+Current results: 1
+Categorisation Data Updated
+
+Measurement:AXE-3RmyCFpND4aqRie5:2
+Current results: 2
+Categorisation Data Updated
+
+Measurement:AXE-zHs_utugd-Zqkci-:1
+Categorisation Data Updated
+
+Measurement:AXE-zRSNsQ_J8HhTGqF5:2
+Current results: 1
+Categorisation Data Updated
+
+Measurement:AXE_GEsNutugd-ZqldgW:2
+Current results: 2
+Categorisation Data Updated
+
+Measurement:AXE_A-RyCFpND4aqSC-z:1
+Categorisation Data Updated
+
+Measurement:AXE_A3Vbutugd-ZqlLCD:1
+Current results: 5
+Categorisation Data Updated
+
+Measurement:AXE-9I_Zutugd-Zqk-4A:1
+Categorisation Data Updated
+
+Measurement:AXE-9jH_CFpND4aqR3vm:1
+Categorisation Data Updated
+
+Measurement:AXE-90ZfCFpND4aqR4px:1
+Categorisation Data Updated
+
+Measurement:AXE-99U7sQ_J8HhTHOYx:1
+Categorisation Data Updated
+
+Measurement:AXE-92tHutugd-ZqlBKp:2
+Current results: 1
+Categorisation Data Updated
+
+Measurement:AXE_A6hPCFpND4aqSCyv:1
+Current results: 2
+Categorisation Data Updated
+
+Measurement:AXE-08noutugd-Zqki5M:1
+Categorisation Data Updated
+
+Measurement:AXE-1JnDsQ_J8HhTGwle:2
+Current results: 1
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1a6f5124
+RecordCount2020-04-01 05:00:00:2020-04-05 06:00:001
+Categorisation Data Updated
+
+Current results: 2
+Categorisation Data Updated
+
+Measurement:AXE_DtTQsQ_J8HhTHiNK:1
+Categorisation Data Updated
+
+Measurement:AXE_Dloyutugd-ZqlU-V:2
+Current results: 2
+Categorisation Data Updated
+
+Measurement:AXE-p9LrsQ_J8HhTGJ8r:1
+Categorisation Data Updated
+
+Measurement:AXE-p95zCFpND4aqQ0vb:2
+Current results: 1
+Categorisation Data Updated
+
+Measurement:AXE-2xjhCFpND4aqRg37:1
+Current results: 3
+Categorisation Data Updated
+
+Measurement:AXE-7WV4sQ_J8HhTHFwf:4
+Categorisation Data Updated
+
+Measurement:AXE-8aXEsQ_J8HhTHJTw:7
+Categorisation Data Updated
+
+Measurement:AXE--OIpCFpND4aqR5-M:2
+Current results: 1
+Categorisation Data Updated
+
+Measurement:AXE-6uTCutugd-Zqk2rn:2
+Current results: 2
+Categorisation Data Updated
+
+Measurement:AXE-0Jlfutugd-ZqkgHk:1
+Categorisation Data Updated
+
+Measurement:AXE-0RvtCFpND4aqRYT2:2
+Current results: 7
+Categorisation Data Updated
+
+Measurement:AXE_HUxfCFpND4aqSZYQ:1
+Categorisation Data Updated
+
+Measurement:AXE_HWlesQ_J8HhTHuoS:1
+Categorisation Data Updated
+
+Measurement:AXE_HoSNsQ_J8HhTHvjE:1
+Categorisation Data Updated
+
+Measurement:AXE_HpwqsQ_J8HhTHvn5:1
+Categorisation Data Updated
+
+Measurement:AXE_HxCwsQ_J8HhTHv-o:1
+Categorisation Data Updated
+
+Measurement:AXE_HxVIsQ_J8HhTHv_k:1
+Categorisation Data Updated
+
+Measurement:AXE_HxUGCFpND4aqSa31:2
+Current results: 1
+Categorisation Data Updated
+
+Measurement:AXE-6uiqCFpND4aqRuT1:2
+Current results: 2
+Categorisation Data Updated
+
+Measurement:AXE-rU1VCFpND4aqQ5VT:1
+Categorisation Data Updated
+
+Measurement:AXE-rOAmutugd-ZqkBPY:1
+Current results: 2
+Categorisation Data Updated
+
+Measurement:AXE-urGNutugd-ZqkNOI:1
+Categorisation Data Updated
+
+Measurement:AXE-ur11utugd-ZqkNQ-:2
+Current results: 1
+Categorisation Data Updated
+
+Measurement:AXE-3ETHCFpND4aqRhzy:2
+Current results: 1
+Categorisation Data Updated
+
+Measurement:AXE-2WZ7sQ_J8HhTG0si:1
+Current results: 2
+Categorisation Data Updated
+
+Measurement:AXE-5t13CFpND4aqRqlr:5
+Categorisation Data Updated
+
+Measurement:AXE-627oCFpND4aqRux4:1
