@@ -3,13 +3,21 @@ Databases (hourly Aajtak Data) (Actual Databases are generated on full cookie po
 
 Databases Generated -
 1)segmentPersonaAffinity
+
 2)creativePersonaAffinity
+
 3)demographicPersonaDatabase
+
 4)emotionPersonaDatabase
+
 5)segment segment affinity database
+
 6)Persona Database
+
 7)Creative Database
+
 8)TopicSegmentAffinityDatabase
+
 Classes Database used for classification
 
 https://drive.google.com/drive/folders/1aSeywBe1cZHWSPHOLSGf4_pyi7eVK6dd?usp=sharing
