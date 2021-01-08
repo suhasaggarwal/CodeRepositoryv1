@@ -1,0 +1,24 @@
+Found cluster... cluster name: elasticsearch
+Finished the setup process...
+null
+null
+null
+https://m.aajtak.in/livetv
+https://m.aajtak.in/states-news/bihar-news/story/sushant-rajput-case-bihar-dgp-gupteshwar-pandey-refused-to-reply-on-sanjay-rawat-allegation-says-sushant-want-justice-1218179-2020-08-09
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/banking-on-a-goodwill-that-wasn-t-859925-2016-03-18
+https://aajtak.intoday.in/story/virtual-schooling-1-1174011.html
+https://m.aajtak.in/livetv
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/leave-myths-know-the-truth-about-cancer-805460-2015-03-30
+https://m.aajtak.in/indiatoday-livetv
+Current results: 1
+Current results: 45
+Current results: 713
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/banking-on-a-goodwill-that-wasn-t-859925-2016-03-18'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/leave-myths-know-the-truth-about-cancer-805460-2015-03-30'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/states-news/bihar-news/story/sushant-rajput-case-bihar-dgp-gupteshwar-pandey-refused-to-reply-on-sanjay-rawat-allegation-says-sushant-want-justice-1218179-2020-08-09'
+Current results: 1
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://aajtak.intoday.in/story/virtual-schooling-1-1174011.html'
+https://m.aajtak.in/livetv
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/new-era-for-manjhi-803517-2015-03-16
+https://m.aajtak.in/news/business/story/indiatoday-conclave-arun-jaitley-claims-demonetisation-and-gst-responsible-of-ease-of-doing-business-963081-2017-11-07
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/gambling-many-things-818725-2015-06-22

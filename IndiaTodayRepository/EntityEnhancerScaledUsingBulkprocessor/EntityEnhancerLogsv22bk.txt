@@ -1,0 +1,2 @@
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@3da05287
+FinalRecordCount0

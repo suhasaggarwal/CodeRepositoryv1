@@ -1,0 +1,325 @@
+Found cluster... cluster name: elasticsearch
+Finished the setup process...
+https://www.indiatoday.in/flashtalking/ftlocal.html?ifsrc=https%3A%2F%2Fcdn.flashtalking.com%2Fxre%2F432%2F4320038%2F2993672%2Fjs%2Fj-4320038-2993672.js%26ftx%3D%26fty%3D%26ftadz%3D%26ftscw%3D%26ft_custom%3D%26ftOBA%3D1%26ft_ifb%3D1%26ft_domain%3Dwww.indiatoday.in%26ft_agentEnv%3D0%26ft_referrer%3Dhttps%253A%252F%252Fwww.indiatoday.in%252Fcoronavirus-outbreak%252Fstory%252Fthere-is-a-vaccine-against-coronavirus-behavioural-vaccine-1658648-2020-03-23%26cachebuster%3D507347.12737093266%26click%3Dhttps%3A%2F%2Fnym1-ib.adnxs.com%2Fclick%3F45BBILXC9D9j7lpCPijyPwAAAOCjcBJAf45h3ntZ-T8HCObo8fv8P9VA1hpWajVHA8J7FwEohzUy9HpeAAAAAB6U7gBKAAAA9SAAAAIAAADtMfgLeqMXAAAAAABVU0QAVVNEACwB-gBEGAAAAAABAgUCAAAAALwAliXhRQAAAAA.%2Fbcr%3DAAAAAAAA8D8%3D%2Fcnd%3D%2521qRWj0QjDvvsREO3j4F8Y-sZeIAAoADEAAAAAAAAIQDoJTllNMjo0NDc3QJIdSQAAAAAAAPA_UQAAAAAAAAAAWQAAAAAAAAAAYZqZmZmZmck_aQAAAAAAAAAAcQAAAAAAwCFAeAA.%2Fcca%3DODQzNyNOWU0yOjQ0Nzc%3D%2Fbn%3D44833%2Fclickenc%3D%26ftimpid%3DE07A1C43-1A97-9403-143F-8DD825979B58%26ft_id%3D%26ftcustom%3D%26ftsection%3D%26fttime%3D1585116219%26ftcfid%3D19755291%26ftguid%3D3773C473585CFA
+Current results: 1
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1 Like '%https://www.indiatoday.in/flashtalking/ftlocal.html?ifsrc=https%3A%2F%2Fcdn.flashtalking.com%2Fxre%2F432%2F4320038%2F2993672%2Fjs%2Fj-4320038-2993672.js%26ftx%3D%26fty%3D%26ftadz%3D%26ftscw%3D%26ft_custom%3D%26ftOBA%3D1%26ft_ifb%3D1%26ft_domain%3Dwww.indiatoday.in%26ft_agentEnv%3D0%26ft_referrer%3Dhttps%253A%252F%252Fwww.indiatoday.in%252Fcoronavirus-outbreak%252Fstory%252Fthere-is-a-vaccine-against-coronavirus-behavioural-vaccine-1658648-2020-03-23%26cachebuster%3D507347.12737093266%26click%3Dhttps%3A%2F%2Fnym1-ib.adnxs.com%2Fclick%3F45BBILXC9D9j7lpCPijyPwAAAOCjcBJAf45h3ntZ-T8HCObo8fv8P9VA1hpWajVHA8J7FwEohzUy9HpeAAAAAB6U7gBKAAAA9SAAAAIAAADtMfgLeqMXAAAAAABVU0QAVVNEACwB-gBEGAAAAAABAgUCAAAAALwAliXhRQAAAAA.%2Fbcr%3DAAAAAAAA8D8%3D%2Fcnd%3D%2521qRWj0QjDvvsREO3j4F8Y-sZeIAAoADEAAAAAAAAIQDoJTllNMjo0NDc3QJIdSQAAAAAAAPA_UQAAAAAAAAAAWQAAAAAAAAAAYZqZmZmZmck_aQAAAAAAAAAAcQAAAAAAwCFAeAA.%2Fcca%3DODQzNyNOWU0yOjQ0Nzc%3D%2Fbn%3D44833%2Fclickenc%3D%26ftimpid%3DE07A1C43-1A97-9403-143F-8DD825979B58%26ft_id%3D%26ftcustom%3D%26ftsection%3D%26fttime%3D1585116219%26ftcfid%3D19755291%26ftguid%3D3773C473585CFA%' GROUP BY Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity8,Entity9,Entity10,Entity11,Entity12
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@13d9b21f
+RecordCount1
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@2826f61
+RecordCount2
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@62727399
+RecordCount3
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@4d9ac0b4
+RecordCount4
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@130dca52
+RecordCount5
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@2654635
+RecordCount6
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@737a135b
+RecordCount7
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@687ef2e0
+RecordCount8
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@15dcfae7
+RecordCount9
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@3da05287
+RecordCount10
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1e636ea3
+RecordCount11
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@115667d
+RecordCount12
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@736caf7a
+RecordCount13
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@4ce7fffa
+RecordCount14
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@497486b3
+RecordCount15
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@63f8276e
+RecordCount16
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@75f95314
+RecordCount17
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@6127a7e
+RecordCount18
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@6bbe2511
+RecordCount19
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@495fac5f
+RecordCount20
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@76012793
+RecordCount21
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@635572a7
+RecordCount22
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@79d94571
+RecordCount23
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@4dd02341
+RecordCount24
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@3212a8d7
+RecordCount25
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@7a1a3478
+RecordCount26
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@495b0487
+RecordCount27
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@55dfcc6
+RecordCount28
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@222eb8aa
+RecordCount29
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@93cf163
+RecordCount30
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1852a3ff
+RecordCount31
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@7203c7ff
+RecordCount32
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@25bfcafd
+RecordCount33
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@4b6690c0
+RecordCount34
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@46268f08
+RecordCount35
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@2a76840c
+RecordCount36
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@71454b9d
+RecordCount37
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@eda25e5
+RecordCount38
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@7cf6a5f9
+RecordCount39
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@623e088f
+RecordCount40
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@39fcbef6
+RecordCount41
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@66565121
+RecordCount42
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@2fc6f97f
+RecordCount43
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@3d2ee678
+RecordCount44
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@6179e425
+RecordCount45
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@35f26e72
+RecordCount46
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@2d6764b2
+RecordCount47
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@67304a40
+RecordCount48
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@49c6c24f
+RecordCount49
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@6fe1b4fb
+RecordCount50
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@79351f41
+RecordCount51
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1c32386d
+RecordCount52
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@6399551e
+RecordCount53
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@13d73fa
+RecordCount54
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@5023bb8b
+RecordCount55
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@5d5f10b2
+RecordCount56
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@74c79fa2
+RecordCount57
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1e0f9063
+RecordCount58
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@53bd8fca
+RecordCount59
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@7642df8f
+RecordCount60
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@3e30646a
+RecordCount61
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@5cde6747
+RecordCount62
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@63a270c9
+RecordCount63
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@37c7595
+RecordCount64
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@3ed242a4
+RecordCount65
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1199fe66
+RecordCount66
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@614df0a4
+RecordCount67
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1fdf1c5
+RecordCount68
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@2d96543c
+RecordCount69
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@73a2e526
+RecordCount70
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@7d64e326
+RecordCount71
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@13f95696
+RecordCount72
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@cd1d761
+RecordCount73
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@68be8808
+RecordCount74
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@32193bea
+RecordCount75
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@6b8d96d9
+RecordCount76
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@69653e16
+RecordCount77
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@758705fa
+RecordCount78
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@ebaa6cb
+RecordCount79
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@906d29b
+RecordCount80
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@49d3c823
+RecordCount81
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@436bc36
+RecordCount82
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@5fe1ce85
+RecordCount83
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@604c5de8
+RecordCount84
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@37091312
+RecordCount85
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@66fdec9
+RecordCount86
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@57abad67
+RecordCount87
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@550a1967
+RecordCount88
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@2a640157
+RecordCount89
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@52851b44
+RecordCount90
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@584f54e6
+RecordCount91
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@5d8bafa9
+RecordCount92
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@576f63f6
+RecordCount93
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@2dca0d64
+RecordCount94
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@f80945f
+RecordCount95
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@ff684e1
+RecordCount96
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@23aa363a
+RecordCount97
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@5ef6ae06
+RecordCount98
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@55dfebeb
+RecordCount99
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@6e35bc3d
+RecordCount100
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1cdc4c27
+RecordCount101
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@77b14724
+RecordCount102
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@5d9b7a8a
+RecordCount103
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1e8ce150
+RecordCount104
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@604f2bd2
+RecordCount105
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1d3ac898
+RecordCount106
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1b73be9f
+RecordCount107
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@628c4ac0
+RecordCount108
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@7b84fcf8
+RecordCount109
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@30b19518
+RecordCount110
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@363042d7
+RecordCount111
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@366ac49b
+RecordCount112
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@6ad59d92
+RecordCount113
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@56f0cc85
+RecordCount114
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@62e20a76
+RecordCount115
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@2cc44ad
+RecordCount116
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@44b3606b
+RecordCount117
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1477089c
+RecordCount118
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@663411de
+RecordCount119
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@63dd899
+RecordCount120
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@59d2400d
+RecordCount121
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@75cd8043
+RecordCount122
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@33b1c5c5
+RecordCount123
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@5b202a3a
+RecordCount124
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@10b9db7b
+RecordCount125
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@9ef8eb7
+RecordCount126
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@34cdeda2
+RecordCount127
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@6ee660fb
+RecordCount128
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@305a0c5f
+RecordCount129
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@4535b6d5
+RecordCount130
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1ecee32c
+RecordCount131
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@4372b9b6
+RecordCount132
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@232a7d73
+RecordCount133
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@4b41e4dd
+RecordCount134
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@22ffa91a
+RecordCount135
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@74960bfa
+RecordCount136
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@42721fe
+RecordCount137
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@40844aab
+RecordCount138
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1f6c9cd8
+RecordCount139
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@5b619d14
+RecordCount140
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@66746f57
+RecordCount141
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@447a020
+RecordCount142
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@7f36662c
+RecordCount143
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@28e8dde3
+RecordCount144
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@6d23017e
+RecordCount145
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@54dcfa5a
+RecordCount146
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@1817f1eb
+RecordCount147
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@767e20cf
+RecordCount148
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@3a3e78f
+RecordCount149
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@301ec38b
+RecordCount150
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@17a1e4ca
+RecordCount151
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@10ded6a9
+RecordCount152
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@c5dc4a2
+RecordCount153
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@4a194c39
+RecordCount154
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@52066604
+RecordCount155
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@340b9973
+RecordCount156
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@56113384
+RecordCount157
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@5669c5fb
+RecordCount158
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@373ebf74
+RecordCount159
+Response Size:org.elasticsearch.search.internal.InternalSearchHits@5f9678e1
+RecordCount160

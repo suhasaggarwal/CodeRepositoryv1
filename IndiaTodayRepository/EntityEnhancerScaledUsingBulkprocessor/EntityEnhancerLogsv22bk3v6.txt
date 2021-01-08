@@ -1,0 +1,483 @@
+Found cluster... cluster name: elasticsearch
+Finished the setup process...
+null
+null
+null
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/banking-on-a-goodwill-that-wasn-t-859925-2016-03-18
+https://m.aajtak.in/livetv
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/leave-myths-know-the-truth-about-cancer-805460-2015-03-30
+https://m.aajtak.in/states-news/bihar-news/story/sushant-rajput-case-bihar-dgp-gupteshwar-pandey-refused-to-reply-on-sanjay-rawat-allegation-says-sushant-want-justice-1218179-2020-08-09
+https://aajtak.intoday.in/story/virtual-schooling-1-1174011.html
+https://m.aajtak.in/livetv
+https://m.aajtak.in/indiatoday-livetv
+Current results: 1
+Current results: 1
+Current results: 45
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/banking-on-a-goodwill-that-wasn-t-859925-2016-03-18'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://aajtak.intoday.in/story/virtual-schooling-1-1174011.html'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/leave-myths-know-the-truth-about-cancer-805460-2015-03-30'
+Current results: 713
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/states-news/bihar-news/story/sushant-rajput-case-bihar-dgp-gupteshwar-pandey-refused-to-reply-on-sanjay-rawat-allegation-says-sushant-want-justice-1218179-2020-08-09'
+Current results: 4707
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/indiatoday-livetv'
+https://m.aajtak.in/news/business/story/indiatoday-conclave-arun-jaitley-claims-demonetisation-and-gst-responsible-of-ease-of-doing-business-963081-2017-11-07
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/new-era-for-manjhi-803517-2015-03-16
+https://m.aajtak.in/livetv
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/gambling-many-things-818725-2015-06-22
+https://m.aajtak.in/states-news/bihar-news/story/indiatoday-sos-bihar-conclave-governer-lalji-tandon-university-politics-development-tpt-1038842-2018-11-03
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/uttarakhand-char-dham-yatra-kedarnath-badrinath-devotees-1006036-2018-05-29
+Current results: 1
+Current results: 1
+Current results: 1
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/new-era-for-manjhi-803517-2015-03-16'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/news/business/story/indiatoday-conclave-arun-jaitley-claims-demonetisation-and-gst-responsible-of-ease-of-doing-business-963081-2017-11-07'
+Current results: 1
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/uttarakhand-char-dham-yatra-kedarnath-badrinath-devotees-1006036-2018-05-29'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/gambling-many-things-818725-2015-06-22'
+https://aajtak.intoday.in/teztv.php
+https://aajtak.intoday.in/livetv.html
+null
+https://m.aajtak.in/teztv
+https://m.aajtak.in/teztv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/teztv
+https://aajtak.intoday.in/livetv.html
+https://m.aajtak.in/livetv
+null
+https://aajtak.intoday.in/indiatoday-livetv.html
+Current results: 1
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/states-news/bihar-news/story/indiatoday-sos-bihar-conclave-governer-lalji-tandon-university-politics-development-tpt-1038842-2018-11-03'
+https://aajtak.intoday.in/livetv.html
+null
+null
+https://aajtak.intoday.in/livetv.html
+https://aajtak.intoday.in/livetv.html
+null
+https://aajtak.intoday.in/videos.html
+Current results: 101432
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/livetv'
+https://m.aajtak.in/teztv
+null
+https://m.aajtak.in/india-today-hindi/
+Current results: 101432
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/livetv'
+null
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://aajtak.intoday.in/livetv.html
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/nobodys-business-969490-2017-12-11
+Current results: 1942
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://aajtak.intoday.in/teztv.php'
+null
+https://m.aajtak.in/indiatoday-livetv
+https://aajtak.intoday.in/indiatoday-hindi/
+Current results: 2
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/nobodys-business-969490-2017-12-11'
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/environment-of-suspicion-1211068-2020-07-17
+Current results: 1914
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://aajtak.intoday.in/indiatoday-livetv.html'
+null
+https://m.aajtak.in/livetv
+null
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/livetv.html
+null
+null
+Current results: 5566
+https://m.aajtak.in/livetv
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/teztv'
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+null
+https://m.aajtak.in/dharma/puja-vidhi-in-hindi/story/janmashtami-2020-date-kanha-mask-face-shield-murti-in-demand-tlifd-1218424-2020-08-10
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/news/national/story/shah-faesal-i-can-t-be-seen-a-traitor-to-a-nation-that-gave-me-everything-in-life-1218419-2020-08-10
+Current results: 1
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/environment-of-suspicion-1211068-2020-07-17'
+https://m.aajtak.in/livetv
+https://m.aajtak.in/livetv
+https://aajtak.intoday.in/story/modis-ram-mandir-mission-accomplished-1-1217121.html
+Current results: 1037
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://aajtak.intoday.in/videos.html'
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+Current results: 693
+https://m.aajtak.in/indiatoday-livetv
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi'
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+Current results: 616
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://aajtak.intoday.in/indiatoday-hindi'
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://m.aajtak.in/indiatoday-livetv
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+null
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/age-of-adulthood-age-of-confusion-726172-2013-04-02
+null
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/pakistan-mamta-banerjee-balakot-terrorist-camp-air-attack-kamal-nath-pulwama-attack-crpf-1069106-2019-03-20
+null
+null
+https://m.aajtak.in/indiatoday-livetv
+null
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-hindi/
+https://aajtak.intoday.in/indiatoday-hindi/
+http://origin-aajtak.intoday.in/indiatoday-hindi
+Current results: 3
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://aajtak.intoday.in/story/modis-ram-mandir-mission-accomplished-1-1217121.html'
+https://aajtak.intoday.in/livetv.html
+Current results: 1
+https://m.aajtak.in/crime/crime-news/
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/pakistan-mamta-banerjee-balakot-terrorist-camp-air-attack-kamal-nath-pulwama-attack-crpf-1069106-2019-03-20'
+Current results: 593
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/news/national/story/shah-faesal-i-can-t-be-seen-a-traitor-to-a-nation-that-gave-me-everything-in-life-1218419-2020-08-10'
+https://m.aajtak.in/crime/crime-news/
+https://m.aajtak.in/crime/crime-news/
+null
+null
+null
+null
+https://m.aajtak.in/indiatoday-livetv
+https://aajtak.intoday.in/story/the-covid-generation-1-1217031.html
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/microfinance-on-the-way-of-success-881063-2016-08-03
+Current results: 3
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'http://origin-aajtak.intoday.in/indiatoday-hindi'
+Current results: 166
+Current results: 15
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/age-of-adulthood-age-of-confusion-726172-2013-04-02'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://aajtak.intoday.in/story/the-covid-generation-1-1217031.html'
+Current results: 256
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/crime/crime-news'
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/crime/crime-news/
+null
+null
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+null
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/an-orgasm-injection-to-female-pleasue-910845-2017-02-07
+null
+https://m.aajtak.in/teztv
+null
+null
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+null
+null
+null
+https://m.aajtak.in/indiatoday-livetv
+null
+https://m.aajtak.in/indiatoday-livetv
+null
+https://aajtak.intoday.in/livetv.html
+https://m.aajtak.in/livetv
+https://m.aajtak.in/teztv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://aajtak.intoday.in/indiatoday-hindi/
+null
+https://m.aajtak.in/livetv
+null
+https://aajtak.intoday.in/indiatoday-hindi/
+https://m.aajtak.in/livetv
+https://m.aajtak.in/livetv
+https://m.aajtak.in/livetv
+null
+https://m.aajtak.in/teztv
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/lingering-presence-1214556-2020-07-30
+null
+null
+null
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/wrestlering-for-muslim-vote-bank-803580-2015-03-16
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/chinas-stealth-attack-1217193-2020-08-05
+Current results: 16
+Current results: 2
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/microfinance-on-the-way-of-success-881063-2016-08-03'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/wrestlering-for-muslim-vote-bank-803580-2015-03-16'
+Current results: 36
+Current results: 11
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/an-orgasm-injection-to-female-pleasue-910845-2017-02-07'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/lingering-presence-1214556-2020-07-30'
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/movie-masala/news-on-films/story/priyanka-chopra-nick-jonas-family-just-got-bigger-addition-rescue-dog-panda-tmov-1218049-2020-08-09
+https://m.aajtak.in/indiatoday-livetv
+null
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://m.aajtak.in/livetv
+null
+null
+https://m.aajtak.in/teztv
+null
+null
+null
+null
+null
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+null
+null
+null
+https://aajtak.intoday.in/livetv.html
+null
+null
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/corona-covid-19-industries-laborers-garment-factories-constructions-footwear-manufactures-sidcul-1194178-2020-05-25
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/politics-the-great-ally-bazaar-727697-2013-04-18
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/know-the-truth-of-rural-electrification-885097-2016-08-29
+Current results: 72
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/chinas-stealth-attack-1217193-2020-08-05'
+Current results: 1
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/politics-the-great-ally-bazaar-727697-2013-04-18'
+Current results: 3
+Current results: 5
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/corona-covid-19-industries-laborers-garment-factories-constructions-footwear-manufactures-sidcul-1194178-2020-05-25'
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/leave-myths-know-the-truth-about-cancer-805460-2015-03-30
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/know-the-truth-of-rural-electrification-885097-2016-08-29'
+null
+null
+null
+null
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+null
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+null
+null
+null
+https://aajtak.intoday.in/indiatoday-hindi/
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/the-flop-yatra-740819-2013-09-03
+null
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/age-of-adulthood-age-of-confusion-726172-2013-04-02
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/livetv
+https://m.aajtak.in/entertainment/gallery/samantha-akkineni-shares-candid-pic-with-rana-daggubati-on-wedding-day-viral-on-instagram-tmov-54354-2020-08-08
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+null
+https://aajtak.intoday.in/indiatoday-hindi/
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/rss-started-mission-u.p.-785259-2014-10-27
+Current results: 1
+Current results: 45
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/the-flop-yatra-740819-2013-09-03'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/leave-myths-know-the-truth-about-cancer-805460-2015-03-30'
+null
+https://aajtak.intoday.in/indiatoday-hindi/
+null
+https://m.aajtak.in/livetv
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/coronas-lasting-effect-1214549-2020-07-28
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/coronas-lasting-effect-1214549-2020-07-28
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://aajtak.intoday.in/livetv.html
+https://aajtak.intoday.in/livetv.html
+https://m.aajtak.in/livetv
+https://m.aajtak.in/livetv
+https://m.aajtak.in/livetv
+https://m.aajtak.in/livetv
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/example-of-madhu-babu-1201036-2020-06-19
+Current results: 2
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/rss-started-mission-u.p.-785259-2014-10-27'
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/bullet-trains-and-beyond-951325-2017-09-14
+Current results: 4709
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/dharma/puja-vidhi-in-hindi/story/janmashtami-2020-date-kanha-mask-face-shield-murti-in-demand-tlifd-1218424-2020-08-10'
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/industry-by-industry-jim-umesh-china-1052833-2019-01-08
+Current results: 1
+Current results: 1
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/bullet-trains-and-beyond-951325-2017-09-14'
+Current results: 2
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/industry-by-industry-jim-umesh-china-1052833-2019-01-08'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/example-of-madhu-babu-1201036-2020-06-19'
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/nations-oldest-multinational-companies-731312-2013-05-23
+https://aajtak.intoday.in/livetv.html
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/high-milk-yielding-murrah-buffaloes-are-yedefining-farm-economics-818766-2015-06-22
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/
+Current results: 5
+Current results: 19
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/nations-oldest-multinational-companies-731312-2013-05-23'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/coronas-lasting-effect-1214549-2020-07-28'
+Current results: 13
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/high-milk-yielding-murrah-buffaloes-are-yedefining-farm-economics-818766-2015-06-22'
+null
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/mulayam-singh-yadav-ramgopal-shivpal-yadav-congress-bjp-1076002-2019-04-17
+null
+null
+https://m.aajtak.in/livetv
+https://aajtak.intoday.in/livetv.html
+https://m.aajtak.in/livetv
+https://m.aajtak.in/teztv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://aajtak.intoday.in/indiatoday-hindi/
+null
+null
+null
+https://m.aajtak.in/teztv
+https://m.aajtak.in/livetv
+null
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+null
+null
+https://aajtak.intoday.in/indiatoday-hindi/
+null
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/ministers-of-uttar-pradesh-752122-2014-01-14
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/old-illness-of-environment-are-present--813918-2015-05-25
+Current results: 1
+Current results: 7
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/ministers-of-uttar-pradesh-752122-2014-01-14'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/mulayam-singh-yadav-ramgopal-shivpal-yadav-congress-bjp-1076002-2019-04-17'
+Current results: 2
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/old-illness-of-environment-are-present--813918-2015-05-25'
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/religion-of-the-unfaithful-786996-2014-11-10
+null
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/crime/crime-news/
+https://m.aajtak.in/crime/crime-news/
+https://m.aajtak.in/crime/crime-news/
+https://m.aajtak.in/crime/crime-news/
+https://m.aajtak.in/crime/crime-news/
+https://aajtak.intoday.in/indiatoday-hindi/
+https://aajtak.intoday.in/indiatoday-hindi/
+https://m.aajtak.in/teztv
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/MANGADH-MASSACRE-The-Massacre-on-Mangadh-Hill-707089-2012-09-04
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/MANGADH-MASSACRE-The-Massacre-on-Mangadh-Hill-707089-2012-09-04
+https://m.aajtak.in/livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+https://aajtak.intoday.in/indiatoday-livetv.html
+null
+https://m.aajtak.in/india-today-hindi/indiatoday-sports/story/the-game-changers-time-to-cheque-in-718741-2013-01-14
+Current results: 61
+Current results: 2
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/religion-of-the-unfaithful-786996-2014-11-10'
+null
+https://aajtak.intoday.in/indiatoday-hindi/
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/patna-stampede-due-to-irresponsibility-of-big-officials-783671-2014-10-14
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/ek-mandir-ki-mahagatha-1216758-2020-08-05
+Current results: 2
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-sports/story/the-game-changers-time-to-cheque-in-718741-2013-01-14'
+Current results: 1
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/patna-stampede-due-to-irresponsibility-of-big-officials-783671-2014-10-14'
+null
+null
+null
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/age-of-adulthood-age-of-confusion-726172-2013-04-02
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/microfinance-on-the-way-of-success-881063-2016-08-03
+https://m.aajtak.in/livetv
+https://m.aajtak.in/states-news/rajasthan-news/story/rajasthan-political-crisis-bjp-congress-cm-ashok-gehlot-sachin-pilot-1218434-2020-08-10
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/indiatoday-livetv
+https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/the-curious-case-of-honeypreet-957471-2017-10-15
+Current results: 285
+Current results: 60
+Current results: 1
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/the-curious-case-of-honeypreet-957471-2017-10-15'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/entertainment/gallery/samantha-akkineni-shares-candid-pic-with-rana-daggubati-on-wedding-day-viral-on-instagram-tmov-54354-2020-08-08'
+SELECT Entity1,Entity2,Entity3,Entity4,Entity5,Entity6,Entity7,Entity8,Entity9,Entity10,Entity11,Entity12 FROM entity where Entity1  = 'https://m.aajtak.in/india-today-hindi/indiatoday-special-report/story/MANGADH-MASSACRE-The-Massacre-on-Mangadh-Hill-707089-2012-09-04'
+null
+null
+https://aajtak.intoday.in/story/hush-hush-1-1217290.html
+null
+https://aajtak.intoday.in/livetv.html
+null
+null
+null
+null
+https://m.aajtak.in/indiatoday-livetv
+null
+null
+https://m.aajtak.in/livetv
+null
+https://m.aajtak.in/movie-masala/news-on-films/story/kangana-ranaut-bollywood-actress-ayushmann-khurrana-sushant-singh-rajput-suicide-tmov-1218192-2020-08-09
+null
+https://aajtak.intoday.in/crime/crime-news-1-781.html
