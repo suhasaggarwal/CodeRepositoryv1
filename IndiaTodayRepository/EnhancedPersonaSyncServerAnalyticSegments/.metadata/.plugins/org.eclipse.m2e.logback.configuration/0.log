@@ -1,0 +1,17 @@
+2021-01-08 06:46:03,408 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-01-08 06:46:48,301 [Worker-11: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.personaCache:personasyncserver:0.0.1-SNAPSHOT @ G:\Files\EnhancedPersonaSyncServer\PersonaSyncServer\pom.xml.
+2021-01-08 06:46:48,900 [Worker-11: Importing Maven projects] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.alibaba:druid:jar:1.0.15 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2021-01-08 06:46:49,975 [Worker-11: Importing Maven projects] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.alibaba:druid:jar:1.0.15 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2021-01-08 06:46:53,808 [Worker-11: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PersonaSyncServer/src/main/java
+2021-01-08 06:46:53,809 [Worker-11: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PersonaSyncServer/src/main/resources
+2021-01-08 06:46:53,810 [Worker-11: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PersonaSyncServer/src/test/java
+2021-01-08 06:46:56,751 [Worker-11: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 10 sec
+2021-01-08 06:47:01,196 [Worker-17: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.alibaba:druid:jar:1.0.15 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2021-01-08 06:47:01,412 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-08 06:47:01,433 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-08 06:47:01,548 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-08 06:47:01,549 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\Files\EnhancedPersonaSyncServer\PersonaSyncServer\src\test\resources
+2021-01-08 17:35:35,362 [Worker-77: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-08 17:35:35,409 [Worker-77: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-01-08 17:35:35,409 [Worker-77: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-08 17:35:35,409 [Worker-77: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\Files\EnhancedPersonaSyncServer\PersonaSyncServer\src\test\resources

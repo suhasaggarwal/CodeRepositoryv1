@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+G:\Files\EnhancedPersonaSyncServer\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1507727636.index
+2444061330.index
+984805206.index
+733958630.index
+836635330.index
+3300029035.index
