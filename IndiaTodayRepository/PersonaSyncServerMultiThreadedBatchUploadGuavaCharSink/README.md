@@ -1,2 +1,2 @@
-Persona Sync Server Multi Threaded Processing of Cookie Batches. Cookie Batches are Serialised tO Disk using Google Guava CharSink to minimise Disk I/O Latencies so that Batches are written with minimum Latencies to the Disk.
+Persona Sync Server Multi Threaded Processing of Cookie Batches. Cookie Batches are Serialised to Disk using Google Guava CharSink to minimise Disk I/O Latencies so that Batches are written with minimum Latencies to the Disk.
 This ensures all the cookie personas are developed for the time range and no cookie is left. This ensures Ehcache contains all the personas and gampad ad call gets persona signals/segments for near complete cookie set which visits the website for that day.
