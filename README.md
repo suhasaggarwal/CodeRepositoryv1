@@ -101,6 +101,43 @@ m" "AJTK" > /mnt/data/logdirectory/demographyAJTK.txt
 UseStringDeduplication -Xloggc:/mnt/data/logdirectory/demographyenhancer-gc$(date +\%Y\%m\%d\%H\%M\%S).txt /mnt/data/demographyenhancer.jar "now-111m" "now-51
 m" "ITWEBEN" > /mnt/data/logdirectory/demographyITWEBEN.txt
 
+# Ehcache Upload APIs
+
+Every Quarter Upload of IndiaToday and Aajtak Personas in EhCache
+
+curl http://localhost:8080/publisherv1/loadEhcache?cacheFile=/mnt/data/ITWEBENCookiePersonas.txt
+
+curl http://localhost:8080/publisherv1/loadEhcache?cacheFile=/mnt/data/AJTKCookiePersonas.txt
+
+
+
+# Ehcache Statistics API
+curl  http://localhost:8080/publisherv1/report/v1/getEhcacheStats
+
+# Sample Response from the API
+
+OnHeapTier hits:23170
+onHeapTier misses:73190onHeapTier OccupiedByteSize:-1
+onHeapTier AllocatedByteSize:-1
+onHeapTier Occupancy Fraction:100
+onHeapTier Evictions:0
+onHeapTier Puts:0
+offHeapTier Hits:3415
+offHeapTier Misses:69775
+offHeapTier OccupiedByteSize:2066739264
+offHeapTier AllocatedByteSize:2287599616
+oFFHeapTier Occupancy Fraction:0
+offHeapTier Evictions:0
+offHeapTier Puts:16288873
+Cache hits:26556
+Cache misses:69804
+Cache Eviction:0
+Cache Expirations:0
+Hit %:27.559153
+Miss %:72.44084
+Cache Gets:96360
+Cache Puts:16288873
+
 
 # Data Repository for Cuberoot
 https://drive.google.com/file/d/1zsKX7qbMZSDNa1dyUrmH1Zcn0hxBmq3h/view?usp=sharing
