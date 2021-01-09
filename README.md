@@ -41,6 +41,26 @@ Classes Database used for classification
 https://drive.google.com/drive/folders/1aSeywBe1cZHWSPHOLSGf4_pyi7eVK6dd?usp=sharing
 https://drive.google.com/file/d/1R4GqxLxmK9ijFzSwll1vp5BmayUTASzJ/view?usp=sharing
 
+
+# Segment Sync Node Jobs tuned with Frequency and Time Decay Settings
+
+0,30 * * * * sh /mnt/data/itwebenpersonaAggregation.sh > /mnt/data/itwebenlogs.txt
+
+#10,40 * * * * sleep 30; cat /mnt/data/Batch* >> /mnt/data/ITWEBENCookiePersonas.txt
+
+12,42 * * * * curl http://localhost:8080/publisherv1/loadEhcache?cacheFile=/mnt/data/ITWEBENCookiePersonas.txt
+
+19,49 * * * * mv /mnt/data/ITWEBENCookiePersonas.txt /mnt/data/logdirectory/ITWEBENCookiePersonas$(date +\%Y\%m\%d\%H\%M\%S).txt
+
+15,45 * * * * sh /mnt/data/ajtkpersonaAggregation.sh > /mnt/data/ajtklogs.txt
+
+#25,55 * * * * sleep 30; cat /mnt/data/Batch* >> /mnt/data/AJTKCookiePersonas.txt
+
+27,57 * * * * curl http://localhost:8080/publisherv1/loadEhcache?cacheFile=/mnt/data/AJTKCookiePersonas.txt
+
+4,34 * * * * mv /mnt/data/AJTKCookiePersonas.txt /mnt/data/logdirectory/AJTKCookiePersonas$(date +\%Y\%m\%d\%H\%M\%S).txt
+
+
 # Middleware Node Jobs tuned with G1 GC Garbage Collector settings
 
 */5 * * * * /mnt/data/datamigration.sh > /mnt/data/logdirectory/logdatacopy.txt
