@@ -9,4 +9,4 @@ Publisher Analytic Signals Embedded in User Persona -
 8)Average Session Duration
 9)Loyalty Nature of User - User is New,Returning or Loyal.
 
-These Data points are embedded in an array in custom signals key i.e csection and is supplied as a Key value pair to GPT Ad Tag.
+These Data points are embedded in an array in custom signals key i.e csection and is supplied as a Key value pair to GPT- gampad ad call.
