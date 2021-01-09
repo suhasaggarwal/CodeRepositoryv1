@@ -1,6 +1,8 @@
 Databases (hourly Aajtak Data) (Actual Databases are generated on full cookie pool and updated on hourly data) which are used to generate ML signals and further, ingest in gampad ad call.
 
-Databases Generated - 1)segmentPersonaAffinity
+Databases Generated - 
+
+1)segmentPersonaAffinity
 
 2)creativePersonaAffinity
 
