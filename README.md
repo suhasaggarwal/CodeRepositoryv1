@@ -1,4 +1,4 @@
-# Publisher Analytic Signals 
+# Publisher Analytic Signals/Segments 
 Embedded in User Persona - 
 1)Section Engagement Times 
 2)IAB Categories Engagement Times 
@@ -13,7 +13,7 @@ Embedded in User Persona -
 These Data points are embedded in an array in custom signals key i.e csection and is supplied as a Key value pair to gampad Ad call
 
 
-# Databases - ML signals
+# Databases - ML signals/Segments
 Databases (hourly Aajtak Data) (Actual Databases are generated on full cookie pool and updated on hourly data) which are used to generate ML signals and further, ingest in gampad ad call.
 
 Databases Generated -
