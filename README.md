@@ -159,7 +159,9 @@ Cache Gets:96360
 Cache Puts:16288873
 
 
-Sample EhCache.xml
+# Ehcache.xml
+
+# Uses - Heap as well as Direct Memory for Storing Cookie Personas
 
 <?xml version="1.0" encoding="UTF-8"?>
 
