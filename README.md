@@ -117,25 +117,45 @@ curl  http://localhost:8080/publisherv1/report/v1/getEhcacheStats
 # Sample Response from the API
 
 OnHeapTier hits:23170
+
 onHeapTier misses:73190onHeapTier OccupiedByteSize:-1
+
 onHeapTier AllocatedByteSize:-1
+
 onHeapTier Occupancy Fraction:100
+
 onHeapTier Evictions:0
+
 onHeapTier Puts:0
+
 offHeapTier Hits:3415
+
 offHeapTier Misses:69775
+
 offHeapTier OccupiedByteSize:2066739264
+
 offHeapTier AllocatedByteSize:2287599616
-oFFHeapTier Occupancy Fraction:0
+
+offHeapTier Occupancy Fraction:0
+
 offHeapTier Evictions:0
+
 offHeapTier Puts:16288873
+
 Cache hits:26556
+
 Cache misses:69804
+
 Cache Eviction:0
+
 Cache Expirations:0
+
 Hit %:27.559153
+
 Miss %:72.44084
+
 Cache Gets:96360
+
 Cache Puts:16288873
 
 
