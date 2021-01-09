@@ -44,29 +44,39 @@ https://drive.google.com/file/d/1R4GqxLxmK9ijFzSwll1vp5BmayUTASzJ/view?usp=shari
 # Middleware Node Jobs tuned with G1 GC settings
 
 */5 * * * * /mnt/data/datamigration.sh > /mnt/data/logdirectory/logdatacopy.txt
+
 0 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,23 * * * sh /mnt/data/crawlscriptfinal.sh > /mnt/data/logdirectory/crawllog.txt
+
 30 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,23 * * * sh /mnt/data/crawlscriptfinalv1.sh > /mnt/data/logdirectory/crawllogv1.txt
+
 1 * * * * cd /mnt/data && timeout 7m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+U
 seStringDeduplication -Xloggc:/mnt/data/logdirectory/contentenhancer-gc$(date +\%Y\%m\%d\%H\%M\%S).txt /mnt/data/contentenhancer.jar "now-61m" "now-1m" "AJTK"
  23 > /mnt/data/logdirectory/contentenhancerAJTK.txt
+
 9 * * * * cd /mnt/data && timeout 5m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+U
 seStringDeduplication -Xloggc:/mnt/data/logdirectory/contentenhancer-gc$(date +\%Y\%m\%d\%H\%M\%S).txt /mnt/data/contentenhancer.jar "now-69m" "now-9m" "ITWEB
 EN" 23 > /mnt/data/logdirectory/contentenhancerITWEBEN.txt
+
 15 * * * * cd /mnt/data && timeout 12m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:
 +UseStringDeduplication -Xloggc:/mnt/data/logdirectory/entityenhancer-gc$(date +\%Y\%m\%d\%H\%M\%S).txt /mnt/data/entityenhancer.jar "now-80m" "now-10m" "AJTK
 " > /mnt/data/logdirectory/entityenhancerAJTK.txt
+
 28 * * * * cd /mnt/data && timeout 3m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+
 UseStringDeduplication -Xloggc:/mnt/data/logdirectory/entityenhancer-gc$(date +\%Y\%m\%d\%H\%M\%S).txt /mnt/data/entityenhancer.jar "now-90m" "now-12m" "ITWEB
 EN" > /mnt/data/logdirectory/entityenhancerITWEBEN.txt
+
 32 * * * * cd /mnt/data && timeout 7m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+
 UseStringDeduplication -Xloggc:/mnt/data/logdirectory/etcompute-gc$(date +\%Y\%m\%d\%H\%M\%S).txt /mnt/data/etcomputeenhancer.jar "now-89m" "now-29m" "AJTK" >
  /mnt/data/logdirectory/etComputeAJTK.txt
+
 37 * * * * cd /mnt/data && timeout 5m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+
 UseStringDeduplication -Xloggc:/mnt/data/logdirectory/etcompute-gc$(date +\%Y\%m\%d\%H\%M\%S).txt /mnt/data/etcomputeenhancer.jar "now-97m" "now-37m" "ITWEBEN
 " > /mnt/data/logdirectory/etComputeITWEBEN.txt
+
 43 * * * * cd /mnt/data && timeout 7m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+
 UseStringDeduplication -Xloggc:/mnt/data/logdirectory/demographyenhancer-gc$(date +\%Y\%m\%d\%H\%M\%S).txt /mnt/data/demographyenhancer.jar "now-103m" "now-43
 m" "AJTK" > /mnt/data/logdirectory/demographyAJTK.txt
+
 51 * * * * cd /mnt/data && timeout 5m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+
 UseStringDeduplication -Xloggc:/mnt/data/logdirectory/demographyenhancer-gc$(date +\%Y\%m\%d\%H\%M\%S).txt /mnt/data/demographyenhancer.jar "now-111m" "now-51
 m" "ITWEBEN" > /mnt/data/logdirectory/demographyITWEBEN.txt
