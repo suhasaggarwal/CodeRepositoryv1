@@ -189,6 +189,40 @@ Cache Puts:16288873
 # Data Repository for Cuberoot
 https://drive.google.com/file/d/1zsKX7qbMZSDNa1dyUrmH1Zcn0hxBmq3h/view?usp=sharing
 
+Details of the Third Party Data Available is present in the presentation uploaded.
+
+# Vector Store 
+https://github.com/suhasaggarwal/VectorStore
+
+# vectorstore
+Tired of your custom word/sentence vectors taking too much RAM!!
+
+# Scale it using Vector-Store
+
+# Powered by LevelDB
+
+Not excited about having all your RAM eaten up? Still want fast lookup?
+
+# Key Features
+Easily initialize custom word/sentence embedding databases on disk.
+Lazy-load embeddings instead of reading the entire file on startup.
+LRU caching (1024 most recent lookups by default)
+Open Vectorstore word embeddings DB
+
+```
+>>> from emstore import Emstore
+>>> e = Emstore('~/topicDataLevelDB')
+>>> e['modi']
+[0.27204,
+ -0.06203,
+ -0.1884,
+ 0.023225,
+ -0.018158,
+ 0.0067192,
+ ...
+]
+```
+
 # CodeRepository for Cuberoot
 
 Code includes the following - 
