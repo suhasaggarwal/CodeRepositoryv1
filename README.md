@@ -41,7 +41,7 @@ Classes Database used for classification
 https://drive.google.com/drive/folders/1aSeywBe1cZHWSPHOLSGf4_pyi7eVK6dd?usp=sharing
 https://drive.google.com/file/d/1R4GqxLxmK9ijFzSwll1vp5BmayUTASzJ/view?usp=sharing
 
-# Middleware Node Jobs tuned with G1 GC settings
+# Middleware Node Jobs tuned with G1 GC Garbage Collector settings
 
 */5 * * * * /mnt/data/datamigration.sh > /mnt/data/logdirectory/logdatacopy.txt
 
