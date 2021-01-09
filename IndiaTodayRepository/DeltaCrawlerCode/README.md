@@ -6,7 +6,7 @@ Each spiders in an instance/process crawl concurrently but uses one CPU Core onl
 
 # Protocol followed - Scrape websites without being blocked
 
-# Tor
+# Install Tor
 Tor makes sure you are untraceable (so it will be impossible to get blocked by IP address). It will probably be more slow, but at least one don't have to worry about searching for proxy servers which might go down or become too slow to use. Tor will always work.
 
 After installing Tor, start it up before scraping. This can easily be done by running the tor command, Tor will start up and run on localhost port 9050 (localhost:9050) by default. When I was running the scraper scripts from a server, I made sure that Tor was automatically started immediately after booting up Ubuntu Server.
