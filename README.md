@@ -159,6 +159,30 @@ Cache Gets:96360
 Cache Puts:16288873
 
 
+Sample EhCache.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache:config
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xmlns:ehcache='http://www.ehcache.org/v3'
+  xsi:schemaLocation="http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.1.xsd">
+ <!-- <ehcache:persistence directory="/mnt/data/cache"/> -->
+  <ehcache:cache alias="basicCache">
+    <ehcache:key-type>java.lang.String</ehcache:key-type>
+    <ehcache:value-type>java.lang.String</ehcache:value-type>
+     <ehcache:expiry>
+     <ehcache:ttl unit="seconds">864000</ehcache:ttl>
+    </ehcache:expiry>
+    <ehcache:resources>
+      <ehcache:heap unit="entries">100000</ehcache:heap>
+      <ehcache:offheap unit="GB">16</ehcache:offheap>
+    <!-- <ehcache:disk persistent="true" unit="GB">20</ehcache:disk> -->
+    </ehcache:resources>
+  </ehcache:cache>
+</ehcache:config>
+
+
 # Data Repository for Cuberoot
 https://drive.google.com/file/d/1zsKX7qbMZSDNa1dyUrmH1Zcn0hxBmq3h/view?usp=sharing
 
