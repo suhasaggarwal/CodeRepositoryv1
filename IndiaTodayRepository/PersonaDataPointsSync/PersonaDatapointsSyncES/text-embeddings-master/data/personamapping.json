@@ -1,0 +1,156 @@
+    {
+        "properties": {
+          "admiration": {
+            "type": "integer"
+          },
+          "amusement": {
+            "type": "integer"
+          },
+          "anger": {
+            "type": "integer"
+          },
+          "annoyance": {
+            "type": "integer"
+          },
+          "approval": {
+            "type": "integer"
+          },
+          "caring": {
+            "type": "integer"
+          },
+          "confusion": {
+            "type": "integer"
+          },
+          "curiosity": {
+            "type": "integer"
+          },
+          "desire": {
+            "type": "integer"
+          },
+          "disappointment": {
+            "type": "integer"
+          },
+          "disapproval": {
+            "type": "integer"
+          },
+          "disgust": {
+            "type": "integer"
+          },
+          "embarassment": {
+            "type": "integer"
+          },
+          "excitement": {
+            "type": "integer"
+          },
+          "fear": {
+            "type": "integer"
+          },
+          "gratitude": {
+            "type": "integer"
+          },
+          "grief": {
+            "type": "integer"
+          },
+          "joy": {
+            "type": "integer"
+          },
+          "love": {
+            "type": "integer"
+          },
+          "nervousness": {
+            "type": "integer"
+          },
+          "optimism": {
+            "type": "integer"
+          },
+          "pride": {
+            "type": "integer"
+          },
+          "realization": {
+            "type": "integer"
+          },
+           "relief": {
+            "type": "integer"
+          },
+          "remorse": {
+            "type": "integer"
+          },
+          "sadness": {
+            "type": "integer"
+          },
+          "surprise": {
+            "type": "integer"
+          },
+          "neutral": {
+            "type": "integer"
+          },
+           "genderwiki": {
+            "type": "keyword"
+          },
+          "agegroupwiki": {
+            "type": "keyword"
+          },
+          "incomelevelwiki": {
+            "type": "keyword"
+          },
+          "gendertwitter": {
+            "type": "keyword"
+          },
+          "agegrouptwitter": {
+            "type": "keyword"
+          },
+          "incomeleveltwitter": {
+            "type": "keyword"
+          },
+          "genderconceptnet": {
+            "type": "keyword"
+          },
+          "agegroupconceptnet": {
+            "type": "keyword"
+          },
+          "incomelevelconceptnet": {
+            "type": "keyword"
+          },
+          "topicsegmentaffinity": {
+            "type": "keyword"
+          },
+          "segmentsegmentaffinity": {
+            "type": "keyword"
+          },
+          "personasegmentaffinity": {
+            "type": "keyword"
+          },
+          "personacreativeaffinity": {
+            "type": "keyword"
+          },
+          "topiccreativeaffinity": {
+            "type": "keyword"
+          },
+          "segmentcreativeaffinity": {
+            "type": "keyword"
+          },
+          "persona_vector_wiki": {
+          "type": "dense_vector",
+          "dims": 300
+          },
+         "persona_vector_twitter": {
+          "type": "dense_vector",
+          "dims": 400
+          },
+          "persona_vector_conceptnet": {
+          "type": "dense_vector",
+          "dims": 300
+          },
+          "full_persona": {
+          "type": "text"
+          },
+          "cookie_id": {
+            "type": "keyword"
+          },
+          "insertion_time": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss"
+          }
+        }
+      }
+    
