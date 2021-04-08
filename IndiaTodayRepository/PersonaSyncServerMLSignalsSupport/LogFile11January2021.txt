@@ -1,0 +1,955 @@
+Date:2021-01-10
+Date1:2021-01-10
+Most Active Quarter:Quarter2
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Total Engagement Time:90
+Total Number of sessions:1
+Time Since Last Session:0
+Loyalty Nature:loyal
+Visit Counter:407
+Cookie_id:22bc3a49_00bc_44d9_8e73_5d2692e48ffcPersona:{"city":"","country":"","mobileDevice":"generic_web_browser__1994_january","tags":[],"inMarketSegments":[],"AffinitySegments":[],"section":["ajtk","Quarter2","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","90","1","0","loyal","407"],"age":"2","gender":"male","incomelevel":"high"}
+Date:2021-01-10
+Date1:2021-01-10
+Most Active Quarter:Quarter2
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Total Engagement Time:89
+Total Number of sessions:1
+Time Since Last Session:0
+Loyalty Nature:loyal
+Visit Counter:89
+Cookie_id:d1f93135_af45_4ebd_a953_593c79b3a566Persona:{"city":"","country":"","mobileDevice":"generic_web_browser__1994_january","tags":[],"inMarketSegments":[],"AffinitySegments":[],"section":["ajtk","Quarter2","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","89","1","0","loyal","89"],"age":"5","gender":"female","incomelevel":"medium"}
+Date:2021-01-10
+Date1:2021-01-10
+Most Active Quarter:Quarter2
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Total Engagement Time:90
+Total Number of sessions:1
+Time Since Last Session:0
+Loyalty Nature:loyal
+Visit Counter:302
+Cookie_id:0ec9d5b6_dd6e_4911_b9ef_5e609fe737dfPersona:{"city":"","country":"","mobileDevice":"generic_web_browser__1994_january","tags":[],"inMarketSegments":[],"AffinitySegments":[],"section":["ajtk","Quarter2","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","90","1","0","loyal","302"],"age":"4","gender":"male","incomelevel":"medium"}
+Date:2021-01-10
+Date1:2021-01-10
+Date:2020-12-24
+Date2:2020-12-24
+Most Active Quarter:Quarter2
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Total Engagement Time:60
+Total Number of sessions:1
+Time Since Last Session:17
+Loyalty Nature:loyal
+Visit Counter:807
+Cookie_id:a7d27d36_cc2e_4e6e_b274_7a140819ddb3Persona:{"city":"","country":"","mobileDevice":"asus_tf101_2011_april","tags":[],"inMarketSegments":[],"AffinitySegments":[],"section":["ajtk","Quarter2","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","60","1","17","loyal","807"],"age":"1","gender":"male","incomelevel":"medium"}
+Date:2021-01-10
+Date1:2021-01-10
+Section Engagement Time List:coronavirus:28
+Section Engagement Time List:sports:42
+Section Engagement Time List:india:13
+Section Engagement Time List:lifestyle:39
+Segment Engagement Time List:_religion.and.spirituality_hinduism_:12
+Segment Engagement Time List:_shopping_gifts_flowers_:15
+Segment Engagement Time List:_society__:14
+Segment Engagement Time List:_sports_weightlifting_:3
+Segment Engagement Time List:_art.and.entertainment_movies.and.tv_bollywood_:31
+Segment Engagement Time List:_travel_transports_air.travel_airplanes_:3
+Segment Engagement Time List:_home.and.garden_pest.control_:52
+Most Active Quarter:Quarter2
+Topic Engagement Time List:bird flu latest news:2
+Topic Engagement Time List:west bengal:3
+Topic Engagement Time List:bird flye in up:2
+Topic Engagement Time List:bird flu india 2021:2
+Topic Engagement Time List:bird flu hindi:2
+Topic Engagement Time List:can eating eggs cause bird flu:2
+Topic Engagement Time List:air flight:3
+Topic Engagement Time List:corona vaccine:7
+Topic Engagement Time List:jdu meeting:5
+Topic Engagement Time List:kerala bird flu:2
+Topic Engagement Time List:avian flu:2
+Topic Engagement Time List:bird flu symptoms:3
+Topic Engagement Time List:bird flu virus:2
+Topic Engagement Time List:bird flu symptoms in birds:2
+Topic Engagement Time List:bird flu outbreak 2021:2
+Topic Engagement Time List:sheikh rashid:3
+Topic Engagement Time List:bird flu news:2
+Topic Engagement Time List:bird flu virus name:2
+Topic Engagement Time List:bird flu news in hindi:2
+Topic Engagement Time List:bird flu in haryana:2
+Topic Engagement Time List:hindi news:5
+Topic Engagement Time List:govt:3
+Topic Engagement Time List:chief secretary of telangana:8
+Topic Engagement Time List:bird flu in india:5
+Topic Engagement Time List:bird flu spread:5
+Topic Engagement Time List:free corona vaccine:5
+Topic Engagement Time List:virat kohli:20
+Topic Engagement Time List:team india:9
+Topic Engagement Time List:news in hindi:15
+Topic Engagement Time List:corona virus:39
+Topic Engagement Time:2
+Topic Engagement Time:3
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:3
+Topic Engagement Time:7
+Topic Engagement Time:5
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:3
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:3
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:5
+Topic Engagement Time:3
+Topic Engagement Time:8
+Topic Engagement Time:5
+Topic Engagement Time:5
+Topic Engagement Time:5
+Topic Engagement Time:20
+Topic Engagement Time:9
+Topic Engagement Time:15
+Topic Engagement Time:39
+Segment Engagement Time:12
+Segment Engagement Time:15
+Segment Engagement Time:14
+Segment Engagement Time:3
+Segment Engagement Time:31
+Segment Engagement Time:3
+Segment Engagement Time:52
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Section Engagement Time:28
+Section Engagement Time:42
+Section Engagement Time:13
+Section Engagement Time:39
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Total Engagement Time:137
+Total Number of sessions:1
+Time Since Last Session:0
+Loyalty Nature:loyal
+Visit Counter:305
+Cookie_id:fc38cee4_0f16_4988_b773_4c57f4ec1e80Persona:{"city":"sonipat","country":"india","mobileDevice":"asus_tf101_2011_april","tags":["bird flu latest news","bird flu virus name","bird flu in india","team india","can eating eggs cause bird flu","news in hindi","bird flu outbreak 2021","bird flu india 2021","bird flu symptoms","govt","hindi news","avian flu","kerala bird flu","chief secretary of telangana","air flight","jdu meeting","bird flu symptoms in birds","bird flu news in hindi","virat kohli","bird flu virus","bird flye in up","west bengal","bird flu in haryana","corona vaccine","bird flu spread","bird flu news","sheikh rashid","bird flu hindi","free corona vaccine","corona virus"],"inMarketSegments":["_religion.and.spirituality_hinduism_","_art.and.entertainment_movies.and.tv_bollywood_","_sports_weightlifting_","_home.and.garden_pest.control_","_shopping_gifts_flowers_","_society__"],"AffinitySegments":["_religion.and.spirituality_hinduism_","_shopping_gifts_flowers_","_society__","_sports_weightlifting_","_art.and.entertainment_movies.and.tv_bollywood_","_travel_transports_air.travel_airplanes_","_home.and.garden_pest.control_"],"section":["coronavirus","sports","india","lifestyle","ajtk","Quarter2","2","3","2","2","2","2","3","7","5","2","2","3","2","2","2","3","2","2","2","2","5","3","8","5","5","5","20","9","15","39","12","15","14","3","31","3","52","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","28","42","13","39","0","0","0","0","0","0","0","0","0","0","0","137","1","0","loyal","305"],"age":"3","gender":"male","incomelevel":"low"}
+Date:2021-01-10
+Date1:2021-01-10
+Date:2020-12-24
+Date2:2020-12-24
+Section Engagement Time List:india:50
+Section Engagement Time List:crime:2
+Section Engagement Time List:business:11
+Section Engagement Time List:lifestyle:12
+Segment Engagement Time List:_religion.and.spirituality_hinduism_:8
+Segment Engagement Time List:_finance_investing_day.trading_:11
+Segment Engagement Time List:_travel_transports_road.travel_road.accident_:2
+Segment Engagement Time List:_art.and.entertainment_movies.and.tv_bollywood_:51
+Segment Engagement Time List:_sports_archery_:3
+Segment Engagement Time List:_news_national.news_:26
+Segment Engagement Time List:_shopping_gifts_flowers_:6
+Segment Engagement Time List:_style.and.fashion_fashion.designers_:10
+Segment Engagement Time List:_sports_weightlifting_:5
+Segment Engagement Time List:_technology.and.computing_software_desktop_video_:64
+Most Active Quarter:Quarter2
+Topic Engagement Time List:lifestyle hindi news:10
+Topic Engagement Time List:lifestyle news hindi:10
+Topic Engagement Time List:covid 19 vaccination start date:6
+Topic Engagement Time List:corona vaccine india:6
+Topic Engagement Time List:weather today:4
+Topic Engagement Time List:corona vaccine india update:6
+Topic Engagement Time List:lifestyles news:10
+Topic Engagement Time List:breaking news and live updates of west bengal assembly elections 2021:12
+Topic Engagement Time List:exit poll results in hindi at aajtak in:12
+Topic Engagement Time List:news in hindi:15
+Topic Engagement Time List:west bengal vidhan sabha chunav 2021   stay updated with latest news:12
+Topic Engagement Time List:weather in delhi:6
+Topic Engagement Time List:voting guidelines:12
+Topic Engagement Time List:schedule:12
+Topic Engagement Time List:hindi news:13
+Topic Engagement Time List:delhi weather today:6
+Topic Engagement Time List:dates:12
+Topic Engagement Time List:weather forecast:8
+Topic Engagement Time List:entertainment news:20
+Topic Engagement Time List:entertainment news in hindi:20
+Topic Engagement Time List:corona vaccine:12
+Topic Engagement Time List:india news videos:26
+Topic Engagement Time List:breaking news today in hindi:26
+Topic Engagement Time List:breaking news india today:26
+Topic Engagement Time List:india news hindi:26
+Topic Engagement Time List:india news:26
+Topic Engagement Time List:aajtak:26
+Topic Engagement Time List:breaking news from india:26
+Topic Engagement Time List:india news photos:26
+Topic Engagement Time List:breaking india news hindi:26
+Topic Engagement Time:10
+Topic Engagement Time:10
+Topic Engagement Time:6
+Topic Engagement Time:6
+Topic Engagement Time:4
+Topic Engagement Time:6
+Topic Engagement Time:10
+Topic Engagement Time:12
+Topic Engagement Time:12
+Topic Engagement Time:15
+Topic Engagement Time:12
+Topic Engagement Time:6
+Topic Engagement Time:12
+Topic Engagement Time:12
+Topic Engagement Time:13
+Topic Engagement Time:6
+Topic Engagement Time:12
+Topic Engagement Time:8
+Topic Engagement Time:20
+Topic Engagement Time:20
+Topic Engagement Time:12
+Topic Engagement Time:26
+Topic Engagement Time:26
+Topic Engagement Time:26
+Topic Engagement Time:26
+Topic Engagement Time:26
+Topic Engagement Time:26
+Topic Engagement Time:26
+Topic Engagement Time:26
+Topic Engagement Time:26
+Segment Engagement Time:8
+Segment Engagement Time:11
+Segment Engagement Time:2
+Segment Engagement Time:51
+Segment Engagement Time:3
+Segment Engagement Time:26
+Segment Engagement Time:6
+Segment Engagement Time:10
+Segment Engagement Time:5
+Segment Engagement Time:64
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Section Engagement Time:50
+Section Engagement Time:2
+Section Engagement Time:11
+Section Engagement Time:12
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Total Engagement Time:211
+Total Number of sessions:3
+Time Since Last Session:17
+Loyalty Nature:loyal
+Visit Counter:1762
+Cookie_id:7cae11a8_6fd0_422c_acd9_cc1c12315907Persona:{"city":"rewa","country":"india","mobileDevice":"asus_tf101_2011_april","tags":["india news hindi","news in hindi","delhi weather today","breaking news from india","west bengal vidhan sabha chunav 2021   stay updated with latest news","hindi news","aajtak","weather today","breaking news and live updates of west bengal assembly elections 2021","corona vaccine india","lifestyles news","lifestyle news hindi","breaking india news hindi","weather forecast","breaking news today in hindi","exit poll results in hindi at aajtak in","dates","india news photos","lifestyle hindi news","breaking news india today","schedule","corona vaccine","india news videos","entertainment news in hindi","entertainment news","weather in delhi","corona vaccine india update","voting guidelines","india news","covid 19 vaccination start date"],"inMarketSegments":["_art.and.entertainment_movies.and.tv_bollywood_","_finance_investing_day.trading_","_style.and.fashion_fashion.designers_"],"AffinitySegments":["_religion.and.spirituality_hinduism_","_finance_investing_day.trading_","_travel_transports_road.travel_road.accident_","_art.and.entertainment_movies.and.tv_bollywood_","_sports_archery_","_news_national.news_","_shopping_gifts_flowers_","_style.and.fashion_fashion.designers_","_sports_weightlifting_","_technology.and.computing_software_desktop_video_"],"section":["india","business","lifestyle","ajtk","twitter","search","Quarter2","10","10","6","6","4","6","10","12","12","15","12","6","12","12","13","6","12","8","20","20","12","26","26","26","26","26","26","26","26","26","8","11","2","51","3","26","6","10","5","64","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","50","2","11","12","0","0","0","0","0","0","0","0","0","0","0","211","3","17","loyal","1762"],"age":"5","gender":"male","incomelevel":"medium"}
+Date:2021-01-10
+Date1:2021-01-10
+Date:2020-12-24
+Date2:2020-12-24
+Section Engagement Time List:sports:119
+Section Engagement Time List:breakingnews:11
+Segment Engagement Time List:_travel_tourist.destinations_australia.and.new.zealand_:119
+Segment Engagement Time List:_art.and.entertainment_movies.and.tv_bollywood_:11
+Most Active Quarter:Quarter2
+Topic Engagement Time List:news in hindi:7
+Topic Engagement Time List:aajtak:7
+Topic Engagement Time List:breaking news:7
+Topic Engagement Time List:news flash:7
+Topic Engagement Time List:aajtak news:11
+Topic Engagement Time List:sydney test match live score:82
+Topic Engagement Time List:ind vs aus:82
+Topic Engagement Time List:ind vs aus test:82
+Topic Engagement Time List:ind vs aus 3rd test live score:82
+Topic Engagement Time List:ind vs aus live cricket score:82
+Topic Engagement Time List:india vs australia test match live:82
+Topic Engagement Time List:ind vs aus test match live:82
+Topic Engagement Time List:india vs australia 3rd test live:82
+Topic Engagement Time List:cricket live score:82
+Topic Engagement Time List:ind vs aus live score:82
+Topic Engagement Time List:india vs australia live score:82
+Topic Engagement Time List:india vs australia sydney test live score:82
+Topic Engagement Time List:india vs australia live cricket score:82
+Topic Engagement Time List:india vs australia sydney test:119
+Topic Engagement Time List:ind vs aus test live score:164
+Topic Engagement Time:7
+Topic Engagement Time:7
+Topic Engagement Time:7
+Topic Engagement Time:7
+Topic Engagement Time:11
+Topic Engagement Time:82
+Topic Engagement Time:82
+Topic Engagement Time:82
+Topic Engagement Time:82
+Topic Engagement Time:82
+Topic Engagement Time:82
+Topic Engagement Time:82
+Topic Engagement Time:82
+Topic Engagement Time:82
+Topic Engagement Time:82
+Topic Engagement Time:82
+Topic Engagement Time:82
+Topic Engagement Time:82
+Topic Engagement Time:119
+Topic Engagement Time:164
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Segment Engagement Time:119
+Segment Engagement Time:11
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Section Engagement Time:119
+Section Engagement Time:11
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Total Engagement Time:130
+Total Number of sessions:2
+Time Since Last Session:17
+Loyalty Nature:loyal
+Visit Counter:324
+Cookie_id:87ed785e_8e64_4bac_b61e_6f6d658d820cPersona:{"city":"","country":"","mobileDevice":"motorola_xt321_2012_november","tags":["india vs australia test match live","india vs australia live score","news in hindi","sydney test match live score","ind vs aus 3rd test live score","ind vs aus test match live","ind vs aus live score","india vs australia 3rd test live","cricket live score","india vs australia sydney test live score","india vs australia sydney test","ind vs aus live cricket score","news flash","ind vs aus test","ind vs aus","aajtak","aajtak news","india vs australia live cricket score","ind vs aus test live score","breaking news"],"inMarketSegments":["_travel_tourist.destinations_australia.and.new.zealand_","_art.and.entertainment_movies.and.tv_bollywood_"],"AffinitySegments":["_travel_tourist.destinations_australia.and.new.zealand_","_art.and.entertainment_movies.and.tv_bollywood_"],"section":["sports","breakingnews","ajtk","Quarter2","7","7","7","7","11","82","82","82","82","82","82","82","82","82","82","82","82","82","119","164","0","0","0","0","0","0","0","0","0","0","119","11","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","119","11","0","0","0","0","0","0","0","0","0","0","0","0","0","130","2","17","loyal","324"],"age":"1","gender":"female","incomelevel":"medium"}
+Date:2021-01-10
+Date1:2021-01-10
+Date:2020-12-24
+Date2:2020-12-24
+Section Engagement Time List:india:82
+Section Engagement Time List:breakingnews:2
+Section Engagement Time List:crime:4
+Section Engagement Time List:elections:1
+Segment Engagement Time List:_religion.and.spirituality_hinduism_:3
+Segment Engagement Time List:_law.govt.and.politics_legal.issues_legislation_tax.laws_:3
+Segment Engagement Time List:_travel_transports_road.travel_road.accident_:3
+Segment Engagement Time List:_law.govt.and.politics_politics_elections_local.elections_:4
+Segment Engagement Time List:_art.and.entertainment_movies.and.tv_bollywood_:5
+Segment Engagement Time List:_news_national.news_:2
+Segment Engagement Time List:_finance_grants.scholarships.and.financial.aid_government.grants_:29
+Segment Engagement Time List:_travel_transports_air.travel_air.and.space.accident_:1
+Segment Engagement Time List:_home.and.garden_pest.control_:33
+Most Active Quarter:Quarter1
+Topic Engagement Time List:pm narendra modi:1
+Topic Engagement Time List:promotion:1
+Topic Engagement Time List:farmers protest:2
+Topic Engagement Time List:jammu kashmir:3
+Topic Engagement Time List:mata vaishno devi:3
+Topic Engagement Time List:anti farm law:2
+Topic Engagement Time List:mnrega:29
+Topic Engagement Time List:pilgrims:3
+Topic Engagement Time List:news in hindi:4
+Topic Engagement Time List:yogi government:32
+Topic Engagement Time List:chilla:2
+Topic Engagement Time List:bjp:2
+Topic Engagement Time List:accident:3
+Topic Engagement Time List:muslim voters:4
+Topic Engagement Time List:injured:3
+Topic Engagement Time List:yogi government doubles budget:29
+Topic Engagement Time List:aajtak news:2
+Topic Engagement Time List:mini bus:3
+Topic Engagement Time List:udhampur:3
+Topic Engagement Time List:yogi adityanath:2
+Topic Engagement Time List:news flash:2
+Topic Engagement Time List:ghazipur border:2
+Topic Engagement Time List:breaking news:2
+Topic Engagement Time List:uttar pradesh:32
+Topic Engagement Time List:aajtak:4
+Topic Engagement Time List:hindi news:3
+Topic Engagement Time List:delhi:5
+Topic Engagement Time List:live updates:33
+Topic Engagement Time:1
+Topic Engagement Time:1
+Topic Engagement Time:2
+Topic Engagement Time:3
+Topic Engagement Time:3
+Topic Engagement Time:2
+Topic Engagement Time:29
+Topic Engagement Time:3
+Topic Engagement Time:4
+Topic Engagement Time:32
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:3
+Topic Engagement Time:4
+Topic Engagement Time:3
+Topic Engagement Time:29
+Topic Engagement Time:2
+Topic Engagement Time:3
+Topic Engagement Time:3
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:32
+Topic Engagement Time:4
+Topic Engagement Time:3
+Topic Engagement Time:5
+Topic Engagement Time:33
+Padding Topic Engagement Time
+Padding Topic Engagement Time
+Segment Engagement Time:3
+Segment Engagement Time:3
+Segment Engagement Time:3
+Segment Engagement Time:4
+Segment Engagement Time:5
+Segment Engagement Time:2
+Segment Engagement Time:29
+Segment Engagement Time:1
+Segment Engagement Time:33
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Section Engagement Time:82
+Section Engagement Time:2
+Section Engagement Time:4
+Section Engagement Time:1
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Total Engagement Time:90
+Total Number of sessions:3
+Time Since Last Session:17
+Loyalty Nature:loyal
+Visit Counter:1667
+Cookie_id:8d6447e3_a723_4ba0_a83d_926e5fd34a76Persona:{"city":"","country":"","mobileDevice":"asus_tf101_2011_april","tags":["jammu kashmir","mata vaishno devi","uttar pradesh","news in hindi","accident","pilgrims","injured","ghazipur border","udhampur","live updates","farmers protest","aajtak","hindi news","muslim voters","anti farm law","chilla","bjp","yogi adityanath","mini bus","mnrega","news flash","yogi government doubles budget","yogi government","aajtak news","delhi","pm narendra modi","promotion","breaking news"],"inMarketSegments":["_travel_transports_road.travel_road.accident_","_news_national.news_","_art.and.entertainment_movies.and.tv_bollywood_","_home.and.garden_pest.control_","_finance_grants.scholarships.and.financial.aid_government.grants_","_law.govt.and.politics_politics_elections_local.elections_"],"AffinitySegments":["_religion.and.spirituality_hinduism_","_law.govt.and.politics_legal.issues_legislation_tax.laws_","_travel_transports_road.travel_road.accident_","_law.govt.and.politics_politics_elections_local.elections_","_art.and.entertainment_movies.and.tv_bollywood_","_news_national.news_","_finance_grants.scholarships.and.financial.aid_government.grants_","_travel_transports_air.travel_air.and.space.accident_","_home.and.garden_pest.control_"],"section":["india","breakingnews","crime","ajtk","twitter","Quarter1","1","1","2","3","3","2","29","3","4","32","2","2","3","4","3","29","2","3","3","2","2","2","2","32","4","3","5","33","0","0","3","3","3","4","5","2","29","1","33","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","82","2","4","1","0","0","0","0","0","0","0","0","0","0","0","90","3","17","loyal","1667"],"age":"2","gender":"female","incomelevel":"medium"}
+Date:2021-01-10
+Date1:2021-01-10
+Section Engagement Time List:world:13
+Section Engagement Time List:india:100
+Section Engagement Time List:coronavirus:4
+Section Engagement Time List:crime:13
+Segment Engagement Time List:_religion.and.spirituality_hinduism_:19
+Segment Engagement Time List:_travel_transports_road.travel_road.accident_:10
+Segment Engagement Time List:_law.govt.and.politics_espionage.and.intelligence_terrorism_:2
+Segment Engagement Time List:_careers_nursing_:2
+Segment Engagement Time List:_art.and.entertainment_movies.and.tv_bollywood_:19
+Segment Engagement Time List:_travel_transports_air.travel_airplanes_:5
+Segment Engagement Time List:_news_national.news_:38
+Most Active Quarter:Quarter2
+Topic Engagement Time List:indonesia:3
+Topic Engagement Time List:vaccine day:2
+Topic Engagement Time List:sheikh rashid:2
+Topic Engagement Time List:covishield:2
+Topic Engagement Time List:winters:7
+Topic Engagement Time List:pakistan blackout:1
+Topic Engagement Time List:china army in india:4
+Topic Engagement Time List:news in hindi:13
+Topic Engagement Time List:state govt:4
+Topic Engagement Time List:bird flu:7
+Topic Engagement Time List:west bengal governor jagdeep dhankhar:2
+Topic Engagement Time List:west bengal al qaeda:1
+Topic Engagement Time List:vaccination drive:1
+Topic Engagement Time List:himachal pradesh:7
+Topic Engagement Time List:air flight:5
+Topic Engagement Time List:injured:10
+Topic Engagement Time List:farm laws:6
+Topic Engagement Time List:delhi:30
+Topic Engagement Time List:hindi news:13
+Topic Engagement Time List:corona vaccine:6
+Topic Engagement Time List:promotion:15
+Topic Engagement Time List:india news:37
+Topic Engagement Time List:breaking news india today:37
+Topic Engagement Time List:breaking news from india:37
+Topic Engagement Time List:aajtak:38
+Topic Engagement Time List:breaking news today in hindi:37
+Topic Engagement Time List:india news photos:37
+Topic Engagement Time List:breaking india news hindi:37
+Topic Engagement Time List:india news videos:37
+Topic Engagement Time List:india news hindi:37
+Topic Engagement Time:3
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:2
+Topic Engagement Time:7
+Topic Engagement Time:1
+Topic Engagement Time:4
+Topic Engagement Time:13
+Topic Engagement Time:4
+Topic Engagement Time:7
+Topic Engagement Time:2
+Topic Engagement Time:1
+Topic Engagement Time:1
+Topic Engagement Time:7
+Topic Engagement Time:5
+Topic Engagement Time:10
+Topic Engagement Time:6
+Topic Engagement Time:30
+Topic Engagement Time:13
+Topic Engagement Time:6
+Topic Engagement Time:15
+Topic Engagement Time:37
+Topic Engagement Time:37
+Topic Engagement Time:37
+Topic Engagement Time:38
+Topic Engagement Time:37
+Topic Engagement Time:37
+Topic Engagement Time:37
+Topic Engagement Time:37
+Topic Engagement Time:37
+Segment Engagement Time:19
+Segment Engagement Time:10
+Segment Engagement Time:2
+Segment Engagement Time:2
+Segment Engagement Time:19
+Segment Engagement Time:5
+Segment Engagement Time:38
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Padding Segment Engagement Time
+Section Engagement Time:13
+Section Engagement Time:100
+Section Engagement Time:4
+Section Engagement Time:13
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Padding Section Engagement Time
+Total Engagement Time:138
+Total Number of sessions:1
+Time Since Last Session:0
+Loyalty Nature:new
+Visit Counter:1
+Cookie_id:86ef271b_4640_4936_9cea_760f1ac952cePersona:{"city":"chandigarh","country":"india","mobileDevice":"asus_tf101_2011_april","tags":["india news hindi","news in hindi","vaccination drive","injured","breaking news from india","hindi news","aajtak","west bengal al qaeda","air flight","state govt","breaking india news hindi","breaking news today in hindi","farm laws","himachal pradesh","india news photos","indonesia","breaking news india today","pakistan blackout","corona vaccine","bird flu","india news videos","china army in india","west bengal governor jagdeep dhankhar","winters","sheikh rashid","covishield","india news","delhi","vaccine day","promotion"],"inMarketSegments":["_art.and.entertainment_movies.and.tv_bollywood_","_news_national.news_"],"AffinitySegments":["_religion.and.spirituality_hinduism_","_travel_transports_road.travel_road.accident_","_law.govt.and.politics_espionage.and.intelligence_terrorism_","_careers_nursing_","_art.and.entertainment_movies.and.tv_bollywood_","_travel_transports_air.travel_airplanes_","_news_national.news_"],"section":["world","india","coronavirus","crime","ajtk","search","Quarter2","3","2","2","2","7","1","4","13","4","7","2","1","1","7","5","10","6","30","13","6","15","37","37","37","38","37","37","37","37","37","19","10","2","2","19","5","38","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","13","100","4","13","0","0","0","0","0","0","0","0","0","0","0","138","1","0","new","1"],"age":"3","gender":"female","incomelevel":"low"}

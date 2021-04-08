@@ -1,0 +1,157 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.personaCache</groupId>
+	<artifactId>personasyncserver</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>App</name>
+	<description>App</description>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>Suhas</id>
+			<name>Suhas Aggarwal</name>
+			<email>suhaas.cuberoot@gmail.com</email>
+		</developer>
+	</developers>
+
+	<distributionManagement>
+		<repository>
+			<id>mvn-repo</id>
+			<url>scpexe://ansj/home/mvn-repo/ROOT</url>
+		</repository>
+	</distributionManagement>
+
+
+
+
+	<repositories>
+		<repository>
+			<id>mvn-repo1</id>
+			<url>https://mvnrepository.com/</url>
+		</repository>
+		<repository>
+			<id>mvn-repo2</id>
+			<url>https://repo1.maven.org/maven2/</url>
+		</repository>
+		<repository>
+			<id>sourceforge</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+
+	</repositories>
+
+
+
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<runSuite>**/MainTestSuite.class</runSuite>
+		<springframework.version>4.2.0.RELEASE</springframework.version>
+		<jackson.version>2.5.3</jackson.version>
+		<ehcache3.version>3.7.0</ehcache3.version>
+		<slf4j.version>1.7.25</slf4j.version>
+		<log4j.version>1.2.17</log4j.version>
+
+	</properties>
+
+	<dependencies>
+	
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>7.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>4.0.0.RELEASE</version>
+        </dependency>
+         <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-elasticsearch</artifactId>
+            <version>4.0.0.RELEASE</version>
+        </dependency>
+        <dependency>
+           <groupId>org.elasticsearch.client</groupId>
+           <artifactId>elasticsearch-rest-high-level-client</artifactId>
+           <version>7.6.1</version>
+        </dependency>
+
+	</dependencies>
+
+
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>2.4</version>
+					<configuration>
+						<warSourceDirectory>src/main/webapp</warSourceDirectory>
+						<warName>publisherv1</warName>
+						<failOnMissingWebXml>false</failOnMissingWebXml>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+
+
+
+
+
+			</plugins>
+		</pluginManagement>
+
+		<finalName>publisherv1</finalName>
+		<!-- <resources> <resource> <directory>src/main/resources</directory> <filtering>true</filtering> 
+			<includes> <include>es-plugin.properties</include> </includes> </resource> 
+			</resources> <plugins> <plugin> <artifactId>maven-compiler-plugin</artifactId> 
+			<version>2.3.2</version> <configuration> <source>1.7</source> <target>1.7</target> 
+			<encoding>UTF-8</encoding> </configuration> </plugin> <plugin> <artifactId>maven-jar-plugin</artifactId> 
+			<executions> <execution> <goals> <goal>jar</goal> </goals> <phase>package</phase> 
+			</execution> </executions> </plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> 
+			<artifactId>maven-dependency-plugin</artifactId> <version>2.10</version> 
+			<executions> <execution> <id>copy</id> <phase>package</phase> <goals> <goal>copy</goal> 
+			</goals> <configuration> <artifactItems> <artifactItem> <groupId>com.alibaba</groupId> 
+			<artifactId>druid</artifactId> <overWrite>false</overWrite> <outputDirectory>${project.build.directory}</outputDirectory> 
+			<destFileName>druid.jar</destFileName> </artifactItem> <artifactItem> <groupId>com.google.guava</groupId> 
+			<artifactId>guava</artifactId> <overWrite>false</overWrite> <outputDirectory>${project.build.directory}</outputDirectory> 
+			<destFileName>guava.jar</destFileName> </artifactItem> </artifactItems> <outputDirectory>${project.build.directory}</outputDirectory> 
+			<overWriteReleases>false</overWriteReleases> <overWriteSnapshots>true</overWriteSnapshots> 
+			</configuration> </execution> </executions> </plugin> <plugin> <artifactId>maven-assembly-plugin</artifactId> 
+			<version>2.4.1</version> <configuration> <appendAssemblyId>all</appendAssemblyId> 
+			<descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> </descriptorRefs> 
+			</configuration> </plugin> <plugin> <artifactId>maven-assembly-plugin</artifactId> 
+			<version>2.4</version> <configuration> <descriptor>src/assembly/zip.xml</descriptor> 
+			</configuration> </plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> 
+			<artifactId>maven-surefire-plugin</artifactId> <configuration> <includes> 
+			<include>${runSuite}</include> </includes> </configuration> </plugin> </plugins> 
+			<extensions> <extension> <groupId>org.apache.maven.wagon</groupId> <artifactId>wagon-ssh-external</artifactId> 
+			<version>1.0-beta-6</version> </extension> </extensions> -->
+	</build>
+
+</project>
