@@ -1,0 +1,31 @@
+0,30 * * * * sh /mnt/data/itwebenpersonaAggregation.sh > /mnt/data/itwebenlogs.txt
+1 * * * * curl http://localhost:8080/publisherv1/report/v1/getEhcacheStats
+2 * * * * sshpass -p h3zu4hyLmAsE7wYb scp /mnt/data/EhcacheStats root@192.168.103.138:/home/reportsystem/EhcacheStats
+3 * * * * grep ".*200.*GET.*200 [6][123456789][123456789][123456789].*" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt > /m
+nt/data/PersonaLogs6
+4 * * * * grep ".*200.*GET.*200 [5][123456789][123456789][123456789].*" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt > /m
+nt/data/PersonaLogs5
+5 * * * * grep ".*200.*GET.*200 [4][123456789][123456789][123456789].*" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt > /m
+nt/data/PersonaLogs4
+6 * * * * grep ".*200.*GET.*200 [3][123456789][123456789][123456789].*" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt > /m
+nt/data/PersonaLogs3
+7 * * * * grep ".*200.*GET.*200 [2][123456789][123456789][123456789].*" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt > /m
+nt/data/PersonaLogs2
+8 * * * * grep ".*200.*GET.*200 [1][123456789][123456789][123456789].*" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt > /m
+nt/data/PersonaLogs1
+9 * * * * sshpass -p h3zu4hyLmAsE7wYb scp /mnt/data/PersonaLogs* root@192.168.103.138:/home/reportsystem
+#10,40 * * * * sleep 30; cat /mnt/data/Batch* >> /mnt/data/ITWEBENCookiePersonas.txt
+12,42 * * * * curl http://localhost:8080/publisherv1/loadEhcache?cacheFile=/mnt/data/ITWEBENCookiePersonas.txt
+19,49 * * * * sshpass -p TnvGJWfTuz9e6fg6 scp /mnt/data/ITWEBENCookiePersonas.txt root@192.168.106.124:/mnt/data/ITWEBENCookiePersonas.txt
+20,50 * * * * mv /mnt/data/ITWEBENCookiePersonas.txt /mnt/data/logdirectory/ITWEBENCookiePersonas$(date +\%Y\%m\%d\%H\%M\%S).txt
+15,45 * * * * sh /mnt/data/ajtkpersonaAggregation.sh > /mnt/data/ajtklogs.txt
+#25,55 * * * * sleep 30; cat /mnt/data/Batch* >> /mnt/data/AJTKCookiePersonas.txt
+27,57 * * * * curl http://localhost:8080/publisherv1/loadEhcache?cacheFile=/mnt/data/AJTKCookiePersonas.txt
+4,34 * * * * sshpass -p TnvGJWfTuz9e6fg6 scp /mnt/data/AJTKCookiePersonas.txt root@192.168.106.124:/mnt/data/AJTKCookiePersonas.txt
+5,35 * * * * mv /mnt/data/AJTKCookiePersonas.txt /mnt/data/logdirectory/AJTKCookiePersonas$(date +\%Y\%m\%d\%H\%M\%S).txt
+1,25 * * * * curl http://localhost:8080/publisherv1/loadEhcacheMLSignals?cacheFile=/mnt/data/EhcacheUploadFilepart1.txt
+10,40 * * * * curl http://localhost:8080/publisherv1/loadEhcacheMLSignals?cacheFile=/mnt/data/EhcacheUploadFilepart1itweb.txt
+4,28 * * * * curl http://localhost:8080/publisherv1/loadEhcacheMLSignals?cacheFile=/mnt/data/EhcacheUploadFilepart2.txt
+13,43 * * * * curl http://localhost:8080/publisherv1/loadEhcacheMLSignals?cacheFile=/mnt/data/EhcacheUploadFilepart2itweb.txt
+55 11 * * * grep ".*200.*GET.*200" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt | wc -l > /mnt/data/PersonaLogsRequestCount
+59 11 * * * sshpass -p h3zu4hyLmAsE7wYb scp /mnt/data/PersonaLogsRequestCount root@192.168.103.138:/home/reportsystem
