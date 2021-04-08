@@ -1,0 +1,3 @@
+0 3 * * * timeout 45m java -jar /root/reduceduplicateurls.jar
+46 3 * * * timeout 40m java -jar /root/getunclassifiedurls.jar /root/urldata.txt
+30 4 * * * timeout 120m sh /root/classificationscript.sh
