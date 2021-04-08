@@ -1,0 +1,12 @@
+20 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 * * * cd /mnt/data && sh /mnt/data/classificationscript.sh > /mnt/data/ClassificationScriptLo
+gs-$(date +\%Y\%m\%d\%H\%M\%S).txt
+50 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 * * * cd /mnt/data && sh /mnt/data/classificationscriptv1.sh > /mnt/data/ClassificationScript
+Logsv1-$(date +\%Y\%m\%d\%H\%M\%S).txt
+9 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 * * * cd /mnt/data && sh /mnt/data/PersonaformatAJTK.sh 1>/mnt/data/AJTKOut-$(date +\%Y\%m\%d\
+%H\%M\%S).txt 2>/mnt/data/AJTKError-$(date +\%Y\%m\%d\%H\%M\%S).txt
+19 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 * * * sleep 5; cd /mnt/data && sh /mnt/data/PersonaformatITWEBEN.sh 1>/mnt/data/ITWEBENOut-$(
+date +\%Y\%m\%d\%H\%M\%S).txt 2>/mnt/data/ITWEBENError-$(date +\%Y\%m\%d\%H\%M\%S).txt
+40 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 * * * cd /mnt/data && sh /mnt/data/PersonaformatAJTK.sh 1>/mnt/data/AJTKOut-$(date +\%Y\%m\%d
+\%H\%M\%S).txt 2>/mnt/data/AJTKError-$(date +\%Y\%m\%d\%H\%M\%S).txt
+50 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 * * * sleep 5; cd /mnt/data && sh /mnt/data/PersonaformatITWEBEN.sh 1>/mnt/data/ITWEBENOut-$(
+date +\%Y\%m\%d\%H\%M\%S).txt 2>/mnt/data/ITWEBENError-$(date +\%Y\%m\%d\%H\%M\%S).txt
