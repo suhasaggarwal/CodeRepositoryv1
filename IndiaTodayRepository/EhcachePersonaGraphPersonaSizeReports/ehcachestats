@@ -1,0 +1,21 @@
+OnHeapTier hits:2648583
+onHeapTier misses:12986469onHeapTier OccupiedByteSize:-1
+onHeapTier AllocatedByteSize:-1
+onHeapTier Occupancy Fraction:100
+onHeapTier Evictions:3412761
+onHeapTier Puts:0
+offHeapTier Hits:4438007
+offHeapTier Misses:8548462
+offHeapTier OccupiedByteSize:13312197848
+offHeapTier AllocatedByteSize:14497611776
+oFFHeapTier Occupancy Fraction:0
+offHeapTier Evictions:0
+offHeapTier Puts:30305476
+Cache hits:7047013
+Cache misses:8588039
+Cache Eviction:0
+Cache Expirations:0
+Hit %:45.071888
+Miss %:54.928112
+Cache Gets:15635052
+Cache Puts:30305478
