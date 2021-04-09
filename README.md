@@ -1,4 +1,4 @@
-# Knowledge Graph Databases for Creative Enities/User Personas
+# Knowledge Graph Databases for Creative Entities/User Personas
 
 Please kindly note - Actual Graph Database is very large, this is for Demo Purposes 
 
