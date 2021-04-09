@@ -1,3 +1,7 @@
+# Knowledge Graph Databases for Creative Enities/User Personas
+Please kindly note - Actual Graph Database is very large, this is for Demo Purposes 
+https://drive.google.com/drive/folders/1Qtcf90dO-Qj1FZ31fC3n1EHzZgu_YD6g?usp=sharing
+
 # IAB Segments Using Sentence Transformers
 Sentence Transformers Scaled on a 16-core machine. Scaling Architecture - 3 processes of Sentence Tranformer are spawned each using 5 workers to increase the throughput of Sentence Transformers. 15 workers - sentence transformer is able to do one batch of 1000 urls in 10 minutes. Splitting workers in multiple processes - increases throughput to 3 batches in 10 minute. Scaling is done without GPU node to keep server costs minimum.
 
