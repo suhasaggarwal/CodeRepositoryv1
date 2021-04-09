@@ -1,5 +1,7 @@
 # Knowledge Graph Databases for Creative Enities/User Personas
+
 Please kindly note - Actual Graph Database is very large, this is for Demo Purposes 
+
 https://drive.google.com/drive/folders/1Qtcf90dO-Qj1FZ31fC3n1EHzZgu_YD6g?usp=sharing
 
 # IAB Segments Using Sentence Transformers
