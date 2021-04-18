@@ -281,6 +281,14 @@ C)Generates url from which requests is logged in Elasticsearch.
 Url Set is generated twice in a day.
 If url has not already been crawled before and is not present in Entity index, it is crawled and its entity data is added in Entity index.
 
+For developers -
+
+Elasticsearch with all indices created and sample data to work with.
+
+https://drive.google.com/file/d/1b8NJ4kieJg4TViXYvVpS7Yd6tHC3hBH3/view?usp=sharing
+
+
+
 Wittyfeed Functional Urls - 
 
 Elasticsearch Index view - 
