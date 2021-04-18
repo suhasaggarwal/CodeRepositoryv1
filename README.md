@@ -193,10 +193,15 @@ Cache Puts:16288873
 ```
 
 # Data Repository for Cuberoot/Clickstream from third party data (For learning third party embeddings, third party knowledge graphs)
+
 https://drive.google.com/file/d/1zsKX7qbMZSDNa1dyUrmH1Zcn0hxBmq3h/view?usp=sharing
 
+
+
 # Clickstreams from wittyfeed (Very Large in Size) 
-https://drive.google.com/drive/u/0/folders/1R9a1fgs2Kfl77bodJdyFcJejJzsGW18G
+
+https://drive.google.com/file/d/1pjCojb-OOfxDS14rc9jvVFt2K490SGbO/view?usp=sharing
+
 
 Details of the Third Party Data Available is present in the presentation uploaded.
 
