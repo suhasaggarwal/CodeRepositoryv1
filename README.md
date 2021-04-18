@@ -192,7 +192,7 @@ Cache Puts:16288873
 </ehcache:config>
 ```
 
-# Data Repository for Cuberoot/Clickstream from third party data (For learning third party embeddings, third paty knowledge graphs)
+# Data Repository for Cuberoot/Clickstream from third party data (For learning third party embeddings, third party knowledge graphs)
 https://drive.google.com/file/d/1zsKX7qbMZSDNa1dyUrmH1Zcn0hxBmq3h/view?usp=sharing
 
 #Clickstreams from wittyfeed (Very Large in Size) 
