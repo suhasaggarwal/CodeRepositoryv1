@@ -19,6 +19,7 @@ API Url will be as follows -
 "http://localhost:8080/SemanticClassifierv2/getTextAnalysis?text=" + text
 
 Application for noise removal and improve classification efficiency using ranked-categories.csv + All_hidden_categories.txt is also provided.
+Refined context derived from above and crawled article metadata ==> can greatly improve vector quality computed from embeddings/transformers and hence, a more efficient classification.
 
 IAB segments classifier + Custom taxonomy support.
 
