@@ -194,6 +194,24 @@ Cache Puts:16288873
 
 # Data Repository for Cuberoot/Clickstream from third party data (For learning third party embeddings, third party knowledge graphs)
 
+Clickstreams, Knowledge Graphs from various popular website and domain, demography, region specific clickstream is also available for use.
+
+1)Wittyfeed
+2)Quint (Network 18)
+3)Silicon India
+4)IDP
+5)Puthiyathalaimurai
+6)Marathistar
+7)Clovia
+8)Womansera
+9)BlogtoBollywood
+10)CricBuzz
+11)Social Post
+12)North East Today
+13)Rajasthan Patrika
+14)Adda 52
+15)Digit
+
 https://drive.google.com/file/d/1zsKX7qbMZSDNa1dyUrmH1Zcn0hxBmq3h/view?usp=sharing
 
 https://drive.google.com/drive/folders/1lN6pC1vLwD4fE0IH2dS0mSrQOpXQMNns?usp=sharing
