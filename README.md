@@ -226,6 +226,8 @@ Clickstreams, Knowledge Graphs from various popular website and domain, demograp
 
 15)Digit
 
+Apart from this Wifi-hotspots, Quadgen hyperlocal, ISP data is also available.
+
 https://drive.google.com/file/d/1zsKX7qbMZSDNa1dyUrmH1Zcn0hxBmq3h/view?usp=sharing
 
 https://drive.google.com/drive/folders/1lN6pC1vLwD4fE0IH2dS0mSrQOpXQMNns?usp=sharing
