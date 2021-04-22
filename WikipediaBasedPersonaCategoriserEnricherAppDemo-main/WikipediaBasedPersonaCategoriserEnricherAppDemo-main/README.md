@@ -10,6 +10,9 @@
 3)Category Noise removal is also there.
 
 
+4)Wikipedia Articles Graph
+
+
 Deploy this war file in Tomcat.
 
 API Url will be as follows - 
