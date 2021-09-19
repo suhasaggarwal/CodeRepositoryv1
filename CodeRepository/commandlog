@@ -1,0 +1,6 @@
+ln -s /usr/bin/nodejs /usr/bin/node
+echo 1 | sudo tee /proc/sys/net/ipv4/tcp_tw_recycle
+echo 1 | sudo tee /proc/sys/net/ipv4/tcp_tw_reuse
+
+THEANO_FLAGS='floatX=float32,openmp=True' OMP_NUM_THREADS=4 python model.py
+CREATE USER 'aduser'@'localhost' IDENTIFIED BY 'q1w2e3r4t5y6';
