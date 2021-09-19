@@ -1,0 +1,655 @@
+1)Aajtak/IndiaToday In-house DMP
+
+a)EngagementTimeComputation
+###########################
+  Engagement Time Computation Algorithm
+  All userId browsing logs corresponding to time range to be scanned are derived in sorted order of timestamp, difference in consecutive requests is used to derive engagement time on particular article url for a particular user session for that user time.
+  User engagement time is stored in both minutes and seconds accuracy.
+  Each Worker Thread in Thread Pool Maintain its own copy of Bulk Processor for Update operations using Thread Local. Sharing Bulk Processor Among Multiple Thread Cause Issues.
+  Batch size - depends on volume of traffic and is different for Aajtak/Indiatoday.
+
+b)DemographicsClassifierFullscan
+    Based on predefined topic rules.  
+    An aggregation algorithm is used to aggregate userId data points and derive demographic behavior (gender, age, income level) corresponding to each topic in user topic Persona based on rule set.
+    Finally a confidence aggregation algorithm is used to derive majority demographic properties - age,gender,incomelevel from the aggregation map and embedded in user data points.
+
+c)EntityDataSync
+##############
+  EntityDataSync -
+  This Module fetches Entity data for a url from Entity index and does enhancement of data points corresponding to url.
+  
+ Entity Enhancer Module is scaled using Bulk Processor.
+ Current Batch Size is 1000.
+ Each Worker Thread in Thread Pool Maintain its own copy of Bulk Processor for Update operations using Thread Local. Sharing Bulk Processor Among Multiple Thread Cause Issues.
+Batch size - depends on volume of traffic and is different for Aajtak/Indiatoday.
+
+d)PublisherDashboard - Aajtak/IndiaToday
+#################################
+ Publisher Dashboard with approximation support for querier which takes long time and trips Circuit Breaker, causes Out of Memory Errors on very large number of records. This code is universal and will scale on very large number of records as it can   be seen on aajtak/indiatoday code running at present.
+
+e)Enhanced Data Bulk Processor
+##########################
+  Does enhancement of raw data points.
+  
+  Open source databases used - 
+  1)Maxmind for geography related data points derivation
+  2)Device detector module for derivation for data points related to device.
+
+  Third Party commerical libraries which can add more accurate data points in different domains -
+  1)Commercial version of maxmind  - geography domain (like lat long, organisation name)
+  2)Wurfl latest version ( Full properties of mobile device - RAM,processor,camera,battery and more)
+   
+Content Enhancer Module is scaled using Bulk Processor.
+Current Batch Size is 1000  
+Each Worker Thread in Thread Pool Maintain its own copy of Bulk Processor for Update operations using Thread Local. Sharing Bulk Processor Among Multiple Thread Cause Issues.
+Batch size - depends on volume of traffic and is different for Aajtak/Indiatoday.
+
+
+
+ReadMe for Modules - How to Generate jar file from different modules -
+
+DemographyClassifier
+#################
+Generate a Runnable jar file using Following java Class having main method - getDemographicsFullDataorInterval.java
+
+EngagementTimeComputation
+########################
+Generate a Runnable jar file using Following java Class having main method - ComputeEngagementTime.java
+
+
+EnhanceUserData
+###############
+Generate a Runnable jar file using Following java Class having main method - EnhanceUserDataDaily.java
+
+
+EntityDataSync
+##############
+Generate a Runnable jar file using Following java Class having main method. Does entity based enhancement in userId data points - SpecificFieldEnhancer.java
+
+Channel names and date range can be modified in Java files for in-house DMP set up.
+
+Publisher
+#########
+Main publisher Dashboard with BigData and Approximation Support. Generates a war file using maven build which is deployed in tomcat and APIs data can be obtained.
+
+
+Crawler Pipeline
+############
+
+Multi Stage Crawling 
+##########################
+
+i)Initial Crawler
+
+A)First scrapy crawls website for full list of urls and puts Entity data corresponding to urls in Entity index.
+
+ii)Dynamic Crawler
+
+B)Gets new urls from websites sitemap. New urls are added in websites sitemap on a daily basis and thus, new urls are added in Entity index. Polling for new Urls occur every 2 hours.
+
+iii)Delta Crawler
+
+C)Generates url from which requests is logged in Elasticsearch. Url Set is generated twice in a day. If url has not already been crawled before and is not present in Entity index, it is crawled and its entity data is added in Entity index.
+Delta Urls generator for Delta Crawling.
+Set custom time range in code using Calendar. Example shown in code. This code generates delta url file 4 times in a day as set in cron. Scrapy crawls these urls in delta url file and fill Entity index in ES 
+Generate a Runnable jar file using Following java Class having main method. GetMiddlewareData.java
+
+Crawlscript1
+##########
+#!/bin/bash
+java -jar /mnt/data/deltaurlgeneratorv2.jar itweben /mnt/data/indiatodaydeltaurls0.txt auto,movies,india,education,coronavirus,technology,sports,lifestyle,information,business,television,science,trending,world,story,news 300 3000
+java -jar /mnt/data/deltaurlgeneratorv2.jar ajtk /mnt/data/ajtkdelta0.txt auto,india,entertainment,trending,lifestyle,youtube,crime,religion,business,coronavirus,sports,world,technology,elections,education,tez,news,story 300 3000
+#split -l$((`wc -l < indiatodayurls0.txt`/6)) indiatodaydeltaurls0.txt indiatodaydeltaurls0 --numeric-suffixes
+#split -l$((`wc -l < ajtkdelta0.txt`/6)) ajtkdelta0.txt ajtkdelta0 --numeric-suffixes
+cd /mnt/data && split -n l/6 -d /mnt/data/indiatodaydeltaurls0.txt indiatodaydeltaurls0
+cd /mnt/data && split -n l/6 -d /mnt/data/ajtkdelta0.txt ajtkdelta0
+PATH=$PATH:/usr/local/bin
+export PATH
+cd /mnt/data/indiatoday0/indiatoday0/spiders && rm -f /mnt/data/indiatoday0/indiatoday0/spiders/indiatodaydelta00.json
+cd /mnt/data/indiatoday0/indiatoday0/spiders && rm -f /mnt/data/indiatoday0/indiatoday0/spiders/indiatodaydelta01.json
+cd /mnt/data/indiatoday0/indiatoday0/spiders && rm -f /mnt/data/indiatoday0/indiatoday0/spiders/indiatodaydelta02.json
+cd /mnt/data/indiatoday0/indiatoday0/spiders && rm -f /mnt/data/indiatoday0/indiatoday0/spiders/indiatodaydelta03.json
+cd /mnt/data/indiatoday0/indiatoday0/spiders && rm -f /mnt/data/indiatoday0/indiatoday0/spiders/indiatodaydelta04.json
+cd /mnt/data/indiatoday0/indiatoday0/spiders && rm -f /mnt/data/indiatoday0/indiatoday0/spiders/indiatodaydelta05.json
+
+
+cd /mnt/data/aajtak0/aajtak0/spiders && rm -f /mnt/data/aajtak0/aajtak0/spiders/ajtkdelta00.json
+cd /mnt/data/aajtak0/aajtak0/spiders && rm -f /mnt/data/aajtak0/aajtak0/spiders/ajtkdelta01.json
+cd /mnt/data/aajtak0/aajtak0/spiders && rm -f /mnt/data/aajtak0/aajtak0/spiders/ajtkdelta02.json
+cd /mnt/data/aajtak0/aajtak0/spiders && rm -f /mnt/data/aajtak0/aajtak0/spiders/ajtkdelta03.json
+cd /mnt/data/aajtak0/aajtak0/spiders && rm -f /mnt/data/aajtak0/aajtak0/spiders/ajtkdelta04.json
+cd /mnt/data/aajtak0/aajtak0/spiders && rm -f /mnt/data/aajtak0/aajtak0/spiders/ajtkdelta05.json
+
+
+cd /mnt/data/indiatoday0/indiatoday0/spiders && timeout 10m scrapy crawl indiatoday00 &
+cd /mnt/data/indiatoday0/indiatoday0/spiders && timeout 10m scrapy crawl indiatoday01 &
+cd /mnt/data/indiatoday0/indiatoday0/spiders && timeout 10m scrapy crawl indiatoday02 &
+cd /mnt/data/indiatoday0/indiatoday0/spiders && timeout 10m scrapy crawl indiatoday03 &
+cd /mnt/data/indiatoday0/indiatoday0/spiders && timeout 10m scrapy crawl indiatoday04 &
+cd /mnt/data/indiatoday0/indiatoday0/spiders && timeout 10m scrapy crawl indiatoday05 &
+cd /mnt/data/aajtak0/aajtak0/spiders && timeout 10m scrapy crawl aajtak00 &
+cd /mnt/data/aajtak0/aajtak0/spiders && timeout 10m scrapy crawl aajtak01 &
+cd /mnt/data/aajtak0/aajtak0/spiders && timeout 10m scrapy crawl aajtak02 &
+cd /mnt/data/aajtak0/aajtak0/spiders && timeout 10m scrapy crawl aajtak03 &
+cd /mnt/data/aajtak0/aajtak0/spiders && timeout 10m scrapy crawl aajtak04 &
+cd /mnt/data/aajtak0/aajtak0/spiders && timeout 10m scrapy crawl aajtak05 &
+wait
+
+#sleep 10m
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/indiatoday0/indiatoday0/spiders/indiatodaydelta00.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/indiatoday0/indiatoday0/spiders/indiatodaydelta01.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/indiatoday0/indiatoday0/spiders/indiatodaydelta02.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/indiatoday0/indiatoday0/spiders/indiatodaydelta03.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/indiatoday0/indiatoday0/spiders/indiatodaydelta04.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/indiatoday0/indiatoday0/spiders/indiatodaydelta05.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/aajtak0/aajtak0/spiders/ajtkdelta00.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/aajtak0/aajtak0/spiders/ajtkdelta01.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/aajtak0/aajtak0/spiders/ajtkdelta02.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/aajtak0/aajtak0/spiders/ajtkdelta03.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/aajtak0/aajtak0/spiders/ajtkdelta04.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/aajtak0/aajtak0/spiders/ajtkdelta05.json
+
+cd /mnt/data && head -n 1500 /mnt/data/indiatodaydeltaurls0.txt > /mnt/data/itd0.txt && head -n 1500 /mnt/data/ajtkdelta0.txt > /mnt/data/ajtk0.txt
+cd /mnt/data && cat /mnt/data/itd0.txt /mnt/data/ajtk0.txt > /mnt/data/indiatodayurlListv1.txt
+sshpass -p TnvGJWfTuz9e6fg6 scp /mnt/data/indiatodayurlListv1.txt root@192.168.106.124:/mnt/data
+#cd /mnt/data && split -l 150 --additional-suffix=.txt /mnt/data/indiatodayurlList.txt /mnt/data/indiatodayurlList
+#cd /mnt/data && timeout 60m java -jar /mnt/data/categorizerv1.jar &
+#cd /mnt/data && timeout 60m java -jar /mnt/data/categorizerv2.jar &
+#cd /mnt/data && timeout 60m java -jar /mnt/data/categorizerv3.jar &
+
+#sleep 75m
+#cd /mnt/data/indiatoday0/indiatoday0/spiders && mv indiatodaydelta0.json indiatodaydeltabk0.json
+#cd /mnt/data/aajtak0/aajtak0/spiders && mv ajtkdelta0.json ajtkdelta0bk.json
+cd /mnt/data/indiatoday0/indiatoday0/spiders && mv indiatodaydelta00.json bk0.json && mv indiatodaydelta01.json bk1.json && mv indiatodaydelta02.json bk2.json && mv indiatodaydelta03.json bk3.json && mv indiatodaydelta04.json bk4.json && mv indiatodaydelta05.json bk5.json
+cd /mnt/data/aajtak0/aajtak0/spiders && mv ajtkdelta00.json abk0.json && mv ajtkdelta01.json abk1.json && mv ajtkdelta02.json abk2.json && mv ajtkdelta03.json abk3.json && mv ajtkdelta04.json abk4.json && mv ajtkdelta05.json abk5.json
+cd /mnt/data && mv indiatodaydeltaurls0.txt indiatodaydeltaurls0bk.txt && mv ajtkdelta0.txt ajtkdelta0bk.txt && mv indiatodayurlListv1.txt indiatodayurlListv1bk.txt
+
+
+Crawlscript2
+############
+#!/bin/bash
+java -jar /mnt/data/deltaurlgeneratorv2.jar itweben /mnt/data/indiatodaydeltaurls1.txt auto,movies,india,education,coronavirus,technology,sports,lifestyle,information,business,television,science,trending,world,news,story 300 3000
+java -jar /mnt/data/deltaurlgeneratorv2.jar ajtk /mnt/data/ajtkdelta1.txt auto,india,entertainment,trending,lifestyle,youtube,crime,religion,business,coronavirus,sports,world,technology,elections,education,tez,news,story 300 3000
+#cd /mnt/data/indiatoday1/indiatoday1/spiders && scrapy crawl indiatoday1
+#cd /mnt/data/aajtak1/aajtak1/spiders && scrapy crawl aajtak1
+#sleep 10m
+#curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/indiatoday1/indiatoday1/spiders/indiatodaydelta1.json
+#curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/aajtak1/aajtak1/spiders/ajtkdelta1.json
+cd /mnt/data && split -n l/6 -d /mnt/data/indiatodaydeltaurls1.txt indiatodaydeltaurls1
+cd /mnt/data && split -n l/6 -d /mnt/data/ajtkdelta1.txt ajtkdelta1
+PATH=$PATH:/usr/local/bin
+export PATH
+
+cd /mnt/data/indiatoday1/indiatoday1/spiders && rm -f /mnt/data/indiatoday1/indiatoday1/spiders/indiatodaydelta10.json
+cd /mnt/data/indiatoday1/indiatoday1/spiders && rm -f /mnt/data/indiatoday1/indiatoday1/spiders/indiatodaydelta11.json
+cd /mnt/data/indiatoday1/indiatoday1/spiders && rm -f /mnt/data/indiatoday1/indiatoday1/spiders/indiatodaydelta12.json
+cd /mnt/data/indiatoday1/indiatoday1/spiders && rm -f /mnt/data/indiatoday1/indiatoday1/spiders/indiatodaydelta13.json
+cd /mnt/data/indiatoday1/indiatoday1/spiders && rm -f /mnt/data/indiatoday1/indiatoday1/spiders/indiatodaydelta14.json
+cd /mnt/data/indiatoday1/indiatoday1/spiders && rm -f /mnt/data/indiatoday1/indiatoday1/spiders/indiatodaydelta15.json
+
+
+cd /mnt/data/aajtak1/aajtak1/spiders && rm -f /mnt/data/aajtak1/aajtak1/spiders/ajtkdelta10.json
+cd /mnt/data/aajtak1/aajtak1/spiders && rm -f /mnt/data/aajtak1/aajtak1/spiders/ajtkdelta11.json
+cd /mnt/data/aajtak1/aajtak1/spiders && rm -f /mnt/data/aajtak1/aajtak1/spiders/ajtkdelta12.json
+cd /mnt/data/aajtak1/aajtak1/spiders && rm -f /mnt/data/aajtak1/aajtak1/spiders/ajtkdelta13.json
+cd /mnt/data/aajtak1/aajtak1/spiders && rm -f /mnt/data/aajtak1/aajtak1/spiders/ajtkdelta14.json
+cd /mnt/data/aajtak1/aajtak1/spiders && rm -f /mnt/data/aajtak1/aajtak1/spiders/ajtkdelta15.json
+
+
+cd /mnt/data/indiatoday1/indiatoday1/spiders && timeout 10m scrapy crawl indiatoday10 &
+cd /mnt/data/indiatoday1/indiatoday1/spiders && timeout 10m scrapy crawl indiatoday11 &
+cd /mnt/data/indiatoday1/indiatoday1/spiders && timeout 10m scrapy crawl indiatoday12 &
+cd /mnt/data/indiatoday1/indiatoday1/spiders && timeout 10m scrapy crawl indiatoday13 &
+cd /mnt/data/indiatoday1/indiatoday1/spiders && timeout 10m scrapy crawl indiatoday14 &
+cd /mnt/data/indiatoday1/indiatoday1/spiders && timeout 10m scrapy crawl indiatoday15 &
+cd /mnt/data/aajtak1/aajtak1/spiders && timeout 10m scrapy crawl aajtak10 &
+cd /mnt/data/aajtak1/aajtak1/spiders && timeout 10m scrapy crawl aajtak11 &
+cd /mnt/data/aajtak1/aajtak1/spiders && timeout 10m scrapy crawl aajtak12 &
+cd /mnt/data/aajtak1/aajtak1/spiders && timeout 10m scrapy crawl aajtak13 &
+cd /mnt/data/aajtak1/aajtak1/spiders && timeout 10m scrapy crawl aajtak14 &
+cd /mnt/data/aajtak1/aajtak1/spiders && timeout 10m scrapy crawl aajtak15 &
+wait
+#sleep 10m
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/indiatoday1/indiatoday1/spiders/indiatodaydelta10.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/indiatoday1/indiatoday1/spiders/indiatodaydelta11.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/indiatoday1/indiatoday1/spiders/indiatodaydelta12.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/indiatoday1/indiatoday1/spiders/indiatodaydelta13.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/indiatoday1/indiatoday1/spiders/indiatodaydelta14.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/indiatoday1/indiatoday1/spiders/indiatodaydelta15.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/aajtak1/aajtak1/spiders/ajtkdelta10.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/aajtak1/aajtak1/spiders/ajtkdelta11.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/aajtak1/aajtak1/spiders/ajtkdelta12.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/aajtak1/aajtak1/spiders/ajtkdelta13.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/aajtak1/aajtak1/spiders/ajtkdelta14.json
+curl -XPOST 192.168.106.118:9200/entity/core2/_bulk --data-binary @/mnt/data/aajtak1/aajtak1/spiders/ajtkdelta15.json
+cd /mnt/data && head -n 1500 /mnt/data/indiatodaydeltaurls1.txt > /mnt/data/itd1.txt && head -n 1500 /mnt/data/ajtkdelta1.txt > /mnt/data/ajtk1.txt
+cd /mnt/data && cat /mnt/data/itd1.txt /mnt/data/ajtk1.txt > /mnt/data/indiatodayurlList.txt
+sshpass -p TnvGJWfTuz9e6fg6 scp /mnt/data/indiatodayurlList.txt root@192.168.106.124:/mnt/data
+
+#cd /mnt/data && split -l 150 --additional-suffix=.txt /mnt/data/indiatodayurlList.txt /mnt/data/indiatodayurlList
+#cd /mnt/data && timeout 60m java -jar /mnt/data/categorizerv1.jar &
+#cd /mnt/data && timeout 60m java -jar /mnt/data/categorizerv2.jar &
+#cd /mnt/data && timeout 60m java -jar /mnt/data/categorizerv3.jar &
+#sleep 75m
+#cd /mnt/data/indiatoday1/indiatoday1/spiders && mv indiatodaydelta1.json indiatodaydelta1bk.json
+#cd /mnt/data/aajtak1/aajtak1/spiders && mv ajtkdelta1.json ajtkdelta1bk.json
+
+cd /mnt/data/indiatoday1/indiatoday1/spiders && mv indiatodaydelta10.json bk0.json && mv indiatodaydelta11.json bk1.json && mv indiatodaydelta12.json bk2.json && mv indiatodaydelta13.json bk3.json && mv indiatodaydelta14.json bk4.json && mv indiatodaydelta15.json bk5.json
+cd /mnt/data/aajtak1/aajtak1/spiders && mv ajtkdelta10.json abk0.json && mv ajtkdelta11.json abk1.json && mv ajtkdelta12.json abk2.json && mv ajtkdelta13.json abk3.json && mv ajtkdelta14.json abk4.json && mv ajtkdelta15.json abk5.json
+cd /mnt/data && mv indiatodaydeltaurls1.txt indiatodaydeltaurls1bk.txt && mv ajtkdelta1.txt ajtkdelta1bk.txt && mv indiatodayurlList.txt indiatodayurlListbk.txt
+
+Crawler Aggregation Jobs Tuned with Priority and Deduplication Algorithm
+###########################################################
+
+java -jar -Xms4g -Xmx4g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+UseStringDeduplication -Xloggc:/mnt/data/logdirectory/cookiepersonas-gc$(date +\%Y\%m\%d\%H\%M\%S).txt /mnt/data/cookiepersonacachev2.jar 'now-135m' 'now-105m' 'AJTK' '/mnt/data/AJTKCookiePersonas.txt' 'linkedin,quora,wikipedia,social,search,twitter,instagram' 'technology,luxury,finance,business,money,dollar,million,crore,crores,millions,millionaire,rich,expensive,billionaires,multi-million,poker,lottery,wealthy,multimillionaire,gemstones,education,entertainment,health' 'technology,luxury,finance,business,money,dollar,million,crore,crores,millions,millionaire,rich,expensive,billionaires,multi-million,poker,lottery,wealthy,multimillionaire,gemstones,education,entertainment,bollywood,netflix,health,coronavirus' 'technology,luxury,finance,business,money,dollar,million,crore,crores,millions,millionaire,rich,expensive,billionaires,multi-million,poker,lottery,wealthy,multimillionaire,gemstones,education,health,entertainment,coronavirus' > /mnt/data/AJTKCookieLogs.txt
+
+java -jar -Xms4g -Xmx4g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+UseStringDeduplication -Xloggc:/mnt/data/logdirectory/cookiepersonas-gc$(date +\%Y\%m\%d\%H\%M\%S).txt /mnt/data/cookiepersonacachev2.jar 'now-120m' 'now-90m' 'ITWEBEN' '/mnt/data/ITWEBENCookiePersonas.txt' 'linkedin,quora,wikipedia,social,search,twitter,instagram' 'technology,luxury,finance,business,money,dollar,million,crore,crores,millions,millionaire,rich,expensive,billionaires,multi-million,poker,lottery,wealthy,multimillionaire,gemstones,education,entertainment,health' 'technology,luxury,finance,business,money,dollar,million,crore,crores,millions,millionaire,rich,expensive,billionaires,multi-million,poker,lottery,wealthy,multimillionaire,gemstones,education,entertainment,bollywood,netflix,health,coronavirus' 'technology,luxury,finance,business,money,dollar,million,crore,crores,millions,millionaire,rich,expensive,billionaires,multi-million,poker,lottery,wealthy,multimillionaire,gemstones,education,health,entertainment,coronavirus' > /mnt/data/ITWEBENCookieLogs.txt
+
+Entities which are tuned for frequency and time decay (Applicable for delta crawler)
+1)Section
+To ensure (full Segmentation,entity derivation and other ML parameters derivation) for urls (Articles which are related to current domain(root category) of campaigns are given priority over other categories)
+Similarity scores of root categories are derived by using Creative persona (vectors) and root category/section vectors (topic corpus of section is already derived based on bulk,very high depth seed/initial(at the time of DMP Integration) crawl in each section)
+
+Delta Crawler Code Works in Sync with Segmentation Module and Entity Index is updated with period of 30 minutes. Crawler is distributed in nature - each crawler crawls concurrently. Distributed Aajtak and IndiaToday Spiders. Memory Consumption of a single scrapy spiders is less, so multiple scrapy spiders can run in multiple instances/processes to scale crawling. Each spiders in an instance/process crawl concurrently but uses one CPU Core only. Multiple Scrapy Processes are started so that multiple cores of machine are utilised to fullest.
+
+Protocol followed - Scrape websites without being blocked
+Install Tor
+Tor makes sure you are untraceable (so it will be impossible to get blocked by IP address). It will probably be more slow, but at least one don't have to worry about searching for proxy servers which might go down or become too slow to use. Tor will always work.
+
+After installing Tor, start it up before scraping. This can easily be done by running the tor command, Tor will start up and run on localhost port 9050 (localhost:9050) by default. When I was running the scraper scripts from a server, I made sure that Tor was automatically started immediately after booting up Ubuntu Server.
+
+Install Polipo
+SOCKS protocol is a lower level protocol than HTTP and it is more transparent in a sense that it doesn’t add extra info like http-header etc. Since Scrapy doesn't work directly with SOCKS proxies, we will use Polipo as a connection between Scrapy and Tor, so we are still able to use the SOCKS protocol (Polipo will talk to Tor using the SOCKS protocol). All three together will create an anonymous crawler.
+
+Add Middleware
+Add these lines to the middlewares.py inside your project folder (inside the scraper folder). It contains a middleware which will randomly select a different user agent on every request, and it contains the middleware for using a proxy server
+
+import os import random from scrapy.conf import settings class RandomUserAgentMiddleware(object): def process_request(self, request, spider): ua = random.choice(settings.get('USER_AGENT_LIST')) if ua: request.headers.setdefault('User-Agent', ua)
+
+class ProxyMiddleware(object): def process_request(self, request, spider): request.meta['proxy'] = settings.get('HTTP_PROXY')
+
+USER_AGENT_LIST = [
+'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.36 Safari/535.7',
+'Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:16.0) Gecko/16.0 Firefox/16.0',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.3 Safari/534.53.10'
+]
+
+HTTP_PROXY = 'http://127.0.0.1:8123'
+DOWNLOADER_MIDDLEWARES = {
+'scraper.middlewares.RandomUserAgentMiddleware': 400,
+'scraper.middlewares.ProxyMiddleware': 410,
+'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None
+# Disable compression middleware, so the actual HTML pages are cached
+
+
+Data Aggregation Pipeline
+#####################
+
+Middleware Node Jobs tuned with G1GC Garbage Collector settings
+#####################################################
+
+*/5 * * * * /mnt/data/datamigration.sh > /mnt/data/logdirectory/logdatacopy.txt
+0 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,23 * * * sh /mnt/data/crawlscriptfinal.sh > /mnt/data/logdirectory/crawllog.txt
+
+30 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,23 * * * sh /mnt/data/crawlscriptfinalv1.sh > /mnt/data/logdirectory/crawllogv1.txt
+
+1 * * * * cd /mnt/data && timeout 7m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+U seStringDeduplication -Xloggc:/mnt/data/logdirectory/contentenhancer-gc$(date +%Y%m%d%H%M%S).txt /mnt/data/contentenhancer.jar "now-61m" "now-1m" "AJTK" 23 > /mnt/data/logdirectory/contentenhancerAJTK.txt
+
+9 * * * * cd /mnt/data && timeout 5m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+U seStringDeduplication -Xloggc:/mnt/data/logdirectory/contentenhancer-gc$(date +%Y%m%d%H%M%S).txt /mnt/data/contentenhancer.jar "now-69m" "now-9m" "ITWEBEN" 23 > /mnt/data/logdirectory/contentenhancerITWEBEN.txt
+
+15 * * * * cd /mnt/data && timeout 12m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX: +UseStringDeduplication -Xloggc:/mnt/data/logdirectory/entityenhancer-gc$(date +%Y%m%d%H%M%S).txt /mnt/data/entityenhancer.jar "now-80m" "now-10m" "AJTK " > /mnt/data/logdirectory/entityenhancerAJTK.txt
+
+28 * * * * cd /mnt/data && timeout 3m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+ UseStringDeduplication -Xloggc:/mnt/data/logdirectory/entityenhancer-gc$(date +%Y%m%d%H%M%S).txt /mnt/data/entityenhancer.jar "now-90m" "now-12m" "ITWEBEN" > /mnt/data/logdirectory/entityenhancerITWEBEN.txt
+
+32 * * * * cd /mnt/data && timeout 7m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+ UseStringDeduplication -Xloggc:/mnt/data/logdirectory/etcompute-gc$(date +%Y%m%d%H%M%S).txt /mnt/data/etcomputeenhancer.jar "now-89m" "now-29m" "AJTK" > /mnt/data/logdirectory/etComputeAJTK.txt
+
+37 * * * * cd /mnt/data && timeout 5m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+ UseStringDeduplication -Xloggc:/mnt/data/logdirectory/etcompute-gc$(date +%Y%m%d%H%M%S).txt /mnt/data/etcomputeenhancer.jar "now-97m" "now-37m" "ITWEBEN " > /mnt/data/logdirectory/etComputeITWEBEN.txt
+
+43 * * * * cd /mnt/data && timeout 7m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+ UseStringDeduplication -Xloggc:/mnt/data/logdirectory/demographyenhancer-gc$(date +%Y%m%d%H%M%S).txt /mnt/data/demographyenhancer.jar "now-103m" "now-43m" "AJTK" > /mnt/data/logdirectory/demographyAJTK.txt
+
+51 * * * * cd /mnt/data && timeout 5m java -jar -Xms22g -Xmx22g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+ UseStringDeduplication -Xloggc:/mnt/data/logdirectory/demographyenhancer-gc$(date +%Y%m%d%H%M%S).txt /mnt/data/demographyenhancer.jar "now-111m" "now-51m" "ITWEBEN" > /mnt/data/logdirectory/demographyITWEBEN.txt
+
+
+Persona Aggregation Pipeline
+############################
+
+0,30 * * * * sh /mnt/data/itwebenpersonaAggregation.sh > /mnt/data/itwebenlogs.txt
+1 * * * * curl http://localhost:8080/publisherv1/report/v1/getEhcacheStats
+2 * * * * sshpass -p h3zu4hyLmAsE7wYb scp /mnt/data/EhcacheStats root@192.168.103.138:/home/reportsystem/EhcacheStats
+3 * * * * grep ".*200.*GET.*200 [6][123456789][123456789][123456789].*" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt > /mnt/data/PersonaLogs6
+4 * * * * grep ".*200.*GET.*200 [5][123456789][123456789][123456789].*" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt > /mnt/data/PersonaLogs5
+5 * * * * grep ".*200.*GET.*200 [4][123456789][123456789][123456789].*" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt > /mnt/data/PersonaLogs4
+6 * * * * grep ".*200.*GET.*200 [3][123456789][123456789][123456789].*" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt > /mnt/data/PersonaLogs3
+7 * * * * grep ".*200.*GET.*200 [2][123456789][123456789][123456789].*" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt > /mnt/data/PersonaLogs2
+8 * * * * grep ".*200.*GET.*200 [1][123456789][123456789][123456789].*" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt > /m    `nt/data/PersonaLogs1
+9 * * * * sshpass -p h3zu4hyLmAsE7wYb scp /mnt/data/PersonaLogs* root@192.168.103.138:/home/reportsystem
+
+#10,40 * * * * sleep 30; cat /mnt/data/Batch* >> /mnt/data/ITWEBENCookiePersonas.txt
+12,42 * * * * curl http://localhost:8080/publisherv1/loadEhcache?cacheFile=/mnt/data/ITWEBENCookiePersonas.txt
+19,49 * * * * sshpass -p TnvGJWfTuz9e6fg6 scp /mnt/data/ITWEBENCookiePersonas.txt root@192.168.106.124:/mnt/data/ITWEBENCookiePersonas.txt
+20,50 * * * * mv /mnt/data/ITWEBENCookiePersonas.txt /mnt/data/logdirectory/ITWEBENCookiePersonas$(date +\%Y\%m\%d\%H\%M\%S).txt
+15,45 * * * * sh /mnt/data/ajtkpersonaAggregation.sh > /mnt/data/ajtklogs.txt
+
+#25,55 * * * * sleep 30; cat /mnt/data/Batch* >> /mnt/data/AJTKCookiePersonas.txt
+27,57 * * * * curl http://localhost:8080/publisherv1/loadEhcache?cacheFile=/mnt/data/AJTKCookiePersonas.txt
+4,34 * * * * sshpass -p TnvGJWfTuz9e6fg6 scp /mnt/data/AJTKCookiePersonas.txt root@192.168.106.124:/mnt/data/AJTKCookiePersonas.txt
+5,35 * * * * mv /mnt/data/AJTKCookiePersonas.txt /mnt/data/logdirectory/AJTKCookiePersonas$(date +\%Y\%m\%d\%H\%M\%S).txt
+1,25 * * * * curl http://localhost:8080/publisherv1/loadEhcacheMLSignals?cacheFile=/mnt/data/EhcacheUploadFilepart1.txt
+10,40 * * * * curl http://localhost:8080/publisherv1/loadEhcacheMLSignals?cacheFile=/mnt/data/EhcacheUploadFilepart1itweb.txt
+4,28 * * * * curl http://localhost:8080/publisherv1/loadEhcacheMLSignals?cacheFile=/mnt/data/EhcacheUploadFilepart2.txt
+13,43 * * * * curl http://localhost:8080/publisherv1/loadEhcacheMLSignals?cacheFile=/mnt/data/EhcacheUploadFilepart2itweb.txt
+55 11 * * * grep ".*200.*GET.*200" /mnt/data/apache-tomcat-8.0.52/logs/localhost_access_log.$(date +\%Y-\%m-\%d).txt | wc -l > /mnt/data/PersonaLogsRequestCount
+59 11 * * * sshpass -p h3zu4hyLmAsE7wYb scp /mnt/data/PersonaLogsRequestCount root@192.168.103.138:/home/reportsystem
+
+Persona Aggregation Jobs Tuned with Frequency and Time Decay Algorithm
+##########################################################
+
+java -jar -Xms4g -Xmx4g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+UseStringDeduplication -Xloggc:/mnt/data/logdirectory/cookiepersonas-gc$(date +\%Y\%m\%d\%H\%M\%S).txt /mnt/data/cookiepersonacachev2.jar 'now-135m' 'now-105m' 'AJTK' '/mnt/data/AJTKCookiePersonas.txt' 'linkedin,quora,wikipedia,social,search,twitter,instagram' 'technology,luxury,finance,business,money,dollar,million,crore,crores,millions,millionaire,rich,expensive,billionaires,multi-million,poker,lottery,wealthy,multimillionaire,gemstones,education,entertainment,health' 'technology,luxury,finance,business,money,dollar,million,crore,crores,millions,millionaire,rich,expensive,billionaires,multi-million,poker,lottery,wealthy,multimillionaire,gemstones,education,entertainment,bollywood,netflix,health,coronavirus' 'technology,luxury,finance,business,money,dollar,million,crore,crores,millions,millionaire,rich,expensive,billionaires,multi-million,poker,lottery,wealthy,multimillionaire,gemstones,education,health,entertainment,coronavirus' > /mnt/data/AJTKCookieLogs.txt
+
+java -jar -Xms4g -Xmx4g -XX:+PrintGCDetails -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:GCPauseIntervalMillis=1000 -XX:+UseStringDeduplication -Xloggc:/mnt/data/logdirectory/cookiepersonas-gc$(date +\%Y\%m\%d\%H\%M\%S).txt /mnt/data/cookiepersonacachev2.jar 'now-120m' 'now-90m' 'ITWEBEN' '/mnt/data/ITWEBENCookiePersonas.txt' 'linkedin,quora,wikipedia,social,search,twitter,instagram' 'technology,luxury,finance,business,money,dollar,million,crore,crores,millions,millionaire,rich,expensive,billionaires,multi-million,poker,lottery,wealthy,multimillionaire,gemstones,education,entertainment,health' 'technology,luxury,finance,business,money,dollar,million,crore,crores,millions,millionaire,rich,expensive,billionaires,multi-million,poker,lottery,wealthy,multimillionaire,gemstones,education,entertainment,bollywood,netflix,health,coronavirus' 'technology,luxury,finance,business,money,dollar,million,crore,crores,millions,millionaire,rich,expensive,billionaires,multi-million,poker,lottery,wealthy,multimillionaire,gemstones,education,health,entertainment,coronavirus' > /mnt/data/ITWEBENCookieLogs.txt
+
+Entities which are tuned for frequency and time decay-
+1)Social media channels
+2)IAB Segments
+3)Topics
+4)Section
+
+
+Publisher Analytic Signals Embedded in User Persona
+#########################################
+
+1)Section Engagement Times
+
+2)IAB Categories Engagement Times
+
+3)Topic Engagement Times
+
+4)Total Engagement Time on website
+
+5)Most Active Quarter of the Day
+
+6)Total Number of Sessions
+
+7)Time Since Last Session
+
+8)Average Session Duration
+
+9)Loyalty Nature of User - User is New,Returning or Loyal.
+
+These Data points are embedded in an array in custom signals key i.e csection and is supplied as a Key value pair to GPT- gampad ad call.
+
+Persona Sync Server
+Multi Threaded Processing of Cookie(UserId) Batches.
+
+Algorithm 1
+************
+Cookie(UserId) Batches are Serialised to Disk using Google Guava CharSink to minimise Disk I/O Latencies so that Batches are written with minimum Latencies to the Disk. This ensures all the cookie personas are developed for the time range and no cookie is left (There is no user loss even (which is in returning category and has partially developed persona)). This ensures Ehcache contains all the personas and gampad ad call gets persona signals/segments for near complete cookie set which visits the website for that day.
+
+Algorithm 2
+*************
+Cookie(UserId) Batches are Serialised to Disk using FileWriter to minimise Disk I/O Latencies so that Batches are written with minimum Latencies to the Disk.
+
+Algorithm 3
+************
+Cookie(UserId) Batches are Serialised to Disk using BufferedWriter(different buffer sizes) -  to minimise Disk I/O Latencies so that Batches are written with minimum Latencies to the Disk.
+Different Buffer Sizes -
+buffer size: 8192
+buffer size: 1048576
+buffer size: 4194304
+
+Experiments were carried with parameters - Data Store(Elasticsearch) Shards Document Fetch Size,Concurrency,BatchSize,FileWriting Frameworks to ensure all the userIds(First party Ids) get processed with minimum loss in processing period on daily basis.
+
+
+ML pipeline
+###########
+
+Article Persona Derivation Algorithm
+******************************************
+
+Real Time Article Persona Derivation -
+  Url data points are derived using Crawlers -
+ 1)Crawler derive data points from meta tags present in article webpages. 
+  Benefit of this to capture accurate human computation in involved in generating page meta tags. 
+
+
+Batch Article Persona Derivation (Daily basis) -
+  Url data points are derived using different multiple hybrid algorithms -
+ 1)Crawler derive data points from meta tags present in article webpages. 
+  Benefit of this to capture accurate human computation in involved in generating page meta tags. 
+  Url data scraped is further by different entity derivation techniques  -
+ 2)Topics, Wikipedia Categories obtained from Tag Me module.
+    (Junked wikipedia categories are cleaned by using wikipedia categories list which have high page rank (rank score above a threshold is only considered to be valid) 
+ 3)DBPedia spotlight for entity derivation.
+ 4)Entity Linking Algorithm open sourced by Karlsruhe institute of Technology for meta data enrichment.
+
+ Redundant entities (noise) for a url are removed as derived from above multiple hybrid algorithms and full set of article data points are derived.
+ 
+URL segmentation 
+*********************
+
+1)Near Real Time Batch Segmentation pipeline
+  For real time pipeline, crawled/scraped data points from webpages is used to form Article Persona and form corresponding Article vector. 
+
+2)Daily Batch Segmentation pipeline (to segment missing urls which could not be processed by real time segmenter)
+
+First stage of Batch Segmentation
+***********************************
+Sentence Transformers Scaled on a 16-core machine. Scaling Architecture - 3 processes of Sentence Tranformer are spawned each using 5 workers to increase the throughput of Sentence Transformers. 15 workers - sentence transformer is able to do one batch of 1000 urls in 10 minutes. Splitting workers in multiple processes - increases throughput to 3 batches in 10 minute. Scaling is done without GPUs to keep server costs minimum.
+Sentence Transformers currently don't run on a GPU node (to save costs), thereby above scaling architecture is derived.
+There is no loss of URL segmentation on dailybasis.
+Use of GPU for sentence transformers (needed only for real time segmentation) will greatly improve quality of near real time (30 minutes period) segmentation and will lead to minimum loss.
+
+Second stage of Batch Segmentation
+**************************************
+
+Confidence Algorithm for Second Stage of Daily Batch Segmentation 
+###################################################
+
+Segmentation is computed using multiple algorithms -
+i)Sentence Transformer
+ (Different models)
+stsb-mpnet-base-v2
+stsb-roberta-base-v2
+stsb-distilroberta-base-v2
+nli-mpnet-base-v2
+stsb-roberta-large
+nli-roberta-base-v2
+stsb-roberta-base
+stsb-bert-large
+stsb-distilbert-base
+
+ii)Bert Tweet
+
+2)Word2vec embeddings from wikipedia/twitter dataset.
+
+  Article persona derivation algorithm described earlier is converted to sentence and is given input to sentence transformer to derive Article vector and is compared with IAB/custom taxonomy segment vectors to find most matching segment.
+  A confidence aggregation Algorithm is used to derive correct segment and classify urls and embed in user persona.
+
+EntityEnhancer is designed in such a way that new updated Article Segmentation is updated in full time series of different userIds data points.
+
+
+Persona Vector Derivation Algorithm 
+**************************************
+
+Algorithm 1
+************
+Based on unweighted Data points of user.
+
+Persona vectors computed using 
+1)Average
+2)Smooth Inverse Frequency
+ 
+Persona vectors are computed on -
+a)Embeddings based on different datasets - 
+1)Wikipedia
+2)Twitter
+3)Concept Net
+
+b)Sentence Transformer based vectors -
+ (Different models)
+i)
+stsb-mpnet-base-v2
+stsb-roberta-base-v2
+stsb-distilroberta-base-v2
+nli-mpnet-base-v2
+stsb-roberta-large
+nli-roberta-base-v2
+stsb-roberta-base
+stsb-bert-large
+stsb-distilbert-base
+ii)Bert Tweet
+
+Algorithm2
+***********
+a)Data points of user - Section, IAB Segments, Topic Segments weighted by engagement time.
+Individual vectors of data points - sections, IAB segments and Topics present binded in userId are weighted according to corresponding cumulative engagement time. 
+
+b)Based on Weights of different segments derived via neural network (documentation already submitted)
+
+Persona vectors computed using 
+1)Average
+2)Smooth Inverse Frequency
+ 
+Persona vectors are computed on -
+a)Embeddings based on different datasets - 
+1)Wikipedia
+2)Twitter
+3)Concept Net
+
+b)Sentence Transformer based vectors -
+ (Different models)
+i)
+stsb-mpnet-base-v2
+stsb-roberta-base-v2
+stsb-distilroberta-base-v2
+nli-mpnet-base-v2
+stsb-roberta-large
+nli-roberta-base-v2
+stsb-roberta-base
+stsb-bert-large
+stsb-distilbert-base
+ii)Bert Tweet
+
+Persona vectors contain many words/segments which are redundant in nature and are repeated for lot of userIds.
+Memoization of word vectors is done for fast computation of word vectors and is stored in level db KV form storage for on - demand fast computation of persona vectors to ensure no data loss on persona vector computation for Aajtak/Indiatoday hourly traffic.
+Other KV stores like badger and bolt db are in experimental mode for fast loading of vectors and vector serialisation to Disk.
+
+Persona vector derivation run can be in following ways - 
+
+1)Predefined configuration which is locked during runtime.
+
+2)Rotational configuration
+Persona Vector derivation algorithm is rotated on dailybasis to see which configuration is proving to be optimal for campaigns and is locked on checkpoint basis during a defined run period.
+Different checkpoints map, play an optimal role in determining which algorithm to switch at which point in time series of run duration to obtain overall good CTR scores for the campaigns.
+
+
+Creative Persona Derivation
+######################
+
+Data points derived from Creative Metadata -
+
+a)Creative Text based entities
+b)Creative IAB segments
+c)Creative Text entities are enriched using third party tools like Google Trends, Entity Linking, Tag me tool described above, to create full list of Creative Data points.
+d)Creative entities present in Creative images in different domain - People (Virat Kohli, Sachin Tendulkar, Amitabh Bachchan..), Places (Monuments, Universities, Stadiums..)
+
+
+Algorithm 1
+************
+Based on unweighted Data points of user.
+
+Persona vectors computed using 
+1)Average
+2)Smooth Inverse Frequency
+ 
+Persona vectors are computed on -
+a)Embeddings based on different datasets - 
+1)Wikipedia
+2)Twitter
+3)Concept Net
+
+b)Sentence Transformer based vectors -
+ (Different models)
+i)
+stsb-mpnet-base-v2
+stsb-roberta-base-v2
+stsb-distilroberta-base-v2
+nli-mpnet-base-v2
+stsb-roberta-large
+nli-roberta-base-v2
+stsb-roberta-base
+stsb-bert-large
+stsb-distilbert-base
+ii)Bert Tweet
+
+Algorithm2
+***********
+a)Data points of creative - Entities weighted by engagement time.
+Individual vectors of entities can be weighted (via configuration file) as scale of creatives is very less.
+
+Persona vectors computed using 
+1)Average
+2)Smooth Inverse Frequency
+ 
+Persona vectors are computed on -
+a)Embeddings based on different datasets - 
+1)Wikipedia
+2)Twitter
+3)Concept Net
+
+b)Sentence Transformer based vectors -
+ (Different models)
+i)
+stsb-mpnet-base-v2
+stsb-roberta-base-v2
+stsb-distilroberta-base-v2
+nli-mpnet-base-v2
+stsb-roberta-large
+nli-roberta-base-v2
+stsb-roberta-base
+stsb-bert-large
+stsb-distilbert-base
+ii)Bert Tweet
+
+Persona vectors contain many words/segments which are redundant in nature and are repeated for lot of userIds.
+Memoization of word vectors is done for fast computation of word vectors and is stored in level db KV form storage for on - demand fast computation of persona vectors to ensure no data loss on persona vector computation for Aajtak/Indiatoday hourly traffic.
+Other KV stores like badger and bolt db are in experimental mode for fast loading of vectors and vector serialisation to Disk.
+
+Both Predefined and Rotational modes can be done depending on campaign life cycle (for longer campaign lifecycle say 30 days, rotation algorithms get sufficient time)
+
+For more details and experimental Algorithms 
+
+Please kindly refer to - Creative Management Platform using Knowledge Graphs Presentation
+
+Databases - ML signals/Segments
+#########################
+
+Databases (hourly Aajtak Data) (Actual Databases are generated on full cookie pool and updated on hourly data) which are used to generate ML signals and further, ingest in gampad ad call.
+
+Databases Generated -
+
+1)segmentPersonaAffinity
+
+2)creativePersonaAffinity
+
+3)demographicPersonaDatabase
+
+4)emotionPersonaDatabase
+
+5)segment segment affinity database
+
+6)Persona Database
+
+7)Creative Database
+
+8)TopicSegmentAffinityDatabase
+
+Classes Database used for classification
+
+https://drive.google.com/drive/folders/1aSeywBe1cZHWSPHOLSGf4_pyi7eVK6dd?usp=sharing
+https://drive.google.com/file/d/1R4GqxLxmK9ijFzSwll1vp5BmayUTASzJ/view?usp=sharing
+
+Knowledge Graph Databases for Creative Entities/User Personas
+##############################################################
+Please kindly note - Actual Graph Database is very large, this is for Demo Purposes
+https://drive.google.com/drive/folders/1Qtcf90dO-Qj1FZ31fC3n1EHzZgu_YD6g?usp=sharing
