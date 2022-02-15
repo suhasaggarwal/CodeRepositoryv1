@@ -1,8 +1,8 @@
 # go-loom [![Build Status](https://travis-ci.org/loomnetwork/go-loom.svg?branch=master)](https://travis-ci.org/loomnetwork/go-loom)
 
-Go package for building Go Smart Contracts  for the Loom SDK
+Go package for building Go Smart Contracts  for the Aajtak SDK
 
-This package is also used for building Clients to DAppChains in the Loom SDK.
+This package is also used for building Clients to DAppChains in the Aajtak SDK.
 
 The code that runs the actual DAppChain(sidechain) is in a different repository.
 
