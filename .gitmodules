@@ -1,0 +1,6 @@
+[submodule "blockchainbasedDMPstack/go-loom"]
+	path = blockchainbasedDMPstack/go-loom
+	url = git@github.com:loomnetwork/go-loom.git
+[submodule "blockchainbasedDMPstack/loomchain"]
+	path = blockchainbasedDMPstack/loomchain
+	url = git@github.com:loomnetwork/loomchain.git
