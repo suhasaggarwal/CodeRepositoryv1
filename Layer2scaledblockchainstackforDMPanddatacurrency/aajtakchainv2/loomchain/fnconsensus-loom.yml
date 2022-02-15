@@ -1,0 +1,13 @@
+FnConsensus:
+  Reactor:
+    OverrideValidators:
+    - Address: "E3485043C5D51080DC1FFECA5ECD38B281F3A0B0"
+      VotingPower: 100
+    - Address: "A9C2FF9B2B9D451F7A993CFBCA7E5689E9D2AAFB"
+      VotingPower: 100
+    - Address: "6D0216D0EF9FAB1661E472BF2223BE003125E047"
+      VotingPower: 100
+    - Address: "81578447947C18989B08CB17F9DC613FCD1169E6"
+      VotingPower: 100
+    FnVoteSigningThreshold: All
+  Enabled: true

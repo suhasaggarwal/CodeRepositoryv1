@@ -1,0 +1,20 @@
+{ "contracts": [
+{
+    "vm": "plugin",
+    "format": "plugin",
+    "name": "tron-gateway",
+    "location": "tron-gateway:0.1.0",
+    "init": {
+        "owner": {
+            "chain_id": "asia1",
+            "local": "O+HWG3mhSKkMNqxXqughIowLlRQ="
+        },
+        "oracles": [
+            {
+                "chain_id": "asia1",
+                "local": "GVCzmGTiOk6YSJvwBVPQrFPhVGk="
+            }
+        ]
+    }
+}
+]}

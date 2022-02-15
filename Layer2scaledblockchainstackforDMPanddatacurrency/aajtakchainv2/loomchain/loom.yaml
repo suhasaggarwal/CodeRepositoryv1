@@ -1,0 +1,15 @@
+ReceiptsVersion: 2
+ContractLogLevel: "debug"
+LoomLogLevel: "debug"
+AppStore:
+  Version: 3
+  SaveEVMStateToIAVL: false
+Blockstore:
+  PruneOnStartup: true  #should default to false for now
+  NumBlocksToRetain: 100 # number of most recent blocks to retain when pruning
+  PruneGraceFactor: 1             
+  SkipMissing: false
+  SkipCompaction: false
+  PruningAlgorithm: "Copy"
+  BatchSize: 100
+  Loglevel: 10

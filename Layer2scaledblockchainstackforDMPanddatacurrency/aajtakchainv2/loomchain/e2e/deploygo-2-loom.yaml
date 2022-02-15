@@ -1,0 +1,6 @@
+DPOSVersion: 3
+GoContractDeployerWhitelist:
+  Enabled: true
+  DeployerAddressList:
+    - "0"
+    - "1"

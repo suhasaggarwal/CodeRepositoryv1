@@ -1,0 +1,18 @@
+=============== Aug 5, 2019 (IST) ===============
+15:11:00.497947 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:11:00.543168 db@open opening
+15:11:00.551512 version@stat F·[] S·0B[] Sc·[]
+15:11:00.580063 db@janitor F·2 G·0
+15:11:00.580439 db@open done T·37.032291ms
+=============== Aug 9, 2019 (IST) ===============
+01:16:26.554816 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+01:16:26.555239 version@stat F·[] S·0B[] Sc·[]
+01:16:26.555274 db@open opening
+01:16:26.555386 journal@recovery F·1
+01:16:26.555648 journal@recovery recovering @1
+01:16:26.639833 memdb@flush created L0@2 N·2904 S·415KiB ",v2904":"blo..ore,v5"
+01:16:26.641453 version@stat F·[1] S·415KiB[415KiB] Sc·[0.25]
+01:16:26.726182 db@janitor F·3 G·0
+01:16:26.726332 db@open done T·171.023281ms
+01:16:29.386900 db@close closing
+01:16:29.387812 db@close done T·861.761µs

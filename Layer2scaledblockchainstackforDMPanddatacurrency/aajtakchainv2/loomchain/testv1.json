@@ -1,0 +1,24 @@
+{
+ "contracts":[{
+          "vm": "plugin",
+          "format": "plugin",
+          "name": "deployerwhitelist",
+          "location": "deployerwhitelist:1.0.0",
+          "init": {
+              "owner": {
+                  "chainId": "default",
+                  "local": "S7Mg3vyaNSnqchAyvZWoYF7S1UM="
+              },
+              "deployers": [
+                  {
+                      "address": {
+                          "chainId":"default",
+                          "local":"duzR9yYfz0xoTil74+3wO4JeAcQ="
+                      },
+                      "flags": 2
+                  }
+              ]
+          }
+      }
+  ]
+}

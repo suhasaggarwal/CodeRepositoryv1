@@ -1,0 +1,24 @@
+{
+  "contracts":[{
+           "vm": "plugin",
+           "format": "plugin",
+           "name": "user-deployer-whitelist",
+           "location": "user-deployer-whitelist:1.0.0",
+           "init": {
+               "owner": {
+                   "chainId": "default",
+                   "local": "S7Mg3vyaNSnqchAyvZWoYF7S1UM="
+               },
+               "tier_info": [
+                       {
+                           "id": 0,
+                           "fee": "10",
+                           "name": "tier1",
+                           "block_range": 10,
+                           "max_txs": 3
+                       }
+               ]
+           }
+       }
+    ]
+  }

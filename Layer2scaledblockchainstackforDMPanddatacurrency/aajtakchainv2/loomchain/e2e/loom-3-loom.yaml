@@ -1,0 +1,18 @@
+ReceiptsVersion: 2
+DPOSVersion: 2
+ChainConfig: 
+  ContractEnabled: true
+ContractLogLevel: "debug"
+LoomLogLevel: "debug"
+AppStore:
+  Version: 3
+  SaveEVMStateToIAVL: false
+CachingStoreConfig:
+  CachingEnabled: true
+
+Auth:
+  Chains:
+    eth:
+      TxType: "eth"
+    tron:
+      TxType: "tron"

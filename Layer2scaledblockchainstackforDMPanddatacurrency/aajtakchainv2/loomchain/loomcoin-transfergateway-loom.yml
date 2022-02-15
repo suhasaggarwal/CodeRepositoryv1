@@ -1,0 +1,16 @@
+  BatchSignFnConfig:
+    Enabled: true
+    MainnetPrivateKeyPath: "/opt/keys/node_eth_priv.key"
+  MainnetContractHexAddress: "0x48d7CcCFAD03FC9f07BF4B547d6809A3aB54F6d4"
+  WithdrawalSig: 2
+  OracleEnabled: false
+  DAppChainReadURI: "http://localhost:46658/query"
+  DAppChainWriteURI: "http://localhost:46658/rpc"
+  DAppChainEventsURI: "ws://localhost:46658/queryws"
+  DAppChainPollInterval: 1
+  MainnetPollInterval: 1
+  NumMainnetBlockConfirmations: 10
+  OracleLogLevel: "debug"
+  OracleLogDestination: "file://-"
+  OracleStartupDelay: 5
+  OracleReconnectInterval: 5

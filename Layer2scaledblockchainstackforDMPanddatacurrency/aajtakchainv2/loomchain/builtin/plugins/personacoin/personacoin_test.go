@@ -1,0 +1,608 @@
+package coin
+
+import (
+	"errors"
+	"math/big"
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
+	loom "github.com/loomnetwork/go-loom"
+	"github.com/loomnetwork/go-loom/plugin"
+	"github.com/loomnetwork/go-loom/plugin/contractpb"
+	"github.com/loomnetwork/go-loom/types"
+	"github.com/loomnetwork/loomchain"
+)
+
+var (
+	addr1 = loom.MustParseAddress("chain:0xb16a379ec18d4093666f8f38b11a3071c920207d")
+	addr2 = loom.MustParseAddress("chain:0xfa4c7920accfd66b86f5fd0e69682a79f762d49e")
+	addr3 = loom.MustParseAddress("chain:0x5cecd1f7261e1f4c684e297be3edf03b825e01c4")
+)
+
+type mockLoomPersonaCoinGateway struct {
+}
+
+
+//Persona coin fo users tend to follow - new, returning, loyal users trend - users with loyal nature to aajtak.in, indiatoday.com tend to have more dense personas and more persona coins
+
+
+
+func (m *mockLoomPersonaCoinGateway) Meta() (plugin.Meta, error) {
+	return plugin.Meta{
+		Name:    "loomcoin-gateway",
+		Version: "0.1.0",
+	}, nil
+}
+
+func (m *mockLoomPersonaCoinGateway) DummyMethod(ctx contractpb.Context, req *MintToGatewayRequest) error {
+	return nil
+}
+
+func TestTransfer(t *testing.T) {
+	pctx := plugin.CreateFakeContext(addr1, addr2)
+	ctx := contractpb.WrapPluginContext(pctx)
+
+	amount := loom.NewBigUIntFromInt(100)
+	contract := &PersonaCoin{}
+	err := contract.Transfer(ctx, &TransferRequest{
+		To:     addr2.MarshalPB(),
+		Amount: &types.BigUInt{Value: *amount},
+	})
+	assert.NotNil(t, err)
+
+	acct := &Account{
+		Owner: addr1.MarshalPB(),
+		Balance: &types.BigUInt{
+			Value: *loom.NewBigUIntFromInt(100),
+		},
+	}
+	err = saveAccount(ctx, acct)
+	require.Nil(t, err)
+
+	err = contract.Transfer(ctx, &TransferRequest{
+		To:     addr2.MarshalPB(),
+		Amount: &types.BigUInt{Value: *amount},
+	})
+	assert.Nil(t, err)
+
+	resp, err := contract.BalanceOf(ctx, &BalanceOfRequest{
+		Owner: addr1.MarshalPB(),
+	})
+	require.Nil(t, err)
+	assert.Equal(t, 0, int(resp.Balance.Value.Int64()))
+
+	resp, err = contract.BalanceOf(ctx, &BalanceOfRequest{
+		Owner: addr2.MarshalPB(),
+	})
+	require.Nil(t, err)
+	assert.Equal(t, 100, int(resp.Balance.Value.Int64()))
+
+	pctx.SetFeature(loomchain.PersonaCoinVersion1_2Feature, true)
+	err = contract.Transfer(contractpb.WrapPluginContext(pctx), &TransferRequest{
+		To:     nil,
+		Amount: nil,
+	})
+	assert.Equal(t, ErrInvalidRequest, err)
+
+}
+
+func sciNot(m, n int64) *loom.BigUInt {
+	ret := loom.NewBigUIntFromInt(10)
+	ret.Exp(ret, loom.NewBigUIntFromInt(n), nil)
+	ret.Mul(ret, loom.NewBigUIntFromInt(m))
+	return ret
+}
+
+// Verify Persona Coin.Transfer works correctly when the to & from addresses are the same.
+func TestTransferToSelf(t *testing.T) {
+	pctx := plugin.CreateFakeContext(addr1, addr1)
+	// Test using the v1.1 contract, this test will fail if this feature is not enabled
+	pctx.SetFeature(loomchain.PersonaCoinVersion1_1Feature, true)
+
+	contract := &PersonaCoin{}
+	err := contract.Init(
+		contractpb.WrapPluginContext(pctx),
+		&InitRequest{
+			Accounts: []*InitialAccount{
+				&InitialAccount{
+					Owner:   addr2.MarshalPB(),
+					Balance: uint64(100),
+				},
+			},
+		},
+	)
+	require.NoError(t, err)
+
+	amount := sciNot(100, 18)
+	resp, err := contract.BalanceOf(
+		contractpb.WrapPluginContext(pctx),
+		&BalanceOfRequest{
+			Owner: addr2.MarshalPB(),
+		},
+	)
+	require.NoError(t, err)
+	assert.Equal(t, *amount, resp.Balance.Value)
+
+	err = contract.Transfer(
+		contractpb.WrapPluginContext(pctx.WithSender(addr2)),
+		&TransferRequest{
+			To:     addr2.MarshalPB(),
+			Amount: &types.BigUInt{Value: *amount},
+		},
+	)
+	assert.NoError(t, err)
+
+	resp, err = contract.BalanceOf(
+		contractpb.WrapPluginContext(pctx),
+		&BalanceOfRequest{
+			Owner: addr2.MarshalPB(),
+		},
+	)
+	require.NoError(t, err)
+	// the transfer was from addr2 to addr2 so the balance of addr2 should remain unchanged
+	assert.Equal(t, *amount, resp.Balance.Value)
+}
+
+func TestApprove(t *testing.T) {
+	contract := &PersonaCoin{}
+	pctx := plugin.CreateFakeContext(addr1, addr2)
+	ctx := contractpb.WrapPluginContext(pctx)
+
+	acct := &Account{
+		Owner: addr1.MarshalPB(),
+		Balance: &types.BigUInt{
+			Value: *loom.NewBigUIntFromInt(100),
+		},
+	}
+	err := saveAccount(ctx, acct)
+	require.Nil(t, err)
+
+	err = contract.Approve(ctx, &ApproveRequest{
+		Spender: addr3.MarshalPB(),
+		Amount: &types.BigUInt{
+			Value: *loom.NewBigUIntFromInt(40),
+		},
+	})
+	assert.Nil(t, err)
+
+	allowResp, err := contract.Allowance(ctx, &AllowanceRequest{
+		Owner:   addr1.MarshalPB(),
+		Spender: addr3.MarshalPB(),
+	})
+	require.Nil(t, err)
+	assert.Equal(t, 40, int(allowResp.Amount.Value.Int64()))
+
+	pctx.SetFeature(loomchain.PersonaCoinVersion1_2Feature, true)
+	err = contract.Approve(contractpb.WrapPluginContext(pctx), &ApproveRequest{
+		Spender: nil,
+		Amount:  nil,
+	})
+	assert.Equal(t, ErrInvalidRequest, err)
+}
+
+func TestTransferFrom(t *testing.T) {
+	contract := &PersonaCoin{}
+
+	pctx := plugin.CreateFakeContext(addr1, addr1)
+	ctx := contractpb.WrapPluginContext(pctx)
+	acct := &Account{
+		Owner: addr1.MarshalPB(),
+		Balance: &types.BigUInt{
+			Value: *loom.NewBigUIntFromInt(100),
+		},
+	}
+	err := saveAccount(ctx, acct)
+	require.Nil(t, err)
+
+	err = contract.Approve(ctx, &ApproveRequest{
+		Spender: addr3.MarshalPB(),
+		Amount: &types.BigUInt{
+			Value: *loom.NewBigUIntFromInt(40),
+		},
+	})
+	assert.Nil(t, err)
+
+	ctx = contractpb.WrapPluginContext(pctx.WithSender(addr3))
+	err = contract.TransferFrom(ctx, &TransferFromRequest{
+		From: addr1.MarshalPB(),
+		To:   addr2.MarshalPB(),
+		Amount: &types.BigUInt{
+			Value: *loom.NewBigUIntFromInt(50),
+		},
+	})
+	assert.NotNil(t, err)
+
+	err = contract.TransferFrom(ctx, &TransferFromRequest{
+		From: addr1.MarshalPB(),
+		To:   addr2.MarshalPB(),
+		Amount: &types.BigUInt{
+			Value: *loom.NewBigUIntFromInt(30),
+		},
+	})
+	assert.Nil(t, err)
+
+	allowResp, err := contract.Allowance(ctx, &AllowanceRequest{
+		Owner:   addr1.MarshalPB(),
+		Spender: addr3.MarshalPB(),
+	})
+	require.Nil(t, err)
+	assert.Equal(t, 10, int(allowResp.Amount.Value.Int64()))
+
+	balResp, err := contract.BalanceOf(ctx, &BalanceOfRequest{
+		Owner: addr1.MarshalPB(),
+	})
+	require.Nil(t, err)
+	assert.Equal(t, 70, int(balResp.Balance.Value.Int64()))
+
+	balResp, err = contract.BalanceOf(ctx, &BalanceOfRequest{
+		Owner: addr2.MarshalPB(),
+	})
+	require.Nil(t, err)
+	assert.Equal(t, 30, int(balResp.Balance.Value.Int64()))
+
+	pctx.SetFeature(loomchain.CoinVersion1_2Feature, true)
+	nilResp, err := contract.BalanceOf(ctx, &BalanceOfRequest{
+		Owner: nil,
+	})
+	require.Error(t, err)
+	require.Nil(t, nilResp)
+
+}
+
+// Verify Persona Coin.TransferFrom works correctly when the to & from addresses are the same.
+func TestTransferFromSelf(t *testing.T) {
+	pctx := plugin.CreateFakeContext(addr1, addr1)
+	// Test using the v1.1 contract, this test will fail if this feature is not enabled
+	pctx.SetFeature(loomchain.CoinVersion1_1Feature, true)
+
+	contract := &PersonaCoin{}
+	err := contract.Init(
+		contractpb.WrapPluginContext(pctx),
+		&InitRequest{
+			Accounts: []*InitialAccount{
+				&InitialAccount{
+					Owner:   addr2.MarshalPB(),
+					Balance: uint64(100),
+				},
+			},
+		},
+	)
+	require.NoError(t, err)
+	amount := sciNot(100, 18)
+	resp, err := contract.BalanceOf(
+		contractpb.WrapPluginContext(pctx),
+		&BalanceOfRequest{
+			Owner: addr2.MarshalPB(),
+		},
+	)
+	require.NoError(t, err)
+	assert.Equal(t, *amount, resp.Balance.Value)
+
+	err = contract.Approve(
+		contractpb.WrapPluginContext(pctx.WithSender(addr2)),
+		&ApproveRequest{
+			Spender: addr2.MarshalPB(),
+			Amount: &types.BigUInt{
+				Value: *amount,
+			},
+		},
+	)
+	assert.NoError(t, err)
+
+	err = contract.TransferFrom(
+		contractpb.WrapPluginContext(pctx.WithSender(addr2)),
+		&TransferFromRequest{
+			From: addr2.MarshalPB(),
+			To:   addr2.MarshalPB(),
+			Amount: &types.BigUInt{
+				Value: *amount,
+			},
+		},
+	)
+	assert.NoError(t, err)
+
+	resp, err = contract.BalanceOf(
+		contractpb.WrapPluginContext(pctx),
+		&BalanceOfRequest{
+			Owner: addr2.MarshalPB(),
+		},
+	)
+	require.NoError(t, err)
+	// the transfer was from addr2 to addr2 so the balance of addr2 should remain unchanged
+	assert.Equal(t, *amount, resp.Balance.Value)
+}
+
+func TestMintToGateway(t *testing.T) {
+	contract := &Coin{}
+
+	mockLoomPersonaCoinGatewayContract := contractpb.MakePluginContract(&mockLoomPersonaCoinGateway{})
+
+	pctx := plugin.CreateFakeContext(addr1, addr1)
+
+	loomPersonacoinTGAddress := pctx.CreateContract(mockLoomPersonaCoinGatewayContract)
+	pctx.RegisterContract("loomcoin-gateway", loomPersonacoinTGAddress, loomPersonacoinTGAddress)
+
+	ctx := contractpb.WrapPluginContext(pctx)
+
+	contract.Init(ctx, &InitRequest{
+		Accounts: []*InitialAccount{
+			&InitialAccount{
+				Owner:   loomPersonacoinTGAddress.MarshalPB(),
+				Balance: uint64(29),
+			},
+			&InitialAccount{
+				Owner:   addr1.MarshalPB(),
+				Balance: uint64(31),
+			},
+		},
+	})
+
+	multiplier := big.NewInt(10).Exp(big.NewInt(10), big.NewInt(18), big.NewInt(0))
+	loomPersonacoinTGBalance := big.NewInt(0).Mul(multiplier, big.NewInt(29))
+	addr1Balance := big.NewInt(0).Mul(multiplier, big.NewInt(31))
+	totalSupply := big.NewInt(0).Add(loomPersonacoinTGBalance, addr1Balance)
+
+	totalSupplyResponse, err := contract.TotalSupply(ctx, &TotalSupplyRequest{})
+	require.Nil(t, err)
+	require.Equal(t, totalSupply, totalSupplyResponse.TotalSupply.Value.Int)
+
+	gatewayBalanceResponse, err := contract.BalanceOf(ctx, &BalanceOfRequest{
+		Owner: loomPersonacoinTGAddress.MarshalPB(),
+	})
+	require.Nil(t, err)
+	require.Equal(t, loomPersonacoinTGBalance, gatewayBalanceResponse.Balance.Value.Int)
+
+	require.Nil(t, contract.MintToGateway(
+		contractpb.WrapPluginContext(pctx.WithSender(loomPersonacoinTGAddress)),
+		&MintToGatewayRequest{
+			Amount: &types.BigUInt{
+				Value: *loom.NewBigUIntFromInt(59),
+			},
+		},
+	))
+
+	newTotalSupply := big.NewInt(0).Add(totalSupply, big.NewInt(59))
+	newLoomPersonaCoinTGBalance := big.NewInt(0).Add(loomPersonacoinTGBalance, big.NewInt(59))
+
+	totalSupplyResponse, err = contract.TotalSupply(ctx, &TotalSupplyRequest{})
+	require.Nil(t, err)
+	require.Equal(t, newTotalSupply, totalSupplyResponse.TotalSupply.Value.Int)
+
+	gatewayBalanceResponse, err = contract.BalanceOf(ctx, &BalanceOfRequest{
+		Owner: loomPersonacoinTGAddress.MarshalPB(),
+	})
+	require.Nil(t, err)
+	require.Equal(t, newLoomPersonaCoinTGBalance, gatewayBalanceResponse.Balance.Value.Int)
+
+	pctx.SetFeature(loomchain.PersonaCoinVersion1_2Feature, true)
+	err = contract.MintToGateway(contractpb.WrapPluginContext(pctx.WithSender(newLoomPersonaCoinTGAddress)), &MintToGatewayRequest{
+		Amount: nil,
+	})
+	assert.Equal(t, ErrInvalidRequest, err)
+}
+
+func TestBurn(t *testing.T) {
+	contract := &PersonaCoin{}
+
+	mockLoomPersonaCoinGatewayContract := contractpb.MakePluginContract(&mockLoomPersonaCoinGateway{})
+
+	pctx := plugin.CreateFakeContext(addr1, addr1)
+
+	loomPersonacoinTGAddress := pctx.CreateContract(mockLoomPersonaCoinGatewayContract)
+	pctx.RegisterContract("loomcoin-gateway", loomPersonacoinTGAddress, loomPersonacoinTGAddress)
+
+	ctx := contractpb.WrapPluginContext(pctx)
+
+	contract.Init(ctx, &InitRequest{
+		Accounts: []*InitialAccount{
+			&InitialAccount{
+				Owner:   addr2.MarshalPB(),
+				Balance: uint64(29),
+			},
+			&InitialAccount{
+				Owner:   addr1.MarshalPB(),
+				Balance: uint64(31),
+			},
+		},
+	})
+
+	multiplier := big.NewInt(10).Exp(big.NewInt(10), big.NewInt(18), big.NewInt(0))
+	addr2Balance := big.NewInt(0).Mul(multiplier, big.NewInt(29))
+	addr1Balance := big.NewInt(0).Mul(multiplier, big.NewInt(31))
+	totalSupply := big.NewInt(0).Add(addr2Balance, addr1Balance)
+
+	totalSupplyResponse, err := contract.TotalSupply(ctx, &TotalSupplyRequest{})
+	require.Nil(t, err)
+	require.Equal(t, totalSupply, totalSupplyResponse.TotalSupply.Value.Int)
+
+	addr2BalanceResponse, err := contract.BalanceOf(ctx, &BalanceOfRequest{
+		Owner: addr2.MarshalPB(),
+	})
+
+	require.Nil(t, err)
+	require.Equal(t, addr2Balance, addr2BalanceResponse.Balance.Value.Int)
+
+	require.Nil(t, contract.Burn(
+		contractpb.WrapPluginContext(pctx.WithSender(loomPersonacoinTGAddress)),
+		&BurnRequest{
+			Owner: addr2.MarshalPB(),
+			Amount: &types.BigUInt{
+				Value: *loom.NewBigUIntFromInt(2),
+			},
+		},
+	))
+
+	newTotalSupply := big.NewInt(0).Sub(totalSupply, big.NewInt(2))
+	newAddr2Balance := big.NewInt(0).Sub(addr2Balance, big.NewInt(2))
+
+	totalSupplyResponse, err = contract.TotalSupply(ctx, &TotalSupplyRequest{})
+	require.Nil(t, err)
+	require.Equal(t, newTotalSupply, totalSupplyResponse.TotalSupply.Value.Int)
+
+	addr2BalanceResponse, err = contract.BalanceOf(ctx, &BalanceOfRequest{
+		Owner: addr2.MarshalPB(),
+	})
+	require.Nil(t, err)
+	require.Equal(t, newAddr2Balance, addr2BalanceResponse.Balance.Value.Int)
+}
+
+func TestBurnAccess(t *testing.T) {
+	contract := &PersonaCoin{}
+
+	mockLoomPersonaCoinGatewayContract := contractpb.MakePluginContract(&mockLoomPersonaCoinGateway{})
+
+	pctx := plugin.CreateFakeContext(addr1, addr1)
+
+	loomPersonaCoinTGAddress := pctx.CreateContract(mockLoomPersonaCoinGatewayContract)
+	pctx.RegisterContract("loomcoin-gateway", loomPersonaCoinTGAddress, loomPersonaCoinTGAddress)
+
+	ctx := contractpb.WrapPluginContext(pctx)
+
+	contract.Init(ctx, &InitRequest{
+		Accounts: []*InitialAccount{
+			{
+				Owner:   addr1.MarshalPB(),
+				Balance: 100,
+			},
+			{
+				Owner:   addr2.MarshalPB(),
+				Balance: 0,
+			},
+		},
+	})
+
+	require.EqualError(t, contract.Burn(ctx, &BurnRequest{
+		Owner: addr1.MarshalPB(),
+		Amount: &types.BigUInt{
+			Value: *loom.NewBigUIntFromInt(10),
+		},
+	}), "not authorized to burn Loom coin", "only loomPersonacoin gateway can call Burn")
+
+	require.Nil(t, contract.Burn(
+		contractpb.WrapPluginContext(pctx.WithSender(loomPersonaCoinTGAddress)),
+		&BurnRequest{
+			Owner: addr1.MarshalPB(),
+			Amount: &types.BigUInt{
+				Value: *loom.NewBigUIntFromInt(10),
+			},
+		},
+	), "loomPersonacoin gateway should be allowed to call Burn")
+
+	require.EqualError(t, contract.Burn(
+		contractpb.WrapPluginContext(pctx.WithSender(loomPersonaCoinTGAddress)),
+		&BurnRequest{
+			Owner: addr2.MarshalPB(),
+			Amount: &types.BigUInt{
+				Value: *loom.NewBigUIntFromInt(10),
+			},
+		},
+	), "cant burn coins more than available balance: 0", "only burn coin owned by you")
+}
+
+func TestMintToGatewayAccess(t *testing.T) {
+	contract := &PersonaCoin{}
+
+	mockLoomPersonaCoinGatewayContract := contractpb.MakePluginContract(&mockLoomPersonaCoinGateway{})
+
+	pctx := plugin.CreateFakeContext(addr1, addr1)
+
+	loomPersonacoinTGAddress := pctx.CreateContract(mockLoomPersonaCoinGatewayContract)
+	pctx.RegisterContract("loomcoin-gateway", loomPersonacoinTGAddress, loomPersonacoinTGAddress)
+
+	ctx := contractpb.WrapPluginContext(pctx)
+
+	require.EqualError(t, contract.MintToGateway(ctx, &MintToGatewayRequest{
+		Amount: &types.BigUInt{
+			Value: *loom.NewBigUIntFromInt(10),
+		},
+	}), "not authorized to mint Loom coin", "only loomcoin gateway can call MintToGateway")
+
+	require.Nil(t, contract.MintToGateway(
+		contractpb.WrapPluginContext(pctx.WithSender(loomPersonacoinTGAddress)),
+		&MintToGatewayRequest{
+			Amount: &types.BigUInt{
+				Value: *loom.NewBigUIntFromInt(10),
+			},
+		},
+	), "loompersonacoin gateway should be allowed to call MintToGateway")
+
+}
+
+func TestNilRequest(t *testing.T) {
+	pctx := plugin.CreateFakeContext(addr1, addr1)
+	pctx.SetFeature(loomchain.PersonaCoinVersion1_2Feature, true)
+	ctx := contractpb.WrapPluginContext(pctx)
+	contract := &PersonaCoin{}
+
+	contract.Init(ctx, &InitRequest{
+		Accounts: []*InitialAccount{
+			{
+				Owner:   addr1.MarshalPB(),
+				Balance: 100,
+			},
+		},
+	})
+	err := contract.Burn(ctx, &BurnRequest{
+		Owner:  nil,
+		Amount: nil,
+	})
+	require.Equal(t, err, errors.New("owner or amount is nil"))
+
+	balResp, err := contract.BalanceOf(ctx, &BalanceOfRequest{
+		Owner: nil,
+	})
+	require.Equal(t, err, ErrInvalidRequest)
+	require.Nil(t, balResp)
+
+	err = contract.Transfer(ctx, &TransferRequest{
+		To:     nil,
+		Amount: nil,
+	})
+	require.Equal(t, err, ErrInvalidRequest)
+
+	err = contract.Approve(ctx, &ApproveRequest{
+		Spender: nil,
+		Amount:  nil,
+	})
+	require.Equal(t, err, ErrInvalidRequest)
+
+	amount := sciNot(0, 18)
+	err = contract.Approve(ctx, &ApproveRequest{
+		Spender: addr2.MarshalPB(),
+		Amount: &types.BigUInt{
+			Value: *amount,
+		},
+	})
+	require.NoError(t, err)
+
+	alwResp, err := contract.Allowance(ctx, &AllowanceRequest{
+		Owner:   nil,
+		Spender: nil,
+	})
+	require.Equal(t, err, ErrInvalidRequest)
+	require.Nil(t, alwResp)
+
+	err = contract.TransferFrom(ctx, &TransferFromRequest{
+		From:   addr2.MarshalPB(),
+		To:     addr1.MarshalPB(),
+		Amount: nil,
+	})
+	require.Equal(t, err, ErrInvalidRequest)
+
+	err = contract.Transfer(ctx, &TransferRequest{
+		To:     nil,
+		Amount: nil,
+	})
+	assert.Equal(t, ErrInvalidRequest, err)
+
+	err = contract.TransferFrom(ctx, &TransferFromRequest{
+		From: addr2.MarshalPB(),
+		To:   addr1.MarshalPB(),
+		Amount: &types.BigUInt{
+			Value: *amount,
+		},
+	})
+	require.NoError(t, err)
+}

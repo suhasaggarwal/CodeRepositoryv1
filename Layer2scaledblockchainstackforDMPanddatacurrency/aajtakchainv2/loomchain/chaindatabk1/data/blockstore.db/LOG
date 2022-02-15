@@ -1,0 +1,36 @@
+=============== Aug 9, 2019 (IST) ===============
+01:16:26.727966 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+01:16:26.784924 db@open opening
+01:16:26.786403 version@stat F·[] S·0B[] Sc·[]
+01:16:26.810690 db@janitor F·2 G·0
+01:16:26.810820 db@open done T·25.781638ms
+01:16:29.388359 db@close closing
+01:16:29.388688 db@close done T·324.839µs
+=============== Aug 9, 2019 (IST) ===============
+01:16:30.802422 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+01:16:30.804747 version@stat F·[] S·0B[] Sc·[]
+01:16:30.804955 db@open opening
+01:16:30.805516 journal@recovery F·1
+01:16:30.806355 journal@recovery recovering @1
+01:16:30.838465 memdb@flush created L0@2 N·600 S·85KiB ",v100":"blo..ore,v105"
+01:16:30.839950 version@stat F·[1] S·85KiB[85KiB] Sc·[0.25]
+01:16:30.924352 db@janitor F·3 G·0
+01:16:30.924492 db@open done T·119.443297ms
+=============== Jan 17, 2022 (IST) ===============
+14:37:49.893541 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:37:49.898558 version@stat F·[1] S·85KiB[85KiB] Sc·[0.25]
+14:37:49.898591 db@open opening
+14:37:49.898780 journal@recovery F·1
+14:37:49.901187 journal@recovery recovering @3
+14:37:49.979669 memdb@flush created L0@5 N·18 S·1KiB ",v619":"blo..ore,v606"
+14:37:49.980126 version@stat F·[2] S·86KiB[86KiB] Sc·[0.50]
+14:37:50.128074 db@janitor F·4 G·0
+14:37:50.128141 db@open done T·229.524537ms
+14:37:51.074667 table@compaction L0·2 -> L1·0 S·86KiB Q·620
+14:37:51.146298 table@build created L1@8 N·414 S·86KiB ",v619":"blo..ore,v618"
+14:37:51.146429 version@stat F·[0 1] S·86KiB[0B 86KiB] Sc·[0.00 0.00]
+14:37:51.244380 table@compaction committed F-1 S-479B Ke·0 D·204 T·169.594727ms
+14:37:51.244531 table@remove removed @5
+14:37:51.244610 table@remove removed @2
+14:37:56.249421 db@close closing
+14:37:56.249651 db@close done T·203.739µs

@@ -1,0 +1,221 @@
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg list-features"
+  Condition = "contains"
+  Expected = ['dposv3']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg add-feature hardfork multichain --build 0 --no-auto-enable -k {{index $.NodePrivKeyPathList 0}}"
+  Condition = "excludes"
+  Expected = ['Error']
+  
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg add-feature hardfork --build 0 -k {{index $.NodePrivKeyPathList 2}}"
+  Condition = "contains"
+  Expected = ['not authorized']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg add-feature hardfork --build 0 -k {{index $.NodePrivKeyPathList 3}}"
+  Condition = "contains"
+  Expected = ['not authorized']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg add-feature hardfork --build 0 -k {{index $.NodePrivKeyPathList 0}}"
+  Condition = "contains"
+  Expected = ['feature already exists']
+ 
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg enable-feature hardfork -k {{index $.NodePrivKeyPathList 0}}"
+  Condition = "excludes"
+  Expected = ['Error']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg enable-feature hardfork -k {{index $.NodePrivKeyPathList 1}}"
+  Condition = "contains"
+  Expected = ['']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg get-feature hardfork"
+  Condition = "contains"
+  Expected = ['50','PENDING']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg enable-feature hardfork multichain -k {{index $.NodePrivKeyPathList 2}}"
+  Condition = "contains"
+  Expected = ['']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg get-feature hardfork"
+  Condition = "contains"
+  Expected = ['75']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg add-feature newfeature --build=0 --no-auto-enable -k {{index $.NodePrivKeyPathList 0}}"
+  Condition = "contains"
+  Expected = []
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg add-feature chaincfg:v1.2 --build 0 -k {{index $.NodePrivKeyPathList 0}}"
+  Condition = "excludes"
+  Expected = ['Error']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg list-features"
+  Condition = "contains"
+  Expected = ['hardfork','newfeature','multichain','dposv3']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg enable-feature chaincfg:v1.2 -k {{index $.NodePrivKeyPathList 0}}"
+  Condition = "excludes"
+  Expected = ['Error']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg enable-feature chaincfg:v1.2 -k {{index $.NodePrivKeyPathList 1}}"
+  Condition = "excludes"
+  Expected = ['Error']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg enable-feature chaincfg:v1.2 -k {{index $.NodePrivKeyPathList 2}}"
+  Condition = "excludes"
+  Expected = ['Error']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg enable-feature chaincfg:v1.2 -k {{index $.NodePrivKeyPathList 3}}"
+  Condition = "excludes"
+  Expected = ['Error']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg list-features"
+  Condition = "contains"
+  Expected = ['hardfork','newfeature']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg get-feature hardfork"
+  Condition = "contains"
+  Expected = ['75']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg get-params"
+  Condition = "contains"
+  Expected = ['100', '1']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg set-params -k {{index $.NodePrivKeyPathList 0}} --vote-threshold 50 --block-confirmations 1000"
+  Condition = "excludes"
+  Expected = ['Error']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg get-params"
+  Condition = "contains"
+  Expected = ['50', '1000']
+  
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg set-params -k {{index $.NodePrivKeyPathList 0}} --vote-threshold 100 --block-confirmations 1"
+  Condition = "excludes"
+  Expected = ['Error']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg get-params"
+  Condition = "contains"
+  Expected = ['100', '1']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg get-feature hardfork"
+  Condition = "contains"
+  Expected = ['75']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg enable-feature hardfork -k {{index $.NodePrivKeyPathList 3}}"
+  Condition = "contains"
+  Expected = ['']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg get-feature hardfork"
+  Condition = "contains"
+  Expected = ['75']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg add-feature feature1 feature2 --build 567 --no-auto-enable -k {{index $.NodePrivKeyPathList 0}}"
+  Condition = "contains"
+  Expected = ['']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg get-feature feature1"
+  Condition = "contains"
+  Expected = ['feature1', '567']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg get-feature feature2"
+  Condition = "contains"
+  Expected = ['feature2', '567']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg set-validator-info --build 578 -k {{index $.AccountPrivKeyPathList 0}}"
+  Condition = "contains"
+  Expected = ['Error','not authorized']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg set-validator-info --build 578 -k {{index $.NodePrivKeyPathList 0}}"
+  Condition = "excludes"
+  Expected = ['Error']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg get-validator-info {{index $.NodeAddressList 0}}"
+  Condition = "contains"
+  Expected = ['buildNumber', '578']
+
+  [[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg set-validator-info --build 50 -k {{index $.NodePrivKeyPathList 1}}"
+  Condition = "excludes"
+  Expected = ['Error','RPC error']
+
+[[TestCases]]
+  Delay = 5000
+  RunCmd = "{{ $.LoomPath }} chain-cfg set-validator-info --build 50 -k {{index $.NodePrivKeyPathList 2}}"
+  Condition = "excludes"
+  Expected = ['Error','RPC error']
+
+  [[TestCases]]
+  Delay = 5000
+  RunCmd = "{{ $.LoomPath }} chain-cfg set-validator-info --build 50 -k {{index $.NodePrivKeyPathList 3}}"
+  Condition = "excludes"
+  Expected = ['Error','RPC error']
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} coin approve dposV3 1250000 -k {{index $.NodePrivKeyPathList 0}}"
+  Condition = "excludes"
+  Excluded = ["Error"]
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} dpos3 register-candidate {{index $.NodePubKeyList 0}} 100 3 -k {{index $.NodePrivKeyPathList 0}} --name LOOM_0"
+  Condition = "excludes"
+  Excluded = ["Error"]
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} coin approve dposV3 1250000 -k {{index $.NodePrivKeyPathList 1}}"
+  Condition = "excludes"
+  Excluded = ["Error"]
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} dpos3 register-candidate {{index $.NodePubKeyList 1}} 100 3 -k {{index $.NodePrivKeyPathList 1}} --name LOOM_1"
+  Condition = "excludes"
+  Excluded = ["Error"]
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} coin approve dposV3 1250000 -k {{index $.NodePrivKeyPathList 2}}"
+  Condition = "excludes"
+  Excluded = ["Error"]
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} dpos3 register-candidate {{index $.NodePubKeyList 2}} 100 3 -k {{index $.NodePrivKeyPathList 2}} --name LOOM_2"
+  Condition = "excludes"
+  Excluded = ["Error"]
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} dpos3 list-candidates"
+  Condition = "contains"
+  Expected = ["{{index $.NodePubKeyList 0}}", "{{index $.NodePubKeyList 1}}", "{{index $.NodePubKeyList 2}}"]
+
+[[TestCases]]
+  RunCmd = "{{ $.LoomPath }} chain-cfg list-validators "
+  Condition = "contains"
+  Expected = ['validator','578','50','LOOM_0','LOOM_1','LOOM_2']

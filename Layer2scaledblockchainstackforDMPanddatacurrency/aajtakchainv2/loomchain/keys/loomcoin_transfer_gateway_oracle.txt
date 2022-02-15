@@ -1,0 +1,2 @@
+local address: 0xeDfE45649F194b1D39De7d9E8d68c2ba46b5a305
+local address base64: 7f5FZJ8ZSx053n2ejWjCuka1owU=
