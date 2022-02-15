@@ -1,6 +1,6 @@
-# [Loom SDK](https://loomx.io)
+# [Aajtak chain SDK]
 
-Loom application specific side chain software development kit.
+Aajtak application specific side chain software development kit.
 
 ## Documentation
  
