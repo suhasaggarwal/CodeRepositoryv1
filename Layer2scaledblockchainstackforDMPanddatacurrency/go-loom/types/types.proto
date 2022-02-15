@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+option csharp_namespace = "Loom.Client.Protobuf";
+
+// Blockchain Types
+
+message BlockHeader {
+    string chain_id = 1 [(gogoproto.customname)="ChainID"];
+    int64 height = 2;
+    int64 time = 3;
+    int32 num_txs = 4;
+    BlockID last_block_id = 5 [(gogoproto.customname)="LastBlockID", (gogoproto.nullable)=false];
+    bytes last_commit_hash = 6;
+    bytes data_hash = 7;
+    bytes validators_hash = 8;
+    bytes app_hash = 9;
+    bytes current_hash = 10;
+}
+
+message BlockID {
+    bytes hash = 1;
+    PartSetHeader parts = 2 [(gogoproto.nullable)=false];
+}
+
+message PartSetHeader {
+    int32 total = 1;
+    bytes hash = 2;
+}
+
+message Validator {
+    bytes pub_key = 1;
+    int64 power = 2;
+}
+
+message Evidence {
+    bytes pub_key = 1;
+    int64 height = 2;
+}
+
+// Generic Loom data structures
+
+message BigUInt {
+    bytes Value = 1 [(gogoproto.customtype) = "github.com/loomnetwork/go-loom/common.BigUInt", (gogoproto.nullable) = false];
+}
+
+message Address {
+    string chain_id = 1;
+    bytes local = 2 [(gogoproto.customtype) = "github.com/loomnetwork/go-loom/common.LocalAddress", (gogoproto.nullable) = false];
+}
+
+message Transaction {
+    uint32 id = 1;
+    bytes data = 2;
+}

@@ -1,0 +1,307 @@
+syntax = "proto3";
+
+import "github.com/loomnetwork/go-loom/types/types.proto";
+import "github.com/loomnetwork/go-loom/vm/vm.proto";
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+option csharp_namespace = "Loom.Client.Internal.Protobuf";
+
+// Contract specific data structures
+
+enum EncodingType {
+    JSON = 0;
+    PROTOBUF3 = 1;
+}
+
+message PluginCode {
+    string name = 1;
+    bytes input = 2;
+}
+
+message Request {
+    EncodingType content_type = 1;
+    EncodingType accept = 2;
+    bytes body = 3;
+}
+
+message Response {
+    EncodingType content_type = 1;
+    bytes body = 2;
+}
+
+message Message {
+    Address sender = 1;
+}
+
+message ContractMeta {
+    string name = 1;
+    string version = 2;
+    string metric_addr = 3;
+}
+
+message ContractMethodCall {
+	string method = 1;
+    bytes args = 2;
+}
+
+// Wrapped types for GRPC
+
+message Context {
+}
+
+message MetaRequest {
+}
+
+message ContractCallRequest {
+    BlockHeader block = 1;
+    Message message = 2;
+    Address contract_address = 3;
+    uint32 api_server = 4;
+    Request request = 5;
+}
+
+message InitResponse {
+
+}
+
+message EthMessage {
+    bytes body = 1;
+    string id = 2;
+}
+
+message EventDataList {
+    repeated EventData events = 1;
+}
+
+message EventData {
+    repeated string topics = 1;
+    Address caller = 2;
+    Address address = 3;
+    string plugin_name = 4;
+    uint64 block_height = 5 [(gogoproto.jsontag) = "block_height,string,omitempty"];
+    bytes encoded_body = 6;
+    bytes original_request = 7;
+    bytes tx_hash = 8;
+    uint64 transaction_index = 9 [(gogoproto.jsontag) = "transaction_index,string,omitempty"];
+    bytes block_hash = 10;
+    int64 block_time = 11 [(gogoproto.jsontag) = "block_time,string,omitempty"];
+}
+
+message ContractEventsResult {
+    repeated EventData events = 1;
+    uint64 from_block = 2 [(gogoproto.jsontag) = "from_block,string,omitempty"];
+    uint64 to_block = 3 [(gogoproto.jsontag) = "to_block,string,omitempty"]; 
+}
+
+message EvmTxReceiptList {
+    repeated EvmTxReceipt tx_receipts = 1;
+}
+
+message EvmTxReceiptListItem {
+    EvmTxReceipt receipt = 1;
+    bytes nextTxHash = 2;
+}
+
+message EvmTxReceipt {
+    int32 transaction_index = 1;
+    bytes block_hash = 2;
+    int64 block_number = 3;
+    int32 cumulative_gas_used = 4;
+    int32 gas_used = 5 ;
+    bytes contract_address = 6;
+    repeated EventData logs = 7;
+    bytes logs_bloom = 8;
+    int32 status = 9;
+    bytes tx_hash = 10;
+    Address caller_address = 11;
+    int64 nonce = 12;
+}
+
+message EvmTxObject {
+    bytes hash = 1;                 // : DATA, 32 Bytes - hash of the transaction.
+    uint64 nonce = 2;                // : QUANTITY - the number of transactions made by the sender prior to this one.
+    bytes block_hash = 3;           // : DATA, 32 Bytes - hash of the block where this transaction was in. null when its pending.
+    int64 block_number = 4;         // : QUANTITY - block number where this transaction was in. null when its pending.
+    int32 transaction_index = 5;    // : QUANTITY - integer of the transactions index position in the block. null when its pending.
+    bytes from = 6;                 // : DATA, 20 Bytes - address of the sender.
+    bytes to = 7;                   // : DATA, 20 Bytes - address of the receiver. null when its a contract creation transaction.
+    int64 value = 8;                // : QUANTITY - value transferred in Wei.
+    int64 gas_price = 9;            // : QUANTITY - gas price provided by the sender in Wei.
+    int64 gas = 10;                 // : QUANTITY - gas provided by the sender.
+    bytes input = 11;               //: DATA - the data send along with the transaction.
+}
+
+message EthFilterLog {
+    bool removed = 1;
+    int64 log_index = 2;
+    int32 transaction_index = 3;
+    bytes transaction_hash = 4;
+    bytes block_hash = 5;
+    int64 block_number = 6;
+    bytes address = 7;
+    bytes data = 8;
+    repeated bytes topics = 9;
+    int64 block_time = 10;
+}
+
+message EthBlockInfo {
+    int64 number = 1;                   //: QUANTITY - the block number. null when its pending block.
+    bytes hash = 2;                     //: DATA, 32 Bytes - hash of the block. null when its pending block.
+    bytes parent_hash = 3;              //: DATA, 32 Bytes - hash of the parent block.
+    bytes nonce = 4;                    //: DATA, 8 Bytes - hash of the generated proof-of-work. null when its pending block.
+    bytes sha3_uncles  = 5;             //: DATA, 32 Bytes - SHA3 of the uncles data in the block.
+    bytes logs_bloom = 6;               //: DATA, 256 Bytes - the bloom filter for the logs of the block. null when its pending block.
+    bytes transactions_root = 7;        //: DATA, 32 Bytes - the root of the transaction trie of the block.
+    bytes state_root = 8;               //t: DATA, 32 Bytes - the root of the final state trie of the block.
+    bytes receipts_root = 9;            //: DATA, 32 Bytes - the root of the receipts trie of the block.
+    bytes miner = 10;                   //: DATA, 20 Bytes - the address of the beneficiary to whom the mining rewards were given.
+    int64 difficulty = 11;              //: QUANTITY - integer of the difficulty for this block.
+    int64 total_difficulty = 12;        //: QUANTITY - integer of the total difficulty of the chain until this block.
+    bytes extra_data = 13;              //: DATA - the "extra data" field of this block.
+    int64 size = 14;                    //: QUANTITY - integer the size of this block in bytes.
+    int64 gasLimit = 15;                //: QUANTITY - the maximum gas allowed in this block.
+    int64 gasUsed = 16;                 //: QUANTITY - the total used gas by all transactions in this block.
+    int64 timestamp = 17;               //: QUANTITY - the unix timestamp for when the block was collated.
+    repeated bytes transactions = 18;   //: Array - Array of transaction objects, or 32 Bytes transaction hashes depending on the last given parameter.
+    repeated bytes uncles = 19;         //: Array - Array of uncle hashes.
+}
+
+message EthBlockHashList {
+    repeated bytes eth_block_hash = 1;
+}
+
+message EthTxHashList {
+    repeated bytes eth_tx_hash = 1;
+}
+
+message EthFilterLogList {
+    repeated EthFilterLog eth_block_logs = 1;
+}
+
+message EthFilterEnvelope {
+    oneof message {
+        EthBlockHashList eth_block_hash_list = 1;
+        EthFilterLogList eth_filter_log_list = 2;
+        EthTxHashList eth_tx_hash_list = 3;
+    }
+}
+
+service Contract {
+    rpc Meta(MetaRequest) returns (ContractMeta);
+    rpc Init(ContractCallRequest) returns (InitResponse);
+    rpc Call(ContractCallRequest) returns (Response);
+    rpc StaticCall(ContractCallRequest) returns (Response);
+}
+
+message GetRequest {
+    bytes key = 1;
+}
+
+message GetResponse {
+    bytes value = 1;
+}
+
+message EvmTxReceiptRequest{
+    bytes value = 1;
+}
+
+message RangeRequest {
+    bytes prefix = 1;
+}
+
+message RangeEntry {
+    bytes key = 1;
+    bytes value = 2;
+}
+
+message RangeResponse {
+    repeated RangeEntry range_entries = 1;
+}
+
+
+message HasRequest {
+    bytes key = 1;
+}
+
+message HasResponse {
+    bool value = 1;
+}
+
+message CallRequest {
+    Address address = 1;
+    bytes input = 2;
+    VMType vm_type = 3;
+    BigUInt value = 4;
+}
+
+message CallResponse {
+    bytes output = 1;
+}
+
+
+message ResolveRequest {
+    string name = 1;
+}
+
+message ResolveResponse {
+    Address address = 1;
+}
+
+message EmitRequest {
+    bytes data = 1;
+    repeated string topics = 2;
+}
+
+message EmitResponse {
+}
+
+message SetRequest {
+    bytes key = 1;
+    bytes value = 2;
+}
+
+message SetResponse {
+}
+
+message DeleteRequest {
+    bytes key = 1;
+}
+
+message DeleteResponse {
+}
+
+message ContractRecordRequest {
+    Address contract = 1;
+}
+
+message ContractRecordResponse {
+    string contract_name = 1;
+    Address contract_address = 2;
+    Address creator_address = 3;
+}
+
+message FeatureEnabledRequest {
+    string name = 1;
+    bool defaultVal = 2;
+}
+
+message FeatureEnabledResponse {
+    bool value = 1;
+}
+
+
+
+service API {
+    rpc Get(GetRequest) returns (GetResponse);
+    rpc Has(HasRequest) returns (HasResponse);
+    rpc Range(RangeRequest) returns (RangeResponse);
+    rpc StaticCall(CallRequest) returns (CallResponse);
+    rpc Resolve(ResolveRequest) returns (ResolveResponse);
+    rpc Emit(EmitRequest) returns (EmitResponse);
+    rpc GetEvmTxReceipt(EvmTxReceiptRequest) returns (EvmTxReceipt);
+    rpc Set(SetRequest) returns (SetResponse);
+    rpc Delete(DeleteRequest) returns (DeleteResponse);
+    rpc Call(CallRequest) returns (CallResponse);
+    rpc ContractRecord(ContractRecordRequest) returns (ContractRecordResponse);
+    rpc FeatureEnabled(FeatureEnabledRequest) returns (FeatureEnabledResponse);
+}

@@ -1,0 +1,12 @@
+
+syntax = "proto3";
+package personastorage;
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "github.com/loomnetwork/go-loom/types/types.proto";
+
+message PersonaStorage {
+    string timestamp = 1;
+    string userpersona = 2;
+    string userid = 3;
+
+}

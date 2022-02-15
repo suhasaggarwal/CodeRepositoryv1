@@ -1,0 +1,12 @@
+syntax = "proto3";
+package clicktracker;
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "github.com/loomnetwork/go-loom/types/types.proto";
+
+message ClickTracker {
+    string timestamp = 1;
+    string campaign_name = 2;
+    string userId = 3;
+    uint64 creative_id = 4;
+    uint64 tracker_id = 5;
+}

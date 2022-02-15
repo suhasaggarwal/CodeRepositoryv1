@@ -1,0 +1,58 @@
+syntax = "proto3";
+package deployer_whitelist;
+import "github.com/loomnetwork/go-loom/types/types.proto";
+
+message InitRequest {
+    Address owner = 1;
+    repeated Deployer deployers = 2;
+}
+
+enum Flags {
+    NONE = 0;
+    GO = 1;
+    EVM = 2;
+    MIGRATION = 4;
+}
+
+message Deployer {
+    Address address = 1;
+    uint32 flags = 2;
+}
+
+message AddDeployerRequest {
+    Address deployer_addr = 1;
+    uint32 flags = 2;
+}
+
+message AddUserDeployerRequest {
+    Address deployer_addr = 1;
+}
+
+message RemoveUserDeployerRequest {
+    Address deployer_addr = 1;
+}
+
+message AddDeployerResponse {
+}
+
+message GetDeployerRequest {
+    Address deployer_addr = 1;
+}
+
+message GetDeployerResponse {
+    Deployer deployer = 1;
+}
+
+message RemoveDeployerRequest {
+    Address deployer_addr = 1;
+}
+
+message RemoveDeployerResponse {
+}
+
+message ListDeployersRequest {
+}
+
+message ListDeployersResponse {
+    repeated Deployer deployers = 1;
+}
