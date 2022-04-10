@@ -1,3 +1,9 @@
+#Code quality score
+
+https://api.codiga.io/project/32727/score/svg
+https://api.codiga.io/project/32727/status/svg
+
+
 # Knowledge Graph Databases for Creative Entities/User Personas
 
 Please kindly note - Actual Graph Database is very large, this is for Demo Purposes 
