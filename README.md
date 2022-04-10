@@ -1,6 +1,7 @@
 #Code quality score
 
 https://api.codiga.io/project/32727/score/svg
+
 https://api.codiga.io/project/32727/status/svg
 
 
