@@ -9,16 +9,23 @@ https://api.codiga.io/project/32727/status/svg
 https://drive.google.com/drive/folders/1Aswv4eU2FvhDfxMdbFxsF3JyTp5T8hVR?usp=sharing
 
 
+
 # Data Files are available for download below - (This full data has been synchronized in Google AdManager (Network - Aajtak/IndiaToday) for campaign optimisation)
+
 
 PersonaArchiveTillDecember2020
 https://drive.google.com/file/d/1hHYSYzFhA1vSpfJPMA4Soq-F2mvJ6Nsx/view?usp=sharing
 
+
+
 PersonaArchivefromJan2021
 https://drive.google.com/file/d/1Ez1-CsIT2MGiwdFTMcVJfb_HUX0XjEWt/view?usp=sharing
 
+
+
 PersonaArchivefromAprilMay2021 (COVID pandemic second wave - (full Aajtak/IndiaToday Audience))
 https://drive.google.com/file/d/1UuvAlGL6b0d3wWk_erprjqOZTBmv-Wgw/view?usp=sharing
+
 
 
 # Knowledge Graph Databases for Creative Entities/User Personas
