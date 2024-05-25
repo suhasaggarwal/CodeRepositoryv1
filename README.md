@@ -13,6 +13,16 @@ Code Quality Score - 99%
 Code lines - 2982918
 
 
+![keanuhimalayas](https://github.com/suhasaggarwal/CodeRepositoryv1/assets/19626161/27c01a00-9420-438a-b652-43a09dc50f46)
+
+![keanurockymountains](https://github.com/suhasaggarwal/CodeRepositoryv1/assets/19626161/114fc69f-1592-4e97-a270-62c14c828e4d)
+
+![keanuastronaut1 (1)](https://github.com/suhasaggarwal/CodeRepositoryv1/assets/19626161/2fc76d6f-50a9-4e84-8540-987f0d05a231)
+
+![kreguitar1](https://github.com/suhasaggarwal/CodeRepositoryv1/assets/19626161/843d75ef-6eba-4320-9c5c-0657220815cc)
+
+
+
 # Product Documentation 
 
 https://drive.google.com/drive/folders/1Aswv4eU2FvhDfxMdbFxsF3JyTp5T8hVR?usp=sharing
@@ -155,6 +165,7 @@ Please kindly note - Actual Graph Database is very large, this is for Demo Purpo
 https://drive.google.com/drive/folders/1Qtcf90dO-Qj1FZ31fC3n1EHzZgu_YD6g?usp=sharing
 
 # IAB Segments Using Sentence Transformers
+
 Sentence Transformers Scaled on a 16-core machine. Scaling Architecture - 3 processes of Sentence Tranformer are spawned each using 5 workers to increase the throughput of Sentence Transformers. 15 workers - sentence transformer is able to do one batch of 1000 urls in 10 minutes. Splitting workers in multiple processes - increases throughput to 3 batches in 10 minute. Scaling is done without GPU node to keep server costs minimum.
 
 # Publisher Analytic Signals/Segments 
@@ -483,20 +494,6 @@ https://drive.google.com/file/d/1b8NJ4kieJg4TViXYvVpS7Yd6tHC3hBH3/view?usp=shari
 
 
 
-Wittyfeed Functional Urls - 
-
-Elasticsearch Index view - 
-
-Enhanced index -
-http://cuberootanalytics.dc.cuberoot.co:5602/#/settings/indices/enhanceduserdatabeta1?_g=()&_a=(tab:indexedFields)
-
-Live index - 
-http://cuberootanalytics.dc.cuberoot.co:5601/#/discover?_g=()&_a=(columns:!(_source),index:livedmpindex,interval:auto,query:(query_string:(analyze_wildcard:!t,query:'*')),sort:!(request_time,desc))
-
-Publisher Dashboard view -
-http://publisherplatform.dc.cuberoot.co/
-
-
 ReadMe for Modules  - How to Run code on Servers
 -------------------------------------------------
 
@@ -541,7 +538,6 @@ Sample cron file is provided in cron folder.
  
  
  
- 
  Python/JS scripts
 --------------------
 
@@ -563,9 +559,6 @@ Adserver Support - This involves scaled Adserver with support for Elasticsearch 
 
 Semantic Engine is set up in ML Servers and Python code can be obtained from there. 
 
-Machine Learning APIs being used in Entity Index generator modules can be seen here for reference -
-http://semantics.dc.cuberoot.co/CuberootSemantics.html
-
 How to use ML APIs - 
 
 Fetch Topics from ML server - 
@@ -586,17 +579,15 @@ http://101.53.130.215/getTextCategory?url=<text>
 5)Emotion Recognition From Facial Expressions - Python
 
 -------------------------------------------------------------------------------------------------------------------------------
-//Javascript based scripts 
 
-<script src="https://cuberoottagmanager.dc.cuberoot.co/dcode2/dmpbasedc.js" defer></script>
+Javascript based scripts 
 
+1)dmpbasedc.js
 
-
-<script src="https://segmentsync.dc.cuberoot.co/cookiedatav5.js"></script>
+2)cookiedatav5.js
 
     
-    
-    
+       
     <script type="text/javascript">
 
         getCookieData(function(cookiedatav1) {
@@ -627,68 +618,3 @@ http://101.53.130.215/getTextCategory?url=<text>
     </script>
 
 
-
-
-
-Servers 
----------------------
-
-Node name : WittyFeedLoadBalancer
-IP : 101.53.137.16 / 172.16.105.233
-Username : root
-Password : P3KvWEe5z8ah
-
-Node name : WittyfeedDataCollector
-IP : 101.53.136.167 / 172.16.105.228
-Username : root
-Password : 9510@23ce
-
-Node name : WittyFeedLiveES
-IP : 101.53.137.126 / 172.16.105.229
-Username : root
-Password : d477@32ab
-
-Node name : WittyFeedMiddlewareNode
-IP : 101.53.137.134 / 172.16.105.230
-Username : root
-Password : d9f5@8032
-
-Node name : WittyFeedEnhancedIndex
-IP : 101.53.137.155 / 172.16.105.231
-Username : root
-Password : fa38@efcb
-
-Node name : WittyFeedInsightsServer
-IP : 101.53.137.158 / 172.16.105.232
-Username : root
-Password : ab07@e6bc
-
-Node name : WittyfeedMetadataServer
-IP : 101.53.137.240 / 172.16.105.247
-Username : root
-Password : 058d@4222
-
-Node name : Classifier-BigData/ Machine Learning Server
-IP : 101.53.130.215 / 172.16.103.138
-Username : root
-Password : 6wAPasO89LyB
-
-Node name : WittyFeedPreparationServer/Web Crawling Server 
-IP : 101.53.137.127 / 172.16.104.87
-Username : root
-Password : 5582@5928
-
-Node name : SegmentSync/Real Time Persona Fetch Server
-IP : 101.53.138.39 / 172.16.106.17
-Username : root
-Password : fbbd@9751
-
-Node name : RecommendationEngine
-IP : 101.53.137.61 / 172.16.102.107
-Username : root
-Password : a6ce@e9b6
-
-Node name : CuberootWebApplication/ISP Server code Hosted.
-IP : 205.147.103.82 / 172.16.102.251
-Username : root
-Password : dzr0w0qmEnd8
