@@ -107,6 +107,8 @@ Smart contracts for each above token is developed in golang for side chain go ba
 https://photos.app.goo.gl/UJeW4oLqNJd3qnw29
 
 
+# GPT Model
+
 GPT model (like ChatGPT) tailored for disaster prevention, utilizing user browsing logs during the COVID-19 pandemic
 Creating a GPT model (like ChatGPT) tailored for disaster prevention, utilizing user browsing logs during the COVID-19 pandemic to understand seasonal patterns. This model could potentially predict and mitigate the impact of future disasters by analyzing changes in user behavior and identifying early warning signs of crisis.
 https://docs.google.com/document/d/1VzkxA71-8snJBxv6ngIiz0k63oiXEJCtqgbyMxsczsw/edit?usp=sharing
