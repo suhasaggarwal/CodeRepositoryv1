@@ -18,8 +18,117 @@ Code lines - 2982918
 https://drive.google.com/drive/folders/1Aswv4eU2FvhDfxMdbFxsF3JyTp5T8hVR?usp=sharing
 
 
+# System Screenshots 
 
-# Data Files are available for download below - (This full data has been synchronized in Google AdManager (Network - Aajtak/IndiaToday) for campaign optimisation)
+https://photos.app.goo.gl/4Tq1mt578WTQsjPS7
+
+
+# Live User signals in Users Chrome/browsers local storage 
+
+https://photos.app.goo.gl/Jp5dneBRGkVvqtYT7
+
+https://photos.app.goo.gl/Jp5dneBRGkVvqtYT7
+
+https://photos.app.goo.gl/iNhVoCtTqResNW44A
+
+
+Blockchain Work Context for Enhanced Collaboration: The integration of blockchain technology has significantly augmented product's capabilities, including the creation of a Layer 2 scaled blockchain stack for DMP and data currency. This technology stack includes:
+
+1)Aajtak Chain and its interoperability across different blockchain networks such as Binance, Tron, and Ethereum.
+
+2)Development of smart contracts for various data point tokens that are integral to personalized ad campaigns and content recommendations on platforms like aajtak.in.
+
+3)Full product documentation and repositories detailing the design of data currency based on top of DMP and the integration of SSO data points for refined ad targeting.
+
+Publisher Data Currency and its Applications
+User Data Points are derived in different domains based on user
+impression/click activity on publishers.
+
+1)Location
+2)Platform Based
+3)Time Unit
+4)Behavioral Segments
+5)Topic Segments
+
+Publisher Analytic Segments
+
+Engagement Time Based Segments
+
+1)Segment Engagement Times
+2)Topic Engagement Times
+3)Section Engagement Times
+
+Session Based Segments
+1)Session count
+2)Time Since Last Session
+3)Session Engagement Time
+4)Loyalty Nature
+5)Visitor Count.
+
+Machine Learning based Segments
+This covers different domains Personas
+1)Emotion Persona
+2)Affinities based on Creative Persona
+3)Refined Demographic Persona
+4)Affinities of Topic and Segments present in User Persona with
+respect to campaign segments.
+5)Click Segments Derived After Analysis of Clickstream.
+
+These data points are supplied to AdManager for personalised
+campaigns and personalised content recommendations.
+
+Layer 2 scaled blockchain stack for -
+
+1)Publisher Data Management Platform
+2)Publisher Data currency
+3)Website currency
+4)Persona storage for GDPR compliance and tamper proof user data.
+5)Impression/click trackers storage in layer 2 chain for high tps
+(transactions per second) (scaling) storage to store large volume of
+tracker data.
+
+Different tokens available
+1)Emotion Persona based data points for emotion based
+cryptocurrencies.
+2)Engagement time based data points for attention based
+cryptocurrencies similar to Basic Attention Token.
+3)Website Session time based data points for loyalty based
+cryptocurrencies.
+4)Demographic Persona based data points - (For example - income
+level/asset based personas) for credit based tokens.
+5)Total traffic, engagement time, bounce rate metrics based minting
+policies for publisher token.
+
+Smart contracts for each above token is developed in golang for side chain go based virtual machine deployment and solidity for interoperable chain support and Binance,Tron,Ethereum network based deployments.
+
+
+# NFT collaboration samples:
+
+https://photos.app.goo.gl/UJeW4oLqNJd3qnw29
+
+
+GPT model (like ChatGPT) tailored for disaster prevention, utilizing user browsing logs during the COVID-19 pandemic
+Creating a GPT model (like ChatGPT) tailored for disaster prevention, utilizing user browsing logs during the COVID-19 pandemic to understand seasonal patterns. This model could potentially predict and mitigate the impact of future disasters by analyzing changes in user behavior and identifying early warning signs of crisis.
+https://docs.google.com/document/d/1VzkxA71-8snJBxv6ngIiz0k63oiXEJCtqgbyMxsczsw/edit?usp=sharing
+
+
+GPT model (like ChatGPT) tailored for generating trading signals through a GPT
+The pandemic period saw a significant increase in the interest and trading volumes of cryptocurrencies, making this dataset a goldmine for insights related to cryptocurrency adoption, market sentiment, and potential predictors of market movement.
+https://docs.google.com/document/d/1gIBpdVmFh6xkFzNR6TuxTFqQ8t1sGumwWeT8mTvbXdY/edit?usp=sharing
+
+
+# Potential collaboration that could greatly benefit the broader data science and machine learning community with Kaggle.
+
+I believe there is a tremendous opportunity to contribute to the community by releasing a subset of this anonymized user persona data on Kaggle.
+
+This data, with its rich insights into user behaviors, preferences, and engagement, could serve as an invaluable resource for a wide range of research projects and competitions. It could help spur innovation in areas such as personalized content recommendation, advertising, user segmentation, and beyond.
+
+Of course, the privacy and security of user data are of paramount importance. Therefore, I propose that any data shared be thoroughly anonymized and stripped of any personally identifiable information (PII) to comply with GDPR and other privacy regulations. The goal is to ensure that the data can be used safely for educational and research purposes without compromising user privacy.
+
+By collaborating in this manner, we can showcase the potential applications of work with user persona data.
+
+
+# Data Files are kindly available on IndiaToday's Consent - (This full data has been synchronized in Google AdManager (Network - Aajtak/IndiaToday) for campaign optimisation)
 
 
 PersonaArchiveTillDecember2020
