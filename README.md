@@ -1,8 +1,17 @@
-#Code quality score
+Code Audit Report - (Done by company Codiga)
 
-https://api.codiga.io/project/32727/score/svg
+https://www.codiga.io/
 
-https://api.codiga.io/project/32727/status/svg
+Tech support contact for an audit company.
+
+support@codiga.io
+
+Code grade - A
+
+Code Quality Score - 99%
+
+Code lines - 2982918
+
 
 # Product Documentation 
 
