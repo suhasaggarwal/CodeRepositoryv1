@@ -609,8 +609,7 @@ Open Vectorstore word embeddings DB
 ]
 ```
 
-# CodeRepository for Cuberoot
-
+# CodeRepository 
 Code includes the following - 
 
 1)Wittyfeed In-house DMP
