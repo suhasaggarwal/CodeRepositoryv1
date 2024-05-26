@@ -528,7 +528,7 @@ Cache Puts:16288873
 </ehcache:config>
 ```
 
-# Data Repository for Cuberoot/Clickstream from third party data (For learning third party embeddings, third party knowledge graphs)
+# Data Repository for Clickstream from third party data (For learning third party embeddings, third party knowledge graphs)
 
 Clickstreams, Knowledge Graphs from various popular website and domain, demography, region specific clickstream is also available for use.
 
