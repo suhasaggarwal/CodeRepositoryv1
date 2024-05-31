@@ -780,7 +780,7 @@ Javascript based scripts
 
 2)cookiedatav5.js
 
-'''   
+```  
        
     <script type="text/javascript">
 
@@ -810,8 +810,7 @@ Javascript based scripts
            [['cinma', cubeinmarket], ['caffin', cubeaffinity],['ccity', cubecity],['cmobile',cubemobile], ['ctags',cubetags],['cgen',cubegender], ['cag', cubeage],['cinc', cubeincomelevel],['csection', cubesection]] ];
        });
     </script>
-
-     '''
+```
 
 
  https://github.com/suhasagg/SystemDesignPrototypeWhitepapers/
