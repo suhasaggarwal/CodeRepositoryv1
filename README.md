@@ -104,19 +104,32 @@ OpenWrap is a header bidding wrapper/framework designed to manage and optimize t
 GPT Slot Configuration and Bid Requests
 
 PWT.generateConfForGPT() is used to create a configuration object for GPT slots, incorporating the targeting data set previously.
+
 PWT.requestBids() bid requests to various ad exchanges/demand partners connected to OpenWrap, passing along the GPT slot configuration (including targeting data).
 
 GPT Auction and Ad Rendering
+
 The script signals that OpenWrap bids have been received by setting PWT.ow_BidsReceived = true.
+
 Then, initAdserver() is called which triggers the GPT auction.
+
 GPT considers the bids from OpenWrap (along with any other bids or direct campaigns) and selects the winning ad based on various factors, including the targeting data previously set.
+
 Finally, the winning ad is rendered on the page.
+
 
 How Cookie Data Influences OpenWrap Header Bidding
 
+
 Improved Targeting: The cookie data signals enrich the user profile, enabling OpenWrap to send more targeted bid requests to ad exchanges. This increases the likelihood of receiving relevant ads and potentially higher bids.
+
+
 Increased Competition: By providing detailed targeting information, OpenWrap can attract a wider range of demand partners to participate in the auction, fostering greater competition and potentially driving up bid prices.
+
+
 Enhanced User Experience: More relevant ads lead to a better user experience, increasing engagement and potentially improving overall ad performance.
+
+
 In essence, the cookie data acts as a bridge between the user's profile and the ad exchanges participating in the OpenWrap header bidding auction. It enables more precise targeting, fosters competition, and ultimately helps deliver the most valuable and relevant ads to the user.
 
 
