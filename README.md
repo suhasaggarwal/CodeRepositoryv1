@@ -97,6 +97,11 @@ https://photos.app.goo.gl/iNhVoCtTqResNW44A
 
 https://photos.app.goo.gl/ie7Bavn1GmnGK2HA9
 
+
+
+![GXHjKWbaIAA0tP6](https://github.com/user-attachments/assets/acb68abb-6450-4223-8b4c-dea345b72b91)
+
+
 OpenWrap(Header bidding) Integration
 
 OpenWrap is a header bidding wrapper/framework designed to manage and optimize the header bidding process.
