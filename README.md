@@ -56,7 +56,6 @@ https://github.com/suhasaggarwal/CodeRepositoryv1/assets/19626161/3ed7ce6c-b090-
 ![starled](https://github.com/suhasaggarwal/CodeRepositoryv1/assets/19626161/6fa41a0d-91f5-4578-b8c1-fba252167abc)
 
 
-![Green Lifestyle](https://github.com/user-attachments/assets/74e39fd5-6efa-4744-bcbd-16eb5702f98f)
 
 
 
