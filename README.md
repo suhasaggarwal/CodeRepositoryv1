@@ -84,13 +84,6 @@ Renewable sources of energy!! 🌍✨☀️ 🌬 🌊
 
 
 
-![36f18064-66b6-4c49-99e9-b9e258f91602](https://github.com/user-attachments/assets/e31c8952-24b0-45e9-953b-760ef6367589)
-
-
-
-![802-1-2-600x600](https://github.com/user-attachments/assets/988a69ce-b70e-40c7-97b3-001dbe015bce)
-
-
 # Product Documentation 
 
 https://drive.google.com/drive/folders/1Aswv4eU2FvhDfxMdbFxsF3JyTp5T8hVR?usp=sharing
